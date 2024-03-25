@@ -2,7 +2,7 @@
 Advanced Research Data Infrastructure project template.
 
 
-Please fork this repository to start your project.
+Please fork this repository before starting your project.
 
 ## Folder Structure
 ```bash
