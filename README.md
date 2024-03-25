@@ -1,6 +1,5 @@
 # ARDI-project-template
-Advanced Research Data Infrastructure project template.
-
+Advanced Research Data Infrastructure project template. The template has been prepared by considering the [blog post](https://medium.com/analytics-vidhya/folder-structure-for-machine-learning-projects-a7e451a8caaa) about the machine learning project structure.
 
 Please fork this repository before starting your project.
 
