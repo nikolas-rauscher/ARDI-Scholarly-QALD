@@ -23,7 +23,19 @@ def retrieve_triples_for_entity(entity: str, endpoint_url: str) -> dict:
                 {entity} ?predicate ?object.
             }}
             """
-
+    
+    
+#   query = f"""
+#   PREFIX dblp: <https://dblp.org/rdf/schema-2017-04-18#>
+#
+#   SELECT ?predicate ?object ?subject
+#   WHERE {{
+#       {{ {entity} ?predicate ?object }}
+#    UNION
+#       {{ ?subject ?predicate {entity} }}
+#   }}
+#   """
+    
     # Set the query and the return format
     sparql.setQuery(query)
     sparql.setReturnFormat(JSON)
