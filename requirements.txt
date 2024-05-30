@@ -1,1 +1,3 @@
 "add your libraries here, and any other dependencies you have"
+
+"SPARQLWrapper"
