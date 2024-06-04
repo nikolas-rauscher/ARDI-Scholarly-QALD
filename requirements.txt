@@ -1,3 +1,2 @@
-"add your libraries here, and any other dependencies you have"
-
-"SPARQLWrapper"
+SPARQLWrapper==1.8.5
+tqdm==4.62.3
