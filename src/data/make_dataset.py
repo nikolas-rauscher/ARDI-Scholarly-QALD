@@ -4,20 +4,25 @@ import json
 import os
 import time
 from SPARQLWrapper import SPARQLWrapper, JSON
+from tqdm import tqdm
 
 
 trainingdata_path = "data/raw/trainingdata.json"
 save_processed_data_path = "data/processed"
 endpoint_url = "https://dblp-april24.skynet.coypu.org/sparql"  # SPARQL endpoint URL
 
+
 def read_json_(trainindata_path) -> dict:
-    with open(trainindata_path, 'r', encoding='utf-8') as file:
+    with open(trainindata_path, "r", encoding="utf-8") as file:
         formulations = json.load(file)
     return formulations
 
+
 def retrieve_triples_for_entity(entity: str, endpoint_url: str) -> list:
 
-    sparql = SPARQLWrapper(endpoint_url)  # Initialize the SPARQL wrapper with the endpoint URL
+    sparql = SPARQLWrapper(
+        endpoint_url
+    )  # Initialize the SPARQL wrapper with the endpoint URL
 
     # SPARQL query
     query = f"""
@@ -30,7 +35,7 @@ def retrieve_triples_for_entity(entity: str, endpoint_url: str) -> list:
             {{ ?subject ?predicate {entity} }}
         }}
     """
-    
+
     # Set the query and the return format
     sparql.setQuery(query)
     sparql.setReturnFormat(JSON)
@@ -39,7 +44,7 @@ def retrieve_triples_for_entity(entity: str, endpoint_url: str) -> list:
     results = sparql.query().convert()
 
     list_of_triples = []
-    
+
     results = results["results"]["bindings"]
     for result in results:
         triple = {}
@@ -49,13 +54,14 @@ def retrieve_triples_for_entity(entity: str, endpoint_url: str) -> list:
         else:
             triple["subject"] = result["subject"]["value"]
             triple["object"] = entity
-        
+
         triple["predicate"] = result["predicate"]["value"]
 
         list_of_triples.append(triple)
-    
+
     time.sleep(0.5)  # Sleep for 0.5 seconds to avoid timeouts
     return list_of_triples
+
 
 data = read_json_(trainingdata_path)
 processed_data = []
@@ -64,7 +70,7 @@ for data_block in tqdm(data[:10], desc="Processing data blocks"):
     list_of_tripples = []
     entities = data_block["author_dblp_uri"]
     if entities[0] == "[":
-        entities = json.loads(entities.replace("'", "\""))[0]
+        entities = json.loads(entities.replace("'", '"'))[0]
         for key, entity in entities.items():
             tripples = retrieve_triples_for_entity(entity, endpoint_url)
             list_of_tripples += tripples
@@ -80,5 +86,5 @@ os.makedirs(save_processed_data_path, exist_ok=True)
 
 # Save the new processed training data
 file_path = os.path.join(save_processed_data_path, "processed_data.json")
-with open(file_path, 'w', encoding='utf-8') as file:
+with open(file_path, "w", encoding="utf-8") as file:
     json.dump(processed_data, file, indent=4, ensure_ascii=False)
