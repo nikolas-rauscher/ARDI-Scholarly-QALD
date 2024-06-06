@@ -1,10 +1,10 @@
 Utilize the provided context information, structured by 
 [context format description]
-to generate answers to the following question:
-[Question]
-[Instructions]
+to generate answers to the following question: [Question]
+[instructions]
 - Generate the answer to the question based on the provided context.
 - Avoid including any explanations or apologies in your responses.
 - Only respond to questions that ask for the answer to the target question without any additional information.
 - Strictly provide the answer without any additional text.
-[/Instructions]
+[/instructions]
+[context]
