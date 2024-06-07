@@ -5,6 +5,6 @@ to generate answers to the following question:
 - Avoid including any explanations or apologies in your responses.
 - Only respond to questions that ask for the answer to the target question without any additional information.
 - Strictly provide the answer without any additional text.
-{question}:
-{context}
+Question: {question}
+Context: {context}
 [/INST] Answer:{answer}
