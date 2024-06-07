@@ -7,4 +7,4 @@ to generate answers to the following question:
 - Strictly provide the answer without any additional text.
 Question: {question}
 Context: {context}
-[/INST] Answer:{answer}
+[/INST] Answer:
