@@ -82,7 +82,7 @@ def create_dataset(trainingdata_path:str, endpoint_url:str, save_processed_data_
     data = read_json_(trainingdata_path)
     processed_data = []
 
-    for data_block,i in zip(data[:2],range(len(data))):
+    for data_block,i in zip(data,range(len(data))):
         print(i)
         list_of_tripples = []
         entities = data_block["author_dblp_uri"]
