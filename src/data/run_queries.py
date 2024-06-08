@@ -1,9 +1,5 @@
 """Script to download or generate data"""
 
-"""Script to download or generate data"""
-
-import json
-import os
 from SPARQLWrapper import SPARQLWrapper, JSON
 
 
