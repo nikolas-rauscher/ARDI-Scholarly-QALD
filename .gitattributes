@@ -1,3 +1,2 @@
 *.psd filter=lfs diff=lfs merge=lfs -text
-src/models/verbalizer/graph2text/* filter=lfs diff=lfs merge=lfs -text
-src/models/verbalizer/graph2text filter=lfs diff=lfs merge=lfs -text
+src/models/verbalizer/graph2text/output/t5-base_13881/* filter=lfs diff=lfs merge=lfs -text
