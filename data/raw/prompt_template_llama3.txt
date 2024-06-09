@@ -1,9 +1,0 @@
-<|begin_of_text|><|start_header_id|>system<|end_header_id|>
-You are a helpful assistant<|eot_id|><|start_header_id|>user<|end_header_id|>
-Utilize the provided context information, structured by 
-to generate answers to the following question: 
-- Generate the answer to the question based on the provided context.
-- Avoid including any explanations or apologies in your responses.
-- Only respond to questions that ask for the answer to the target question without any additional information.
-- Strictly provide the answer without any additional text.
-Question: {question} Context: {context}<|eot_id|><|start_header_id|>assistant<|end_header_id|>
