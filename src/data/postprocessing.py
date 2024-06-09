@@ -1,17 +1,18 @@
 import json
 import os
 
+outputdata_name_path_0 = "data/processed/processed_data3_0.json"
 outputdata_name_path_1 = "data/processed/processed_data3_1.json"
-outputdata_name_path_0 = "data/processed/processed_data3_1.json"
 
 def read_json_(outputdata_name_path) -> dict:
     with open(outputdata_name_path, 'r', encoding='utf-8') as file:
         formulations = json.load(file)
     return formulations
 
-data_1 = read_json_(outputdata_name_path_1)
 data_0 = read_json_(outputdata_name_path_0)
-data = data_1 + data_0
+data_1 = read_json_(outputdata_name_path_1)
+
+data = data_0 + data_1 
 
 
 take_label= ["authored by", "edited by", "differentFrom"]
