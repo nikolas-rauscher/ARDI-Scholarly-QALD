@@ -3,7 +3,23 @@ import torch
 
 tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 model = BertModel.from_pretrained('bert-base-uncased')
-extract_triple_prompt=""
+extract_triple_prompt = ""
+
+
+def evidence_sentence_selection(question, sentences, num_sentences=2):
+    """select the sentence from quetion and sentences that
+
+    Args:
+        question (str): _description_
+        sentences (str[]): _description_
+        num_sentences (int, optional): _description_. Defaults to 2.
+    """
+    triples = extract_triple_from_question(question)
+    sentences = []
+    for triple in triples:
+        sentences += evidence_sentence_selection_per_triple(
+            triple, sentences, num_sentences=num_sentences)
+    return sentences
 
 def extract_triple_from_question(question):
     """extract the triple from a question using llm
@@ -17,8 +33,7 @@ def extract_triple_from_question(question):
     triples = set()
     return triples
 
-
-def evidence_sentence_selection(triple, sentences, num_sentences=2):
+def evidence_sentence_selection_per_triple(triple, sentences, num_sentences=2):
     """selection of evidence sentences
 
     Args:
