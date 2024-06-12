@@ -50,6 +50,6 @@ def verbaliseFile(FILENAME, outputFile):
 
 if __name__ == "__main__":
     verb_module = VerbModule()
-    FILENAME = "data/exp10.json"
-    outputFile = "data/exp10_out.json"
+    FILENAME = "exp10.json" # TODO Will be changed later, just for testing
+    outputFile = "exp10_out.json"
     verbaliseFile(FILENAME, outputFile)
