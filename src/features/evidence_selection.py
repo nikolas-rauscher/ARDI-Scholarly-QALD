@@ -51,7 +51,6 @@ def evidence_triple_selection(question, triples, num_triples=2, llm=False):
     evidence_triples = []
     triples_embeddings = [create_embeddings_from_triple(
         triple) for triple in triples]
-    print("finished creating embeddings")
     for q_embedding in q_embeddings:
         evidence_triples += evidence_triple_selection_per_embedding(
             q_embedding, triples_embeddings, triples, num_sentences=num_triples)
@@ -91,17 +90,17 @@ def evidence_sentence_selection_per_triple(triple, sentences, num_sentences=2):
     return sentences[idx_list]
 
 
-def create_embeddings_from_sentence(s):
+def create_embeddings_from_sentence(sentence):
     """create embeddings from sentece
     Args:
-        s (str): _description_
+        sentence (str): _description_
 
     Returns:
         embedding: _description_
     """
     global tokenizer
     global model
-    inputs = tokenizer(s, return_tensors='pt', padding=True, truncation=True)
+    inputs = tokenizer(sentence, return_tensors='pt', padding=True, truncation=True)
     input_ids = inputs['input_ids']
 
     with torch.no_grad():  # No need to compute gradients for embedding extraction
