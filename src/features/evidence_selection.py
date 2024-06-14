@@ -1,12 +1,17 @@
-from transformers import BertTokenizer, BertModel
+import numpy as np
+from transformers import BertTokenizer, BertModel, pipeline
 import torch
 
 tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 model = BertModel.from_pretrained('bert-base-uncased')
-extract_triple_prompt = ""
+# extract_triple_prompt = ""
 
 
-def extract_triple_from_question(question):
+def load_triplet_extractor():
+    return pipeline('text2text-generation', model='Babelscape/rebel-large', tokenizer='Babelscape/rebel-large')
+
+
+def extract_triple_from_question(question, triplet_extractor):
     """extract the triple from a question using llm
 
     Args:
@@ -15,11 +20,50 @@ def extract_triple_from_question(question):
     Returns:
         set of triples: _description_
     """
-    triples = set()
-    return triples
+    if (triplet_extractor == None):
+        print("do not specify the triplet_extractor")
+        exit(-1)
+    extracted_text = triplet_extractor.tokenizer.batch_decode([triplet_extractor(
+        question, return_tensors=True, return_text=False)[0]["generated_token_ids"]])
+    return extracted_text
 
 
-def evidence_sentence_selection(question, sentences, num_sentences=2):
+def extract_triplets(text):
+    triplets = []
+    relation, subject, relation, object_ = '', '', '', ''
+    text = text.strip()
+    current = 'x'
+    for token in text.replace("<s>", "").replace("<pad>", "").replace("</s>", "").split():
+        if token == "<triplet>":
+            current = 't'
+            if relation != '':
+                triplets.append(
+                    {'head': subject.strip(), 'type': relation.strip(), 'tail': object_.strip()})
+                relation = ''
+            subject = ''
+        elif token == "<subj>":
+            current = 's'
+            if relation != '':
+                triplets.append(
+                    {'head': subject.strip(), 'type': relation.strip(), 'tail': object_.strip()})
+            object_ = ''
+        elif token == "<obj>":
+            current = 'o'
+            relation = ''
+        else:
+            if current == 't':
+                subject += ' ' + token
+            elif current == 's':
+                object_ += ' ' + token
+            elif current == 'o':
+                relation += ' ' + token
+    if subject != '' and relation != '' and object_ != '':
+        triplets.append(
+            {'head': subject.strip(), 'type': relation.strip(), 'tail': object_.strip()})
+    return triplets
+
+
+def evidence_sentence_selection(question, sentences, conserved_percentage=0.1,triplet_extractor=None,llm=False):
     """select the sentence from quetion and sentences that
 
     Args:
@@ -27,15 +71,22 @@ def evidence_sentence_selection(question, sentences, num_sentences=2):
         sentences (str[]): _description_
         num_sentences (int, optional): _description_. Defaults to 2.
     """
-    triples = extract_triple_from_question(question)
-    sentences = []
-    for triple in triples:
-        sentences += evidence_sentence_selection_per_triple(
-            triple, sentences, num_sentences=num_sentences)
-    return sentences
+    if (llm):
+        q_embeddings = [create_embeddings_from_sentence(
+            sentence) for sentence in extract_triple_from_question(question,triplet_extractor)]
+    else:
+        q_embeddings = [create_embeddings_from_sentence(question,triplet_extractor)]
+    evidence_sentences = []
+    sentences_embeddings = [create_embeddings_from_sentence(
+        sentence) for sentence in sentences]
+    for q_embedding in q_embeddings:
+        evidence_sentences += evidence_selection_per_embedding(
+            q_embedding, sentences_embeddings, sentences, num_sentences=int(conserved_percentage*len(sentences)), threshold=threshold)
+    return evidence_sentences
 
 
-def evidence_triple_selection(question, triples, num_triples=2, llm=False):
+
+def evidence_triple_selection(question, triples, conserved_percentage=0.1, threshold=None,triplet_extractor=None, llm=False):
     """select the triple match the question(directly compare question and triples)
 
     Args:
@@ -44,32 +95,37 @@ def evidence_triple_selection(question, triples, num_triples=2, llm=False):
         num_sentences (int, optional): _description_. Defaults to 2.
     """
     if (llm):
-        q_embeddings = [create_embeddings_from_triple(
-            triple) for triple in extract_triple_from_question(question)]
+        q_embeddings = [create_embeddings_from_sentence(
+            triple) for triple in extract_triple_from_question(question,triplet_extractor)]
     else:
         q_embeddings = [create_embeddings_from_sentence(question)]
     evidence_triples = []
     triples_embeddings = [create_embeddings_from_triple(
         triple) for triple in triples]
     for q_embedding in q_embeddings:
-        evidence_triples += evidence_triple_selection_per_embedding(
-            q_embedding, triples_embeddings, triples, num_sentences=num_triples)
+        evidence_triples += evidence_selection_per_embedding(
+            q_embedding, triples_embeddings, triples, num_sentences=int(conserved_percentage*len(triples)), threshold=threshold)
     return evidence_triples
 
 
-def evidence_triple_selection_per_embedding(target_embedding, triples_embeddings, triples, num_sentences=2):
+def evidence_selection_per_embedding(target_embedding, triples_embeddings, triples, num_sentences=2, threshold=None):
     """selection of evidence sentences
 
     Args:
         target_embedding (): _description_
         sentences (str[]): _description_
         num_sentences (int, optional): _description_. Defaults to 2.
+    TODO:
+        - Threshold Implementation
     """
     semantic_similarities = torch.tensor([torch.dist(
         triple_embedding, target_embedding, p=2).item() for triple_embedding in triples_embeddings])
+    # if (threshold != None):
+    #     semantic_similarities[semantic_similarities > threshold] = -1
     _, idx_list = torch.topk(-semantic_similarities,
                              k=num_sentences, largest=True)
-    return [triples[idx] for idx in idx_list]
+
+    return [triples[idx] for idx in idx_list if (semantic_similarities[idx] != -1)]
 
 
 def evidence_sentence_selection_per_triple(triple, sentences, num_sentences=2):
@@ -100,7 +156,8 @@ def create_embeddings_from_sentence(sentence):
     """
     global tokenizer
     global model
-    inputs = tokenizer(sentence, return_tensors='pt', padding=True, truncation=True)
+    inputs = tokenizer(sentence, return_tensors='pt',
+                       padding=True, truncation=True)
     input_ids = inputs['input_ids']
 
     with torch.no_grad():  # No need to compute gradients for embedding extraction
