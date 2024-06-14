@@ -25,7 +25,10 @@ def extract_triple_from_question(question, triplet_extractor):
         exit(-1)
     extracted_texts = triplet_extractor.tokenizer.batch_decode([triplet_extractor(
         question, return_tensors=True, return_text=False)[0]["generated_token_ids"]])
-    return [extract_triplets(extracted_text) for extracted_text in extracted_texts]
+    L_extracted_triplets = []
+    for extracted_text in extracted_texts:
+        L_extracted_triplets += extract_triplets(extracted_text)
+    return L_extracted_triplets
 
 
 def extract_triplets(text):
@@ -44,9 +47,9 @@ def extract_triplets(text):
     Returns:
         list of dict: A list of dictionaries, each representing a triplet extracted from the text.
                       Each dictionary has three keys:
-                      - 'head': The subject of the triplet.
-                      - 'type': The relation or type of the triplet.
-                      - 'tail': The object of the triplet.
+                      - 'subject': The subject of the triplet.
+                      - 'predicate': The relation or type of the triplet.
+                      - 'object': The object of the triplet.
     """
     triplets = []
     relation, subject, relation, object_ = '', '', '', ''
@@ -82,7 +85,7 @@ def extract_triplets(text):
     return triplets
 
 
-def evidence_sentence_selection(question, sentences, conserved_percentage=0.1,triplet_extractor=None,llm=False):
+def evidence_sentence_selection(question, sentences, conserved_percentage=0.1, triplet_extractor=None, llm=False):
     """select the sentence from quetion and sentences that
 
     Args:
@@ -92,9 +95,10 @@ def evidence_sentence_selection(question, sentences, conserved_percentage=0.1,tr
     """
     if (llm):
         q_embeddings = [create_embeddings_from_sentence(
-            sentence) for sentence in extract_triple_from_question(question,triplet_extractor)]
+            sentence) for sentence in extract_triple_from_question(question, triplet_extractor)]
     else:
-        q_embeddings = [create_embeddings_from_sentence(question,triplet_extractor)]
+        q_embeddings = [create_embeddings_from_sentence(
+            question, triplet_extractor)]
     evidence_sentences = []
     sentences_embeddings = [create_embeddings_from_sentence(
         sentence) for sentence in sentences]
@@ -104,8 +108,7 @@ def evidence_sentence_selection(question, sentences, conserved_percentage=0.1,tr
     return evidence_sentences
 
 
-
-def evidence_triple_selection(question, triples, conserved_percentage=0.1, threshold=None,triplet_extractor=None, llm=False):
+def evidence_triple_selection(question, triples, conserved_percentage=0.1, threshold=None, triplet_extractor=None, llm=False):
     """select the triple match the question(directly compare question and triples)
 
     Args:
@@ -115,7 +118,7 @@ def evidence_triple_selection(question, triples, conserved_percentage=0.1, thres
     """
     if (llm):
         q_embeddings = [create_embeddings_from_triple(
-            triple) for triple in extract_triple_from_question(question,triplet_extractor)]
+            triple) for triple in extract_triple_from_question(question, triplet_extractor)]
     else:
         q_embeddings = [create_embeddings_from_sentence(question)]
     evidence_triples = []
