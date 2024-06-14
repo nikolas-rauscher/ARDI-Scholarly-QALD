@@ -11,10 +11,8 @@ def verbalise(tripleList, verbModule):
             if "object" in item.keys():
                 ans += f"<H> {item['subject']} <R> {item['predicate']} <T> {item['object']} "
             elif "prob" in item.keys():
-                ans += f"<H> {item['subject']} <R> {item['predicate']} <T> {item['prob']} "   
-
+                ans += f"<H> {item['subject']} <R> {item['predicate']} <T> {item['prob']} "
             predicateSet.add(item['predicate'])
-            
     return verbModule.verbalise(ans)
 
 def plainPrompt(tripleList):
@@ -25,31 +23,30 @@ def plainPrompt(tripleList):
             if "object" in item.keys():
                 ans += f"{item['subject']} {item['predicate']} {item['object']}. "
             elif "prob" in item.keys():
-                ans += f"{item['subject']} {item['predicate']} {item['prob']}. " 
+                ans += f"{item['subject']} {item['predicate']} {item['prob']}. "
             predicateSet.add(item['predicate'])
     return ans
 
-
-def verbaliseFile(FILENAME, outputFile):
+def verbaliseFile(FILENAME, outputFile, limit):
     results = []
     f = open(FILENAME, "r")
     data = json.loads(f.read())
-    for item in tqdm(data):
+    f.close() 
+    verb_module = VerbModule() 
+    for item in tqdm(data[:limit]):  
         oneItem = {}
-        oneItem['item_id'] = item['item_id']
-        oneItem['label'] = item['label']
-        oneItem['pic'] = item['pic']
-        oneItem['basic_prompt'] = item['label']
-        oneItem['plain_prompt'] = plainPrompt(item['triple_list'])
-        oneItem['verbalised_prompt'] = verbalise(item['triple_list'], verb_module)
+        oneItem['id'] = item['id'] 
+        oneItem['question'] = item['question']
+        oneItem['answer'] = item['answer']
+        oneItem['author_dblp_uri'] = item['author_dblp_uri']
+        oneItem['plain_prompt'] = plainPrompt(item['all_tripples']) 
+        oneItem['verbalised_prompt'] = verbalise(item['all_tripples'], verb_module)
         results.append(oneItem)
-        
-    json_object = json.dumps(results, indent=4)
-    with open(outputFile, "w") as outfile:
-        outfile.write(json_object)
+    with open(outputFile, "w", encoding='utf-8') as outfile:
+        json.dump(results, outfile, indent=4)
 
 if __name__ == "__main__":
-    verb_module = VerbModule()
-    FILENAME = "exp10.json" # TODO Will be changed later, just for testing
+    FILENAME = "exp10.json"
+    FILENAME = "processed_data.json"
     outputFile = "exp10_out.json"
-    verbaliseFile(FILENAME, outputFile)
+    verbaliseFile(FILENAME, outputFile, limit=3) # add limit for testing
