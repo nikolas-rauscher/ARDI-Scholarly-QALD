@@ -46,7 +46,6 @@ def verbaliseFile(FILENAME, outputFile, limit):
         json.dump(results, outfile, indent=4)
 
 if __name__ == "__main__":
-    FILENAME = "exp10.json"
     FILENAME = "processed_data.json"
-    outputFile = "exp10_out.json"
+    outputFile = "verbalised_data.json"
     verbaliseFile(FILENAME, outputFile, limit=3) # add limit for testing
