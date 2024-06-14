@@ -23,12 +23,31 @@ def extract_triple_from_question(question, triplet_extractor):
     if (triplet_extractor == None):
         print("do not specify the triplet_extractor")
         exit(-1)
-    extracted_text = triplet_extractor.tokenizer.batch_decode([triplet_extractor(
+    extracted_texts = triplet_extractor.tokenizer.batch_decode([triplet_extractor(
         question, return_tensors=True, return_text=False)[0]["generated_token_ids"]])
-    return extracted_text
+    return [extract_triplets(extracted_text) for extracted_text in extracted_texts]
 
 
 def extract_triplets(text):
+    """
+    Extract triplets from a text using predefined tags.
+
+    This function processes a text input that contains triplets marked with specific tags
+    ("<triplet>", "<subj>", "<obj>") and extracts these triplets into a structured format.
+
+    Args:
+        text (str): Input text containing marked triplets. Tags used:
+                    - "<triplet>": Marks the beginning of a new triplet.
+                    - "<subj>": Marks the subject of the triplet.
+                    - "<obj>": Marks the object of the triplet.
+
+    Returns:
+        list of dict: A list of dictionaries, each representing a triplet extracted from the text.
+                      Each dictionary has three keys:
+                      - 'head': The subject of the triplet.
+                      - 'type': The relation or type of the triplet.
+                      - 'tail': The object of the triplet.
+    """
     triplets = []
     relation, subject, relation, object_ = '', '', '', ''
     text = text.strip()
@@ -59,7 +78,7 @@ def extract_triplets(text):
                 relation += ' ' + token
     if subject != '' and relation != '' and object_ != '':
         triplets.append(
-            {'head': subject.strip(), 'type': relation.strip(), 'tail': object_.strip()})
+            {'subject': subject.strip(), 'predicate': relation.strip(), 'object': object_.strip()})
     return triplets
 
 
@@ -95,7 +114,7 @@ def evidence_triple_selection(question, triples, conserved_percentage=0.1, thres
         num_sentences (int, optional): _description_. Defaults to 2.
     """
     if (llm):
-        q_embeddings = [create_embeddings_from_sentence(
+        q_embeddings = [create_embeddings_from_triple(
             triple) for triple in extract_triple_from_question(question,triplet_extractor)]
     else:
         q_embeddings = [create_embeddings_from_sentence(question)]
