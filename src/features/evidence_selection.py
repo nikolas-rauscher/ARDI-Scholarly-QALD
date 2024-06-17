@@ -189,6 +189,8 @@ def create_embeddings_from_sentence(sentence):
 
     return last_hidden_state[:, 0, :].squeeze()
 
+def triple2text(triple):
+    return f"{triple["subject"]} [SEP] {triple["predicate"]} [SEP] {triple["object"]}"
 
 def create_embeddings_from_triple(triple):
     """create embeddings from a textual triple
@@ -202,7 +204,7 @@ def create_embeddings_from_triple(triple):
     global tokenizer
     global model
     # Concatenate the elements of the triple with appropriate separators
-    concatenated_triple = f"{triple["subject"]} [SEP] {triple["predicate"]} [SEP] {triple["object"]}"
+    concatenated_triple = triple2text(triple)
 
     # Tokenize the concatenated triple
     inputs = tokenizer(concatenated_triple, return_tensors='pt',
