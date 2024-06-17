@@ -1,18 +1,33 @@
 import features
 from features.evidence_selection import evidence_triple_selection, triple2text
 import pandas as pd
-from transformers import pipeline
 import torch
 import json
 import sys
 sys.path.append('./src')
 
+from transformers import AutoModelForCausalLM, AutoTokenizer
 
-def load_pipeline(model_path="/Volumes/T7/Backup/models/meta-llama/Meta-Llama-3-8B"):
-    return pipeline(
-        "text-generation", model=model_path, model_kwargs={"torch_dtype": torch.bfloat16}, device_map="auto"
-    )
+ 
 
+def load_model(model_id="meta-llama/Meta-Llama-3-8B-Instruct"):
+
+    maxmem={i:f'{int(torch.cuda.mem_get_info()[0]/1024**3)-2}GB' for i in range(4)}
+    maxmem['cpu']='300GB'
+    model = AutoModelForCausalLM.from_pretrained(model_id,
+        local_files_only=True,
+        load_in_8bit=False,
+        torch_dtype=torch.float16,
+        device_map='auto',
+        max_memory=maxmem)
+
+    tokenizer = AutoTokenizer.from_pretrained(model_id)
+    tokenizer.pad_token = tokenizer.eos_token
+    tokenizer.padding_side = 'right'
+
+   
+
+    return model, tokenizer
 
 def formatting_prompts_func(prompt_template, examples, max_length=4096):
     """Create a list to store the formatted texts for each item in the example
@@ -33,8 +48,15 @@ def formatting_prompts_func(prompt_template, examples, max_length=4096):
     # Return the list of formatted texts
     return prompt_texts
 
+def get_prediction(model,tokenizer, prompt, length=600):
 
-def zero_shot_prompting(pipeline, examples, prompt_template="", evidence_selection=False, verbalizer=False, max_length=4096):
+    inputs = tokenizer(prompt, add_special_tokens=True, max_length=1000,return_tensors="pt").input_ids.to("cuda")
+
+    outputs = model.generate(inputs, max_new_tokens=length)
+    response = tokenizer.batch_decode(outputs, skip_special_tokens=True)
+    return response
+
+def zero_shot_prompting(model, tokenizer, examples, prompt_template="", evidence_selection=False, verbalizer=False, max_length=4096):
     """
     Generate answers to questions using a zero-shot learning approach with the provided pipeline.
 
@@ -57,8 +79,22 @@ def zero_shot_prompting(pipeline, examples, prompt_template="", evidence_selecti
 
     formatted_prompts = formatting_prompts_func(
         prompt_template, examples, max_length)
+    
     responses = []
+
     for formatted_prompt in formatted_prompts:
-        response = pipeline(formatted_prompt)
-        responses.append(response[0]['generated_text'])
+        response = get_prediction(model, tokenizer, formatted_prompt)
+        responses.append(response[0])
+    
     return responses
+
+if __name__ == '__main__':
+
+    llama3, tokenizer = load_model()
+    with open("../../data/raw/prompt_template.txt", "r") as file:
+        prompt_template = file.read()
+
+    with open('../../data/processed/test_processed_data.json', 'r') as file:
+        examples = json.load(file)
+
+    responses = zero_shot_prompting(llama3, tokenizer, prompt_template)
