@@ -1,6 +1,6 @@
 import features
 from data.make_prompt import formatting_prompts_func
-from features.evidence_selection import evidence_triple_selection
+from features.evidence_selection import evidence_triple_selection, triple2text
 import pandas as pd
 from transformers import pipeline
 import torch
@@ -14,6 +14,7 @@ def load_pipeline(model_path="/Volumes/T7/Backup/models/meta-llama/Meta-Llama-3-
         "text-generation", model=model_path, model_kwargs={"torch_dtype": torch.bfloat16}, device_map="auto"
     )
 
+
 def zero_shot_prompting(pipeline, examples, evidence_selection=False):
     """
     Generate answers to questions using a zero-shot learning approach with the provided pipeline.
@@ -24,13 +25,14 @@ def zero_shot_prompting(pipeline, examples, evidence_selection=False):
         evidence_selection (bool, optional): Flag to determine if evidence selection should be performed. Defaults to False.
     Returns:
         list of str: The generated responses for each input example.
+    TODO: add verbaliser
     """
-    if (evidence_selection):
-        for example in examples:
-            example['context'] = evidence_triple_selection(
-                example['question'], example['all_tripples'])
-    else:
-        example['context'] = example['all_tripples']
+    for example in examples:
+        triples = evidence_triple_selection(
+            example['question'], example['all_tripples']) if evidence_selection else example['all_tripples']
+        example['context'] = ''.join(
+            [triple2text(triple) for triple in triples])
+
     formatted_prompts = formatting_prompts_func(prompt_template, examples)
     responses = []
     for formatted_prompt in formatted_prompts:
