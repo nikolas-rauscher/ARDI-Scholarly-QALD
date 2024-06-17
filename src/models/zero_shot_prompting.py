@@ -15,7 +15,6 @@ def load_model(model_id="meta-llama/Meta-Llama-3-8B-Instruct"):
     maxmem={i:f'{int(torch.cuda.mem_get_info()[0]/1024**3)-2}GB' for i in range(4)}
     maxmem['cpu']='300GB'
     model = AutoModelForCausalLM.from_pretrained(model_id,
-        local_files_only=True,
         load_in_8bit=False,
         torch_dtype=torch.float16,
         device_map='auto',
