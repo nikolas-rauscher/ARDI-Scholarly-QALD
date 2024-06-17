@@ -190,7 +190,9 @@ def create_embeddings_from_sentence(sentence):
     return last_hidden_state[:, 0, :].squeeze()
 
 def triple2text(triple):
-    return f"{triple["subject"]} [SEP] {triple["predicate"]} [SEP] {triple["object"]}"
+    results = triple["subject"] + " " + triple["predicate"] + " " + triple["object"]
+    
+    return results
 
 def create_embeddings_from_triple(triple):
     """create embeddings from a textual triple

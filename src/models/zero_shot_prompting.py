@@ -96,4 +96,4 @@ if __name__ == '__main__':
     with open('../../data/processed/test_processed_data.json', 'r') as file:
         examples = json.load(file)
 
-    responses = zero_shot_prompting(llama3, tokenizer, prompt_template)
+    responses = zero_shot_prompting(llama3, tokenizer, examples, prompt_template)
