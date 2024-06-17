@@ -62,12 +62,3 @@ def zero_shot_prompting(pipeline, examples, prompt_template="", evidence_selecti
         response = pipeline(formatted_prompt)
         responses.append(response[0]['generated_text'])
     return responses
-
-
-if __name__ == '__main__':
-    llama3 = load_pipeline()
-    with open("../../data/raw/prompt_template.txt", "r") as file:
-        prompt_template = file.read()
-    with open('../../data/processed/test_processed_data.json', 'r') as file:
-        examples = json.load(file)
-    responses = zero_shot_prompting(llama3, prompt_template)
