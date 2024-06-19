@@ -54,13 +54,13 @@ def verbalise(tripleList, verbModule):
         objects = list(entities['objects'])
         
         if len(subjects) == 1 and len(objects) > 5:
-            ans += f'<H> "{subjects[0]}" <R> "{predicate}" <T> "{", ".join(objects)}"'
+            ans += f'<H> {subjects[0]} <R> "{predicate}" <T> "{", ".join(objects)}"'
         elif len(objects) == 1 and len(subjects) > 5:
-            ans += f'<H> "{", ".join(subjects)}" <R> "{predicate}" <T> "{objects[0]}"'
+            ans += f'<H> "{", ".join(subjects)}" <R> "{predicate}" <T> {objects[0]}'
         else:
             for subj in subjects:
                 for obj in objects:
-                    ans += f'<H> "{subj}" <R> "{predicate}" <T> "{obj}"'
+                    ans += f'<H> {subj} <R> "{predicate}" <T> {obj}'
         
         final_ans_list.append(verbModule.verbalise(ans))
 
@@ -73,11 +73,11 @@ def plainPrompt(tripleList):
 
     for item in formatted_triples:
         if isinstance(item['object'], list):
-            ans += f'"{item["subject"]}" "{item["predicate"]}" "{", ".join(item["object"])}".'
+            ans += f'{item["subject"]} "{item["predicate"]}" "{", ".join(item["object"])}".'
         elif isinstance(item['subject'], list):
-            ans += f'"{", ".join(item["subject"])}" "{item["predicate"]}" "{item["object"]}".'
+            ans += f'"{", ".join(item["subject"])}" "{item["predicate"]}" {item["object"]}.'
         else:
-            ans += f'"{item["subject"]}" "{item["predicate"]}" "{item["object"]}".'
+            ans += f'{item["subject"]} "{item["predicate"]}" {item["object"]}.'
         ans += "\n"
     return ans.strip()
 
@@ -111,4 +111,4 @@ def verbaliseFile(FILENAME, outputFile, limit):
 if __name__ == "__main__":
     FILENAME = "processed_data.json"
     outputFile = "verbalised_data.json"
-    verbaliseFile(FILENAME, outputFile, limit=1)
+    verbaliseFile(FILENAME, outputFile, limit=1) # add limit for testing
