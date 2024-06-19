@@ -43,7 +43,7 @@ def preprocess_triples(tripleList):
     formatted_triples = format_triples(predicateDict)
     return formatted_triples
 
-def verbalise(tripleList, verbModule):
+def verbalise_by_predicate(tripleList, verbModule):
     final_ans_list = []
     predicateDict = group_triples(tripleList)
     formatted_triples = format_triples(predicateDict)
@@ -62,6 +62,7 @@ def verbalise(tripleList, verbModule):
                 for obj in objects:
                     ans += f'<H> {subj} <R> {predicate} <T> {obj}'
         
+        # Call the verbModule's verbalise method for the constructed string
         final_ans_list.append(verbModule.verbalise(ans))
 
     return final_ans_list
@@ -96,12 +97,12 @@ def verbaliseFile(FILENAME, outputFile, limit):
         preprocessed_triples = preprocess_triples(item['all_tripples'])
 
         oneItem['plain_prompt'] = plainPrompt(preprocessed_triples) 
-        verbalised_list = verbalise(preprocessed_triples, verb_module)
+        verbalised_list = verbalise_by_predicate(preprocessed_triples, verb_module)
         oneItem['verbalised_prompt'] = "\n".join(verbalised_list)
 
         oneItem['triples'] = {
             "preprocessed": preprocessed_triples,
-            "verbalised": verbalised_list
+            "verbalised_by_predicate": verbalised_list  # Changed key name here
         }
         results.append(oneItem)
         
