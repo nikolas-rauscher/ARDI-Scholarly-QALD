@@ -41,12 +41,10 @@ def preprocess_triples(tripleList):
     tripleList.sort(key=lambda x: x['predicate'])
     predicateDict = group_triples(tripleList)
     formatted_triples = format_triples(predicateDict)
-    return formatted_triples
+    return formatted_triples, predicateDict
 
-def verbalise_by_predicate(tripleList, verbModule):
+def verbalise_by_predicate(predicateDict, verbModule):
     final_ans_list = []
-    predicateDict = group_triples(tripleList)
-    formatted_triples = format_triples(predicateDict)
 
     for predicate, entities in predicateDict.items():
         ans = "translate Graph to English: "
@@ -67,10 +65,8 @@ def verbalise_by_predicate(tripleList, verbModule):
 
     return final_ans_list
 
-def plainPrompt(tripleList):
+def plainPrompt(formatted_triples):
     ans = ""
-    predicateDict = group_triples(tripleList)
-    formatted_triples = format_triples(predicateDict)
 
     for item in formatted_triples:
         if isinstance(item['object'], list):
@@ -82,7 +78,13 @@ def plainPrompt(tripleList):
         ans += "\n"
     return ans.strip()
 
-def verbaliseFile(FILENAME, outputFile, limit):
+def verbalise_all_at_once(tripleList, verbModule):
+    ans = "translate Graph to English: "
+    for item in tripleList:
+        ans += f'<H> {item["subject"]} <R> {item["predicate"]} <T> {item["object"]}'
+    return [verbModule.verbalise(ans)]
+
+def verbaliseFile(FILENAME, outputFile, limit, use_predicate_based_verbalisation=True, include_preprocessed=False):
     results = []
     with open(FILENAME, "r", encoding="utf-8") as f:
         data = json.loads(f.read())
@@ -94,16 +96,24 @@ def verbaliseFile(FILENAME, outputFile, limit):
         oneItem['answer'] = item['answer']
         oneItem['author_dblp_uri'] = item['author_dblp_uri']
 
-        preprocessed_triples = preprocess_triples(item['all_tripples'])
+        # Preprocess the triples (sort and format)
+        preprocessed_triples, predicate_dict = preprocess_triples(item['all_tripples'])
 
+        # Generate plain prompt
         oneItem['plain_prompt'] = plainPrompt(preprocessed_triples) 
-        verbalised_list = verbalise_by_predicate(preprocessed_triples, verb_module)
-        oneItem['verbalised_prompt'] = "\n".join(verbalised_list)
+        
+        # Generate verbalised prompt based on the flag
+        if use_predicate_based_verbalisation:
+            verbalised_list = verbalise_by_predicate(predicate_dict, verb_module)
+            oneItem['verbalised_prompt'] = "\n".join(verbalised_list)
+        else:
+            verbalised_list = verbalise_all_at_once(preprocessed_triples, verb_module)
+            oneItem['verbalised_prompt'] = "\n".join(verbalised_list)
 
-        oneItem['triples'] = {
-            "preprocessed": preprocessed_triples,
-            "verbalised_by_predicate": verbalised_list  # Changed key name here
-        }
+        # Optionally include preprocessed triples in the output
+        if include_preprocessed:
+            oneItem['preprocessed_triples'] = preprocessed_triples
+
         results.append(oneItem)
         
     with open(outputFile, "w", encoding='utf-8') as outfile:
@@ -112,4 +122,4 @@ def verbaliseFile(FILENAME, outputFile, limit):
 if __name__ == "__main__":
     FILENAME = "processed_data.json"
     outputFile = "verbalised_data.json"
-    verbaliseFile(FILENAME, outputFile, limit=1) # add limit for testing
+    verbaliseFile(FILENAME, outputFile, limit=1, use_predicate_based_verbalisation=True, include_preprocessed=True)  # add limit for testing
