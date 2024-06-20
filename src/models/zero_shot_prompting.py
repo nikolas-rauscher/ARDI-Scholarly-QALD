@@ -7,8 +7,7 @@ import pandas as pd
 import torch
 import json
 from llamaapi import LlamaAPI
-
-
+from models.verbalizer.prompt_verbalizer import verbalise_triples
 
 api_request_json = {
     "messages": [
@@ -96,7 +95,7 @@ def zero_shot_prompting(model, tokenizer, examples, prompt_template="", evidence
             example['context'] = ''.join(
                 [triple2text(triple) for triple in triples])
         else:
-            example['context'] = ""
+            example['context'] = verbalise_triples(triples)
 
     formatted_prompts = formatting_prompts_func(
         prompt_template, examples, max_length)
@@ -125,23 +124,21 @@ def zero_shot_prompting_api(llamaApi, examples, prompt_template="", evidence_sel
     for example in examples:
         triples = evidence_triple_selection(
             example['question'], example['all_tripples']) if evidence_selection else example['all_tripples']
-        if (not verbalizer):
+        if not verbalizer:
             example['context'] = ''.join(
                 [triple2text(triple) for triple in triples])
         else:
-            example['context'] = ""
+            example['context'] = verbalise_triples(triples)
 
     formatted_prompts = formatting_prompts_func(
         prompt_template, examples, max_length)
 
     responses = []
-
     for formatted_prompt in formatted_prompts:
         response = get_llama_api_response(llamaApi, formatted_prompt)
         responses.append(
             response.json()['choices'][0]['message'])
     return responses
-
 
 def test_examples(examples, api=False, token=''):
 
