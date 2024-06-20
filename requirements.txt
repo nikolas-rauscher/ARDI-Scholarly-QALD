@@ -1,3 +1,6 @@
+transformers==4.41.2
+torch==2.3.1
+accelerate
 
 
 absl-py==2.1.0
