@@ -1,7 +1,8 @@
 transformers==4.41.2
 torch==2.3.1
 accelerate
-
+pandas
+llamaapi
 
 absl-py==2.1.0
 aiohttp==3.9.5

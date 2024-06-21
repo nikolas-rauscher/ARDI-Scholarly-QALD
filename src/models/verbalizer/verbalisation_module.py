@@ -1,7 +1,9 @@
-from graph2text.finetune import Graph2TextModule
+
 from typing import Dict, List, Tuple, Union, Optional
 import torch
 import re
+import os
+from models.verbalizer.graph2text.finetune import Graph2TextModule
 
 if torch.cuda.is_available():
     DEVICE = 'cuda'
@@ -9,9 +11,11 @@ else:
     DEVICE = 'cpu'
     print('CUDA NOT AVAILABLE')
 
-DATA_DIR = 'graph2text/data/webnlg'
-OUTPUT_DIR = 'graph2text/outputs/test_model'
-CHECKPOINT = 'graph2text/outputs/t5-base_13881/val_avg_bleu=68.1000-step_count=5.ckpt'
+# set current script path
+current_script_path = os.path.dirname(os.path.abspath(__file__))
+DATA_DIR = os.path.join(current_script_path, 'graph2text/data/webnlg')
+OUTPUT_DIR = os.path.join(current_script_path, 'graph2text/outputs/test_model')
+CHECKPOINT = os.path.join(current_script_path, 'graph2text/outputs/t5-base_13881/val_avg_bleu=68.1000-step_count=5.ckpt')
 MAX_LENGTH = 384
 SEED = 42
 
