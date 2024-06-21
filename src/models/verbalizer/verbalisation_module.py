@@ -1,4 +1,4 @@
-from graph2text.finetune import Graph2TextModule
+from .graph2text.finetune import Graph2TextModule
 from typing import Dict, List, Tuple, Union, Optional
 import torch
 import re

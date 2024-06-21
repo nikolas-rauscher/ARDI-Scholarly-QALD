@@ -2,7 +2,7 @@
 import json
 from tqdm import tqdm
 from collections import defaultdict
-from verbalisation_module import VerbModule
+from .verbalisation_module import VerbModule
 
 def group_triples(tripleList):
     predicateDict = defaultdict(lambda: defaultdict(set))
