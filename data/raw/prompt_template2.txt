@@ -2,7 +2,6 @@
 <|start_header_id|>system<|end_header_id|>
 You are a helpful AI assistant for Hybrid Question Answering over Scholarly Knowledge Graphs and Text<|eot_id|>
 <|start_header_id|>user<|end_header_id|>
-[INST]
 Use the context provided to directly generate answers to the specified question:
 - Respond solely based on the provided context.
 - Exclude explanations, justifications, or additional commentary in your responses.
@@ -11,5 +10,5 @@ Use the context provided to directly generate answers to the specified question:
 If the context does not contain enough information to answer the question, state "Insufficient context to answer."
 Question: {question}
 Context: {context}
-[/INST] Answer:
+Answer:
 <|start_header_id|>assistant<|end_header_id|>
