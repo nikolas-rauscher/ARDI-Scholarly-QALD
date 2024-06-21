@@ -1,7 +1,10 @@
 import json
 from tqdm import tqdm
+import sys
+sys.path.append('./src')
 from collections import defaultdict
-from verbalisation_module import VerbModule
+from models.verbalizer.verbalisation_module import VerbModule
+import os
 
 def group_triples(tripleList):
     predicateDict = defaultdict(lambda: defaultdict(set))
@@ -119,7 +122,49 @@ def verbaliseFile(FILENAME, outputFile, limit, use_predicate_based_verbalisation
     with open(outputFile, "w", encoding='utf-8') as outfile:
         json.dump(results, outfile, indent=4)
 
+# if __name__ == "__main__":
+#     FILENAME = "processed_data.json"
+#     outputFile = "verbalised_data.json"
+#     verbaliseFile(FILENAME, outputFile, limit=1, use_predicate_based_verbalisation=True, include_preprocessed=True)  # add limit for testing
+
+def verbalise_triples(triples, use_predicate_based_verbalisation=True):
+    verb_module = VerbModule()
+    
+    # Preprocess the triples (sort and format)
+    preprocessed_triples, predicate_dict = preprocess_triples(triples)
+
+    # Generate plain prompt
+    plain_prompt = plainPrompt(preprocessed_triples)
+    
+    # Generate verbalised prompt based on the flag
+    if use_predicate_based_verbalisation:
+        verbalised_list = verbalise_by_predicate(predicate_dict, verb_module)
+        verbalised_prompt = "\n".join(verbalised_list)
+    else:
+        verbalised_list = verbalise_all_at_once(preprocessed_triples, verb_module)
+        verbalised_prompt = "\n".join(verbalised_list)
+
+    # return {
+    #     'plain_prompt': plain_prompt,
+    #     'verbalised_prompt': verbalised_prompt,
+    #     'preprocessed_triples': preprocessed_triples 
+    # }
+    return verbalised_prompt
+
+# Test
 if __name__ == "__main__":
-    FILENAME = "processed_data.json"
-    outputFile = "verbalised_data.json"
-    verbaliseFile(FILENAME, outputFile, limit=1, use_predicate_based_verbalisation=True, include_preprocessed=True)  # add limit for testing
+
+    triples = [
+{"subject": "John", "predicate": "likes", "object": "apples"},
+        {"subject": "Mary", "predicate": "likes", "object": "oranges"},
+        {"subject": "Mary", "predicate": "likes", "object": "bananas"},
+        {"subject": "Alice", "predicate": "knows", "object": "Charlie"},
+        {"subject": "Bob", "predicate": "knows", "object": "Charlie"},
+        {"subject": "Bob", "predicate": "knows", "object": "Dave"},
+        {"subject": "Bob", "predicate": "knows", "object": "Eve"},
+        {"subject": "Charlie", "predicate": "works_with", "object": "Eve"},
+        {"subject": "Dave", "predicate": "works_with", "object": "Eve"}
+    ]
+    
+    result = verbalise_triples(triples, use_predicate_based_verbalisation=True)
+    print(result)

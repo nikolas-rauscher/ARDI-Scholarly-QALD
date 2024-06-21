@@ -3,12 +3,11 @@ import sys
 sys.path.append('./src')
 import features
 from features.evidence_selection import evidence_triple_selection, triple2text
-from models.verbalizer.prompt_verbalizer import verbalise_triples
+from models.verbalizer.generatePrompt import verbalise_triples
 import pandas as pd
 import torch
 import json
 from llamaapi import LlamaAPI
-
 api_request_json = {
     "messages": [
         {"role": "user", "content": "What is the weather like in Boston?"},
