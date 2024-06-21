@@ -1,13 +1,15 @@
+from llamaapi import LlamaAPI
 import configparser
 import pandas as pd
 import torch
 import json
-from llamaapi import LlamaAPI
+import sys
+sys.path.append('./src')
 from features.evidence_selection import evidence_triple_selection, triple2text
 import features
 from transformers import AutoModelForCausalLM, AutoTokenizer
-import sys
-sys.path.append('./src')
+
+
 
 config = configparser.ConfigParser()
 config.read('config.ini')
@@ -17,13 +19,26 @@ api_request_json = {
     "messages": [
         {"role": "user", "content": "What is the weather like in Boston?"},
     ],
+    "functions": [
+        {
+            "name": "get_current_answer",
+            "description": "Get the answer given the provided context",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                },
+            },
+            "required": [],
+        }
+    ],
     "stream": False,
+    "function_call": "get_current_answer",
 }
 
 
 def zero_shot_prompting(example, model=None, tokenizer=None, prompt_template="", evidence_selection=False, verbalizer=False, max_length=4096, api=False, llamaApi=None):
     """
-    Generate answers to questions using a zero-shot learning approach with the provided model and tokenizer.
+    Generate answer to question using a zero-shot learning approach with the provided model and tokenizer.
 
     Args:
         example (dict): An example containing 'question' (str) and 'all_tripples' (list of triples).
@@ -52,17 +67,22 @@ def zero_shot_prompting(example, model=None, tokenizer=None, prompt_template="",
         prompt_template, example, max_length)
     if (api):
         response = get_llama_api_response(llamaApi, formatted_prompt)
-        response.append(
-            response.json()['choices'][0]['message'])
+        if (response):
+            response = response.json()['choices'][0]['message']
     else:
         response = get_prediction(model, tokenizer, formatted_prompt)
-        response.append(response[0])
+        response = response[0]
+    print(response)
     return example['context'], response
 
 
 def get_llama_api_response(llamaApi, question):
+    global api_request_json
     api_request_json["messages"] = [{"role": "user", "content": question}]
-    response = llamaApi.run(api_request_json)
+    try:
+        response = llamaApi.run(api_request_json)
+    except:
+        return None
     return response
 
 
@@ -110,7 +130,6 @@ def formatting_prompts_func(prompt_template, examples, max_length=4096):
 
 
 def get_prediction(model, tokenizer, prompt, length=600):
-
     inputs = tokenizer(prompt, add_special_tokens=True,
                        max_length=1000, return_tensors="pt").input_ids.to("cuda")
 
@@ -125,7 +144,7 @@ result_sample_template = {
     "answer": "",
     "results": {
         "model": "",
-        "plain_triples_results": {"response": "","context":"", "metrics": {"exact_score": "", "meteor": ""}},
+        "plain_triples_results": {"response": "", "context": "", "metrics": {"exact_score": "", "meteor": ""}},
         "verbalizer_results": {},
         "evidence_matching": {},
         "verbalizer_plus_evidence_matching": {}
@@ -146,40 +165,44 @@ def test_examples(examples, prompt_template, model=None, tokenizer=None, model_n
             "id": example.get("id")
         })
 
-        context_plain,response_plain = zero_shot_prompting(
+        context_plain, response_plain = zero_shot_prompting(
             example, model=model, tokenizer=tokenizer, api=api, prompt_template=prompt_template, llamaApi=llamaApi)
-        context_evidence,response_evidence = zero_shot_prompting(example, model=model, tokenizer=tokenizer,
-                                                api=api, prompt_template=prompt_template, evidence_selection=True, llamaApi=llamaApi)
-        context_verbalizer,response_verbalizer = zero_shot_prompting(
+        context_evidence, response_evidence = zero_shot_prompting(example, model=model, tokenizer=tokenizer,
+                                                                  api=api, prompt_template=prompt_template, evidence_selection=True, llamaApi=llamaApi)
+        context_verbalizer, response_verbalizer = zero_shot_prompting(
             example, model=model, tokenizer=tokenizer, api=api, prompt_template=prompt_template, verbalizer=True, llamaApi=llamaApi)
-        context_evidence_verbalizer,response_evidence_verbalizer = zero_shot_prompting(
+        context_evidence_verbalizer, response_evidence_verbalizer = zero_shot_prompting(
             example, model=model, tokenizer=tokenizer, api=api, prompt_template=prompt_template, evidence_selection=True, verbalizer=True, llamaApi=llamaApi)
 
         approach_names = ["plain_triples_results", "evidence_matching",
                           "verbalizer_results", "verbalizer_plus_evidence_matching"]
         responses_gen = [response_plain, response_evidence,
                          response_verbalizer, response_evidence_verbalizer]
-        contexts=[context_plain,context_evidence,context_verbalizer,context_evidence_verbalizer]
+        contexts = [context_plain, context_evidence,
+                    context_verbalizer, context_evidence_verbalizer]
 
-        for approach_name, res,context in zip(approach_names, responses_gen,contexts):
+        for approach_name, res, context in zip(approach_names, responses_gen, contexts):
             result['results'][approach_name] = {
                 "context": context,
                 "response": res,
                 "metrics": {
-                    "exact_score": "", 
-                    "meteor": ""     
+                    "exact_score": "",
+                    "meteor": ""
                 }
             }
+        responses.append(result)
 
     with open(saved_file_name, 'w') as file:
         json.dump(responses, file)
 
 
 if __name__ == '__main__':
-    llama3, tokenizer = load_model()
+    llama3, tokenizer = None, None
     with open(config['FilePaths']['test_data_file'], 'r') as file:
         examples = json.load(file)
     with open(config['FilePaths']['prompt_template'], 'r')as file:
         prompt_template = file.read()
     examples = [examples[0]]
-    test_examples(examples, prompt_template, model=llama3, tokenizer=tokenizer,model_name="llama3")
+    llama = LlamaAPI(config['token']['llamaapi'])
+    test_examples(examples, prompt_template, api=True, llamaApi=llama, saved_file_name=config["FilePaths"]["zero_shot_prompting_result_file"],
+                   model_name="llama3")
