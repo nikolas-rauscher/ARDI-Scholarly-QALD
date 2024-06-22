@@ -9,7 +9,7 @@ def read_json_(outputdata_name_path) -> dict:
 
 
 
-#get all predicates
+#get all predicates labels
 def get_all_predicate_labels(data):
     predicates_labels= []
     predicates = []
@@ -39,15 +39,39 @@ def get_all_predicates_without_labels(data):
     return predicates
 
 
+# get all authors without oridID
+
+def get_authors_without_oridID(data):
+    author_list = []
+    for question in data:
+        for item in question["all_tripples"]:
+            if item["objectLabel"] == "Person":
+                author_list.append(item["subject"])
+    print (len(author_list))
+
+    for question in data:
+        for item in question["all_tripples"]:
+            if item["predicateLabel"] == "orcid":
+                subject = item["subject"]
+                if subject in author_list:
+                    author_list.remove(subject)   
+    print(len(author_list)) 
+    return      
+        
+
 def main():
 
-    outputdata_name_path_0 = "data/processed/processed_data3_0.json"
-    outputdata_name_path_1 = "data/processed/processed_data3_1.json"
+    outputdata_name_path_0 = "/Users/erikrubinov/Desktop/SM24/project/repos/processed_data3_0.json"
+    outputdata_name_path_1 = "/Users/erikrubinov/Desktop/SM24/project/repos/processed_data3_1.json"
     data_0 = read_json_(outputdata_name_path_0)
     data_1 = read_json_(outputdata_name_path_1)
     data = data_0 + data_1
+
+  
+
     #get_all_predicate_labels(data)
-    get_all_predicates_without_labels(data)
+    #get_all_predicates_without_labels(data)
+    get_authors_without_oridID(data)
  
 
 ##############################################################################

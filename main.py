@@ -1,4 +1,4 @@
-from src.data.make_dataset import create_dataset
+from src.data.create_dataset_dblp import create_dataset
 import config
 
 outputdata_name = "processed_data"
