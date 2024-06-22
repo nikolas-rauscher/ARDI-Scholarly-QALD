@@ -1,10 +1,18 @@
-
 import json
 from tqdm import tqdm
 from collections import defaultdict
 from .verbalisation_module import VerbModule
 
 def group_triples(tripleList):
+    """
+    Groups triples by their predicates, collecting subjects and objects into sets.
+
+    Args:
+        tripleList (list): A list of triples, where each triple is a dictionary with keys 'subject', 'predicate', and 'object'.
+
+    Returns:
+        dict: A dictionary where keys are predicates and values are dictionaries with 'subjects' and 'objects' keys containing sets of subjects and objects, respectively.
+    """
     predicateDict = defaultdict(lambda: defaultdict(set))
     for item in tripleList:
         subjects = item['subject'] if isinstance(item['subject'], list) else [item['subject']]
@@ -16,6 +24,15 @@ def group_triples(tripleList):
     return predicateDict
 
 def format_triples(predicateDict):
+    """
+    Formats the triples in the given predicate dictionary.
+
+    Args:
+        predicateDict (dict): A dictionary containing predicates as keys and entities as values.
+
+    Returns:
+        list: A list of formatted triples.
+    """
     formatted_triples = []
     large_lists = []
 
@@ -39,12 +56,31 @@ def format_triples(predicateDict):
     return formatted_triples
 
 def preprocess_triples(tripleList):
+    """
+    Preprocesses a list of triples by sorting them, grouping by predicates, and formatting them.
+
+    Args:
+        tripleList (list): A list of triples, where each triple is a dictionary with keys 'subject', 'predicate', and 'object'.
+
+    Returns:
+        tuple: A tuple containing a list of formatted triples and the predicate dictionary.
+    """
     tripleList.sort(key=lambda x: x['predicate'])
     predicateDict = group_triples(tripleList)
     formatted_triples = format_triples(predicateDict)
     return formatted_triples, predicateDict
 
 def verbalise_by_predicate(predicateDict, verbModule):
+    """
+    Verbalises triples by predicate using a given verbalisation module.
+
+    Args:
+        predicateDict (dict): A dictionary containing predicates as keys and entities as values.
+        verbModule (VerbModule): An instance of the VerbModule class for verbalising the triples.
+
+    Returns:
+        list: A list of verbalised triples as strings.
+    """
     final_ans_list = []
 
     for predicate, entities in predicateDict.items():
@@ -66,6 +102,16 @@ def verbalise_by_predicate(predicateDict, verbModule):
     return final_ans_list
 
 def verbalise_triples(triples, use_predicate_based=True):
+    """
+    Verbalises a list of triples.
+
+    Args:
+        triples (list): A list of triples, where each triple is a dictionary with keys 'subject', 'predicate', and 'object'.
+        use_predicate_based (bool): Whether to use predicate-based verbalisation.
+
+    Returns:
+        str: A string of verbalised triples.
+    """
     verb_module = VerbModule()
     preprocessed_triples, predicate_dict = preprocess_triples(triples)
     
