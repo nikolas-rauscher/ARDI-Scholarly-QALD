@@ -7,6 +7,15 @@ from models.verbalizer.verbalisation_module import VerbModule
 import os
 
 def group_triples(tripleList):
+    """
+    Groups triples by their predicates, collecting subjects and objects into sets.
+
+    Args:
+        tripleList (list): A list of triples, where each triple is a dictionary with keys 'subject', 'predicate', and 'object'.
+
+    Returns:
+        dict: A dictionary where keys are predicates and values are dictionaries with 'subjects' and 'objects' keys containing sets of subjects and objects, respectively.
+    """
     predicateDict = defaultdict(lambda: defaultdict(set))
     for item in tripleList:
         subjects = item['subject'] if isinstance(item['subject'], list) else [item['subject']]
@@ -18,6 +27,15 @@ def group_triples(tripleList):
     return predicateDict
 
 def format_triples(predicateDict):
+    """
+    Formats the triples in the given predicate dictionary.
+
+    Args:
+        predicateDict (dict): A dictionary containing predicates as keys and entities as values.
+
+    Returns:
+        list: A list of formatted triples.
+    """
     formatted_triples = []
     large_lists = []
 
@@ -41,12 +59,31 @@ def format_triples(predicateDict):
     return formatted_triples
 
 def preprocess_triples(tripleList):
+    """
+    Preprocesses a list of triples by sorting them, grouping by predicates, and formatting them.
+
+    Args:
+        tripleList (list): A list of triples, where each triple is a dictionary with keys 'subject', 'predicate', and 'object'.
+
+    Returns:
+        tuple: A tuple containing a list of formatted triples and the predicate dictionary.
+    """
     tripleList.sort(key=lambda x: x['predicate'])
     predicateDict = group_triples(tripleList)
     formatted_triples = format_triples(predicateDict)
     return formatted_triples, predicateDict
 
 def verbalise_by_predicate(predicateDict, verbModule):
+    """
+    Verbalises triples by predicate using a given verbalisation module.
+
+    Args:
+        predicateDict (dict): A dictionary containing predicates as keys and entities as values.
+        verbModule (VerbModule): An instance of the VerbModule class for verbalising the triples.
+
+    Returns:
+        list: A list of verbalised triples as strings.
+    """
     final_ans_list = []
 
     for predicate, entities in predicateDict.items():
@@ -69,6 +106,15 @@ def verbalise_by_predicate(predicateDict, verbModule):
     return final_ans_list
 
 def plainPrompt(formatted_triples):
+    """
+    Generates a plain prompt string from formatted triples.
+
+    Args:
+        formatted_triples (list): A list of formatted triples.
+
+    Returns:
+        str: A plain text representation of the triples.
+    """
     ans = ""
 
     for item in formatted_triples:
@@ -82,12 +128,32 @@ def plainPrompt(formatted_triples):
     return ans.strip()
 
 def verbalise_all_at_once(tripleList, verbModule):
+    """
+    Verbalises all triples at once using a given verbalisation module.
+
+    Args:
+        tripleList (list): A list of triples, where each triple is a dictionary with keys 'subject', 'predicate', and 'object'.
+        verbModule (VerbModule): An instance of the VerbModule class for verbalising the triples.
+
+    Returns:
+        list: A list containing the verbalised triples as a single string.
+    """
     ans = "translate Graph to English: "
     for item in tripleList:
         ans += f'<H> {item["subject"]} <R> {item["predicate"]} <T> {item["object"]}'
     return [verbModule.verbalise(ans)]
 
 def verbaliseFile(FILENAME, outputFile, limit, use_predicate_based_verbalisation=True, include_preprocessed=False):
+    """
+    Verbalises triples from a file and writes the results to an output file.
+
+    Args:
+        FILENAME (str): The name of the input file containing triples.
+        outputFile (str): The name of the output file to write the verbalised triples.
+        limit (int): The number of triples to process from the input file.
+        use_predicate_based_verbalisation (bool): Whether to use predicate-based verbalisation.
+        include_preprocessed (bool): Whether to include preprocessed triples in the output file.
+    """
     results = []
     with open(FILENAME, "r", encoding="utf-8") as f:
         data = json.loads(f.read())
@@ -128,6 +194,16 @@ def verbaliseFile(FILENAME, outputFile, limit, use_predicate_based_verbalisation
 #     verbaliseFile(FILENAME, outputFile, limit=1, use_predicate_based_verbalisation=True, include_preprocessed=True)  # add limit for testing
 
 def verbalise_triples(triples, use_predicate_based_verbalisation=True):
+    """
+    Verbalises a list of triples.
+
+    Args:
+        triples (list): A list of triples, where each triple is a dictionary with keys 'subject', 'predicate', and 'object'.
+        use_predicate_based_verbalisation (bool): Whether to use predicate-based verbalisation.
+
+    Returns:
+        str: A string of verbalised triples.
+    """
     verb_module = VerbModule()
     
     # Preprocess the triples (sort and format)
@@ -155,7 +231,7 @@ def verbalise_triples(triples, use_predicate_based_verbalisation=True):
 if __name__ == "__main__":
 
     triples = [
-{"subject": "John", "predicate": "likes", "object": "apples"},
+        {"subject": "John", "predicate": "likes", "object": "apples"},
         {"subject": "Mary", "predicate": "likes", "object": "oranges"},
         {"subject": "Mary", "predicate": "likes", "object": "bananas"},
         {"subject": "Alice", "predicate": "knows", "object": "Charlie"},
