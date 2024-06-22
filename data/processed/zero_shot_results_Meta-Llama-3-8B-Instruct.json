@@ -1,0 +1,42 @@
+[
+    {
+        "id": "6b8aa79c-3908-4f03-b85b-aa1a325d9fe6",
+        "question": "What type of information sources were found to be lacking in organized information at Social Services offices according to the author's observation?",
+        "true_answer": "oral communication and notes",
+        "model": "Meta-Llama-3-8B-Instruct",
+        "technique": "zero_shot",
+        "results": [
+            {
+                "prompt_template": "data/raw/prompt_template.txt",
+                "all_triples_results": {
+                    "response": "Websites",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "verbalizer_results": {
+                    "response": "Books",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "evidence_matching": {
+                    "response": "According to the author's observation, Social Services offices were found to be lacking in organized information.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "verbalizer_plus_evidence_matching": {
+                    "response": "According to the author's observation, information sources lacking in organized information at Social Services offices were found to be lacking.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                }
+            }
+        ]
+    }
+]
