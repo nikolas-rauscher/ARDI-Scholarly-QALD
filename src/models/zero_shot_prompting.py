@@ -8,12 +8,11 @@ sys.path.append('./src')
 from features.evidence_selection import evidence_triple_selection, triple2text
 import features
 from transformers import AutoModelForCausalLM, AutoTokenizer
-
+from models.verbalizer.generatePrompt import verbalise_triples
 
 
 config = configparser.ConfigParser()
 config.read('config.ini')
-
 
 api_request_json = {
     "messages": [
@@ -62,7 +61,7 @@ def zero_shot_prompting(example, model=None, tokenizer=None, prompt_template="",
         example['context'] = ''.join(
             [triple2text(triple) for triple in triples])
     else:
-        example['context'] = ""
+        example['context'] = verbalise_triples(triples)
     formatted_prompt = formatting_prompt_func(
         prompt_template, example, max_length)
     if (api):
@@ -83,6 +82,8 @@ def get_llama_api_response(llamaApi, question):
         response = llamaApi.run(api_request_json)
     except:
         return None
+    print(f"Statuscode: {response.status_code}")
+    print(f"Antwortinhalt: {response.text}")  
     return response
 
 
@@ -153,7 +154,6 @@ result_sample_template = {
 
 
 def test_examples(examples, prompt_template, model=None, tokenizer=None, model_name="", saved_file_name="", api=False, token='', llamaApi=None):
-
     responses = []
     global result_sample_template
     result_sample_template["results"]["model"] = model_name

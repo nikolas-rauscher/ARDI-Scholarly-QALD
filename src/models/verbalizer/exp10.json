@@ -1,0 +1,13 @@
+[
+    {
+        "item_id": 1,
+        "label": "example label",
+        "pic": "example_pic.jpg",
+        "triple_list": [
+            {"subject": "Burka Avenger", "predicate": "description", "object": "fictional character"},
+            {"subject": "Burka Avenger", "predicate": "instance of", "object": "fictional character"},
+            {"subject": "Burka Avenger", "predicate": "present in work", "object": "Burka Avenger"},
+            {"subject": "Burka Avenger", "predicate": "character type", "object": "superhero"}
+        ]
+    }
+]
