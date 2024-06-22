@@ -12,6 +12,11 @@ config.read('config.ini')
 max_length_input = config.getint('Parameters', 'max_length_input')
 max_output_length = config.getint('Parameters', 'max_output_length')
 
+# Approximate characters per token
+chars_per_token = 4
+max_length_chars = max_length_input * chars_per_token
+
+
 def load_model(model_id):
     """
     Load the model and tokenizer for the specified model ID.
@@ -47,6 +52,29 @@ def clean_context(context):
     """
     return context.replace('<unk>', ' ')
 
+
+def truncate_context_to_max_chars(context, question, prompt_template):
+    """
+    Truncate the context to ensure it fits within the maximum character length.
+
+    Args:
+        context (str): The context to truncate.
+        question (str): The question for the prompt.
+        prompt_template (str): The prompt template.
+
+    Returns:
+        str: The truncated context.
+    """
+    formatted_prompt = prompt_template.format(question=question, context='')
+    prompt_length = len(formatted_prompt)
+    max_context_length = max_length_chars - prompt_length
+    
+    if len(context) > max_context_length:
+        print(f"Original context is too long and will be truncated. Original length: {len(context)}, truncated length: {max_context_length}")
+        context = context[:max_context_length]
+    
+    return context
+
 def zero_shot_prompting_local(model, tokenizer, example, context_type, prompt_template):
     """
     Generate zero-shot predictions using a local model.
@@ -62,7 +90,9 @@ def zero_shot_prompting_local(model, tokenizer, example, context_type, prompt_te
         dict: A dictionary containing the role and content of the response.
     """
     context = clean_context(example["contexts"][context_type])
-    formatted_prompt = prompt_template.format(question=example['question'], context=context[:max_length_input-len(example['question'])-len(prompt_template)])
+    truncated_context = truncate_context_to_max_chars(context, example['question'], prompt_template)
+    formatted_prompt = prompt_template.format(question=example['question'], context=truncated_context)
+    
     inputs = tokenizer(formatted_prompt, add_special_tokens=True, max_length=max_length_input, return_tensors="pt").input_ids.to("cuda")
     outputs = model.generate(inputs, max_new_tokens=max_output_length)
     response_text = tokenizer.batch_decode(outputs, skip_special_tokens=True)[0]
@@ -82,7 +112,8 @@ def zero_shot_prompting_llama(api, example, context_type, prompt_template):
         dict: A dictionary containing the role and content of the response.
     """
     context = clean_context(example["contexts"][context_type])
-    formatted_prompt = prompt_template.format(question=example['question'], context=context[:max_length_input-len(example['question'])-len(prompt_template)])
+    truncated_context = truncate_context_to_max_chars(context, example['question'], prompt_template)
+    formatted_prompt = prompt_template.format(question=example['question'], context=truncated_context)
     response = get_llama_api_response(api, formatted_prompt)
     return response
 
@@ -101,7 +132,8 @@ def zero_shot_prompting_groq(api, example, context_type, prompt_template, model_
         dict: A dictionary containing the role and content of the response.
     """
     context = clean_context(example["contexts"][context_type])
-    formatted_prompt = prompt_template.format(question=example['question'], context=context[:max_length_input-len(example['question'])-len(prompt_template)])
+    truncated_context = truncate_context_to_max_chars(context, example['question'], prompt_template)
+    formatted_prompt = prompt_template.format(question=example['question'], context=truncated_context)
     response_text = get_groq_api_response(formatted_prompt, api, model_id)
     return response_text
 
