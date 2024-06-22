@@ -1,22 +1,24 @@
 import json
 import configparser
-import torch
-import sys
-sys.path.append('./src')
+import os
 from tqdm import tqdm
-from transformers import AutoModelForCausalLM, AutoTokenizer
+from groq import Groq
 from llamaapi import LlamaAPI
+from transformers import AutoModelForCausalLM, AutoTokenizer
+import torch
 
 config = configparser.ConfigParser()
 config.read('config.ini')
+max_length_input = config.getint('Parameters', 'max_length_input')
+max_output_length = config.getint('Parameters', 'max_output_length')
 
 def load_model(model_id):
     """
     Load the model and tokenizer for the specified model ID.
-    
+
     Args:
         model_id (str): The ID of the model to load.
-        
+
     Returns:
         model (transformers.PreTrainedModel): The loaded model.
         tokenizer (transformers.PreTrainedTokenizer): The loaded tokenizer.
@@ -33,95 +35,150 @@ def load_model(model_id):
     tokenizer.padding_side = 'right'
     return model, tokenizer
 
-def zero_shot_prompting(model, tokenizer, example, context_type, prompt_template, max_length=4096, api=False, llamaApi=None):
+def clean_context(context):
     """
-    Generate zero-shot predictions based on the provided context and prompt template.
-    
+    Clean the context by removing special characters.
+
+    Args:
+        context (str): The context to be cleaned.
+
+    Returns:
+        str: The cleaned context.
+    """
+    return context.replace('<unk>', ' ')
+
+def zero_shot_prompting_local(model, tokenizer, example, context_type, prompt_template):
+    """
+    Generate zero-shot predictions using a local model.
+
     Args:
         model (transformers.PreTrainedModel): The loaded model.
         tokenizer (transformers.PreTrainedTokenizer): The loaded tokenizer.
         example (dict): The example containing the question and context.
         context_type (str): The type of context to use from the example.
         prompt_template (str): The prompt template to format the question and context.
-        max_length (int, optional): The maximum length of the context. Defaults to 4096.
-        api (bool, optional): Whether to use the Llama API. Defaults to False.
-        llamaApi (LlamaAPI, optional): The LlamaAPI instance if using the API. Defaults to None.
-        
-    Returns:
-        tuple: A tuple containing the context and the generated response.
-    """
-    context = example["contexts"][context_type]
-    formatted_prompt = prompt_template.format(question=example['question'], context=context[:max_length-len(example['question'])-len(prompt_template)])
-    print(f"Formatted Prompt: {formatted_prompt}")
-    
-    if api:
-        response = get_llama_api_response(llamaApi, formatted_prompt)
-        if response:
-            try:
-                response_json = response.json()
-                print(f"API Response: {response_json}")  # Log the response
-                response = response_json['choices'][0]['message']['content']
-            except json.JSONDecodeError as e:
-                print(f"Error decoding JSON response: {e}")
-                response = {"role": "assistant", "content": "API call failed to return valid JSON."}
-            except Exception as e:
-                print(f"Unexpected error processing API response: {e}")
-                response = {"role": "assistant", "content": "API call failed with an unexpected error."}
-        else:
-            response = {"role": "assistant", "content": "API call failed."}
-    else:
-        inputs = tokenizer(formatted_prompt, add_special_tokens=True, max_length=max_length, return_tensors="pt").input_ids.to("cuda")
-        outputs = model.generate(inputs, max_new_tokens=600)
-        response = tokenizer.batch_decode(outputs, skip_special_tokens=True)[0]
-        response = {"role": "assistant", "content": response}
-    
-    return context, response
 
-def get_llama_api_response(llamaApi, question):
+    Returns:
+        dict: A dictionary containing the role and content of the response.
+    """
+    context = clean_context(example["contexts"][context_type])
+    formatted_prompt = prompt_template.format(question=example['question'], context=context[:max_length_input-len(example['question'])-len(prompt_template)])
+    inputs = tokenizer(formatted_prompt, add_special_tokens=True, max_length=max_length_input, return_tensors="pt").input_ids.to("cuda")
+    outputs = model.generate(inputs, max_new_tokens=max_output_length)
+    response_text = tokenizer.batch_decode(outputs, skip_special_tokens=True)[0]
+    return response_text
+
+def zero_shot_prompting_llama(api, example, context_type, prompt_template):
+    """
+    Generate zero-shot predictions using the Llama API.
+
+    Args:
+        api (LlamaAPI): The LlamaAPI instance.
+        example (dict): The example containing the question and context.
+        context_type (str): The type of context to use from the example.
+        prompt_template (str): The prompt template to format the question and context.
+
+    Returns:
+        dict: A dictionary containing the role and content of the response.
+    """
+    context = clean_context(example["contexts"][context_type])
+    formatted_prompt = prompt_template.format(question=example['question'], context=context[:max_length_input-len(example['question'])-len(prompt_template)])
+    response = get_llama_api_response(api, formatted_prompt)
+    return response
+
+def zero_shot_prompting_groq(api, example, context_type, prompt_template, model_id):
+    """
+    Generate zero-shot predictions using the Groq API.
+
+    Args:
+        api (Groq): The Groq API instance.
+        example (dict): The example containing the question and context.
+        context_type (str): The type of context to use from the example.
+        prompt_template (str): The prompt template to format the question and context.
+        model_id (str): The ID of the model to use with the Groq API.
+
+    Returns:
+        dict: A dictionary containing the role and content of the response.
+    """
+    context = clean_context(example["contexts"][context_type])
+    formatted_prompt = prompt_template.format(question=example['question'], context=context[:max_length_input-len(example['question'])-len(prompt_template)])
+    response_text = get_groq_api_response(formatted_prompt, api, model_id)
+    return response_text
+
+def get_llama_api_response(api, question):
     """
     Send a request to the Llama API and return the response.
-    
+
     Args:
-        llamaApi (LlamaAPI): The LlamaAPI instance.
+        api (LlamaAPI): The LlamaAPI instance.
         question (str): The question to send to the API.
-        
+
     Returns:
-        requests.Response: The response from the Llama API.
+        str: The response from the Llama API.
     """
     api_request_json = {
         "messages": [{"role": "user", "content": question}],
-        "max_tokens": 3000  # Increase max tokens to allow longer responses
+        "max_tokens": max_output_length  # Use max_output_length from config
     }
     try:
-        print(f"API Request: {api_request_json}")  # Log the request
-        response = llamaApi.run(api_request_json)
+        response = api.run(api_request_json)
         if response.status_code != 200:
-            print(f"API call failed with status code: {response.status_code}")
-            print(f"API Response: {response.text}")  # Log the response text for debugging
-            return None
-        print("API request successful")
-        return response
+            return "API call failed."
+        response_json = response.json()
+        return response_json['choices'][0]['message']['content']
+    except Exception as e:
+        return "API call failed."
+
+def get_groq_api_response(question, client, model_id):
+    """
+    Send a request to the Groq API and return the response.
+
+    Args:
+        question (str): The question to send to the API.
+        client (Groq): The Groq API instance.
+        model_id (str): The ID of the model to use with the Groq API.
+
+    Returns:
+        str: The response from the Groq API.
+    """
+    try:
+        # print(question) only for testing the final Prompt
+        chat_completion = client.chat.completions.create(
+            messages=[
+                {
+                    "role": "user",
+                    "content": question,
+                }
+            ],
+            model=model_id,
+            max_tokens=max_output_length  # Use max_output_length from config
+        )
+        response_text = chat_completion.choices[0].message.content if chat_completion.choices else ""
+        print(f"API Response: {response_text}")
+        return response_text
     except Exception as e:
         print(f"API call failed: {e}")
-        return None
+        return "API call failed."
 
-def run_model(model_id, model_name, template_files, api=False, llamaApi=None):
+def run_model(model_id, model_name, template_files, api=False, api_type=None):
     """
     Run the model to generate zero-shot predictions for the given templates.
-    
+
     Args:
         model_id (str): The ID of the model to load.
         model_name (str): The name of the model.
         template_files (list): A list of template file paths.
-        api (bool, optional): Whether to use the Llama API. Defaults to False.
-        llamaApi (LlamaAPI, optional): The LlamaAPI instance if using the API. Defaults to None.
+        api (bool, optional): Whether to use an API. Defaults to False.
+        api_type (str, optional): The type of API to use ('llama' or 'groq'). Defaults to None.
     """
+    llama_api = LlamaAPI(config['Token']['llamaapi']) if api and api_type == 'llama' else None
+    groq_client = Groq(api_key=config['Token']['groqapi']) if api and api_type == 'groq' else None
     model, tokenizer = load_model(model_id) if not api else (None, None)
     with open(config['FilePaths']['prepared_data_file'], 'r') as file:
         prepared_data = json.load(file)
     
     results = []
-    for example in tqdm(prepared_data, desc=f"Generating Zero-Shot Predictions for {model_name}"):
+    for example in tqdm(prepared_data, desc=f"Generating Zero-Shot Predictions for {api_type} {model_name}"):
         result = {
             "id": example["id"],
             "question": example["question"],
@@ -132,6 +189,12 @@ def run_model(model_id, model_name, template_files, api=False, llamaApi=None):
         }
         
         for template_file in template_files:
+            # Remove comments and whitespace from the file list
+            template_file = template_file.split('#')[0].strip()
+            if not os.path.exists(template_file):
+                print(f"Template file {template_file} does not exist.")
+                continue
+            
             with open(template_file, 'r') as file:
                 prompt_template = file.read()
             
@@ -171,7 +234,13 @@ def run_model(model_id, model_name, template_files, api=False, llamaApi=None):
                 ["plain", "verbalizer_on_all_tripples", "evidence_matching", "verbalizer_plus_evidence_matching"],
                 ["all_triples_results", "verbalizer_results", "evidence_matching", "verbalizer_plus_evidence_matching"]
             ):
-                context, response = zero_shot_prompting(model, tokenizer, example, context_type, prompt_template, api=api, llamaApi=llamaApi)
+                if api_type == 'llama':
+                    response = zero_shot_prompting_llama(llama_api, example, context_type, prompt_template)
+                elif api_type == 'groq':
+                    response = zero_shot_prompting_groq(groq_client, example, context_type, prompt_template, model_id)
+                else:
+                    response = zero_shot_prompting_local(model, tokenizer, example, context_type, prompt_template)
+                
                 template_result[context_key]["response"] = response
             
             result["results"].append(template_result)
@@ -180,18 +249,18 @@ def run_model(model_id, model_name, template_files, api=False, llamaApi=None):
     
     output_file = config['FilePaths']['zero_shot_results_file'].replace(".json", f"_{model_name}.json")
     with open(output_file, 'w') as file:
-        json.dump(results, file, indent=4, ensure_ascii=False)  # Indent added for better formatting
+        json.dump(results, file, indent=4, ensure_ascii=False)
 
 if __name__ == '__main__':
-    llama = LlamaAPI(config['Token']['llamaapi']) if config['Flags']['use_api'] == 'True' else None
     api = config['Flags']['use_api'] == 'True'
+    api_type = config['Flags']['api_type']
     
     model_templates = {
-        config['Model']['llama3_id']: config['Templates']['llama3_templates'].split(', '),
-        config['Model']['llama2_id']: config['Templates']['llama2_templates'].split(', '),
-        # config['Model']['mistral_id']: config['Templates']['mistral_templates'].split(', ')
+        config['Model']['model_1']: config['Templates']['model_1_prompt_templates'].split(', '),
+        config['Model']['model_2']: config['Templates']['model_2_prompt_templates'].split(', '),
+        config['Model']['model_3']: config['Templates']['model_3_prompt_templates'].split(', ')
     }
     
     for model_id, templates in model_templates.items():
         model_name = model_id.split('/')[-1]
-        run_model(model_id, model_name, templates, api=api, llamaApi=llama)
+        run_model(model_id, model_name, templates, api=api, api_type=api_type)
