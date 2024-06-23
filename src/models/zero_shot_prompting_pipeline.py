@@ -289,6 +289,7 @@ def run_model(model_id, model_name, template_files, api=False, api_type=None):
         del model
     if tokenizer:
         del tokenizer
+    torch.cuda.empty_cache()
     gc.collect()
 
 if __name__ == '__main__':
@@ -296,9 +297,9 @@ if __name__ == '__main__':
     api_type = config['Flags']['api_type']
     
     model_templates = {
-        config['Model']['model_1']: config['Templates']['model_1_prompt_templates'].split(', '),
-        config['Model']['model_2']: config['Templates']['model_2_prompt_templates'].split(', '),
-        config['Model']['model_3']: config['Templates']['model_3_prompt_templates'].split(', ')
+        config['Model']['model_id_1']: config['Templates']['model_1_prompt_templates'].split(', '),
+        config['Model']['model_id_2']: config['Templates']['model_2_prompt_templates'].split(', '),
+        config['Model']['model_id_3']: config['Templates']['model_3_prompt_templates'].split(', ')
     }
     
     for model_id, templates in model_templates.items():
