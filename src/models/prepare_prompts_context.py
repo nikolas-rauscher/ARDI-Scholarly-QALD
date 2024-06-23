@@ -16,11 +16,11 @@ def prepare_data(examples, prompt_template, output_file):
         tripples_number = len(example['all_tripples'])
         
         # Plain Triples
-        context_plain = ''.join([triple2text(triple) for triple in example['all_tripples']])
+        context_plain = '. '.join([triple2text(triple) for triple in example['all_tripples']])
         
         # Evidence Matching
         triples_evidence = evidence_triple_selection(example['question'], example['all_tripples'])
-        context_evidence = ''.join([triple2text(triple) for triple in triples_evidence])
+        context_evidence = '. '.join([triple2text(triple) for triple in triples_evidence])
         
         # Verbalizer
         context_verbalizer = verbalise_triples(example['all_tripples'])
