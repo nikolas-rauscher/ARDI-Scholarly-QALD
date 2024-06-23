@@ -196,6 +196,7 @@ def triple2text(triple):
     return results
 
 
+
 def create_embeddings_from_triple(triple):
     """create embeddings from a textual triple
 
