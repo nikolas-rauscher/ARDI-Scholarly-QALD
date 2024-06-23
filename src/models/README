@@ -6,7 +6,7 @@
 This section defines the file paths used by the pipeline.
 
 - `zero_shot_prompting_result_file`: Path to the file where the zero-shot prompting results will be saved.
-- `prompt_template`: Path to the prompt template file.
+- `prompt_template`: Path to the prompt template file. (Not the one for the pipeline)
 - `test_data_file`: Path to the test data file.
 - `prepared_data_file`: Path to the prepared data file.
 - `zero_shot_results_file`: Path to the file where the zero-shot results will be saved.
@@ -20,9 +20,9 @@ This section contains the API tokens required for accessing the respective APIs.
 ### [Model]
 This section specifies the model configurations.
 
-- `model_1`: Identifier for the first model (Llama 3, 7B parameters).
-- `model_2`: Identifier for the second model (Llama 2, 13B parameters).
-- `model_3`: Identifier for the third model (Mistral, 7B parameters).
+- `model_id_1`: Identifier for the first model (Llama 3, 7B parameters).
+- `model_id_2`: Identifier for the second model (Llama 2, 13B parameters).
+- `model_id_3`: Identifier for the third model (Mistral, 7B parameters).
 
 ### [Templates]
 This section specifies the paths to the prompt templates for each model.
@@ -59,7 +59,7 @@ To run the pipeline using a local model on a cluster:
    zero_shot_prompting_result_file = ./results/zero_shot_prompting.json
    prompt_template = ./data/raw/prompt_template.txt
    test_data_file = ./data/processed/test_processed_data_100.json
-   prepared_data_file = ./data/processed/test_processed_data_100.json
+   prepared_data_file = ./results/prepared_data_file_zero_shot_prompting.json
    zero_shot_results_file = ./results/zero_shot_prompting.json
 
    [Token]
@@ -67,9 +67,9 @@ To run the pipeline using a local model on a cluster:
    groqapi = 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
 
    [Model]
-   model_1 = facebook/llama-7b
-   model_2 = facebook/llama-13b
-   model_3 = mistralai/Mistral-7B-v0.1
+    model_id_1 =meta-llama/Meta-Llama-3-8B-Instruct 
+    model_id_2 = meta-llama/Meta-Llama-2-7B 
+    model_id_3 = mistral/Mistral-7B 
 
    [Templates]
    model_1_prompt_templates = data/raw/prompt_template.txt 
