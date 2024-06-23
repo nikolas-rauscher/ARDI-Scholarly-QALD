@@ -167,3 +167,4 @@ data/processed/processed_data.json
 # Verbaliyzer
 src/models/verbalizer/graph2text/outputs/*
 src/models/verbalizer/processed_data.json
+.vscode/settings.json

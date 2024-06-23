@@ -2,6 +2,8 @@ import json
 import configparser
 from tqdm import tqdm
 import sys
+import os
+
 sys.path.append('./src')
 from features.evidence_selection import evidence_triple_selection, triple2text
 from models.verbalizer.generatePrompt import verbalise_triples
@@ -31,7 +33,7 @@ def prepare_data(examples, prompt_template, output_file):
         prepared_example = {
             "id": example["id"],
             "question": example["question"],
-            "answer": example["answer"],
+            # "answer": example["answer"],
             "tripples_number": tripples_number,
             "contexts": {
                 "all_tripples": example['all_tripples'],
@@ -46,11 +48,44 @@ def prepare_data(examples, prompt_template, output_file):
     with open(output_file, 'w') as file:
         json.dump(prepared_data, file, indent=4, ensure_ascii=False)  # Indent added for better formatting
 
-if __name__ == '__main__':
-    with open(config['FilePaths']['test_data_file'], 'r') as file:
+def process_file(input_file_path, prompt_template_path, output_file_path):
+    if not os.path.exists(input_file_path):
+        print(f"Error: Input file '{input_file_path}' not found.")
+        return False
+    if not os.path.exists(prompt_template_path):
+        print(f"Error: Prompt template file '{prompt_template_path}' not found.")
+        return False
+    
+    with open(input_file_path, 'r') as file:
         examples = json.load(file)
-    with open(config['FilePaths']['prompt_template'], 'r') as file:
+    with open(prompt_template_path, 'r') as file:
         prompt_template = file.read()
     
-    output_file = config['FilePaths']['prepared_data_file']
-    prepare_data(examples, prompt_template, output_file)
+    prepare_data(examples, prompt_template, output_file_path)
+    return True
+
+if __name__ == '__main__':
+    input_files = [
+        'data/external/train_post_processed_data_dblp_hm.json',
+        'data/external/train_post_processed_data_alex_hm.json',
+        'data/external/train_hm_openalex_dblp.json'
+    ]
+    
+    output_files = [
+        './results/prepared_data_hm_openalex_dblp.json',
+        './results/prepared_data_alex_hm.json',
+        './results/prepared_data_dblp_hm.json'
+    ]
+    
+    prompt_template_path = config['FilePaths']['prompt_template']
+
+    all_files_exist = all(os.path.exists(f) for f in input_files + [prompt_template_path])
+    if not all_files_exist:
+        print("Error: One or more input files or the prompt template file are missing.")
+        sys.exit(1)
+
+    for input_file, output_file in zip(input_files, output_files):
+        success = process_file(input_file, prompt_template_path, output_file)
+        if not success:
+            print(f"Processing stopped due to missing file: {input_file}")
+            break
