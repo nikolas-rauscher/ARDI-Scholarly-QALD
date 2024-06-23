@@ -6,6 +6,7 @@ from groq import Groq
 from llamaapi import LlamaAPI
 from transformers import AutoModelForCausalLM, AutoTokenizer
 import torch
+import gc  # Garbage Collector Interface
 
 config = configparser.ConfigParser()
 config.read('config.ini')
@@ -282,6 +283,13 @@ def run_model(model_id, model_name, template_files, api=False, api_type=None):
     output_file = config['FilePaths']['zero_shot_results_file'].replace(".json", f"_{model_name}.json")
     with open(output_file, 'w') as file:
         json.dump(results, file, indent=4, ensure_ascii=False)
+
+    # Clean up the model and tokenizer to free up memory
+    if model:
+        del model
+    if tokenizer:
+        del tokenizer
+    gc.collect()
 
 if __name__ == '__main__':
     api = config['Flags']['use_api'] == 'True'
