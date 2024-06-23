@@ -108,7 +108,7 @@ def evidence_sentence_selection(question, sentences, conserved_percentage=0.1, t
     return evidence_sentences
 
 
-def evidence_triple_selection(question, triples, conserved_percentage=0.1, threshold=None, triplet_extractor=None, llm=False):
+def evidence_triple_selection(question, triples, conserved_percentage=0.1, max_num=50, threshold=None, triplet_extractor=None, llm=False):
     """select the triple match the question(directly compare question and triples)
 
     Args:
@@ -126,7 +126,7 @@ def evidence_triple_selection(question, triples, conserved_percentage=0.1, thres
         triple) for triple in triples]
     for q_embedding in q_embeddings:
         evidence_triples += evidence_selection_per_embedding(
-            q_embedding, triples_embeddings, triples, num_sentences=int(conserved_percentage*len(triples)), threshold=threshold)
+            q_embedding, triples_embeddings, triples, num_sentences=min(max_num, int(conserved_percentage*len(triples))), threshold=threshold)
     return evidence_triples
 
 
@@ -189,10 +189,13 @@ def create_embeddings_from_sentence(sentence):
 
     return last_hidden_state[:, 0, :].squeeze()
 
+
 def triple2text(triple):
     results = triple["subject"] + " " + triple["predicate"] + " " + triple["object"]
     
     return results
+
+
 
 def create_embeddings_from_triple(triple):
     """create embeddings from a textual triple
