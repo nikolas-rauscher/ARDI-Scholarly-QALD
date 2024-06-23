@@ -267,10 +267,12 @@ def run_model(model_id, model_name, template_files, api=False, api_type=None):
                 ["plain", "verbalizer_on_all_tripples", "evidence_matching", "verbalizer_plus_evidence_matching"],
                 ["all_triples_results", "verbalizer_results", "evidence_matching", "verbalizer_plus_evidence_matching"]
             ):
-                if api_type == 'llama':
-                    response = zero_shot_prompting_llama(llama_api, example, context_type, prompt_template)
-                elif api_type == 'groq':
-                    response = zero_shot_prompting_groq(groq_client, example, context_type, prompt_template, model_id)
+               
+                if api:
+                    if api_type == 'llama':
+                        response = zero_shot_prompting_llama(llama_api, example, context_type, prompt_template)
+                    elif api_type == 'groq':
+                        response = zero_shot_prompting_groq(groq_client, example, context_type, prompt_template, model_id)
                 else:
                     response = zero_shot_prompting_local(model, tokenizer, example, context_type, prompt_template)
                 
