@@ -17,7 +17,6 @@ max_output_length = config.getint('Parameters', 'max_output_length')
 chars_per_token = 4
 max_length_chars = max_length_input * chars_per_token
 
-
 def load_model(model_id):
     """
     Load the model and tokenizer for the specified model ID.
