@@ -29,8 +29,6 @@ def load_gold_standard_qa(gold_path):
     for ques in data:
         gold_answers[ques['id']] = ques['answer']
     print(f"\tGold answers: loaded {len(data)} questions!")
-    with open("test.json",'w') as json_file:
-        json.dump(gold_answers,json_file,indent=2)
     return gold_answers
 
 
