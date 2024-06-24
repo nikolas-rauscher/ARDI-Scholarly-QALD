@@ -170,3 +170,4 @@ src/models/verbalizer/graph2text/outputs/*
 src/models/verbalizer/processed_data.json
 test/
 .vscode/settings.json
+results/hm_results/todo
