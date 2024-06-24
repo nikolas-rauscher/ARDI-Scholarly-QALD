@@ -11,25 +11,29 @@ from models.verbalizer.generatePrompt import verbalise_triples
 config = configparser.ConfigParser()
 config.read('config.ini')
 
+
 def prepare_data(examples, prompt_template, output_file):
     prepared_data = []
     for example in tqdm(examples, desc="Preparing Data"):
         # Anzahl der Tripel
         tripples_number = len(example['all_tripples'])
-        
+
         # Plain Triples
-        context_plain = ''.join([triple2text(triple) for triple in example['all_tripples']])
-        
+        context_plain = '. '.join([triple2text(triple)
+                                  for triple in example['all_tripples']])
+
         # Evidence Matching
-        triples_evidence = evidence_triple_selection(example['question'], example['all_tripples'])
-        context_evidence = ''.join([triple2text(triple) for triple in triples_evidence])
-        
+        triples_evidence = evidence_triple_selection(
+            example['question'], example['all_tripples'])
+        context_evidence = '. '.join(
+            [triple2text(triple) for triple in triples_evidence])
+
         # Verbalizer
         context_verbalizer = verbalise_triples(example['all_tripples'])
-        
+
         # Verbalizer + Evidence Matching
         context_evidence_verbalizer = verbalise_triples(triples_evidence)
-        
+
         prepared_example = {
             "id": example["id"],
             "question": example["question"],
@@ -43,10 +47,14 @@ def prepare_data(examples, prompt_template, output_file):
                 "verbalizer_plus_evidence_matching": context_evidence_verbalizer
             }
         }
+        if ("answer" in example):
+            prepared_example["answer"] = example["answer"]
         prepared_data.append(prepared_example)
-    
+
     with open(output_file, 'w') as file:
-        json.dump(prepared_data, file, indent=4, ensure_ascii=False)  # Indent added for better formatting
+        # Indent added for better formatting
+        json.dump(prepared_data, file, indent=4, ensure_ascii=False)
+
 
 def process_file(input_file_path, prompt_template_path, output_file_path):
     if not os.path.exists(input_file_path):

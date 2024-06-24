@@ -8,9 +8,9 @@ import pandas as pd
 import torch
 import json
 from llamaapi import LlamaAPI
+import configparser
 config = configparser.ConfigParser()
 config.read('config.ini')
-
 
 
 api_request_json = {

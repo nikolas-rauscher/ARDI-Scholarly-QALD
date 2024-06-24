@@ -100,4 +100,6 @@ Werkzeug==3.0.3
 wrapt==1.16.0
 yarl==1.9.4
 zipp==3.19.2
-
+GitPython>=3.1.43
+rouge-score>=0.1.2
+sacrebleu>=2.4.2
