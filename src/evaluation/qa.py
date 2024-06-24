@@ -29,6 +29,8 @@ def load_gold_standard_qa(gold_path):
     for ques in data:
         gold_answers[ques['id']] = ques['answer']
     print(f"\tGold answers: loaded {len(data)} questions!")
+    with open("test.json",'w') as json_file:
+        json.dump(gold_answers,json_file,indent=2)
     return gold_answers
 
 
@@ -117,6 +119,6 @@ if __name__ == '__main__':
             print(
                 f"\nQA Results:\n\tExact Match Accuracy: {round(exact_match_accuracy * 100, 2)}%\n\tMETEOR: {round(avg_meteor_qa, 5)}")
 
-            with open(os.path.join(output_dir, 'scores'+filename[:-5]+'.txt'), 'w') as f:
+            with open(os.path.join(output_dir, ('scores'+filename[:-5]+'.txt').replace('answer_zero_shot_prompting','_zero-shot')), 'w') as f:
                 f.write(f"EM: %f\n" % (exact_match_accuracy))
                 f.write(f"METEOR: %f\n" % (avg_meteor_qa))
