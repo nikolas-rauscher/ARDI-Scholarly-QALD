@@ -75,7 +75,7 @@ def retrieve_triples_for_entity(entity: str, endpoint_url: str) -> list:
         triple["objectLabel"] = result.get("objectLabel", {}).get("value", "")
         list_of_triples.append(triple)
     
-
+ 
     return list_of_triples
 
 def create_dataset(trainingdata_path:str, endpoint_url:str, save_processed_data_path: str, outputdata_name: str):
@@ -84,20 +84,28 @@ def create_dataset(trainingdata_path:str, endpoint_url:str, save_processed_data_
 
     for data_block,i in zip(data,range(len(data))):
         print(i)
-        list_of_tripples = []
+        list_of_tripples_for_authors= []
+        tripples_for_one_author = []
         entities = data_block["author_dblp_uri"]
         if entities[0] == "[":
             entities = eval(entities)[0]
             for key, entity in entities.items():
-                #print(retrieve_triples_for_entity(entity,endpoint_url))
-                tripples = retrieve_triples_for_entity(entity,endpoint_url)
-                list_of_tripples+= tripples
+                dic_for_one_author = {}
+                tripples_for_one_author = retrieve_triples_for_entity(entity,endpoint_url)
+                dic_for_one_author["entity"] = entity
+                dic_for_one_author["tripples"] = tripples_for_one_author
+                list_of_tripples_for_authors.append(dic_for_one_author)
         else:
-            #print(retrieve_triples_for_entity(entities,endpoint_url))
-            list_of_tripples = retrieve_triples_for_entity(entities,endpoint_url)
-
-        data_block["tripples_number"] = len(list_of_tripples)
-        data_block["all_tripples"] = list_of_tripples
+            tripples_for_one_author = retrieve_triples_for_entity(entities,endpoint_url)
+            dic_for_one_author = {}
+            dic_for_one_author["entity"] = entities
+            dic_for_one_author["tripples"] = tripples_for_one_author
+            list_of_tripples_for_authors.append(dic_for_one_author)
+        all_tripples_length  = 0
+        for author in list_of_tripples_for_authors:
+            all_tripples_length += len(author["tripples"])
+        data_block["tripples_number"] = all_tripples_length
+        data_block["all_tripples"] = list_of_tripples_for_authors
         processed_data.append(data_block)
 
     # Save the new processed training data
@@ -112,7 +120,7 @@ def main():
 
     outputdata_name = "processed_data"
     trainingdata_path = "data/raw/trainingdata.json"
-    save_processed_data_path = "data/processed"
+    save_processed_data_path = "data/processed_test"
     endpoint_url ="https://dblp-april24.skynet.coypu.org/sparql" #SPARQL endpoint URL
     create_dataset(trainingdata_path, endpoint_url, save_processed_data_path, outputdata_name) 
 
@@ -129,3 +137,48 @@ if __name__ == "__main__":
 
 
 
+""""
+
+[
+    {
+        "id": "6b8aa79c-3908-4f03-b85b-aa1a325d9fe6",
+        "question": "What type of information sources were found to be lacking in organized information at Social Services offices according to the author's observation?",
+        "answer": "oral communication and notes",
+        "tripples_number": 885,
+        "all_tripples": [
+        {
+            "all_tripples":[
+                {
+                    "entity":"<https://dblp.org/pid/w/TDWilson>", 
+                    "all_tripples": [
+                        {
+                            "subject": "<https://dblp.org/pid/w/TDWilson>",
+                            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                            "object": "https://dblp.org/rdf/schema#Creator",
+                            "subjectLabel": "Thomas D. Wilson 0001",
+                            "predicateLabel": "",
+                            "objectLabel": "Creator"
+                        }, 
+                    ]}, 
+                {
+                    "entity":"<https://dblp.org/pid/w/TDWilson>", 
+                    "all_tripples": [ 
+                        {
+                            "subject": "<https://dblp.org/pid/w/TDWilson>",
+                            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                            "object": "https://dblp.org/rdf/schema#Creator",
+                            "subjectLabel": "Thomas D. Wilson 0001",
+                            "predicateLabel": "",
+                            "objectLabel": "Creator"
+                        }, 
+                    ]
+                }
+            ]
+        }
+    }
+]
+
+
+
+
+"""
