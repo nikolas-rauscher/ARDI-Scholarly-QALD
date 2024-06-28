@@ -2,12 +2,12 @@ import json
 import os
 
 # Load the true answers
-true_answer_file = 'src/evaluation/nikolas/answers.json'
+true_answer_file = 'src/evaluation/scripts_for_human_eval/input/answers.json'
 with open(true_answer_file, encoding='utf-8') as f:
     true_answers = json.load(f)
 
-# Load the zero_shot_prompting_Mistral-7B-Instruct-v0.2.json file
-responses_file = 'src/evaluation/nikolas/zero_shot_prompting_Mistral-7B-Instruct-v0.2.json'
+# Load the responses file
+responses_file = 'results/zero_shot_prompting_Mistral-7B-Instruct-v0.2.json'
 with open(responses_file, encoding='utf-8') as f:
     responses = json.load(f)
 
@@ -34,8 +34,8 @@ def get_human_feedback(context, question, true_answer, model_answer):
 
 # Function to split the response into context and answer
 def split_response(full_response):
-    context_marker = "\nContext:"
-    answer_marker = "[/INST] Answer:"
+    context_marker = "Context:"
+    answer_marker = "Answer:"
     context = ""
     answer = ""
     
@@ -54,12 +54,14 @@ for response in responses:
     model = response['model']
     technique = response['technique']
     for result in response['results']:
-        prompt_template = result['prompt_template']  # Assuming this is the context path, adjust if necessary
+        prompt_template = result['prompt_template']
         for category in ['all_triples_results', 'verbalizer_results', 'evidence_matching', 'verbalizer_plus_evidence_matching']:
-            full_response = result[category]['response']
-            context, model_answer = split_response(full_response)
+            # if 'human_feedback' in result[category]['metrics']:
+            #     print(f"Skipping feedback for category {category} as it already exists.")
+            #     continue  # Skip this iteration as feedback already exists
             
-            # Ensure that the question, true_answer, context, and model_answer are not empty before prompting feedback
+            context, model_answer = split_response(result[category]['response'])
+            
             if not question or not true_answer or not context or not model_answer:
                 print(f"Debug: Missing data for category {category}. Skipping feedback prompt.")
                 print(f"Question: {question}")
@@ -69,16 +71,19 @@ for response in responses:
                 continue
             
             feedback = get_human_feedback(context, question, true_answer, model_answer)
-            
-            # Update the metrics with human feedback
+
+            # Update metrics only if they are not already set
             result[category]['metrics']['human_feedback'] = feedback
-            result[category]['context'] = context
-            result[category]['answer'] = model_answer
-            # Delete the old response field
-            del result[category]['response']
+            result[category]['metrics']['exact_score'] = result[category]['metrics'].get('exact_score', None)
+            result[category]['metrics']['meteor'] = result[category]['metrics'].get('meteor', None)
+
+            result[category]['response'] = {
+                "Context": context,
+                "Answer": model_answer
+            }
 
 # Save the updated responses with human feedback
-updated_responses_file = 'human_eval_updated_zero_shot_prompting_Mistral-7B-Instruct-v0.2.json'
+updated_responses_file = 'src/evaluation/scripts_for_human_eval/results/human_eval_zero_shot_prompting_Mistral-7B-Instruct-v0.2.json'
 with open(updated_responses_file, 'w', encoding='utf-8') as f:
     json.dump(responses, f, ensure_ascii=False, indent=4)
 
