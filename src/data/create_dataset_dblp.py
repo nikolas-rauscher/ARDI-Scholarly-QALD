@@ -5,9 +5,11 @@ import os
 from SPARQLWrapper import SPARQLWrapper, JSON
 
 
-def read_json_(trainindata_path) -> dict:
+def read_json_(trainindata_path, subset) -> dict:
     with open(trainindata_path, 'r', encoding='utf-8') as file:
         formulations = json.load(file)
+    if subset: 
+        formulations = formulations[:subset]
     return formulations
 
 from SPARQLWrapper import SPARQLWrapper, JSON
@@ -78,8 +80,8 @@ def retrieve_triples_for_entity(entity: str, endpoint_url: str) -> list:
  
     return list_of_triples
 
-def create_dataset(trainingdata_path:str, endpoint_url:str, save_processed_data_path: str, outputdata_name: str):
-    data = read_json_(trainingdata_path)
+def create_dataset_dblp(trainingdata_path:str, endpoint_url:str, save_processed_data_path: str, outputdata_name: str, subset = None):
+    data = read_json_(trainingdata_path, subset)
     processed_data = []
 
     for data_block,i in zip(data,range(len(data))):
@@ -118,11 +120,11 @@ def create_dataset(trainingdata_path:str, endpoint_url:str, save_processed_data_
 ##############################################################################
 def main():
 
-    outputdata_name = "processed_data"
+    outputdata_name = "pre_processed_data1000.json"
     trainingdata_path = "data/raw/trainingdata.json"
-    save_processed_data_path = "data/processed_test"
+    save_processed_data_path = "data/processed/dblp"
     endpoint_url ="https://dblp-april24.skynet.coypu.org/sparql" #SPARQL endpoint URL
-    create_dataset(trainingdata_path, endpoint_url, save_processed_data_path, outputdata_name) 
+    create_dataset_dblp(trainingdata_path, endpoint_url, save_processed_data_path, outputdata_name, subset = 1000) 
 
 ##############################################################################
 if __name__ == "__main__":
@@ -147,7 +149,6 @@ if __name__ == "__main__":
         "tripples_number": 885,
         "all_tripples": [
         {
-            "all_tripples":[
                 {
                     "entity":"<https://dblp.org/pid/w/TDWilson>", 
                     "all_tripples": [
