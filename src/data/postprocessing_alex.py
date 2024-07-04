@@ -7,6 +7,10 @@ predicates = ['modified', 'citedByCount', 'worksCount', 'h-index', 'name', '2YrM
 predicates_process = ["creator", "countsByYear", "org#memberOf", "hasAuthor", "22-rdf-syntax-ns#type" ]
 
 
+def save_intermediate_result(outputdata_name, new_dataset):
+    with open(outputdata_name, 'w') as file:
+        json.dump(new_dataset, file, indent=4, ensure_ascii=False)
+
 def read_json_(outputdata_name_path) -> dict:
     with open(outputdata_name_path, 'r', encoding='utf-8') as file:
         formulations = json.load(file)
@@ -178,8 +182,11 @@ def post_process_alex(outputdata_name, data):
       new_question["tripples_number"] = tripples_number
       new_dataset.append(new_question)  
 
-  with open(outputdata_name, 'w') as file:
-      json.dump(new_dataset, file, indent=4,ensure_ascii=False)
+   # Save intermediate result
+      save_intermediate_result(outputdata_name, new_dataset)
+
+    # Final save of the complete dataset
+  save_intermediate_result(outputdata_name, new_dataset)
 
 
 
@@ -211,9 +218,11 @@ def process_in_parallel(data, outputdata_name, processes):
 def main():
 
   pre_processed_data_path = "data/processed/alex/pre_processed_data1000.json"
-  outputdata_name =  "data/processed/alex/post_processed_data1000"
+  outputdata_name =  "data/processed/alex/post_processed_data100-200"
 
+  
   data = read_json_(pre_processed_data_path)
+  data = data[100:200]
   post_process_alex(outputdata_name, data)
   #process_in_parallel(data,outputdata_name,8)
 
