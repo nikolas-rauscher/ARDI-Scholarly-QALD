@@ -18,7 +18,7 @@ def read_json_(outputdata_name_path) -> dict:
 
 
 def post_process_alex(outputdata_name, data):
-
+  print(outputdata_name)
   new_dataset =  []
   for question, i in zip(data, range(len(data))):
       print(i)
@@ -171,9 +171,9 @@ def post_process_alex(outputdata_name, data):
                   pass # remove tripple  
 
       
-      entity_dict["entity"] = entity["entity"]
-      entity_dict["tripples"] = new_tripples
-      new_question["all_tripples"].append(entity_dict)
+        entity_dict["entity"] = entity["entity"]
+        entity_dict["tripples"] = new_tripples
+        new_question["all_tripples"].append(entity_dict)
       
 
       for entity in new_question["all_tripples"]:
@@ -218,11 +218,11 @@ def process_in_parallel(data, outputdata_name, processes):
 def main():
 
   pre_processed_data_path = "data/processed/alex/pre_processed_data1000.json"
-  outputdata_name =  "data/processed/alex/post_processed_data100-200"
+  outputdata_name =  "data/processed/alex/test"
 
   
   data = read_json_(pre_processed_data_path)
-  data = data[100:200]
+  data = data[10:11]
   post_process_alex(outputdata_name, data)
   #process_in_parallel(data,outputdata_name,8)
 
