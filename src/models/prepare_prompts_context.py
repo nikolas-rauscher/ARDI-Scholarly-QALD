@@ -95,7 +95,7 @@ def process_file(input_file_path, prompt_template_path, output_file_path):
     return True
 
 if __name__ == '__main__':
-    with open(config['FilePaths']['test_data_file'], 'r') as file:
+    with open(config['FilePaths']['prepare_prompt_context_input'], 'r') as file:
         examples = json.load(file)
     with open(config['FilePaths']['prompt_template'], 'r') as file:
         prompt_template = file.read()
