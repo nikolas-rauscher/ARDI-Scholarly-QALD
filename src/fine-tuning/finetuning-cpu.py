@@ -160,12 +160,12 @@ def load_model(model_id):
     )
     model = AutoModelForCausalLM.from_pretrained(
         model_id,
-        quantization_config=quant_config,
+        # quantization_config=quant_config,
     )
     # for single GPU
-
-    model.config.use_cache = False
-    model.config.pretraining_tp = 1
+    model.to("cpu")
+    # model.config.use_cache = False
+    # model.config.pretraining_tp = 1
 
     return model
 
@@ -197,7 +197,7 @@ def load_dataset_from_hub(dataset_id):
 #         question=example['question'], context=example['context'][:max_length-len(example['question'])-len(prompt_template)])+str(example['answer'])
 
 
-def formatting_prompts_func(examples, max_length=4096):
+def formatting_prompts_func(examples):
     """Create a list to store the formatted texts for each item in the example
 
     Args:
@@ -208,9 +208,10 @@ def formatting_prompts_func(examples, max_length=4096):
     global prompt_template
     prompt_texts = []
     # Iterate through each example in the batch
-    for question,answer in zip(examples['question'], examples['answer']):
+    for question, answer, context in zip(examples['question'], examples['answer'], examples['context']):
         # Format each example as a prompt_template-response pair
-        prompt_text = prompt_template.format(question=question,context='')+answer
+        prompt_text = prompt_template.format(
+            question=question, context=context)+answer
         prompt_texts.append(prompt_text)
     # Return the list of formatted texts
     return prompt_texts
@@ -284,7 +285,7 @@ def fine_tune_model(model_id, train_dataset, val_dataset):
         tokenizer=tokenizer,
         compute_metrics=compute_metrics,
     )
-    
+
     trainer.train()
     trainer.save_model(training_args.output_dir)
     model = model.merge_and_unload()
@@ -294,7 +295,7 @@ def fine_tune_model(model_id, train_dataset, val_dataset):
     return trainer
 
 
-def load_dataset_local(path_train, path_val):
+def load_dataset_local(path_train):
     """
     Load datasets from local JSON files.
 
@@ -306,11 +307,10 @@ def load_dataset_local(path_train, path_val):
         train_dataset, val_dataset: Train and validation datasets as Hugging Face Dataset objects.
     """
     train_df = pd.read_json(path_train, orient='records')
-    val_df = pd.read_json(path_val, orient='records')
-    return Dataset.from_pandas(train_df), Dataset.from_pandas(val_df)
+    return Dataset.from_pandas(train_df)
 
 
-def perform_cross_validation(model_id, dataset_id, target_column, n_splits=5):
+def perform_cross_validation(model_id, path_train, target_column, n_splits=5):
     """
     Perform cross-validation and calculate the standard error.
 
@@ -325,7 +325,7 @@ def perform_cross_validation(model_id, dataset_id, target_column, n_splits=5):
         mean_accuracy, std_error: The mean accuracy and standard error.
     """
     # train_dataset, _ = load_dataset_from_hub(dataset_id=dataset_id)
-    train_dataset, _ = load_dataset_local("./data/raw/sch_train_reduced_1.json","./data/raw/sch_train_reduced_1.json")
+    train_dataset = load_dataset_local(path_train)
     splits = get_cross_validation_splits(
         train_dataset, target_column, n_splits=n_splits)
 
@@ -361,8 +361,9 @@ if __name__ == "__main__":
 
     model_id = "roneneldan/TinyStories-1M"  # change this
     dataset_id = "Sefika/KGQA_triples"  # change this..
+    path_train = config['FilePaths']['finetune_path_train']
 
     # target_labels = 'rel2id.json'  # file path to your target classes.
     target_column = "answer"
     trainer = perform_cross_validation(
-        model_id, dataset_id, target_column)
+        model_id, path_train, target_column)

@@ -171,3 +171,4 @@ src/models/verbalizer/processed_data.json
 test/
 .vscode/settings.json
 results/hm_results/todo
+TinyStories-1M-local
