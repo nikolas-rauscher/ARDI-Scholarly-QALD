@@ -148,7 +148,6 @@ if __name__ == "__main__":
         "answer": "oral communication and notes",
         "tripples_number": 885,
         "all_tripples": [
-        {
                 {
                     "entity":"<https://dblp.org/pid/w/TDWilson>", 
                     "all_tripples": [
@@ -175,8 +174,7 @@ if __name__ == "__main__":
                     ]
                 }
             ]
-        }
-    }
+     }
 ]
 
 
