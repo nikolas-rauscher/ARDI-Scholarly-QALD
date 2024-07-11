@@ -43,7 +43,7 @@ def prepare_data(examples, prompt_template, output_file):
         # context_verbalizer = verbalise_triples(example['all_tripples'])
 
         # Verbalizer + Evidence Matching
-        context_evidence_verbalizer = verbalise_triples(triples_evidence)
+        context_evidence_verbalizer = verbalise_triples(triples_evidence, use_predicate_based_verbalisation=False)
 
         prepared_example = {
             "id": example["id"],
