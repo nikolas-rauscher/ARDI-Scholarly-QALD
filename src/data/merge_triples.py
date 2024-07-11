@@ -4,12 +4,27 @@ def read_json_(outputdata_name_path) -> dict:
         formulations = json.load(file)
     return formulations
 
-data1 = read_json_("data/processed/alex/post_processed_data0-99.json")
-data2 = read_json_("data/processed/alex/post_processed_data100-200.json")
-data3 = read_json_("data/processed/alex/post_processed_data201-300.json")
-data4 = read_json_("data/processed/alex/post_processed_data301-400.json")
-data5 = read_json_("data/processed/alex/post_processed_data401-500.json")
-alex_parts = [data1,data2,data3,data4,data5]
+data1 = read_json_("data/processed/alex/pre_processed_data1000_0-99.json")
+data1_ = read_json_("data/processed/alex/pre_processed_data1000_0-99-2.json")
+data2 = read_json_("data/processed/alex/pre_processed_data1000_100-199.json")
+data2_ = read_json_("data/processed/alex/pre_processed_data1000_100-199-2.json")
+data3 = read_json_("data/processed/alex/pre_processed_data1000_200-299.json")
+data3_ = read_json_("data/processed/alex/pre_processed_data1000_200-299-2.json")
+data4 = read_json_("data/processed/alex/pre_processed_data1000_300-399.json")
+data4_ = read_json_("data/processed/alex/pre_processed_data1000_300-399-2.json")
+data5 = read_json_("data/processed/alex/pre_processed_data1000_400-500.json")
+data5_ = read_json_("data/processed/alex/pre_processed_data1000_400-499-2.json")
+data6 = read_json_("data/processed/alex/pre_processed_data1000_500-599.json")
+data6_ = read_json_("data/processed/alex/pre_processed_data1000_500-599-2.json")
+data7 = read_json_("data/processed/alex/pre_processed_data1000_600-699.json")
+data7_ = read_json_("data/processed/alex/pre_processed_data1000_600-699-2.json")
+data8 = read_json_("data/processed/alex/pre_processed_data1000_700-799.json")
+data8_ = read_json_("data/processed/alex/pre_processed_data1000_700-799-2.json")
+data9 = read_json_("data/processed/alex/pre_processed_data1000_800-899.json")
+data9_ = read_json_("data/processed/alex/pre_processed_data1000_800-899-2.json")
+data10 = read_json_("data/processed/alex/pre_processed_data1000_900-1000.json")
+data10_ = read_json_("data/processed/alex/pre_processed_data1000_900-1000-2.json")
+alex_parts = [data1,data1_,data2,data2_,data3,data3_,data4,data4_,data5,data5_,data6,data6_,data7,data7_,data8,data8_,data9,data9_,data10,data10_]
 
 
 
@@ -17,13 +32,13 @@ merged_data=alex_parts[0]
 for part in alex_parts[1:]:
    merged_data = merged_data+part
 
-with open("data/processed/alex/post_processed_data500.json", 'w') as file: 
+with open("data/processed/alex/post_processed_data_part.json", 'w') as file: 
         json.dump(merged_data, file, indent=4, ensure_ascii=False)
 
 
 #read dblp data
 dblp_data = read_json_("data/processed/dblp/post_processed_data1000.json") 
-alex_data = read_json_("data/processed/alex/post_processed_data500.json")
+alex_data = read_json_("data/processed/alex/post_processed_data_part.json")
 dblp_data = dblp_data[:500]
 new_merged_dataset = []
 for alex_question in alex_data:

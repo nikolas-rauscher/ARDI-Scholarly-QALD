@@ -33,14 +33,20 @@ query= query = f"""
                     }}
                     """
 
-query_res= run_query(query)
-affiliation_list = []
-#print(query_res)
-paper_during_affiliation = query_res['results']['bindings'][0]['paper']['value']
-for i in range(len(query_res['results']['bindings'])):
-              affiliation_list.append(query_res['results']['bindings'][i]['affiliation']['value'])
-print(paper_during_affiliation)
-print(affiliation_list)   
+def main():
+  query_res= run_query(query)
+  affiliation_list = []
+  #print(query_res)
+  paper_during_affiliation = query_res['results']['bindings'][0]['paper']['value']
+  for i in range(len(query_res['results']['bindings'])):
+                affiliation_list.append(query_res['results']['bindings'][i]['affiliation']['value'])
+  print(paper_during_affiliation)
+  print(affiliation_list)   
 
+
+
+##############################################################################
+if __name__ == "__main__":
+    main()
 
 
