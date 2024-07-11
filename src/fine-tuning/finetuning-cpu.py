@@ -66,6 +66,19 @@ def preprocess_logits_for_metrics(logits):
 
 # helper function to postprocess text
 
+def extract_response(response):
+    """Extract and clean the response."""
+    if len(response) > 300:
+        response = response.split("Answer:")[-1].strip()
+        if '[INST]' in response:
+            response = response.split("INST]")[-1].strip()
+        if 'assistant' in response:
+            response = response.split("assistant")[-1].strip()
+        if len(response) > 300:
+            response = response.split("\n")[-1].strip()
+        if len(response) > 300:
+            response = 'out of tokens'
+    return response
 
 def postprocess_text(labels, preds):
     """_summary_
@@ -78,11 +91,9 @@ def postprocess_text(labels, preds):
         list, list: applied post processing to the returned answers from LLMs.
 
     """
-    preds = [pred.replace('\n', '').split('Answer:')[-1].strip()
+    preds = [extract_response(pred)
              for pred in preds]
-    labels = [label.replace('\n', '').split(
-        'Answer:')[-1].strip() for label in labels]
-
+    labels = [extract_response(label) for label in labels]
     return preds, labels
 
 
@@ -163,7 +174,6 @@ def load_model(model_id):
         # quantization_config=quant_config,
     )
     # for single GPU
-    model.to("cpu")
     # model.config.use_cache = False
     # model.config.pretraining_tp = 1
 
