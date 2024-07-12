@@ -191,7 +191,7 @@ def create_embeddings_from_sentence(sentence):
 
 
 def triple2text(triple):
-    results = triple["subject"] + " " + triple["predicate"] + " " + triple["object"]
+    results = str(triple["subject"]) + " " + str(triple["predicate"]) + " " + str(triple["object"])
     
     return results
 
