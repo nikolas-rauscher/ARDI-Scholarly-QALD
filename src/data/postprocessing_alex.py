@@ -218,11 +218,11 @@ def process_in_parallel(data, outputdata_name, processes):
 def main():
 
   pre_processed_data_path = "data/processed/alex/pre_processed_data1000.json"
-  outputdata_name =  "data/processed/alex/pre_processed_data1000_900-1000-3.json"
+  outputdata_name =  "data/processed/alex/pre_processed_data1000_700-799-3.json"
 
   
   data = read_json_(pre_processed_data_path)
-  data = data[934:1000]
+  data = data[725:800]
   post_process_alex(outputdata_name, data)
   #process_in_parallel(data,outputdata_name,8)
 

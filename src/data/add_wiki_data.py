@@ -92,32 +92,43 @@ def ngram_cosine_similarity(s1, s2, n=3):
     return cosine_similarity(ngrams)[0, 1]
 
 
+def add_wikidata(alex_data, wiki_data, outputdata_name ):
 
-alex_data = read_json_("data/processed/alex/post_processed_data500.json")
-wiki_data = read_json_("data/external/wiki_data_processed.txt")
-#alex_data = alex_data[:1]  # Limiting to the first item for processing as per the example
+    #alex_data = alex_data[:1]  # Limiting to the first item for processing as per the example
 
-new_dataset = []
+    new_dataset = []
 
-for question, i in zip(alex_data, range(len(alex_data))):
-    print(i)
-    wiki_articles= []
-    for entity in question["all_tripples"]:
-        names = []
-        institutions = []
-        for triple in entity["tripples"]:
-            if triple["predicate"] == "alternativeName":
-                names.append(triple["object"])
-            if triple["predicate"] == "was working in":
-                institution = triple["object"].split(" while writing paper")[0]
-                institutions.append(institution)
-                institutions = list(set(institutions))
+    for question, i in zip(alex_data, range(len(alex_data))):
+        print(i)
+        wiki_articles= []
+        for entity in question["all_tripples"]:
+            names = []
+            institutions = []
+            for triple in entity["tripples"]:
+                if triple["predicate"] == "alternativeName":
+                    names.append(triple["object"])
+                if triple["predicate"] == "was working in":
+                    institution = triple["object"].split(" while writing paper")[0]
+                    institutions.append(institution)
+                    institutions = list(set(institutions))
+            
+            wiki_articles.append(find_wiki_article_by_name(names, wiki_data))
+            wiki_articles = wiki_articles + find_wiki_article_by_institution(institutions, wiki_data)
+            question["wiki_data"]= wiki_articles
         
-        wiki_articles.append(find_wiki_article_by_name(names, wiki_data))
-        wiki_articles = wiki_articles + find_wiki_article_by_institution(institutions, wiki_data)
-        question["wiki_data"]= wiki_articles
+        new_dataset.append(question)
     
-    new_dataset.append(question)
-    #print(f'Processed question id: {question["id"]}')
+        save_intermediate_result(outputdata_name, new_dataset)
 
-    save_intermediate_result("data/processed/final/post_processed_data_alex+wiki500.json", new_dataset)
+
+
+def main():
+
+    alex_data = read_json_("data/processed/alex/post_processed_data500.json")
+    wiki_data = read_json_("data/external/wiki_data_processed.txt")
+    outputdata_name =  "data/processed/alex/pre_processed_data1000_700-799-3.json"
+
+    add_wikidata(alex_data=alex_data, wiki_data=wiki_data, outputdata_name=outputdata_name)
+##############################################################################
+if __name__ == "__main__":
+    main()
