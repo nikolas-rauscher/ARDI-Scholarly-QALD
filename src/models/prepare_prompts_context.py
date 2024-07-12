@@ -20,7 +20,7 @@ config.read('config.ini')
 
 def prepare_data_only_ve(examples, prompt_template, output_file):
     """
-    Prepare the data by generating contexts for each example.
+    Prepare the data by generating contexts for each example with all 3 resources
 
     Args:
         examples (list): List of examples.
@@ -46,12 +46,12 @@ def prepare_data_only_ve(examples, prompt_template, output_file):
         
         wiki_context = ""
         for wiki_text in example['wiki_data']:
-            sentences = str(wiki_text)
+            # sentences = ['. '.join(list(item.values())) for item in wiki_text]
+            sentences=str(wiki_text).split('.')
             wiki_evidence = evidence_sentence_selection(
-                example['question'], sentences.split('.'), conserved_percentage=0.1, max_num=40
+                example['question'], sentences, conserved_percentage=0.2, max_num=40
             )
-            wiki_context = wiki_evidence
-
+            wiki_context = '. '.join(wiki_evidence)
         prepared_example = {
             "id": example["id"],
             "question": example["question"],
@@ -71,7 +71,7 @@ def prepare_data_only_ve(examples, prompt_template, output_file):
 
 def prepare_data(examples, prompt_template, output_file):
     """
-    Prepare the data by generating contexts for each example.
+    Prepare the data by generating contexts for each example with dnlp and openalex
 
     Args:
         examples (list): List of examples.

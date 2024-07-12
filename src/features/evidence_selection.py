@@ -104,7 +104,7 @@ def evidence_sentence_selection(question, sentences, conserved_percentage=0.1, m
         sentence) for sentence in sentences]
     for q_embedding in q_embeddings:
         evidence_sentences += evidence_selection_per_embedding(
-            q_embedding, sentences_embeddings, sentences, num_sentences=min(max_num,int(conserved_percentage*len(sentences))), threshold=None)
+            q_embedding, sentences_embeddings, sentences, num_sentences=max(2,int(min(max_num,int(conserved_percentage*len(sentences)))/len(q_embeddings))), threshold=None)
     return evidence_sentences
 
 
