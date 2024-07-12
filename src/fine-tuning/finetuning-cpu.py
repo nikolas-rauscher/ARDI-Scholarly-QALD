@@ -22,7 +22,7 @@ nltk.download("punkt")
 metric = evaluate.load("rouge")
 with open(config['FilePaths']['prompt_template']) as f:
     prompt_template = f.read()
-
+tokenizer = None
 
 def load_tokenizer(model_id):
     """_summary_
@@ -369,7 +369,7 @@ def perform_cross_validation(model_id, path_train, target_column, n_splits=5):
 
 if __name__ == "__main__":
 
-    model_id = "roneneldan/TinyStories-1M"  # change this
+    model_id = "mistralai/Mistral-7B-v0.3"  # change this
     dataset_id = "Sefika/KGQA_triples"  # change this..
     path_train = config['FilePaths']['finetune_path_train']
 
