@@ -1,16 +1,21 @@
-import configparser
 import json
+import configparser
 from tqdm import tqdm
 import sys
 import os
+PACKAGE_PARENT = '.'
+SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.expanduser(__file__))))
+sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
+PREFIX_PATH = "/".join(os.path.dirname(os.path.abspath(__file__)).split("/")[:-2]) + "/"
+print(PREFIX_PATH)
+sys.path.append('..')
 
-sys.path.append('./src')
 from features.evidence_selection import evidence_triple_selection, triple2text
-from models.verbalizer.generatePrompt import verbalise_triples
+
+from verbalizer.generatePrompt import verbalise_triples
 
 config = configparser.ConfigParser()
-config.read('config.ini')
-
+config.read(PREFIX_PATH +'config.ini')
 
 def prepare_data(examples, prompt_template, output_file):
     """
@@ -27,7 +32,7 @@ def prepare_data(examples, prompt_template, output_file):
     prepared_data = []
     for example in tqdm(examples, desc="Preparing Data"):
   
-        tripples_number = len(example['all_tripples'])
+        tripples_number = len(example['all_triples'])
 
         # Plain Triples
         # context_plain = '. '.join([triple2text(triple)
@@ -35,7 +40,7 @@ def prepare_data(examples, prompt_template, output_file):
 
         # Evidence Matching
         triples_evidence = evidence_triple_selection(
-            example['question'], example['all_tripples'])
+            example['question'], example['all_triples'][0])
         context_evidence = '. '.join(
             [triple2text(triple) for triple in triples_evidence])
 
