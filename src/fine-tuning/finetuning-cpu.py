@@ -20,7 +20,7 @@ config.read('config.ini')
 
 nltk.download("punkt")
 metric = evaluate.load("rouge")
-with open(config['FilePaths']['prompt_template']) as f:
+with open(config['FilePaths']['prompt_template'], 'r') as f:
     prompt_template = f.read()
 tokenizer = None
 
@@ -191,13 +191,9 @@ def load_dataset_from_hub(dataset_id):
     """
     # Load dataset from the hub
 
-    train_dataset = load_dataset(dataset_id, split="train")
-    test_dataset = load_dataset(dataset_id, split="test")
+    train_dataset = load_dataset(dataset_id, download_mode="force_redownload")
 
-    print(f"Train dataset size: {len(train_dataset)}")
-    print(f"test dataset size: {len(test_dataset)}")
-
-    return train_dataset, test_dataset
+    return train_dataset
 
 
 # def formatting_prompt_func(example, max_length=4096):
@@ -218,13 +214,14 @@ def formatting_prompts_func(examples):
     global prompt_template
     prompt_texts = []
     # Iterate through each example in the batch
-    for question, answer, context in zip(examples['question'], examples['answer'], examples['context']):
+    for question, answer, context in zip(examples['question'], examples['answer'], examples['contexts']):
         # Format each example as a prompt_template-response pair
         prompt_text = prompt_template.format(
             question=question, context=context)+answer
         prompt_texts.append(prompt_text)
     # Return the list of formatted texts
     return prompt_texts
+
 
 
 def get_cross_validation_splits(train_dataset, target_column, n_splits=5):
@@ -239,8 +236,8 @@ def get_cross_validation_splits(train_dataset, target_column, n_splits=5):
     Returns:
         List of tuples: Each tuple contains train indices and validation indices for each split.
     """
-    train_df = train_dataset.to_pandas()
-    X, y = train_df.drop(columns=[target_column]), train_df[target_column]
+    train_df = train_dataset
+    X, y = train_df['train']['question'], train_df['train'][target_column]
 
     skf = StratifiedKFold(n_splits=n_splits)
     return [(train_idx, val_idx) for train_idx, val_idx in skf.split(X, y)]
@@ -320,7 +317,7 @@ def load_dataset_local(path_train):
     return Dataset.from_pandas(train_df)
 
 
-def perform_cross_validation(model_id, path_train, target_column, n_splits=5):
+def perform_cross_validation(model_id, dataset_id, target_column, n_splits=5):
     """
     Perform cross-validation and calculate the standard error.
 
@@ -334,8 +331,8 @@ def perform_cross_validation(model_id, path_train, target_column, n_splits=5):
     Returns:
         mean_accuracy, std_error: The mean accuracy and standard error.
     """
-    # train_dataset, _ = load_dataset_from_hub(dataset_id=dataset_id)
-    train_dataset = load_dataset_local(path_train)
+    train_dataset = load_dataset_from_hub(dataset_id=dataset_id)
+
     splits = get_cross_validation_splits(
         train_dataset, target_column, n_splits=n_splits)
 
@@ -343,8 +340,8 @@ def perform_cross_validation(model_id, path_train, target_column, n_splits=5):
 
     for i, (train_idx, val_idx) in enumerate(splits):
         print(f"Processing fold {i + 1}/{n_splits}...")
-        train_split = train_dataset.select(train_idx)
-        val_split = train_dataset.select(val_idx)
+        train_split = train_dataset['train'].select(train_idx)
+        val_split = train_dataset['train'].select(val_idx)
 
         trainer = fine_tune_model(
             model_id, train_split, val_split)
@@ -369,11 +366,11 @@ def perform_cross_validation(model_id, path_train, target_column, n_splits=5):
 
 if __name__ == "__main__":
 
-    model_id = "mistralai/Mistral-7B-v0.3"  # change this
-    dataset_id = "Sefika/KGQA_triples"  # change this..
+    model_id = "meta-llama/Meta-Llama-3-8B-Instruct"  # change this
+    dataset_id = "Sefika/KGQA_prompt_context"  # change this..
     path_train = config['FilePaths']['finetune_path_train']
 
     # target_labels = 'rel2id.json'  # file path to your target classes.
     target_column = "answer"
     trainer = perform_cross_validation(
-        model_id, path_train, target_column)
+        model_id, dataset_id, target_column)
