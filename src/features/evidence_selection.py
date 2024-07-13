@@ -85,7 +85,7 @@ def extract_triplets(text):
     return triplets
 
 
-def evidence_sentence_selection(question, sentences, conserved_percentage=0.1, triplet_extractor=None, llm=False):
+def evidence_sentence_selection(question, sentences, conserved_percentage=0.1, max_num=50, triplet_extractor=None, llm=False):
     """select the sentence from quetion and sentences that
 
     Args:
@@ -98,13 +98,13 @@ def evidence_sentence_selection(question, sentences, conserved_percentage=0.1, t
             sentence) for sentence in extract_triple_from_question(question, triplet_extractor)]
     else:
         q_embeddings = [create_embeddings_from_sentence(
-            question, triplet_extractor)]
+            question)]
     evidence_sentences = []
     sentences_embeddings = [create_embeddings_from_sentence(
         sentence) for sentence in sentences]
     for q_embedding in q_embeddings:
         evidence_sentences += evidence_selection_per_embedding(
-            q_embedding, sentences_embeddings, sentences, num_sentences=int(conserved_percentage*len(sentences)), threshold=threshold)
+            q_embedding, sentences_embeddings, sentences, num_sentences=max(2,int(min(max_num,int(conserved_percentage*len(sentences)))/len(q_embeddings))), threshold=None)
     return evidence_sentences
 
 
@@ -191,8 +191,9 @@ def create_embeddings_from_sentence(sentence):
 
 
 def triple2text(triple):
+    if(type(triple["object"])==list):
+        triple["object"]='+'.join(triple["object"])
     results = triple["subject"] + " " + triple["predicate"] + " " + triple["object"]
-    
     return results
 
 
