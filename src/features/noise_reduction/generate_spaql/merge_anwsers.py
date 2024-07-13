@@ -34,13 +34,13 @@ def merge_answers(train_dataset_path, sparql_answers_path, output_file_path):
     
     os.makedirs(os.path.dirname(output_file_path), exist_ok=True)
     
-    with open(output_file_path, 'w') as output_file:
-        json.dump(train_data, output_file, indent=2)
+    with open(output_file_path, 'w', encoding='utf-8') as output_file:
+        json.dump(train_data, output_file, indent=4, ensure_ascii=False)
     
     print(f'Merged data saved to {output_file_path} successfully!')
 
-train_dataset_path = 'data/processed/processed_data500.json'
+train_dataset_path = 'results/prompt_context/prepared_data_file_zero_shot_prompting_final.json'
 sparql_answers_path = 'src/features/noise_reduction/generate_spaql/datasets/answers/filterd_awnsers/1000_qestions/no_numbers_filterd_awnsers.json'
-output_file_path = 'src/features/noise_reduction/generate_spaql/datasets/answers/merged_dataset/1000_qestions/processed_data500_merged_dataset.json'
+output_file_path = 'results/prompt_context/prepared_data_file_zero_shot_prompting_final.json'
 
 merge_answers(train_dataset_path, sparql_answers_path, output_file_path)
