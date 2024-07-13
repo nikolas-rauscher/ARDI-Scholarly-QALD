@@ -83,7 +83,7 @@ def process_directory(input_directory, output_directory):
             print(f"Processed file: {filename}")
 
 if __name__ == "__main__":
-    input_directory = "data/dev/results/final"  
-    output_directory = "data/dev/results/final-results"  
+    input_directory = "src/features/noise_reduction/generate_spaql/datasets/answers"  
+    output_directory = "src/features/noise_reduction/generate_spaql/datasets/eval_results"  
 
     process_directory(input_directory, output_directory)

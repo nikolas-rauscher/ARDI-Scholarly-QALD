@@ -233,27 +233,18 @@ def answer_generation(sparql_file_path, base_save_path, error_file_path):
 
 
 if __name__ == '__main__':
-    top_n_similar_questions = "dev_questions_top_5_similar_questions_v2.json"
-    base_save_path = 'data/dev/results/final'
-    error_file_path = 'data/dev/results/final/failed_queries.json'
+    top_n_similar_questions = "src/features/noise_reduction/generate_spaql/datasets/dev_questions_top_5_similar_questions.json"
+    base_save_path = 'src/features/noise_reduction/generate_spaql/datasets/SPARQL'
+    awnser_file_path = 'src/features/noise_reduction/generate_spaql/datasets/answers'
+    error_file_path = 'src/features/noise_reduction/generate_spaql/datasets/failed_queries'
     shot = 3
     limit = 1000
     with_schema = False
     
     # sparql_query_path = query_generation(top_n_similar_questions, base_save_path, shot, limit, with_schema)
-    sparql_query_path = "data/dev/results/final/sparql_query_without_schema_3_shot_1000_Questions_20240712.json" 
+    sparql_query_path = "src/features/noise_reduction/generate_spaql/datasets/SPARQL/sparql_query_without_schema_3_shot_1000_Questions_20240712.json" 
     
-    answer_generation(sparql_query_path, base_save_path, error_file_path)
+    answer_generation(sparql_query_path, awnser_file_path, error_file_path)
     
     
-    # top_n_similar_questions = "dev_questions_top_5_similar_questions_v2.json"
-    # base_save_path = 'data/dev/results/final'
-    # error_file_path = 'data/dev/results/final/failed_queries_with_schema.json'
-    # shot = 3
-    # limit = 100
-    # with_schema = True
-    
-    # # sparql_query_path = query_generation(top_n_similar_questions, base_save_path, shot, limit, with_schema)
-    # # sparql_query_path = "data/dev/results/final/sparql_query_with_schema_3_shot_100_Questions_20240712.json"
-    # answer_generation(sparql_query_path, base_save_path, error_file_path)
-    
+
