@@ -1,3 +1,4 @@
+import sys
 sys.path.append('./src')
 sys.path.append('..')
 from features.evidence_selection import evidence_triple_selection, triple2text, evidence_sentence_selection
@@ -5,7 +6,6 @@ from models.verbalizer.generatePrompt import verbalise_triples
 import json
 import configparser
 from tqdm import tqdm
-import sys
 import os
 PACKAGE_PARENT = '.'
 SCRIPT_DIR = os.path.dirname(os.path.realpath(

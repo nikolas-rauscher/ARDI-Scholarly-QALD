@@ -44,25 +44,63 @@ def calculate_rouge(answers_to_evaluate, reference_answers):
     return all_scores
 
 
+def calculate_rouge2(answers_to_evaluate, reference_answers):
+    # Initialize a ROUGE scorer.
+    scorer = rouge_scorer.RougeScorer(
+        ['rouge1', 'rouge2', 'rougeL'], use_stemmer=True)
+
+    # Initialize a dictionary to hold all our scores.
+    all_scores = {}
+    idx=0
+    # Score each answer.
+    for generated_answer,reference_answer in zip(answers_to_evaluate,reference_answers):
+        answer_text = generated_answer
+        reference_text = reference_answer["answer"]
+
+        if reference_text:
+            scores = scorer.score(reference_text, answer_text)
+
+            # Create a dictionary for each score type with precision, recall, and fmeasure.
+            all_scores[idx] = {
+                score_type: {
+                    'precision': score.precision,
+                    'recall': score.recall,
+                    'fmeasure': score.fmeasure
+                } for score_type, score in scores.items()
+            }
+            idx+=1
+        else:
+            print(f"No reference answer found for ID {answer_id}")
+    return all_scores
+def ensure_folder_exists(folder_path):
+    if not os.path.exists(folder_path):
+        os.makedirs(folder_path)
+
 if __name__ == '__main__':
-    directory = 'results/hm_results/processed/'
+    directory = 'results/zero-shot_Flan_T5_large'
     gt_path = 'data/processed/processed_data.json'
-    output_dir = 'results/hm_results/scores_rouge/'
+    ref_directory = 'results/train_test_data'
+    output_dir = 'results/zero-shot_Flan_T5_large/evaluation'
 
     score_filename = 'rouge_scores.json'
+    ensure_folder_exists(output_dir)
 
-    with open(gt_path, 'r') as f:
-        reference_answers = json.load(f)
+    # with open(gt_path, 'r') as f:
+    #     reference_answers = json.load(f)
 
     for filename in os.listdir(directory):
-        if ("zero" not in filename):
+        matching_files = [f for f in os.listdir(ref_directory) if f.startswith(filename[:6])]
+        if (("test_" not in filename) or (len(matching_files)==0)):
             continue
         if filename.endswith(".json"):
             system_path = os.path.join(directory, filename)
-
+        system_path_ref = os.path.join(ref_directory, matching_files[0])
+        with open(system_path_ref, 'r') as f:
+            reference_answers=json.load(f)
         with open(system_path, 'r') as f:
             data = json.load(f)
-            all_scores = calculate_rouge(data, reference_answers)
+            all_scores = calculate_rouge2(data, reference_answers)
+            # all_scores = calculate_rouge(data, reference_answers)
         # Write the scores to a file in JSON format.
         with open(os.path.join(output_dir, ('scores'+filename[:-5]+'.json').replace('answer_zero_shot_prompting', '_zero-shot')), 'w') as score_file:
             json.dump(all_scores, score_file, indent=4)
