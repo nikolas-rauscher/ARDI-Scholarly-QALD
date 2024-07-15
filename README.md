@@ -6,10 +6,10 @@ This project is a student project developed for the Scholarly QALD Challenge 202
 
 Our goal is to build a Question Answering system capable of answering questions related to the scholarly domain. To achieve this, we utilize an approach that involves:
 
-1. **Context Creation:** We extract relevant information from various data sources, including:
+1. **Information Extraction:** We extract relevant information (triples) from 3 data sources, including:
     - DBLP KG
     - OpenAlex KG
-    - Wikipedia 
+    - Wikipedia
 2. **Evidence Matching and Verbalization:** We employ evidence matching techniques to identify relevant information within the context and then verbalize it into a format suitable for question answering.
 3. **Zero-Shot Prompting and Fine-tuning:** We leverage pre-trained language models and fine-tune them for question answering using the created context. We experiment with both zero-shot prompting and fine-tuning approaches.
 
@@ -23,7 +23,7 @@ We experiment with several state-of-the-art language models:
 - T5
 
 ### Methodology - Answer Generation
-<img width="1131" alt="image" src="https://github.com/user-attachments/assets/5119d6d9-f203-4a3d-810e-b57280d8d3a0">
+<img width="1131" alt="image" src="https://i.imgur.com/ZrOr4YG.png">
 
 ## Folder Structure
 ```bash
@@ -52,21 +52,6 @@ We experiment with several state-of-the-art language models:
 │   └── README.md
 ├── results
 │   ├── README.md
-│   ├── fine_tuning_preds_epoch_results
-│   │   └── evaluation
-│   ├── fine_tuning_preds_epoch_results_out
-│   │   └── scores
-│   ├── hm_results
-│   │   ├── hm_evaluations
-│   │   ├── processed
-│   │   ├── scores
-│   │   ├── scores_rouge
-│   │   └── todo
-│   ├── prompt_context
-│   ├── zero-shot_Flan_T5_large
-│   │   └── evaluation
-│   └── zero-shot_Flan_T5_large_out
-│       └── scores
 └── src
     ├── __init__.py
     ├── data
@@ -110,16 +95,6 @@ We experiment with several state-of-the-art language models:
     │           ├── crate-top-n.py
     │           ├── create_and_run_sparql.py
     │           ├── datasets
-    │           │   ├── SPARQL
-    │           │   ├── answers
-    │           │   │   ├── filterd_awnsers
-    │           │   │   │   └── 1000_qestions
-    │           │   │   ├── final
-    │           │   │   └── merged_dataset
-    │           │   │       └── 1000_qestions
-    │           │   ├── cleand_datasets
-    │           │   ├── eval_results
-    │           │   └── failed_queries
     │           ├── eval_results.py
     │           ├── get_example_dataset.py
     │           ├── merge_anwsers.py
