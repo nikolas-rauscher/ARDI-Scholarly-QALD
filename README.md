@@ -1,4 +1,4 @@
-# ARDI-Project
+# ARDI-Project Scholarly QALD Challenge 2024
 
 This project is a student project developed for the Scholarly QALD Challenge 2024: [https://kgqa.github.io/scholarly-QALD-challenge/2024/](https://kgqa.github.io/scholarly-QALD-challenge/2024/).
 
@@ -22,6 +22,8 @@ We experiment with several state-of-the-art language models:
 - Mistral
 - T5
 
+### Methodology - Answer Generation
+<img width="1131" alt="image" src="https://github.com/user-attachments/assets/5119d6d9-f203-4a3d-810e-b57280d8d3a0">
 
 ## Folder Structure
 ```bash
