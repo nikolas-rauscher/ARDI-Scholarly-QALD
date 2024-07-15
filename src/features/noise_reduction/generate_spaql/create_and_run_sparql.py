@@ -106,13 +106,13 @@ def construct_prompt(question, sim_questions, examples, author_dblp_uri, with_sc
             """
 
 
-def generate_sparql(question, examples, with_schema):
+def generate_sparql(question, examples, with_schema, model_name):
     question_id = question['id']
     actual_question = question['question']
     author_dblp_uri = question['author_dblp_uri']
     prompt = construct_prompt(actual_question, question['top_n_similar_questions'], examples, author_dblp_uri, with_schema)
     print("Generated Prompt:", prompt)
-    sparql = run_llm(prompt)
+    sparql = run_llm(prompt, model_name)
     cleaned_sparql = utils.post_process_query(sparql)
     cleaned_sparql = cleaned_sparql.replace('```sparql', '').replace('```', '').strip()
     result = {
@@ -126,17 +126,18 @@ def generate_sparql(question, examples, with_schema):
     return result
 
 
-def run_llm(prompt):
+def run_llm(prompt, model_name):
     load_dotenv()
     key = os.getenv("OPENAI_API_KEY")
     if not key:
         raise ValueError("OpenAI API key not found in environment variables.")
+    
     headers = {
         "Content-Type": "application/json",
         "Authorization": f"Bearer {key}"
     }
     json_data = {
-        "model": "gpt-3.5-turbo",
+        "model": model_name,
         "messages": [
             {"role": "system", "content": "You are a helpful assistant."},
             {"role": "user", "content": prompt}
@@ -144,23 +145,35 @@ def run_llm(prompt):
         "temperature": 0,
         "max_tokens": 200
     }
-    response = requests.post('https://api.openai.com/v1/chat/completions', headers=headers, json=json_data)
-    response.raise_for_status()
-    return response.json()["choices"][0]["message"]["content"]
+    
+    max_retries = 5
+    backoff_factor = 0.3
+    for attempt in range(max_retries):
+        try:
+            response = requests.post('https://api.openai.com/v1/chat/completions', headers=headers, json=json_data, timeout=(10, 60))
+            response.raise_for_status()  # Raise an error for bad responses
+            return response.json()["choices"][0]["message"]["content"]
+        except requests.exceptions.RequestException as e:
+            print(f"Attempt {attempt + 1} failed: {e}")
+            if attempt < max_retries - 1:
+                sleep(backoff_factor * (2 ** attempt))  # Exponential backoff
+            else:
+                raise
 
 
-def generate_filename(base_path, with_schema, shot, limit, file_type):
+def generate_filename(base_path, with_schema, shot, limit, model_name, file_type):
     schema_part = "with_schema" if with_schema else "without_schema"
-    timestamp = datetime.datetime.now().strftime("%Y%m%d")
-    return f"{base_path}/{file_type}_{schema_part}_{shot}_shot_{limit}_Questions_{timestamp}.json"
+    # timestamp = datetime.datetime.now().strftime("%Y%m%d")
+    timestamp = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
+    return f"{base_path}/{file_type}_{schema_part}_{shot}_shot_{limit}_Questions_{model_name}_{timestamp}.json"
 
 
-def query_generation(top_n_similar_questions_path, base_save_path, shot, limit, with_schema):
+def query_generation(top_n_similar_questions_path, base_save_path, shot, limit, with_schema, model_name):
     test_questions_similar_questions = utils.read_questions(top_n_similar_questions_path)
-    save_generated_sparql_to = generate_filename(base_save_path, with_schema, shot, limit, "sparql_query")
+    save_generated_sparql_to = generate_filename(base_save_path, with_schema, shot, limit, model_name, "sparql_query")
     results = []
     for question in tqdm(test_questions_similar_questions[:limit], desc="Generating SPARQL queries"):
-        result = generate_sparql(question, shot, with_schema)
+        result = generate_sparql(question, shot, with_schema, model_name)
         results.append(result)
     with open(save_generated_sparql_to, 'w') as outfile:
         json.dump(results, outfile, indent=2)
@@ -236,15 +249,13 @@ if __name__ == '__main__':
     top_n_similar_questions = "src/features/noise_reduction/generate_spaql/datasets/dev_questions_top_5_similar_questions.json"
     base_save_path = 'src/features/noise_reduction/generate_spaql/datasets/SPARQL'
     awnser_file_path = 'src/features/noise_reduction/generate_spaql/datasets/answers'
-    error_file_path = 'src/features/noise_reduction/generate_spaql/datasets/failed_queries'
-    shot = 3
-    limit = 1000
+    error_file_path = 'src/features/noise_reduction/generate_spaql/datasets/failed_queries/failed_queries.json'
+    shot = 5
+    limit = 100
     with_schema = False
+    model_name = "gpt-4-turbo"
     
-    # sparql_query_path = query_generation(top_n_similar_questions, base_save_path, shot, limit, with_schema)
-    sparql_query_path = "src/features/noise_reduction/generate_spaql/datasets/SPARQL/sparql_query_without_schema_3_shot_1000_Questions_20240712.json" 
+    sparql_query_path = query_generation(top_n_similar_questions, base_save_path, shot, limit, with_schema, model_name)
+    # sparql_query_path = "src/features/noise_reduction/generate_spaql/datasets/SPARQL/sparql_query_without_schema_3_shot_1000_Questions_20240712.json" 
     
     answer_generation(sparql_query_path, awnser_file_path, error_file_path)
-    
-    
-
