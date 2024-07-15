@@ -165,6 +165,7 @@ data/processed/processed_data.json
 data/processed/test_post_processed_data_dblp.json
 #.idea/
 
+
 # Verbaliyzer
 src/models/verbalizer/graph2text/outputs/*
 src/models/verbalizer/processed_data.json

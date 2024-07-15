@@ -103,7 +103,9 @@ def process_all_files_in_folder(directory, process_func, result_keys):
         file_path = os.path.join(directory, file_name)
         print(f"Processing file: {file_name}")
         process_file(file_path, process_func, output_dir, result_keys)
-
+def ensure_folder_exists(folder_path):
+    if not os.path.exists(folder_path):
+        os.makedirs(folder_path)
 
 def ensure_folder_exists(folder_path):
     if not os.path.exists(folder_path):
@@ -114,10 +116,9 @@ if __name__ == "__main__":
     test_directory = "results/train_test_data"
     test_directory = "results/train_test_data"
     gt_path = "data/processed/processed_data_final500_format.json"
-    data_directories = ['results/zero-shot_Flan_T5_large',
-                        'results/fine_tuning_preds_epoch_results']
+    data_directories = ['results/zero-shot_Flan_T5_large','results/fine_tuning_preds_epoch_results']
     pipeline_add_question_ids(test_directory, gt_path)
-
+    
     for data_directory in data_directories:
         ensure_folder_exists(data_directory+'_out')
         pipeline_question_ids(test_directory=data_directory,
