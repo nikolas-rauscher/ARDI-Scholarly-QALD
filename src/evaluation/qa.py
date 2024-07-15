@@ -99,12 +99,15 @@ def main():
     with open(os.path.join(output_dir, 'scores.txt'), 'w') as f:
         f.write(f"EM: %f\n" % (exact_match_accuracy))
         f.write(f"METEOR: %f\n" % (avg_meteor_qa))
-
+def ensure_folder_exists(folder_path):
+    if not os.path.exists(folder_path):
+        os.makedirs(folder_path)
 
 if __name__ == '__main__':
-    directory = 'results/hm_results/processed/'
-    gt_path = 'data/processed/processed_data.json'
-    output_dir = 'results/hm_results/scores/' 
+    directory = 'results/fine_tuning_preds_epoch_results_out'
+    gt_path = 'data/processed/processed_data_final500_format.json'
+    output_dir = 'results/fine_tuning_preds_epoch_results_out/scores//' 
+    ensure_folder_exists(output_dir)
 
     for filename in os.listdir(directory):
         if filename.endswith(".json"):
