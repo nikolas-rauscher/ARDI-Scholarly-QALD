@@ -10,6 +10,19 @@ from time import sleep
 from tqdm import tqdm
 
 def construct_prompt(question, sim_questions, examples, author_dblp_uri, with_schema=False):
+    """
+    Constructs a prompt for generating SPARQL queries based on the provided question, similar questions, examples, and author DBLP URI.
+
+    Args:
+        question (str): The question to generate a SPARQL query for.
+        sim_questions (list): A list of similar questions.
+        examples (int): The number of examples to include in the prompt.
+        author_dblp_uri (str): The DBLP URI of the author.
+        with_schema (bool, optional): Whether to include the schema definition in the prompt. Defaults to False.
+
+    Returns:
+        str: The constructed prompt.
+    """
     example = ''
     if with_schema:
         if examples != 1:
@@ -107,6 +120,18 @@ def construct_prompt(question, sim_questions, examples, author_dblp_uri, with_sc
 
 
 def generate_sparql(question, examples, with_schema, model_name):
+    """
+    Generates a SPARQL query based on the provided question, examples, and model name.
+
+    Args:
+        question (dict): The question to generate a SPARQL query for.
+        examples (int): The number of examples to include in the prompt.
+        with_schema (bool): Whether to include the schema definition in the prompt.
+        model_name (str): The name of the model to use for generating the SPARQL query.
+
+    Returns:
+        dict: A dictionary containing the question ID, question, generated SPARQL query, author DBLP URI, and given answer.
+    """
     question_id = question['id']
     actual_question = question['question']
     author_dblp_uri = question['author_dblp_uri']
@@ -127,6 +152,16 @@ def generate_sparql(question, examples, with_schema, model_name):
 
 
 def run_llm(prompt, model_name):
+    """
+    Runs a Large Language Model (LLM) to generate a SPARQL query based on the provided prompt and model name.
+
+    Args:
+        prompt (str): The prompt to generate a SPARQL query for.
+        model_name (str): The name of the model to use for generating the SPARQL query.
+
+    Returns:
+        str: The generated SPARQL query.
+    """
     load_dotenv()
     key = os.getenv("OPENAI_API_KEY")
     if not key:
@@ -162,6 +197,20 @@ def run_llm(prompt, model_name):
 
 
 def generate_filename(base_path, with_schema, shot, limit, model_name, file_type):
+    """
+    Generates a filename based on the provided parameters.
+
+    Args:
+        base_path (str): The base path for the file.
+        with_schema (bool): Whether the schema definition is included.
+        shot (int): The number of shots (examples) used.
+        limit (int): The limit of questions.
+        model_name (str): The name of the model used.
+        file_type (str): The type of file (e.g., "sparql_query" or "answer").
+
+    Returns:
+        str: The generated filename.
+    """
     schema_part = "with_schema" if with_schema else "without_schema"
     # timestamp = datetime.datetime.now().strftime("%Y%m%d")
     timestamp = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
@@ -169,6 +218,20 @@ def generate_filename(base_path, with_schema, shot, limit, model_name, file_type
 
 
 def query_generation(top_n_similar_questions_path, base_save_path, shot, limit, with_schema, model_name):
+    """
+    Generates SPARQL queries for a list of questions and saves them to a file.
+
+    Args:
+        top_n_similar_questions_path (str): The path to the file containing the top N similar questions.
+        base_save_path (str): The base path to save the generated SPARQL queries.
+        shot (int): The number of shots (examples) used.
+        limit (int): The limit of questions.
+        with_schema (bool): Whether the schema definition is included.
+        model_name (str): The name of the model used.
+
+    Returns:
+        str: The path to the file where the generated SPARQL queries are saved.
+    """
     test_questions_similar_questions = utils.read_questions(top_n_similar_questions_path)
     save_generated_sparql_to = generate_filename(base_save_path, with_schema, shot, limit, model_name, "sparql_query")
     results = []
@@ -182,6 +245,13 @@ def query_generation(top_n_similar_questions_path, base_save_path, shot, limit, 
 
 
 def write_predicted_answer_to_file(answer_results, file_name):
+    """
+    Writes the predicted answers to a file.
+
+    Args:
+        answer_results (list): A list of dictionaries containing the question ID, SPARQL answer, and given answer.
+        file_name (str): The name of the file to write the answers to.
+    """
     newarr = []
     for item in answer_results:
         newanswer = []
@@ -200,6 +270,13 @@ def write_predicted_answer_to_file(answer_results, file_name):
 
 
 def error_analysis(answer_results, error_file):
+    """
+    Analyzes errors in the answer results and logs them to a file.
+
+    Args:
+        answer_results (list): A list of dictionaries containing the question ID, SPARQL answer, and given answer.
+        error_file (str): The name of the file to log errors to.
+    """
     with open(error_file, 'w') as ef:
         for item in answer_results:
             if not item['sparql_answer']:
@@ -207,6 +284,16 @@ def error_analysis(answer_results, error_file):
     print(f'Errors logged to {error_file}.')
 
 def answer_extraction(query, max_retries=2):
+    """
+    Extracts answers from the DBLP knowledge graph based on the provided SPARQL query.
+
+    Args:
+        query (str): The SPARQL query to execute.
+        max_retries (int, optional): The maximum number of retries in case of failure. Defaults to 2.
+
+    Returns:
+        dict or None: The extracted answers or None if failed.
+    """
     post_processed_query = utils.post_process_query(query)
     attempt = 0
     while attempt < max_retries:
@@ -224,6 +311,14 @@ def answer_extraction(query, max_retries=2):
 
 
 def answer_generation(sparql_file_path, base_save_path, error_file_path):
+    """
+    Generates answers for the SPARQL queries and saves them to a file.
+
+    Args:
+        sparql_file_path (str): The path to the file containing the SPARQL queries.
+        base_save_path (str): The base path to save the generated answers.
+        error_file_path (str): The path to the file to log errors.
+    """
     save_predicted_answer_to = sparql_file_path.replace("sparql_query", "answer")
     count = 0
     fin_queries = utils.read_questions(sparql_file_path)
@@ -251,9 +346,9 @@ if __name__ == '__main__':
     awnser_file_path = 'src/features/noise_reduction/generate_spaql/datasets/answers'
     error_file_path = 'src/features/noise_reduction/generate_spaql/datasets/failed_queries/failed_queries.json'
     shot = 5
-    limit = 100
-    with_schema = False
-    model_name = "gpt-4-turbo"
+    limit = 10000
+    with_schema = True
+    model_name = "gpt-3.5-turbo"
     
     sparql_query_path = query_generation(top_n_similar_questions, base_save_path, shot, limit, with_schema, model_name)
     # sparql_query_path = "src/features/noise_reduction/generate_spaql/datasets/SPARQL/sparql_query_without_schema_3_shot_1000_Questions_20240712.json" 

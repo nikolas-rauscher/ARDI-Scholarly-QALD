@@ -1,6 +1,16 @@
 import json
 
 def filter_non_empty_sparql_answers(input_file_path, output_file_path):
+    """
+    Filters out items with empty 'sparql_answer' from the input JSON file and saves the filtered data to a new JSON file.
+
+    Args:
+        input_file_path (str): The path to the input JSON file containing the data to be filtered.
+        output_file_path (str): The path where the filtered data will be saved.
+
+    Returns:
+        None
+    """
     with open(input_file_path, 'r') as infile:
         data = json.load(infile)
     
@@ -13,10 +23,29 @@ def filter_non_empty_sparql_answers(input_file_path, output_file_path):
     print(f'Filtered data saved to {output_file_path} successfully!')
 
 def filter_non_empty_non_numeric_sparql_answers(input_file_path, output_file_path):
+    """
+    Filters out items with empty or numeric-only 'sparql_answer' from the input JSON file and saves the filtered data to a new JSON file.
+
+    Args:
+        input_file_path (str): The path to the input JSON file containing the data to be filtered.
+        output_file_path (str): The path where the filtered data will be saved.
+
+    Returns:
+        None
+    """
     with open(input_file_path, 'r') as infile:
         data = json.load(infile)
         
     def contains_only_numbers(lst):
+        """
+        Checks if all characters in a string are digits.
+
+        Args:
+            lst (str): The string to check.
+
+        Returns:
+            bool: True if all characters are digits, False otherwise.
+        """
         return all(item.isdigit() for item in lst)
     
     filtered_data = [

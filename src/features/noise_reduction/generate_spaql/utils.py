@@ -3,6 +3,15 @@ import re
 
 
 def read_questions(file_name):
+    """
+    Reads questions from a JSON file and returns them as a list.
+
+    Args:
+        file_name (str): The name of the file containing the questions in JSON format.
+
+    Returns:
+        list: A list of questions read from the file.
+    """
     f = open(file_name)
     questions = json.load(f)
     f.close()
@@ -10,7 +19,17 @@ def read_questions(file_name):
 
 
 def post_process_query(sparql_query):
-    # remove_special_characters_and_extra_spaces and add_space_before_question_mark
+    """
+    Post-processes a SPARQL query to clean and format it for better readability and execution.
+
+    This function removes special characters, extra spaces, and adds a space before question marks in the SPARQL query.
+
+    Args:
+        sparql_query (str): The SPARQL query to be post-processed.
+
+    Returns:
+        str: The post-processed SPARQL query.
+    """
     # Replace '\n' with a space
     cleaned_sparql_query = sparql_query.replace("\n", ' ')
     cleaned_sparql_query = cleaned_sparql_query.replace("\'", '')
