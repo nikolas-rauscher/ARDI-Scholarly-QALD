@@ -3,9 +3,20 @@ import pandas as pd
 import re
 
 def clean_and_save_dataset(input_path, output_path):
+    """
+    Cleans and saves a dataset by filtering out entries with invalid or nonsensical answers.
+
+    This function reads a JSON file containing a dataset, filters out entries based on the length and content of their 'answer' field, and saves the cleaned dataset to a new JSON file.
+
+    Args:
+        input_path (str): The path to the input JSON file containing the dataset to be cleaned.
+        output_path (str): The path where the cleaned dataset will be saved.
+
+    Returns:
+        None
+    """
     with open(input_path, 'r') as file:
         data = json.load(file)
-
 
     df = pd.DataFrame(data)
     print(f"Number of entries before filtering: {df.shape[0]}")
