@@ -72,6 +72,7 @@ def calculate_rouge2(answers_to_evaluate, reference_answers):
         else:
             print(f"No reference answer found for ID {answer_id}")
     return all_scores
+
 def ensure_folder_exists(folder_path):
     if not os.path.exists(folder_path):
         os.makedirs(folder_path)

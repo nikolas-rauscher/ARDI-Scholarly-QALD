@@ -1,18 +1,17 @@
 
+from datasets import load_dataset
+from trl import SFTTrainer
+from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig, TrainingArguments
+from peft import LoraConfig
+from sklearn.metrics import precision_recall_fscore_support
 import torch
 import json
 import evaluate
-import nltk, torch
+import nltk
+import torch
 import numpy as np
 nltk.download("punkt")
 
-from sklearn.metrics import precision_recall_fscore_support
-from peft import LoraConfig
-
-from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig, TrainingArguments
-
-from trl import SFTTrainer
-from datasets import load_dataset
 
 metric = evaluate.load("rouge")
 
@@ -33,6 +32,7 @@ def load_tokenizer(model_id):
 
     return tokenizer
 
+
 def get_targets(labels_file_path):
     """_summary_
 
@@ -50,13 +50,15 @@ def get_targets(labels_file_path):
 
 
 def preprocess_logits_for_metrics(logits):
-  
-  if isinstance(logits, tuple):
-    logits = logits[0]
 
-  return logits.argmax(dim=-1)
+    if isinstance(logits, tuple):
+        logits = logits[0]
+
+    return logits.argmax(dim=-1)
 
 # helper function to postprocess text
+
+
 def postprocess_text(labels, preds):
     """_summary_
 
@@ -68,11 +70,12 @@ def postprocess_text(labels, preds):
         list, list: applied post processing to the returned answers from LLMs.
 
     """
-    preds = [pred.replace('\n','').split('Answer:')[-1].strip() for pred in preds]
-    labels = [label.replace('\n','').split('Answer:')[-1].strip() for label in labels]
+    preds = [pred.replace('\n', '').split('Answer:')[-1].strip()
+             for pred in preds]
+    labels = [label.replace('\n', '').split(
+        'Answer:')[-1].strip() for label in labels]
 
     return preds, labels
-
 
 
 def compute_metrics(eval_preds):
@@ -91,8 +94,9 @@ def compute_metrics(eval_preds):
 
     # Replace -100 in the preds as we can't decode them
     preds = np.where(preds != -100, preds, tokenizer.pad_token_id)
-    prediction_lens = [np.count_nonzero(pred != tokenizer.pad_token_id) for pred in preds]
-    
+    prediction_lens = [np.count_nonzero(
+        pred != tokenizer.pad_token_id) for pred in preds]
+
     # Decode generated summaries into text
     decoded_preds = tokenizer.batch_decode(preds, skip_special_tokens=True)
 
@@ -102,11 +106,12 @@ def compute_metrics(eval_preds):
     decoded_labels = tokenizer.batch_decode(labels, skip_special_tokens=True)
     # ROUGE expects a newline after each sentence
     # Some simple post-processing
-    grounds, preds = postprocess_text(decoded_labels,decoded_preds)
+    grounds, preds = postprocess_text(decoded_labels, decoded_preds)
 
     # compute micro F1, Recall and Precision
-    precision, recall, f1, s = precision_recall_fscore_support(grounds, preds, labels=targets, average='micro')
-    
+    precision, recall, f1, s = precision_recall_fscore_support(
+        grounds, preds, labels=targets, average='micro')
+
     decoded_preds = ["\n".join(pred.strip()) for pred in decoded_preds]
 
     decoded_labels = ["\n".join(label.strip()) for label in decoded_labels]
@@ -123,8 +128,9 @@ def compute_metrics(eval_preds):
     result['f1'] = f1
     result['recall'] = recall
     result['precision'] = precision
-    
+
     return {k: round(v, 4) for k, v in result.items()}
+
 
 def load_model(model_id):
     """Load the model from Hugging Face
@@ -137,7 +143,7 @@ def load_model(model_id):
     """
 
     compute_dtype = getattr(torch, "float16")
-    #quantization configs
+    # quantization configs
     quant_config = BitsAndBytesConfig(
         load_in_4bit=True,
         bnb_4bit_quant_type="nf4",
@@ -147,12 +153,12 @@ def load_model(model_id):
     model = AutoModelForCausalLM.from_pretrained(
         model_id,
         quantization_config=quant_config,
-        device_map={"": 0} 
-        )
-    #for single GPU
+        device_map={"": 0}
+    )
+    # for single GPU
     model.config.use_cache = False
     model.config.pretraining_tp = 1
-    
+
     return model
 
 
@@ -166,14 +172,13 @@ def load_dataset_from_hub(dataset_id):
         val_dataset, train_dataset: the validation and train datasets
     """
     # Load dataset from the hub
-    
+
     train_dataset = load_dataset(dataset_id, split="train")
     val_dataset = load_dataset(dataset_id, split="validation")
-    
+
     print(f"Train dataset size: {len(train_dataset)}")
     print(f"Validation dataset size: {len(val_dataset)}")
-    
-    
+
     return train_dataset, val_dataset
 
 
@@ -185,7 +190,7 @@ def formatting_prompts_func(example):
     Returns:
         formatted_texts: formated prompts
     """
-     
+
     formatted_texts = []
 
     # Iterate through each example in the batch
@@ -195,6 +200,7 @@ def formatting_prompts_func(example):
         formatted_texts.append(formatted_text)
     # Return the list of formatted texts
     return formatted_texts
+
 
 def fine_tuning(model_id, dataset_id, target_labels):
     """_summary_
@@ -211,7 +217,7 @@ def fine_tuning(model_id, dataset_id, target_labels):
     print("Fine tuning model: ", model_id, " on dataset: ", dataset_id)
 
     train_dataset, val_dataset = load_dataset_from_hub(dataset_id)
-    global targets 
+    global targets
     targets = get_targets(target_labels)
     # quantized pretrained model
     model = load_model(model_id)
@@ -230,62 +236,59 @@ def fine_tuning(model_id, dataset_id, target_labels):
     global tokenizer
     tokenizer = load_tokenizer(model_id)
 
-
-    #declare training arguments
-    #please change it for more than one epoch. such as add val_loss for evaluation on epoch..
+    # declare training arguments
+    # please change it for more than one epoch. such as add val_loss for evaluation on epoch..
     training_args = TrainingArguments(
-            output_dir=repository_id,
-            num_train_epochs=1,
-            per_device_train_batch_size=4,
-            gradient_accumulation_steps=1,
-            optim="paged_adamw_32bit",
-            save_steps=25,
-            logging_steps=25,
-            learning_rate=2e-4,
-            weight_decay=0.001,
-            fp16=False,
-            bf16=False,
-            max_grad_norm=0.3,
-            max_steps=-1,
-            warmup_ratio=0.03,
-            group_by_length=True,
-            lr_scheduler_type="constant",
-            report_to="tensorboard",
-        )
-
+        output_dir=repository_id,
+        num_train_epochs=1,
+        per_device_train_batch_size=4,
+        gradient_accumulation_steps=1,
+        optim="paged_adamw_32bit",
+        save_steps=25,
+        logging_steps=25,
+        learning_rate=2e-4,
+        weight_decay=0.001,
+        fp16=False,
+        bf16=False,
+        max_grad_norm=0.3,
+        max_steps=-1,
+        warmup_ratio=0.03,
+        group_by_length=True,
+        lr_scheduler_type="constant",
+        report_to="tensorboard",
+    )
 
     # declare trainer
-    trainer = SFTTrainer( #based on RLHF
-            model=model,
-            args=training_args,
-            train_dataset=train_dataset,
-            eval_dataset=val_dataset,
-            formatting_func=formatting_prompts_func,
-            peft_config=lora_config,
-            tokenizer=tokenizer,
-            compute_metrics=compute_metrics,        
-            max_seq_length= None,
-            packing=False,
-        )
+    trainer = SFTTrainer(  # based on RLHF
+        model=model,
+        args=training_args,
+        train_dataset=train_dataset,
+        eval_dataset=val_dataset,
+        formatting_func=formatting_prompts_func,
+        peft_config=lora_config,
+        tokenizer=tokenizer,
+        compute_metrics=compute_metrics,
+        max_seq_length=None,
+        packing=False,
+    )
 
     trainer.train()
-    
-    #save trainer
+
+    # save trainer
     trainer.save_model(training_args.output_dir)
     # merge adapter and pretrained weights
     model = model.merge_and_unload()
-    #save fine-tuned model
+    # save fine-tuned model
     model.save_pretrained(training_args.output_dir)
     tokenizer.save_pretrained(training_args.output_dir)
-    
+
     return trainer
 
+
 if __name__ == "__main__":
-    
-    model_id = "mistralai/Mistral-7B-Instruct-v0.2" #change this
-    dataset_id = "Sefika/tacrev_prompt" #change this..
 
-    target_labels = 'rel2id.json' #file path to your target classes.
-    trainer = fine_tuning(model_id, dataset_id, target_labels )
+    model_id = "mistralai/Mistral-7B-Instruct-v0.2"  # change this
+    dataset_id = "Sefika/tacrev_prompt"  # change this..
 
-
+    target_labels = 'rel2id.json'  # file path to your target classes.
+    trainer = fine_tuning(model_id, dataset_id, target_labels)
