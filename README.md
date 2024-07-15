@@ -31,41 +31,67 @@ We experiment with several state-of-the-art language models:
 .
 .
 ├── README.md
+├── config.py
 ├── data
 │   ├── README.md
 │   ├── external
 │   │   └── README.md
 │   ├── processed
-│   │   ├── README.md
-│   │   └── cleand_dataset
+│   │   ├── alex
+│   │   │   └── README.md
+│   │   ├── cleand_dataset
+│   │   └── dblp
+│   │       └── README.md
 │   └── raw
 │       ├── README.md
 │       └── dataset
 ├── docs
 │   └── README.md
+├── main.py
 ├── reports
 │   └── README.md
 ├── results
 │   ├── README.md
+│   ├── fine_tuning_preds_epoch_results
+│   │   └── evaluation
+│   ├── fine_tuning_preds_epoch_results_out
+│   │   └── scores
 │   ├── hm_results
 │   │   ├── hm_evaluations
 │   │   ├── processed
 │   │   ├── scores
 │   │   ├── scores_rouge
 │   │   └── todo
-│   └── prompt_context
+│   ├── prompt_context
+│   ├── zero-shot_Flan_T5_large
+│   │   └── evaluation
+│   └── zero-shot_Flan_T5_large_out
+│       └── scores
 └── src
     ├── __init__.py
     ├── data
+    │   ├── README.md
+    │   ├── add_wiki_data.py
+    │   ├── analyse_dataset_alex.py
+    │   ├── analyse_dataset_dblp.py
+    │   ├── create_dataset_alex.py
+    │   ├── create_dataset_dblp.py
     │   ├── data
     │   │   └── processed
     │   ├── evaluation
     │   │   └── qa_eval.py
-    │   ├── make_dataset.py
-    │   └── make_prompt.py
+    │   ├── make_prompt.py
+    │   ├── merge_triples.py
+    │   ├── postprocessesing_wikidata.py
+    │   ├── postprocessing_alex.py
+    │   ├── postprocessing_dblp.py
+    │   ├── process_wikidata.py
+    │   ├── run_queries.py
+    │   └── run_query.py
     ├── evaluation
+    │   ├── README.md
     │   ├── hm_auto.py
-    │   ├── qa.py
+    │   ├── qa_eval.py
     │   ├── results_prepocess.py
     │   ├── rouge.py
     │   └── scripts_for_human_eval
@@ -76,7 +102,6 @@ We experiment with several state-of-the-art language models:
     │       ├── plot_human_eval.py
     │       └── results
     ├── features
-    │   ├── build_features.py
     │   ├── evidence_selection.py
     │   └── noise_reduction
     │       ├── README.md
@@ -104,21 +129,18 @@ We experiment with several state-of-the-art language models:
     │   └── finetuning.py
     ├── models
     │   ├── README.md
-    │   ├── main.py
-    │   ├── predict_model.py
     │   ├── prepare_prompts_context.py
-    │   ├── train_model.py
     │   ├── verbalizer
     │   │   ├── README.md
     │   │   ├── __init__.py
     │   │   ├── generatePrompt.py
     │   │   ├── prompt_verbalizer.py
     │   │   └── verbalisation_module.py
-    │   ├── zero_shot_prompting.py
     │   └── zero_shot_prompting_pipeline.py
     └── visualization
         └── visualize.py
 
-45 directories, 44 files
+55 directories, 55 files
+
 
 ```
