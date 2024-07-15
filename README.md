@@ -1,6 +1,6 @@
 # ARDI-Project
 
-This project is a student project developed for the Scholarly QALD Challenge 2024: @[https://kgqa.github.io/scholarly-QALD-challenge/2024/](https://kgqa.github.io/scholarly-QALD-challenge/2024/).
+This project is a student project developed for the Scholarly QALD Challenge 2024: [https://kgqa.github.io/scholarly-QALD-challenge/2024/](https://kgqa.github.io/scholarly-QALD-challenge/2024/).
 
 ## Our Approach
 
