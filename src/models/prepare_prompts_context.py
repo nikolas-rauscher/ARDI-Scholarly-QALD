@@ -56,6 +56,7 @@ def prepare_data_only_ve(examples, prompt_template, output_file):
                     example['question'], sentences, conserved_percentage=0.2, max_num=40
                 )
                 wiki_context += '. '.join(wiki_evidence)
+
         prepared_example = {
             "id": example["id"],
             "question": example["question"],

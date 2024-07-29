@@ -95,4 +95,5 @@ def main():
             process_single_file(gt_path, system_path, output_dir)
 
 if __name__ == '__main__':
-    main()
+    gt_path = 'data/raw/trainingdata.json'
+    process_single_file(gt_path, "results/experiments_T5/fine-tuning/model_3/answer.txt", "results/experiments_T5/fine-tuning/model_3")

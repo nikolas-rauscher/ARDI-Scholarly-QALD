@@ -204,7 +204,6 @@ def create_embeddings_from_triple(triple):
     # Generate the embedding for the concatenated triple using Sentence-BERT
     # The model internally handles tokenization, pooling, and returns a sentence embedding
     embedding = model.encode(concatenated_triple, convert_to_tensor=True)
-
     return embedding
 
 

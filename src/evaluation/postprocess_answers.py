@@ -7,27 +7,54 @@ RESULT_KEYS = ["all_triples_results", "verbalizer_results",
 
 
 def search_dict_list_by_answer(dict_list, answer):
-    found_item = None
+    """
+    Search for an item in a list of dictionaries by the 'answer' key.
+
+    Args:
+        dict_list (list): List of dictionaries to search.
+        answer (str): The answer to search for.
+
+    Returns:
+        dict or None: The found dictionary or None if not found.
+    """
     for item in dict_list:
         if item.get('answer') == answer:
-            found_item = item
-            break
-    return found_item
+            return item
+    return None
 
 
 def add_question_id(data, gt_data):
+    """
+    Add 'id' from ground truth data to each entity in the data list.
+
+    Args:
+        data (list): List of dictionaries, each representing an entity.
+        gt_data (list): Ground truth data containing ids and answers.
+
+    Returns:
+        list: The data list with 'id' added to each entity.
+    """
     for entity in data:
-        if ('id' not in entity):
+        if 'id' not in entity:
             entity['id'] = search_dict_list_by_answer(
                 gt_data, entity['answer'])['id']
     return data
 
 
 def pipeline_add_question_ids(test_directory, gt_path):
+    """
+    Add question ids to all JSON files in a directory.
+
+    Args:
+        test_directory (str): Path to the directory containing JSON files.
+        gt_path (str): Path to the ground truth JSON file.
+
+    Returns:
+        None
+    """
     with open(gt_path, 'r') as f:
         gt_data = json.load(f)
     for filename in os.listdir(test_directory):
-        print(filename)
         if not filename.endswith(".json"):
             continue
         with open(os.path.join(test_directory, filename), 'r') as f:
@@ -38,8 +65,19 @@ def pipeline_add_question_ids(test_directory, gt_path):
 
 
 def pipeline_question_ids(test_directory, ref_directory, out_directory):
+    """
+    Generate JSON files with question ids based on reference answers.
+
+    Args:
+        test_directory (str): Path to the directory containing test JSON files.
+        ref_directory (str): Path to the directory containing reference JSON files.
+        out_directory (str): Path to the directory to save the output files.
+
+    Returns:
+        None
+    """
     for filename in os.listdir(test_directory):
-        if (not filename.endswith(".json")) or ('train' in filename):
+        if not filename.endswith(".json") or 'train' in filename:
             continue
         with open(os.path.join(test_directory, filename), 'r') as f:
             data = json.load(f)
@@ -55,7 +93,15 @@ def pipeline_question_ids(test_directory, ref_directory, out_directory):
 
 
 def extract_response(response):
-    """Extract and clean the response."""
+    """
+    Extract and clean a response string, ensuring it is concise.
+
+    Args:
+        response (str): The response string to clean.
+
+    Returns:
+        str: The cleaned response.
+    """
     if len(response) > 300:
         response = response.split("Answer:")[-1].strip()
         if '[INST]' in response:
@@ -70,7 +116,16 @@ def extract_response(response):
 
 
 def process_for_evaluation(data, result_keys):
-    """Process data for evaluation and generate output."""
+    """
+    Process data for evaluation and generate output for specified result keys.
+
+    Args:
+        data (list): List of dictionaries containing the data to process.
+        result_keys (list): List of keys to extract responses for.
+
+    Returns:
+        list: A list of lists containing processed data for each result key.
+    """
     output = [[] for _ in range(len(result_keys))]
     for item in data:
         responses = item["results"][0]
@@ -81,7 +136,18 @@ def process_for_evaluation(data, result_keys):
 
 
 def process_file(file_path, process_func, output_dir, result_keys):
-    """Process a single file and save the output."""
+    """
+    Process a single JSON file and save the output.
+
+    Args:
+        file_path (str): Path to the JSON file to process.
+        process_func (function): Function to process the data.
+        output_dir (str): Directory to save the output files.
+        result_keys (list): List of result keys to use in processing.
+
+    Returns:
+        None
+    """
     with open(file_path, "r") as file:
         data = json.load(file)
         output = process_func(data, result_keys)
@@ -94,7 +160,17 @@ def process_file(file_path, process_func, output_dir, result_keys):
 
 
 def process_all_files_in_folder(directory, process_func, result_keys):
-    """Process all JSON files in the given directory."""
+    """
+    Process all JSON files in a given directory.
+
+    Args:
+        directory (str): Path to the directory containing JSON files.
+        process_func (function): Function to process the data.
+        result_keys (list): List of result keys to use in processing.
+
+    Returns:
+        None
+    """
     files = [f for f in os.listdir(directory) if f.endswith(".json")]
     output_dir = os.path.join(directory, 'processed')
     os.makedirs(output_dir, exist_ok=True)
@@ -103,25 +179,33 @@ def process_all_files_in_folder(directory, process_func, result_keys):
         file_path = os.path.join(directory, file_name)
         print(f"Processing file: {file_name}")
         process_file(file_path, process_func, output_dir, result_keys)
-def ensure_folder_exists(folder_path):
-    if not os.path.exists(folder_path):
-        os.makedirs(folder_path)
+
 
 def ensure_folder_exists(folder_path):
+    """
+    Ensure the specified folder exists, creating it if necessary.
+
+    Args:
+        folder_path (str): Path to the folder to check or create.
+
+    Returns:
+        None
+    """
     if not os.path.exists(folder_path):
         os.makedirs(folder_path)
 
 
 if __name__ == "__main__":
     test_directory = "results/train_test_data"
-    test_directory = "results/train_test_data"
     gt_path = "data/processed/processed_data_final500_format.json"
-    data_directories = ['results/zero-shot_Flan_T5_large','results/fine_tuning_preds_epoch_results']
+    data_directories = ['results/zero-shot_Flan_T5_large',
+                        'results/fine_tuning_preds_epoch_results']
+
     pipeline_add_question_ids(test_directory, gt_path)
-    
+
     for data_directory in data_directories:
-        ensure_folder_exists(data_directory+'_out')
+        ensure_folder_exists(data_directory + '_out')
         pipeline_question_ids(test_directory=data_directory,
-                              ref_directory=test_directory, out_directory=data_directory+'_out')
+                              ref_directory=test_directory, out_directory=data_directory + '_out')
     # process_all_files_in_folder(
     #     "./results/hm_results", process_for_evaluation, RESULT_KEYS)

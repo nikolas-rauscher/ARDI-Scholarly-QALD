@@ -1,5 +1,5 @@
 # Evaluation README
 
-- `hm_eval.py`: Simplifies human evaluations.
-- `results_preprocess.py`: Processes the generated answers.
-- `qa_eval.py` and `rouge.py`: Tools for conducting evaluations.
+- `human_eval_auto.py`: Simplifies human evaluations.
+- `postprocess_answers.py`: Processes the generated answers.
+- `qa_eval.py` and `rouge_eval.py`: Tools for conducting EM, METOER, ROUGE evaluations.
