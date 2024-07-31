@@ -26,15 +26,15 @@ def post_process_dblp(outputdata_name, pre_processed_data_path):
         questions_dict["question"] = question["question"]
         questions_dict["answer"] = question["answer"]
         questions_dict["author_dblp_uri"] = question["author_dblp_uri"]
-        questions_dict["tripples_number"] = 0 
-        questions_dict["all_tripples"] = []
+        questions_dict["triples_number"] = 0 
+        questions_dict["all_triples"] = []
 
-        for entity in question["all_tripples"]:
+        for entity in question["all_triples"]:
             dic_for_one_author = {}
             
-            new_tripples= []
-            #for tripple in question["all_tripples"]:
-            for tripple in entity["tripples"]:
+            new_triples= []
+            #for tripple in question["all_triples"]:
+            for tripple in entity["triples"]:
                 new_tripple_dict = {}
                 if tripple["predicate"] in predicate:
                     new_tripple_dict["subject"] = tripple["subjectLabel"]
@@ -56,18 +56,18 @@ def post_process_dblp(outputdata_name, pre_processed_data_path):
                     pass 
                 else:
                     print(f"undefined id: {tripple['predicate']} for questionid: {question['id']}")
-                if new_tripple_dict: new_tripples.append(new_tripple_dict)
+                if new_tripple_dict: new_triples.append(new_tripple_dict)
             
             dic_for_one_author["entity"] = entity["entity"]
-            dic_for_one_author["tripples"] = new_tripples
+            dic_for_one_author["triples"] = new_triples
 
 
-            questions_dict["all_tripples"].append(dic_for_one_author)
+            questions_dict["all_triples"].append(dic_for_one_author)
         
-        all_tripples_length  = 0
-        for author in questions_dict["all_tripples"]:
-            all_tripples_length += len(author["tripples"])
-        questions_dict["tripples_number"] = all_tripples_length
+        all_triples_length  = 0
+        for author in questions_dict["all_triples"]:
+            all_triples_length += len(author["triples"])
+        questions_dict["triples_number"] = all_triples_length
 
         post_processed_data.append(questions_dict)
 

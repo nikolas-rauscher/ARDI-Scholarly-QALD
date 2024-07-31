@@ -71,11 +71,11 @@ for alex_question in alex_data:
         if dblp_question["id"] == alex_question["id"]:
             break
 
-    new_merged_question["triples_number"]  = dblp_question["tripples_number"] + alex_question["tripples_number"]
+    new_merged_question["triples_number"]  = dblp_question["triples_number"] + alex_question["triples_number"]
 
-    for entity_alex,entity_dblp in zip(alex_question["all_tripples"],dblp_question["all_tripples"]):
+    for entity_alex,entity_dblp in zip(alex_question["all_triples"],dblp_question["all_triples"]):
         merged_triples_all = []
-        merged_triples_for_entity = entity_alex["tripples"] + entity_dblp["tripples"]
+        merged_triples_for_entity = entity_alex["triples"] + entity_dblp["triples"]
         merged_triples_all.append(merged_triples_for_entity)
     
 

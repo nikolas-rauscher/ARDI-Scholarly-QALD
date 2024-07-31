@@ -166,7 +166,7 @@ def verbaliseFile(FILENAME, outputFile, limit, use_predicate_based_verbalisation
         oneItem['author_dblp_uri'] = item['author_dblp_uri']
 
         # Preprocess the triples (sort and format)
-        preprocessed_triples, predicate_dict = preprocess_triples(item['all_tripples'])
+        preprocessed_triples, predicate_dict = preprocess_triples(item['all_triples'])
 
         # Generate plain prompt
         oneItem['plain_prompt'] = plainPrompt(preprocessed_triples) 

@@ -101,10 +101,10 @@ def add_wikidata(alex_data, wiki_data, outputdata_name ):
     for question, i in zip(alex_data, range(len(alex_data))):
         print(i)
         wiki_articles= []
-        for entity in question["all_tripples"]:
+        for entity in question["all_triples"]:
             names = []
             institutions = []
-            for triple in entity["tripples"]:
+            for triple in entity["triples"]:
                 if triple["predicate"] == "alternativeName":
                     names.append(triple["object"])
                 if triple["predicate"] == "was working in":

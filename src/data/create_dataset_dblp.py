@@ -86,28 +86,28 @@ def create_dataset_dblp(trainingdata_path:str, endpoint_url:str, save_processed_
 
     for data_block,i in zip(data,range(len(data))):
         print(i)
-        list_of_tripples_for_authors= []
-        tripples_for_one_author = []
+        list_of_triples_for_authors= []
+        triples_for_one_author = []
         entities = data_block["author_dblp_uri"]
         if entities[0] == "[":
             entities = eval(entities)[0]
             for key, entity in entities.items():
                 dic_for_one_author = {}
-                tripples_for_one_author = retrieve_triples_for_entity(entity,endpoint_url)
+                triples_for_one_author = retrieve_triples_for_entity(entity,endpoint_url)
                 dic_for_one_author["entity"] = entity
-                dic_for_one_author["tripples"] = tripples_for_one_author
-                list_of_tripples_for_authors.append(dic_for_one_author)
+                dic_for_one_author["triples"] = triples_for_one_author
+                list_of_triples_for_authors.append(dic_for_one_author)
         else:
-            tripples_for_one_author = retrieve_triples_for_entity(entities,endpoint_url)
+            triples_for_one_author = retrieve_triples_for_entity(entities,endpoint_url)
             dic_for_one_author = {}
             dic_for_one_author["entity"] = entities
-            dic_for_one_author["tripples"] = tripples_for_one_author
-            list_of_tripples_for_authors.append(dic_for_one_author)
-        all_tripples_length  = 0
-        for author in list_of_tripples_for_authors:
-            all_tripples_length += len(author["tripples"])
-        data_block["tripples_number"] = all_tripples_length
-        data_block["all_tripples"] = list_of_tripples_for_authors
+            dic_for_one_author["triples"] = triples_for_one_author
+            list_of_triples_for_authors.append(dic_for_one_author)
+        all_triples_length  = 0
+        for author in list_of_triples_for_authors:
+            all_triples_length += len(author["triples"])
+        data_block["triples_number"] = all_triples_length
+        data_block["all_triples"] = list_of_triples_for_authors
         processed_data.append(data_block)
 
     # Save the new processed training data
@@ -146,11 +146,11 @@ if __name__ == "__main__":
         "id": "6b8aa79c-3908-4f03-b85b-aa1a325d9fe6",
         "question": "What type of information sources were found to be lacking in organized information at Social Services offices according to the author's observation?",
         "answer": "oral communication and notes",
-        "tripples_number": 885,
-        "all_tripples": [
+        "triples_number": 885,
+        "all_triples": [
                 {
                     "entity":"<https://dblp.org/pid/w/TDWilson>", 
-                    "all_tripples": [
+                    "all_triples": [
                         {
                             "subject": "<https://dblp.org/pid/w/TDWilson>",
                             "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
@@ -162,7 +162,7 @@ if __name__ == "__main__":
                     ]}, 
                 {
                     "entity":"<https://dblp.org/pid/w/TDWilson>", 
-                    "all_tripples": [ 
+                    "all_triples": [ 
                         {
                             "subject": "<https://dblp.org/pid/w/TDWilson>",
                             "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",

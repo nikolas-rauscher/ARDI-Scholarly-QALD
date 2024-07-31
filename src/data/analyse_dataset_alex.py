@@ -13,7 +13,7 @@ def get_all_predicate_labels(data):
     predicates = []
     for question,i in zip(data, range(len(data))):
         print(i)
-        for item in question["all_tripples"]:
+        for item in question["all_triples"]:
             if item["predicate"] not in predicates:
                 predicates.append(item["predicate"])
               
