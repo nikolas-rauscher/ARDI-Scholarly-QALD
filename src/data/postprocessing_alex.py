@@ -26,28 +26,28 @@ def post_process_alex(outputdata_name, data):
       new_question["id"] = question["id"]
       new_question["question"] = question["question"]
       new_question["answer"] = question["answer"]
-      new_question["tripples_number"] = 0
+      new_question["triples_number"] = 0
       if ("author_uri" in question): new_question["author_uri"] =  question["author_uri"]  #TODO quick fix
-      new_question["all_tripples"] = []
+      new_question["all_triples"] = []
   
       
 
-      #for tripple in question["all_tripples"]:
-      for entity in question["all_tripples"]:
+      #for tripple in question["all_triples"]:
+      for entity in question["all_triples"]:
         entity_dict = {}
-        new_tripples = []
-        for tripple in entity["tripples"]:
+        new_triples = []
+        for tripple in entity["triples"]:
           new_tripple = {}
 
 
           if tripple["predicate"] in predicates:
-              new_tripples.append(tripple)
+              new_triples.append(tripple)
 
           if tripple["predicate"] == "22-rdf-syntax-ns#type": 
               new_tripple["subject"] = tripple["subject"]
               new_tripple["predicate"]= "is"
               new_tripple["object"]= tripple["object"].split('/')[-1]
-              new_tripples.append(new_tripple)
+              new_triples.append(new_tripple)
 
           if tripple["predicate"] == "creator":
             title_uri = tripple["subject"]
@@ -67,7 +67,7 @@ def post_process_alex(outputdata_name, data):
               new_tripple["predicate"]= "written by"
               new_tripple["object"]= tripple["object"]
 
-              new_tripples.append(new_tripple)
+              new_triples.append(new_tripple)
             else:
                pass
               #print("no title found") 
@@ -106,7 +106,7 @@ def post_process_alex(outputdata_name, data):
                 new_tripple["predicate"]= "was working in"
                 new_tripple["object"]= ", ".join(affiliation_list) + " while writing paper: " + paper_during_affiliation
 
-                new_tripples.append(new_tripple)
+                new_triples.append(new_tripple)
               else:
                 pass # remove tripple
               
@@ -133,7 +133,7 @@ def post_process_alex(outputdata_name, data):
                   new_tripple["predicate"]= "member of"
                   new_tripple["object"]= institutation_list
 
-                  new_tripples.append(new_tripple)
+                  new_triples.append(new_tripple)
                 else:
                   pass # remove tripple  
 
@@ -158,28 +158,28 @@ def post_process_alex(outputdata_name, data):
                   new_tripple["subject"] =  tripple["subject"] 
                   new_tripple["predicate"]= "citatations in year " + counts_by_year_uri[-4:]
                   new_tripple["object"]= counts_by_year
-                  new_tripples.append(new_tripple)
+                  new_triples.append(new_tripple)
 
                   works_count = (query_res['results']['bindings'][0]['works_count']['value'])
                   #print("works_count:",works_count)
                   new_tripple["subject"] =  tripple["subject"] 
                   new_tripple["predicate"]= " written paper amount in year" + counts_by_year_uri[-4:] + ":"
                   new_tripple["object"]= works_count
-                  new_tripples.append(new_tripple)
+                  new_triples.append(new_tripple)
 
                 else:
                   pass # remove tripple  
 
       
         entity_dict["entity"] = entity["entity"]
-        entity_dict["tripples"] = new_tripples
-        new_question["all_tripples"].append(entity_dict)
+        entity_dict["triples"] = new_triples
+        new_question["all_triples"].append(entity_dict)
       
 
-      for entity in new_question["all_tripples"]:
-          tripples_number = 0
-          tripples_number += len(entity["tripples"])
-      new_question["tripples_number"] = tripples_number
+      for entity in new_question["all_triples"]:
+          triples_number = 0
+          triples_number += len(entity["triples"])
+      new_question["triples_number"] = triples_number
       new_dataset.append(new_question)  
 
    # Save intermediate result

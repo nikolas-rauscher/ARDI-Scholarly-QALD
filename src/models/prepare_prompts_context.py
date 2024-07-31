@@ -106,7 +106,7 @@ def prepare_data_4settings(examples, prompt_template, output_file, wiki=True):
 
         # Plain Triples
         context_plain = '. '.join([triple2text(triple)
-                                  for triple in example['all_tripples']])
+                                  for triple in example['all_triples']])
 
         # Evidence Matching
         triples_evidence = evidence_triple_selection(
@@ -115,7 +115,7 @@ def prepare_data_4settings(examples, prompt_template, output_file, wiki=True):
             [triple2text(triple) for triple in triples_evidence])
 
         # Verbalizer
-        context_verbalizer = verbalise_triples(example['all_tripples'])
+        context_verbalizer = verbalise_triples(example['all_triples'])
 
         # Verbalizer + Evidence Matching
         context_evidence_verbalizer = verbalise_triples(triples_evidence)
@@ -125,9 +125,9 @@ def prepare_data_4settings(examples, prompt_template, output_file, wiki=True):
             "question": example["question"],
             "triples_number": triples_number,
             "contexts": {
-                "all_tripples": example['all_tripples'],
+                "all_triples": example['all_triples'],
                 "plain": context_plain+wiki_context_plain,
-                "verbalizer_on_all_tripples": context_verbalizer+wiki_context_plain,
+                "verbalizer_on_all_triples": context_verbalizer+wiki_context_plain,
                 "evidence_matching": context_evidence+wiki_context,
                 "verbalizer_plus_evidence_matching": context_evidence_verbalizer+wiki_context
             }

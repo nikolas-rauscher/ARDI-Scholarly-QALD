@@ -4,8 +4,8 @@
     "question": "What type of information sources were found to be lacking in organized information at Social Services offices according to the author's observation?",
     "answer": "oral communication and notes",
     "author_dblp_uri": "<https://dblp.org/pid/w/TDWilson>",
-    "tripples_number": 439,
-    "all_tripples": [
+    "triples_number": 439,
+    "all_triples": [
       {
         "subject": "Thomas D. Wilson 0001",
         "predicate": "is",

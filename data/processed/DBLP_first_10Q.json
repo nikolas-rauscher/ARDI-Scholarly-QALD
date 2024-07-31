@@ -4,8 +4,8 @@
     "question": "What type of information sources were found to be lacking in organized information at Social Services offices according to the author's observation?",
     "answer": "oral communication and notes",
     "author_dblp_uri": "<https://dblp.org/pid/w/TDWilson>",
-    "tripples_number": 439,
-    "all_tripples": [
+    "triples_number": 439,
+    "all_triples": [
       {
         "subject": "Thomas D. Wilson 0001",
         "predicate": "is",
@@ -2208,8 +2208,8 @@
     "question": "What is the cited by count for the writer's institution who published the paper 'MAGMA: a multiagent architecture for metaheuristics'?",
     "answer": "3335304",
     "author_dblp_uri": "<https://dblp.org/pid/m/MichelaMilano>",
-    "tripples_number": 222,
-    "all_tripples": [
+    "triples_number": 222,
+    "all_triples": [
       {
         "subject": "Michela Milano",
         "predicate": "is",
@@ -3327,8 +3327,8 @@
     "question": "What was the focus of the author's undergraduate studies at Oberlin College?",
     "answer": "probability and statistics",
     "author_dblp_uri": "<https://dblp.org/pid/d/TGDietterich>",
-    "tripples_number": 251,
-    "all_tripples": [
+    "triples_number": 251,
+    "all_triples": [
       {
         "subject": "Thomas G. Dietterich",
         "predicate": "is",
@@ -4591,8 +4591,8 @@
     "question": "Where did the author of SPAA 1999 - Guest Editors' Foreword receive a B.Tech degree from?",
     "answer": "Indian Institute of Technology, Madras",
     "author_dblp_uri": "<https://dblp.org/pid/s/RameshKSitaraman>",
-    "tripples_number": 173,
-    "all_tripples": [
+    "triples_number": 173,
+    "all_triples": [
       {
         "subject": "Ramesh K. Sitaraman",
         "predicate": "is",
@@ -5465,8 +5465,8 @@
     "question": "In which year did the author join Epic Games as an engineering fellow?",
     "answer": "2021",
     "author_dblp_uri": "<https://dblp.org/pid/j/SimonLPeytonJones>",
-    "tripples_number": 266,
-    "all_tripples": [
+    "triples_number": 266,
+    "all_triples": [
       {
         "subject": "Simon L. Peyton Jones",
         "predicate": "is",
@@ -6804,8 +6804,8 @@
     "question": "How many citations are there for the institution to which the author of the paper 'Dynamic Knowledge Graph Construction for Zero-shot Commonsense Question Answering' belongs?",
     "answer": "15409629",
     "author_dblp_uri": "<https://dblp.org/pid/89/579-1>",
-    "tripples_number": 437,
-    "all_tripples": [
+    "triples_number": 437,
+    "all_triples": [
       {
         "subject": "Yejin Choi 0001",
         "predicate": "is",
@@ -8998,8 +8998,8 @@
     "question": "What is the type of organization where the author of the paper 'First order convergence and roots' works?",
     "answer": "education",
     "author_dblp_uri": "<https://dblp.org/pid/k/DanielKarl>",
-    "tripples_number": 228,
-    "all_tripples": [
+    "triples_number": 228,
+    "all_triples": [
       {
         "subject": "Daniel Král",
         "predicate": "is",
@@ -10147,8 +10147,8 @@
     "question": "In which field is Russell Greiner a specialist?",
     "answer": "Machine learning and bioinformatics",
     "author_dblp_uri": "<https://dblp.org/pid/g/RussellGreiner>",
-    "tripples_number": 251,
-    "all_tripples": [
+    "triples_number": 251,
+    "all_triples": [
       {
         "subject": "Russell Greiner",
         "predicate": "is",
@@ -11411,8 +11411,8 @@
     "question": "What is the i10Index of the researcher who published A Dynamic, Distributed, Hierarchical Load Balancing for HLA-Based Simulations on Large-Scale Environments in 2010 with Robson E. De Grande from Brock University, Canada?",
     "answer": "402",
     "author_dblp_uri": "<https://dblp.org/pid/b/AzzedineBoukerche>",
-    "tripples_number": 1089,
-    "all_tripples": [
+    "triples_number": 1089,
+    "all_triples": [
       {
         "subject": "Azzedine Boukerche",
         "predicate": "is",
@@ -16865,8 +16865,8 @@
     "question": "From which university did the creator of Affect Modeling with Field-based Physiological Responses receive a Bachelor of Applied Science?",
     "answer": "Simon Fraser University",
     "author_dblp_uri": "<https://dblp.org/pid/04/4652>",
-    "tripples_number": 314,
-    "all_tripples": [
+    "triples_number": 314,
+    "all_triples": [
       {
         "subject": "Anind K. Dey",
         "predicate": "is",

@@ -3,8 +3,8 @@
         "id": "6b8aa79c-3908-4f03-b85b-aa1a325d9fe6",
         "question": "What type of information sources were found to be lacking in organized information at Social Services offices according to the author's observation?",
         "author_uri": "https://semopenalex.org/author/A5069855349",
-        "tripples_number": 574,
-        "all_tripples": [
+        "triples_number": 574,
+        "all_triples": [
             {
                 "subject": "Tom Wilson",
                 "predicate": "is",
@@ -5078,8 +5078,8 @@
         "id": "1e7c6df7-abad-4e31-a949-06e9555f6c75",
         "question": "Which author has more publications cited by count, the creator of 'Concurrent Separation Logics: Logical Abstraction, Logical Atomicity and Environment Liveness Conditions (Invited Talk)' or the creator of 'Dynamic problem structure analysis as a basis for constraint-directed scheduling heuristics'?",
         "author_uri": "https://semopenalex.org/author/A5062466238",
-        "tripples_number": 486,
-        "all_tripples": [
+        "triples_number": 486,
+        "all_triples": [
             {
                 "subject": "Mark S. Fox",
                 "predicate": "is",
@@ -8748,8 +8748,8 @@
         "id": "1e22dcc3-610a-4879-b8d8-80bcc505942c",
         "question": "Where is the author who directs the Natural Language Processing Laboratory located?",
         "author_uri": "https://semopenalex.org/author/A5076593865",
-        "tripples_number": 380,
-        "all_tripples": [
+        "triples_number": 380,
+        "all_triples": [
             {
                 "subject": "Verena Rieser",
                 "predicate": "is",
@@ -11383,8 +11383,8 @@
         "id": "8b67e7e0-266c-4743-8fb9-ec08b1ec0edd",
         "question": "The researcher with a co-author at Catholic University of Leuven, Belgium and creator of Equation-free modeling, hIndex, is?",
         "author_uri": "https://semopenalex.org/author/A5036566464",
-        "tripples_number": 1125,
-        "all_tripples": [
+        "triples_number": 1125,
+        "all_triples": [
             {
                 "subject": "Ioannis G. Kevrekidis",
                 "predicate": "is",
@@ -17938,8 +17938,8 @@
         "id": "a83e3a49-c1eb-4ea0-a18a-f1fa2a477d45",
         "question": "What is the name of the IEEE International Conference that Dr. Bourbakis founded and chaired since 1989?",
         "author_uri": "https://semopenalex.org/author/A5025446324",
-        "tripples_number": 720,
-        "all_tripples": [
+        "triples_number": 720,
+        "all_triples": [
             {
                 "subject": "Nikolaos Bourbakis",
                 "predicate": "is",
@@ -23100,8 +23100,8 @@
         "id": "20697a10-2089-45d5-83b2-62d6dbaa2f9d",
         "question": "Where did the author who wrote Recent Developments in the Theory of Pre-processing receive his M.A. degree?",
         "author_uri": "https://semopenalex.org/author/A5054676766",
-        "tripples_number": 610,
-        "all_tripples": [
+        "triples_number": 610,
+        "all_triples": [
             {
                 "subject": "Michael R. Fellows",
                 "predicate": "is",
@@ -27445,8 +27445,8 @@
         "id": "f5fedae0-53b4-4d52-9681-fdbdb299fbdc",
         "question": "Where did the contributor of 'Semi-supervised feature selection for graph classification' earn his MS and PhD degrees in electrical engineering?",
         "author_uri": "https://semopenalex.org/author/A5036357902",
-        "tripples_number": 4255,
-        "all_tripples": [
+        "triples_number": 4255,
+        "all_triples": [
             {
                 "subject": "Philip S. Yu",
                 "predicate": "is",
@@ -59440,8 +59440,8 @@
         "id": "3e7caf11-d9b3-4a72-b12c-8f9c0a571d4d",
         "question": "Who served as the Program Director of Networking Technology and Systems at the National Science Foundation from 2006 to 2008?",
         "author_uri": "https://semopenalex.org/author/A5006665439",
-        "tripples_number": 147,
-        "all_tripples": [
+        "triples_number": 147,
+        "all_triples": [
             {
                 "subject": "Jie Wu",
                 "predicate": "is",
@@ -66055,8 +66055,8 @@
         "id": "cd8d5919-bc44-4254-b441-417f1a9f939f",
         "question": "What is the type of institution where the author of 'Modern Computer Arithmetic' works?",
         "author_uri": "https://semopenalex.org/author/A5083219829",
-        "tripples_number": 405,
-        "all_tripples": [
+        "triples_number": 405,
+        "all_triples": [
             {
                 "subject": "Paolo Montuschi",
                 "predicate": "is",
@@ -68690,8 +68690,8 @@
         "id": "6a9f7d46-5cb5-4aed-a377-f60ca3765868",
         "question": "What is the nationality of the computer scientist who won the German national computer-science contest in 1987 and 1988?",
         "author_uri": "https://semopenalex.org/author/A5021151000",
-        "tripples_number": 219,
-        "all_tripples": [
+        "triples_number": 219,
+        "all_triples": [
             {
                 "subject": "Markus Kühn",
                 "predicate": "is",

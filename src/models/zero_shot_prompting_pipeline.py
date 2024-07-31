@@ -263,7 +263,7 @@ def run_model(model_id, model_name, template_files, api=False, api_type=None):
             }
             
             for context_type, context_key in zip(
-                ["plain", "verbalizer_on_all_tripples", "evidence_matching", "verbalizer_plus_evidence_matching"],
+                ["plain", "verbalizer_on_all_triples", "evidence_matching", "verbalizer_plus_evidence_matching"],
                 ["all_triples_results", "verbalizer_results", "evidence_matching", "verbalizer_plus_evidence_matching"]
             ):
                

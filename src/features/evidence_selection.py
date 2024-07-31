@@ -7,10 +7,8 @@ import torch
 # Initialize the Sentence-BERT model globally if not already done
 model = SentenceTransformer("all-MiniLM-L6-v2")
 
-
 def load_triplet_extractor():
     return pipeline('text2text-generation', model='Babelscape/rebel-large', tokenizer='Babelscape/rebel-large')
-
 
 def extract_triple_from_question(question, triplet_extractor):
     """extract the triple from a question using llm
@@ -211,5 +209,5 @@ if __name__ == "__main__":
     with open("./data/processed/DBLP_first_10Q.json") as f:
         data = json.load(f)[0]
     ems = evidence_triple_selection(
-        data['question'], data['all_tripples'], conserved_percentage=0.1)
+        data['question'], data['all_triples'], conserved_percentage=0.1)
     print(len(ems))

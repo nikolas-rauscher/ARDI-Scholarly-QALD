@@ -4,8 +4,8 @@
     "question": "What type of information sources were found to be lacking in organized information at Social Services offices according to the author's observation?",
     "answer": "oral communication and notes",
     "author_uri": "https://semopenalex.org/author/A5069855349",
-    "tripples_number": 574,
-    "all_tripples": [
+    "triples_number": 574,
+    "all_triples": [
       {
         "subject": "Tom Wilson",
         "predicate": "is",
@@ -2883,8 +2883,8 @@
     "question": "What is the cited by count for the writer's institution who published the paper 'MAGMA: a multiagent architecture for metaheuristics'?",
     "answer": "3335304",
     "author_uri": "https://semopenalex.org/author/A5071259603",
-    "tripples_number": 489,
-    "all_tripples": [
+    "triples_number": 489,
+    "all_triples": [
       {
         "subject": "Michela Milano",
         "predicate": "is",
@@ -5337,8 +5337,8 @@
     "question": "What was the focus of the author's undergraduate studies at Oberlin College?",
     "answer": "probability and statistics",
     "author_uri": "https://semopenalex.org/author/A5074537073",
-    "tripples_number": 537,
-    "all_tripples": [
+    "triples_number": 537,
+    "all_triples": [
       {
         "subject": "Thomas G. Dietterich",
         "predicate": "is",
@@ -8031,8 +8031,8 @@
     "question": "Where did the author of SPAA 1999 - Guest Editors' Foreword receive a B.Tech degree from?",
     "answer": "Indian Institute of Technology, Madras",
     "author_uri": "https://semopenalex.org/author/A5037538509",
-    "tripples_number": 395,
-    "all_tripples": [
+    "triples_number": 395,
+    "all_triples": [
       {
         "subject": "Ramesh K. Sitaraman",
         "predicate": "is",
@@ -10015,8 +10015,8 @@
     "question": "In which year did the author join Epic Games as an engineering fellow?",
     "answer": "2021",
     "author_uri": "https://semopenalex.org/author/A5027817074",
-    "tripples_number": 957,
-    "all_tripples": [
+    "triples_number": 957,
+    "all_triples": [
       {
         "subject": "Simon Peyton Jones",
         "predicate": "is",
@@ -14809,8 +14809,8 @@
     "question": "How many citations are there for the institution to which the author of the paper 'Dynamic Knowledge Graph Construction for Zero-shot Commonsense Question Answering' belongs?",
     "answer": "15409629",
     "author_uri": "https://semopenalex.org/author/A5045464993",
-    "tripples_number": 853,
-    "all_tripples": [
+    "triples_number": 853,
+    "all_triples": [
       {
         "subject": "Yejin Choi",
         "predicate": "is",
@@ -19083,8 +19083,8 @@
     "question": "What is the type of organization where the author of the paper 'First order convergence and roots' works?",
     "answer": "education",
     "author_uri": "https://semopenalex.org/author/A5027559065",
-    "tripples_number": 631,
-    "all_tripples": [
+    "triples_number": 631,
+    "all_triples": [
       {
         "subject": "Daniel Kráľ",
         "predicate": "is",
@@ -22247,8 +22247,8 @@
     "question": "In which field is Russell Greiner a specialist?",
     "answer": "Machine learning and bioinformatics",
     "author_uri": "https://semopenalex.org/author/A5027200864",
-    "tripples_number": 732,
-    "all_tripples": [
+    "triples_number": 732,
+    "all_triples": [
       {
         "subject": "Russell Greiner",
         "predicate": "is",
@@ -25916,8 +25916,8 @@
     "question": "What is the i10Index of the researcher who published A Dynamic, Distributed, Hierarchical Load Balancing for HLA-Based Simulations on Large-Scale Environments in 2010 with Robson E. De Grande from Brock University, Canada?",
     "answer": "402",
     "author_uri": "https://semopenalex.org/author/A5012195474",
-    "tripples_number": 2274,
-    "all_tripples": [
+    "triples_number": 2274,
+    "all_triples": [
       {
         "subject": "Azzedine Boukerche",
         "predicate": "is",
@@ -37295,8 +37295,8 @@
     "question": "From which university did the creator of Affect Modeling with Field-based Physiological Responses receive a Bachelor of Applied Science?",
     "answer": "Simon Fraser University",
     "author_uri": "https://semopenalex.org/author/A5032134965",
-    "tripples_number": 796,
-    "all_tripples": [
+    "triples_number": 796,
+    "all_triples": [
       {
         "subject": "Anind K. Dey",
         "predicate": "is",

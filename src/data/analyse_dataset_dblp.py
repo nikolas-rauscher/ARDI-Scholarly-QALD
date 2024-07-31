@@ -15,7 +15,7 @@ def get_all_predicate_labels(data):
     predicates = []
     for question,i in zip(data, range(len(data))):
         print(i)
-        for item in question["all_tripples"]:
+        for item in question["all_triples"]:
             if item["predicate"] not in predicates:
                 predicates.append(item["predicate"])
                 predicates_labels.append(item["predicateLabel"])
@@ -30,7 +30,7 @@ def get_all_predicates_without_labels(data):
     predicates = []
     for question,i in zip(data, range(len(data))):
         print(i)
-        for item in question["all_tripples"]:
+        for item in question["all_triples"]:
             if item["predicate"] not in predicates and item["predicateLabel"] == "" :
                 predicates.append(item["predicate"])
                 predicates_labels.append(item["predicateLabel"])
@@ -44,13 +44,13 @@ def get_all_predicates_without_labels(data):
 def get_authors_without_oridID(data):
     author_list = []
     for question in data:
-        for item in question["all_tripples"]:
+        for item in question["all_triples"]:
             if item["objectLabel"] == "Person":
                 author_list.append(item["subject"])
     print (len(author_list))
 
     for question in data:
-        for item in question["all_tripples"]:
+        for item in question["all_triples"]:
             if item["predicateLabel"] == "orcid":
                 subject = item["subject"]
                 if subject in author_list:

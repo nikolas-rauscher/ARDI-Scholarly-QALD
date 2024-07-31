@@ -1,6 +1,6 @@
 # get all orcids of every author
 # get author object for that orcid 
-# get all tripples for that author object 
+# get all triples for that author object 
 
 import json
 from run_query import run_query
@@ -23,12 +23,12 @@ def create_alex_dataset(dblp_processed_dataset_path, outputdata_path):
         alex_question["question"] = question["question"]
         alex_question["answer"] = question["answer"]
         alex_question["author_uri"] = []
-        alex_question["all_tripples"] = []
+        alex_question["all_triples"] = []
 
         orcid = ""
-        for dblp_entity in question["all_tripples"]: #go over every entity in quesiton 
+        for dblp_entity in question["all_triples"]: #go over every entity in quesiton 
             entity_dict = {}
-            for tripple in dblp_entity["tripples"]:
+            for tripple in dblp_entity["triples"]:
                 if tripple["predicateLabel"] == "orcid":
                     orcid = tripple["object"]
                     entity_dict["entity"] = orcid
@@ -67,7 +67,7 @@ def create_alex_dataset(dblp_processed_dataset_path, outputdata_path):
                 """
             query_res = run_query(query)
 
-            tripples = []
+            triples = []
             # Iterate over each binding in the data
             for binding in query_res['results']['bindings']:
                 # Each entry in the list is a dictionary with 'Subject', 'Predicate', 'Object'
@@ -76,7 +76,7 @@ def create_alex_dataset(dblp_processed_dataset_path, outputdata_path):
                     "predicate": (binding['predicate']['value']).split('/')[-1] ,
                     "object": binding['object']['value']
                 }
-                tripples.append(entry)
+                triples.append(entry)
 
             query = f"""
 
@@ -96,17 +96,17 @@ def create_alex_dataset(dblp_processed_dataset_path, outputdata_path):
                     "predicate": (binding['predicate']['value']).split('/')[-1], 
                     "object": author_name
                 }
-                tripples.append(entry)
+                triples.append(entry)
 
 
-            entity_dict["tripples"] = tripples
+            entity_dict["triples"] = triples
 
-            alex_question["all_tripples"].append(entity_dict)
+            alex_question["all_triples"].append(entity_dict)
 
-            for entity in alex_question["all_tripples"]:
-                tripples_number = 0
-                tripples_number += len(entity["tripples"])
-            alex_question["tripples_number"] = tripples_number
+            for entity in alex_question["all_triples"]:
+                triples_number = 0
+                triples_number += len(entity["triples"])
+            alex_question["triples_number"] = triples_number
             
         alex_all_questions.append(alex_question)
 

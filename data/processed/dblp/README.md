@@ -13,7 +13,7 @@ The predicate sameAs used in the triple you provided is defined by the OWL (Web 
 
 #### wikidata (can be extended/removed)
 The predicate wikidata in the triple you provided is used to link an entity from the DBLP database to its corresponding entry in Wikidata. 
-Idea: retrieve also all tripples from wikidata with the given link 
+Idea: retrieve also all triples from wikidata with the given link 
 
 #### affiliation (edit)
 The affiliation predicate in the triple you provided is used to denote the institutional or organizational affiliation of an individual, in this case, within the context of the DBLP database. There is is no object label for the institution. The object can be used directly
