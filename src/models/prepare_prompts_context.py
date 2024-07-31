@@ -48,14 +48,15 @@ def prepare_data_only_ve(examples, prompt_template, output_file):
         context_evidence_verbalizer = verbalise_triples(triples_evidence)
 
         wiki_context = ""
-        for wiki_text in example['wiki_data']:
-            # sentences = ['. '.join(list(item.values())) for item in wiki_text]
-            if len(wiki_text) > 0:
-                sentences = str(wiki_text).split('.')
-                wiki_evidence = evidence_sentence_selection(
-                    example['question'], sentences, conserved_percentage=0.2, max_num=40
-                )
-                wiki_context += '. '.join(wiki_evidence)
+        if 'wiki_data' in example:
+            for wiki_text in example['wiki_data']:
+                # sentences = ['. '.join(list(item.values())) for item in wiki_text]
+                if len(wiki_text) > 0:
+                    sentences = str(wiki_text).split('.')
+                    wiki_evidence = evidence_sentence_selection(
+                        example['question'], sentences, conserved_percentage=0.2, max_num=40
+                    )
+                    wiki_context += '. '.join(wiki_evidence)
 
         prepared_example = {
             "id": example["id"],
