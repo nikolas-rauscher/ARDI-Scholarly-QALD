@@ -177,3 +177,4 @@ results/train_test_data copy
 ./data/processed/test
 ./data/processed/train
 data
+test*.py

@@ -21,10 +21,6 @@ config = configparser.ConfigParser()
 config.read('config.ini')
 
 
-
-
-
-
 def prepare_data_4settings(examples, prompt_template, output_file, wiki=True):
     """
     Prepare the data by generating contexts for each example with dnlp and openalex
@@ -132,4 +128,4 @@ if __name__ == '__main__':
         prompt_template = file.read()
 
     output_file = config['FilePaths']['prepared_data_file']
-    prepare_data_4settings(examples, prompt_template, output_file)
+    prepare_data_4settings(examples, prompt_template, output_file,wiki=False)
