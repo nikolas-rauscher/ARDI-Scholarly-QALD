@@ -134,9 +134,9 @@ def main():
     ensure_nltk_resources()
 
     # Define paths
-    input_dir = '/Users/celes/Documents/Projects/ARDI-Scholarly-QALD/results/fine_tuning_preds_epoch_results_out'
+    input_dir = '/Users/celes/Documents/Projects/ARDI-Scholarly-QALD/results/zero-shot_Flan_T5_large_out'
     gt_path = '/Users/celes/Documents/Projects/ARDI-Scholarly-QALD/data/raw/raw_train_dataset.json'
-    output_dir = '/Users/celes/Documents/Projects/ARDI-Scholarly-QALD/results/fine_tuning_preds_epoch_results_out/score'
+    output_dir = '/Users/celes/Documents/Projects/ARDI-Scholarly-QALD/results/zero-shot_Flan_T5_large_out/score'
 
     ensure_folder_exists(output_dir)
 
