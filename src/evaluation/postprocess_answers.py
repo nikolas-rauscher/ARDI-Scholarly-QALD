@@ -196,16 +196,16 @@ def ensure_folder_exists(folder_path):
 
 
 if __name__ == "__main__":
-    test_directory = "results/train_test_data"
-    gt_path = "data/processed/processed_data_final500_format.json"
-    data_directories = ['results/zero-shot_Flan_T5_large',
-                        'results/fine_tuning_preds_epoch_results']
+    # test_directory = "results/train_test_data"
+    # gt_path = "data/raw/codalab_new_train_data.json"
+    # data_directories = ['results/zero-shot_Flan_T5_large',
+    #                     'results/fine_tuning_preds_epoch_results']
 
-    pipeline_add_question_ids(test_directory, gt_path)
+    # pipeline_add_question_ids(test_directory, gt_path)
 
-    for data_directory in data_directories:
-        ensure_folder_exists(data_directory + '_out')
-        pipeline_question_ids(test_directory=data_directory,
-                              ref_directory=test_directory, out_directory=data_directory + '_out')
-    # process_all_files_in_folder(
-    #     "./results/hm_results", process_for_evaluation, RESULT_KEYS)
+    # for data_directory in data_directories:
+    #     ensure_folder_exists(data_directory + '_out')
+    #     pipeline_question_ids(test_directory=data_directory,
+    #                           ref_directory=test_directory, out_directory=data_directory + '_out')
+    process_all_files_in_folder(
+        "./data/processed/100q", process_for_evaluation, RESULT_KEYS)

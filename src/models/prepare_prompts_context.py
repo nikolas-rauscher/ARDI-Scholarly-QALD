@@ -1,12 +1,13 @@
 import os
 from tqdm import tqdm
 import configparser
-import json
-from models.verbalizer.generatePrompt import verbalise_triples
-from features.evidence_selection import evidence_triple_selection, triple2text, evidence_sentence_selection
 import sys
 sys.path.append('./src')
 sys.path.append('..')
+import json
+from models.verbalizer.generatePrompt import verbalise_triples
+from features.evidence_selection import evidence_triple_selection, triple2text, evidence_sentence_selection
+
 PACKAGE_PARENT = '.'
 SCRIPT_DIR = os.path.dirname(os.path.realpath(
     os.path.join(os.getcwd(), os.path.expanduser(__file__))))
@@ -73,6 +74,9 @@ def prepare_data_only_ve(examples, prompt_template, output_file):
         json.dump(prepared_data, file, indent=4, ensure_ascii=False)
 
 
+
+
+
 def prepare_data_4settings(examples, prompt_template, output_file, wiki=True):
     """
     Prepare the data by generating contexts for each example with dnlp and openalex
@@ -132,7 +136,7 @@ def prepare_data_4settings(examples, prompt_template, output_file, wiki=True):
                 "verbalizer_plus_evidence_matching": context_evidence_verbalizer+wiki_context
             }
         }
-        
+
         if ("answer" in example):
             prepared_example["answer"] = example["answer"]
         prepared_data.append(prepared_example)
@@ -172,8 +176,8 @@ def process_file(input_file_path, prompt_template_path, output_file_path):
 
 
 if __name__ == '__main__':
-    with open(config['FilePaths']['prepare_prompt_context_input'], 'r') as file:
-        examples = json.load(file)
+    with open("data/processed/train.json", 'r') as file:
+        examples = json.load(file)[:100]
     with open(config['FilePaths']['prompt_template'], 'r') as file:
         prompt_template = file.read()
 
