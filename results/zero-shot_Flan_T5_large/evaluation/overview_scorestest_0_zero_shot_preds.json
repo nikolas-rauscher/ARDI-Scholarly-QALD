@@ -1,0 +1,53 @@
+{
+  "average": {
+    "rouge1": {
+      "precision": 0.023954476895653366,
+      "recall": 0.024410774410774414,
+      "fmeasure": 0.022090512972865916
+    },
+    "rouge2": {
+      "precision": 0.010942760942760942,
+      "recall": 0.013468013468013467,
+      "fmeasure": 0.011447811447811448
+    },
+    "rougeL": {
+      "precision": 0.023360299830888064,
+      "recall": 0.02314814814814815,
+      "fmeasure": 0.021282432164785106
+    }
+  },
+  "max": {
+    "rouge1": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "fmeasure": 1.0
+    },
+    "rouge2": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "fmeasure": 1.0
+    },
+    "rougeL": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "fmeasure": 1.0
+    }
+  },
+  "median": {
+    "rouge1": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "fmeasure": 0.0
+    },
+    "rouge2": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "fmeasure": 0.0
+    },
+    "rougeL": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "fmeasure": 0.0
+    }
+  }
+}

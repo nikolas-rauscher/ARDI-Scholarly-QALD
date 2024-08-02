@@ -41,6 +41,7 @@ def post_process_dblp(outputdata_name: str, pre_processed_data_path: str):
             dic_for_one_author = {}
             
             new_triples= []
+
             for tripple in entity["triples"]:
                 new_tripple_dict = {}
                 if tripple["predicate"] in predicate:
