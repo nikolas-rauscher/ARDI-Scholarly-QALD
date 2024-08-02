@@ -163,18 +163,12 @@ cython_debug/
 #  .idea/
 data/processed/processed_data.json
 data/processed/test_post_processed_data_dblp.json
-#.idea/
+
 
 
 # Verbaliyzer
 src/models/verbalizer/graph2text/outputs/*
 src/models/verbalizer/processed_data.json
-./test/
+test/
 .vscode/settings.json
 results/hm_results/todo
-results/train_test_data
-results/train_test_data copy
-./data/processed/test
-./data/processed/train
-data
-test*.py
