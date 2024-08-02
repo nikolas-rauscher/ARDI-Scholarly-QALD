@@ -7,21 +7,30 @@ import torch
 # Initialize the Sentence-BERT model globally if not already done
 model = SentenceTransformer("all-MiniLM-L6-v2")
 
+
 def load_triplet_extractor():
-    return pipeline('text2text-generation', model='Babelscape/rebel-large', tokenizer='Babelscape/rebel-large')
-
-def extract_triple_from_question(question, triplet_extractor):
-    """extract the triple from a question using llm
-
-    Args:
-        question (str): _description_
+    """Loads a triplet extraction model pipeline.
 
     Returns:
-        set of triples: _description_
+        A pipeline for extracting triples from text using a specified model and tokenizer.
     """
-    if (triplet_extractor == None):
-        print("do not specify the triplet_extractor")
+    return pipeline('text2text-generation', model='Babelscape/rebel-large', tokenizer='Babelscape/rebel-large')
+
+
+def extract_triple_from_question(question, triplet_extractor):
+    """Extracts triples from a question using a large language model (LLM).
+
+    Args:
+        question: The input question from which to extract triples.
+        triplet_extractor: A pipeline for extracting triples.
+
+    Returns:
+        A list of triples extracted from the question, where each triple is represented as a dictionary.
+    """
+    if triplet_extractor is None:
+        print("Triplet extractor is not specified.")
         exit(-1)
+
     extracted_texts = triplet_extractor.tokenizer.batch_decode([triplet_extractor(
         question, return_tensors=True, return_text=False)[0]["generated_token_ids"]])
     L_extracted_triplets = []
@@ -31,42 +40,38 @@ def extract_triple_from_question(question, triplet_extractor):
 
 
 def extract_triplets(text):
-    """
-    Extract triplets from a text using predefined tags.
-
-    This function processes a text input that contains triplets marked with specific tags
-    ("<triplet>", "<subj>", "<obj>") and extracts these triplets into a structured format.
+    """Extracts triplets from a text using predefined tags.
 
     Args:
-        text (str): Input text containing marked triplets. Tags used:
+        text: Input text containing marked triplets. Tags used:
                     - "<triplet>": Marks the beginning of a new triplet.
                     - "<subj>": Marks the subject of the triplet.
                     - "<obj>": Marks the object of the triplet.
 
     Returns:
-        list of dict: A list of dictionaries, each representing a triplet extracted from the text.
+        A list of dictionaries, each representing a triplet extracted from the text.
                       Each dictionary has three keys:
                       - 'subject': The subject of the triplet.
                       - 'predicate': The relation or type of the triplet.
                       - 'object': The object of the triplet.
     """
     triplets = []
-    relation, subject, relation, object_ = '', '', '', ''
+    relation, subject, object_ = '', '', ''
     text = text.strip()
     current = 'x'
     for token in text.replace("<s>", "").replace("<pad>", "").replace("</s>", "").split():
         if token == "<triplet>":
             current = 't'
             if relation != '':
-                triplets.append(
-                    {'head': subject.strip(), 'type': relation.strip(), 'tail': object_.strip()})
+                triplets.append({'subject': subject.strip(
+                ), 'predicate': relation.strip(), 'object': object_.strip()})
                 relation = ''
             subject = ''
         elif token == "<subj>":
             current = 's'
             if relation != '':
-                triplets.append(
-                    {'head': subject.strip(), 'type': relation.strip(), 'tail': object_.strip()})
+                triplets.append({'subject': subject.strip(
+                ), 'predicate': relation.strip(), 'object': object_.strip()})
             object_ = ''
         elif token == "<obj>":
             current = 'o'
@@ -79,25 +84,31 @@ def extract_triplets(text):
             elif current == 'o':
                 relation += ' ' + token
     if subject != '' and relation != '' and object_ != '':
-        triplets.append(
-            {'subject': subject.strip(), 'predicate': relation.strip(), 'object': object_.strip()})
+        triplets.append({'subject': subject.strip(
+        ), 'predicate': relation.strip(), 'object': object_.strip()})
     return triplets
 
 
 def evidence_sentence_selection(question, sentences, conserved_percentage=0.1, max_num=50, triplet_extractor=None, llm=False):
-    """select the sentence from quetion and sentences that
+    """Selects relevant sentences based on the input question and a list of sentences.
 
     Args:
-        question (str): _description_
-        sentences (str[]): _description_
-        num_sentences (int, optional): _description_. Defaults to 2.
+        question: The question used to select relevant sentences.
+        sentences: A list of sentences from which to select relevant ones.
+        conserved_percentage: The percentage of sentences to conserve. Defaults to 0.1.
+        max_num: The maximum number of sentences to select. Defaults to 50.
+        triplet_extractor: The triplet extraction model. Defaults to None.
+        llm: Whether to use LLM-based triplet extraction. Defaults to False.
+
+    Returns:
+        A list of selected sentences that are relevant to the question.
     """
-    if (llm):
+    if llm:
         q_embeddings = [create_embeddings_from_sentence(
             sentence) for sentence in extract_triple_from_question(question, triplet_extractor)]
     else:
-        q_embeddings = [create_embeddings_from_sentence(
-            question)]
+        q_embeddings = [create_embeddings_from_sentence(question)]
+
     evidence_sentences = []
     sentences_embeddings = [create_embeddings_from_sentence(
         sentence) for sentence in sentences]
@@ -108,18 +119,25 @@ def evidence_sentence_selection(question, sentences, conserved_percentage=0.1, m
 
 
 def evidence_triple_selection(question, triples, conserved_percentage=0.1, max_num=50, triplet_extractor=None, llm=False):
-    """select the triple match the question(directly compare question and triples)
+    """Selects relevant triples based on the input question and a list of triples.
 
     Args:
-        question (str): _description_
-        sentences (str[]): _description_
-        num_sentences (int, optional): _description_. Defaults to 2.
+        question: The question used to select relevant triples.
+        triples: A list of triples from which to select relevant ones.
+        conserved_percentage: The percentage of triples to conserve. Defaults to 0.1.
+        max_num: The maximum number of triples to select. Defaults to 50.
+        triplet_extractor: The triplet extraction model. Defaults to None.
+        llm: Whether to use LLM-based triplet extraction. Defaults to False.
+
+    Returns:
+        A list of selected triples that are relevant to the question.
     """
-    if (llm):
+    if llm:
         q_embeddings = [create_embeddings_from_triple(
             triple) for triple in extract_triple_from_question(question, triplet_extractor)]
     else:
         q_embeddings = [create_embeddings_from_sentence(question)]
+
     evidence_triples = []
     triples_embeddings = [create_embeddings_from_triple(
         triple) for triple in triples]
@@ -130,30 +148,34 @@ def evidence_triple_selection(question, triples, conserved_percentage=0.1, max_n
 
 
 def evidence_selection_per_embedding(target_embedding, triples_embeddings, triples, num_sentences=2):
-    """selection of evidence sentences
+    """Selects the most semantically similar triples based on a target embedding.
 
     Args:
-        target_embedding (): _description_
-        sentences (str[]): _description_
-        num_sentences (int, optional): _description_. Defaults to 2.
+        target_embedding: The embedding of the target (question or triple).
+        triples_embeddings: A list of embeddings for the triples.
+        triples: A list of triples corresponding to the embeddings.
+        num_sentences: The number of triples to select. Defaults to 2.
+
+    Returns:
+        A list of selected triples that are most semantically similar to the target.
     """
     semantic_similarities = torch.tensor([model.similarity(
         triple_embedding, target_embedding) for triple_embedding in triples_embeddings])
-    # if (threshold != None):
-    #     semantic_similarities[semantic_similarities > threshold] = -1
     _, idx_list = torch.topk(semantic_similarities,
                              k=num_sentences, largest=True)
-
-    return [triples[idx] for idx in idx_list if (semantic_similarities[idx] != -1)]
+    return [triples[idx] for idx in idx_list if semantic_similarities[idx] != -1]
 
 
 def evidence_sentence_selection_per_triple(triple, sentences, num_sentences=2):
-    """selection of evidence sentences
+    """Selects the most semantically similar sentences based on a triple.
 
     Args:
-        triple (): _description_
-        sentences (str[]): _description_
-        num_sentences (int, optional): _description_. Defaults to 2.
+        triple: The input triple used to select relevant sentences.
+        sentences: A list of sentences from which to select relevant ones.
+        num_sentences: The number of sentences to select. Defaults to 2.
+
+    Returns:
+        A list of selected sentences that are most semantically similar to the triple.
     """
     triple_embedding = create_embeddings_from_triple(triple)
     sentence_embeddings = torch.tensor(
@@ -166,41 +188,42 @@ def evidence_sentence_selection_per_triple(triple, sentences, num_sentences=2):
 
 
 def create_embeddings_from_sentence(sentence):
-    """Create embeddings from a sentence using Sentence-BERT model.
+    """Create embeddings from a sentence using the Sentence-BERT model.
 
     Args:
-        sentence (str): The input sentence from which to generate embeddings.
+        sentence: The input sentence from which to generate embeddings.
 
     Returns:
-        torch.Tensor: A tensor containing the sentence embedding.
+        A tensor containing the sentence embedding.
     """
     embedding = model.encode(sentence, convert_to_tensor=True)
-
     return embedding
 
 
 def triple2text(triple):
-    if (type(triple["object"]) == list):
+    """Converts a triple dictionary into a text string.
+
+    Args:
+        triple: A dictionary containing 'subject', 'predicate', and 'object' of the triple.
+
+    Returns:
+        A string representation of the triple.
+    """
+    if isinstance(triple["object"], list):
         triple["object"] = '+'.join(triple["object"])
-    results = triple["subject"] + " " + \
-        triple["predicate"] + " " + triple["object"]
-    return results
+    return f"{triple['subject']} {triple['predicate']} {triple['object']}"
 
 
 def create_embeddings_from_triple(triple):
-    """Create embeddings from a textual triple using Sentence-BERT model.
+    """Create embeddings from a textual triple using the Sentence-BERT model.
 
     Args:
-        triple (tuple): A tuple containing three elements (subject, predicate, object) which constitute the triple.
+        triple: A dictionary containing 'subject', 'predicate', and 'object' of the triple.
 
     Returns:
-        torch.Tensor: The embedding representation of the concatenated triple.
+        The embedding representation of the concatenated triple.
     """
-    # Convert the triple to a text string
     concatenated_triple = triple2text(triple)
-
-    # Generate the embedding for the concatenated triple using Sentence-BERT
-    # The model internally handles tokenization, pooling, and returns a sentence embedding
     embedding = model.encode(concatenated_triple, convert_to_tensor=True)
     return embedding
 

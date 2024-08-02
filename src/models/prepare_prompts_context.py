@@ -72,7 +72,6 @@ def prepare_data_only_ve(examples, prompt_template, output_file):
     with open(output_file, 'w') as file:
         json.dump(prepared_data, file, indent=4, ensure_ascii=False)
 
-
 def prepare_data_4settings(examples, prompt_template, output_file, wiki=True):
     """
     Prepare the data by generating contexts for each example with dnlp and openalex
@@ -174,10 +173,10 @@ def process_file(input_file_path, prompt_template_path, output_file_path):
 
 
 if __name__ == '__main__':
-    with open(config['FilePaths']['prepare_prompt_context_input'], 'r') as file:
-        examples = json.load(file)
+    with open("data/processed/train.json", 'r') as file:
+        examples = json.load(file)[:100]
     with open(config['FilePaths']['prompt_template'], 'r') as file:
         prompt_template = file.read()
 
     output_file = config['FilePaths']['prepared_data_file']
-    prepare_data_4settings(examples, prompt_template, output_file)
+    prepare_data_4settings(examples, prompt_template, output_file,wiki=False)
