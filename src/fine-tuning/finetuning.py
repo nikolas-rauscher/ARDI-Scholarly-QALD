@@ -1,143 +1,161 @@
-
+from datasets import load_dataset, Dataset
+from sklearn.metrics import accuracy_score, precision_recall_fscore_support
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import StratifiedKFold
+from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig, TrainingArguments
+from trl import SFTTrainer
+from peft import LoraConfig
+import pandas as pd
 import torch
 import json
 import evaluate
-import nltk, torch
+import nltk
 import numpy as np
+import configparser
+
+config = configparser.ConfigParser()
+config.read('config.ini')
+
 nltk.download("punkt")
-
-from sklearn.metrics import precision_recall_fscore_support
-from peft import LoraConfig
-
-from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig, TrainingArguments
-
-from trl import SFTTrainer
-from datasets import load_dataset
-
 metric = evaluate.load("rouge")
+with open(config['FilePaths']['prompt_template']) as f:
+    prompt_template = f.read()
 
 
 def load_tokenizer(model_id):
-    """_summary_
+    """
+    Load the tokenizer from Hugging Face.
 
     Args:
-        model_id (str): id of the model on HF.
+        model_id (str): The ID of the model on Hugging Face.
 
     Returns:
-        tokenizer
+        tokenizer: The loaded tokenizer.
     """
-
     tokenizer = AutoTokenizer.from_pretrained(model_id)
     tokenizer.pad_token = tokenizer.eos_token
     tokenizer.padding_side = 'right'
-
     return tokenizer
 
+
 def get_targets(labels_file_path):
-    """_summary_
+    """
+    Get the list of target class labels from a file.
 
     Args:
-        labels_file_path (str): path of the file which gives the name of classes.
+        labels_file_path (str): Path to the file containing class labels.
 
     Returns:
-        list: the list of class/label names
+        list: The list of class/label names.
     """
-
     targets = json.load(open(labels_file_path))
-    targets = [key for key in list(targets.keys())]
-
-    return targets
+    return [key for key in targets.keys()]
 
 
 def preprocess_logits_for_metrics(logits):
-  
-  if isinstance(logits, tuple):
-    logits = logits[0]
-
-  return logits.argmax(dim=-1)
-
-# helper function to postprocess text
-def postprocess_text(labels, preds):
-    """_summary_
+    """
+    Preprocess the logits for metric computation.
 
     Args:
-        labels (list): the list of ground truth classes
-        preds (list): the list of predicted classes
+        logits (torch.Tensor): The model's output logits.
 
     Returns:
-        list, list: applied post processing to the returned answers from LLMs.
-
+        torch.Tensor: The indices of the maximum logits.
     """
-    preds = [pred.replace('\n','').split('Answer:')[-1].strip() for pred in preds]
-    labels = [label.replace('\n','').split('Answer:')[-1].strip() for label in labels]
+    if isinstance(logits, tuple):
+        logits = logits[0]
+    return logits.argmax(dim=-1)
 
+
+def extract_response(response):
+    """
+    Extract and clean the response from the model output.
+
+    Args:
+        response (str): The raw response from the model.
+
+    Returns:
+        str: The cleaned response.
+    """
+    if len(response) > 300:
+        response = response.split("Answer:")[-1].strip()
+        if '[INST]' in response:
+            response = response.split("INST]")[-1].strip()
+        if 'assistant' in response:
+            response = response.split("assistant")[-1].strip()
+        if len(response) > 300:
+            response = response.split("\n")[-1].strip()
+        if len(response) > 300:
+            response = 'out of tokens'
+    return response
+
+
+def postprocess_text(labels, preds):
+    """
+    Post-process the labels and predictions.
+
+    Args:
+        labels (list): The list of ground truth labels.
+        preds (list): The list of predicted labels.
+
+    Returns:
+        tuple: The post-processed labels and predictions.
+    """
+    preds = [extract_response(pred) for pred in preds]
+    labels = [extract_response(label) for label in labels]
     return preds, labels
 
 
-
 def compute_metrics(eval_preds):
-    """ Compute the metrics on evaluation. It can be extended with different metrics
+    """
+    Compute the evaluation metrics for the model predictions.
 
     Args:
-        eval_preds (list): the predictions used for evaluation
+        eval_preds (list): The predictions used for evaluation.
 
     Returns:
-        dict: the dict of resulting metrics.
+        dict: The dictionary containing the calculated metrics.
     """
     preds, labels = eval_preds
 
     if isinstance(preds, tuple):
         preds = preds[0]
 
-    # Replace -100 in the preds as we can't decode them
     preds = np.where(preds != -100, preds, tokenizer.pad_token_id)
-    prediction_lens = [np.count_nonzero(pred != tokenizer.pad_token_id) for pred in preds]
-    
-    # Decode generated summaries into text
+    prediction_lens = [np.count_nonzero(
+        pred != tokenizer.pad_token_id) for pred in preds]
     decoded_preds = tokenizer.batch_decode(preds, skip_special_tokens=True)
 
-    # Replace -100 in the labels as we can't decode them
     labels = np.where(labels != -100, labels, tokenizer.pad_token_id)
-    # Decode reference summaries into text
     decoded_labels = tokenizer.batch_decode(labels, skip_special_tokens=True)
-    # ROUGE expects a newline after each sentence
-    # Some simple post-processing
-    grounds, preds = postprocess_text(decoded_labels,decoded_preds)
 
-    # compute micro F1, Recall and Precision
-    precision, recall, f1, s = precision_recall_fscore_support(grounds, preds, labels=targets, average='micro')
-    
-    decoded_preds = ["\n".join(pred.strip()) for pred in decoded_preds]
-
-    decoded_labels = ["\n".join(label.strip()) for label in decoded_labels]
-
-    # Compute ROUGscores
-    result = metric.compute(
-        predictions=decoded_preds, references=decoded_labels, use_stemmer=True
+    grounds, preds = postprocess_text(decoded_labels, decoded_preds)
+    precision, recall, f1, _ = precision_recall_fscore_support(
+        grounds, preds, average='micro'
     )
 
-    # Extract the median scores
+    result = metric.compute(predictions=decoded_preds,
+                            references=decoded_labels, use_stemmer=True)
     result = {key: value * 100 for key, value in result.items()}
     result["gen_len"] = np.mean(prediction_lens)
-
     result['f1'] = f1
     result['recall'] = recall
     result['precision'] = precision
-    
+
     return {k: round(v, 4) for k, v in result.items()}
 
+
 def load_model(model_id):
-    """Load the model from Hugging Face
+    """
+    Load the model from Hugging Face.
 
     Args:
-        model_id (str): the id of model on HF
+        model_id (str): The ID of the model on Hugging Face.
 
     Returns:
-        model: quantized pretrained language model
+        model: The loaded quantized language model.
     """
-
     compute_dtype = getattr(torch, "float16")
-    #quantization configs
     quant_config = BitsAndBytesConfig(
         load_in_4bit=True,
         bnb_4bit_quant_type="nf4",
@@ -147,76 +165,85 @@ def load_model(model_id):
     model = AutoModelForCausalLM.from_pretrained(
         model_id,
         quantization_config=quant_config,
-        device_map={"": 0} 
-        )
-    #for single GPU
+    )
     model.config.use_cache = False
     model.config.pretraining_tp = 1
-    
+
     return model
 
 
 def load_dataset_from_hub(dataset_id):
-    """Load dataset from the Hugging Face hub.
+    """
+    Load dataset from the Hugging Face hub.
 
     Args:
-        dataset_id (str): the id of dataset on HF
+        dataset_id (str): The ID of the dataset on Hugging Face.
 
     Returns:
-        val_dataset, train_dataset: the validation and train datasets
+        tuple: The validation and training datasets.
     """
-    # Load dataset from the hub
-    
     train_dataset = load_dataset(dataset_id, split="train")
-    val_dataset = load_dataset(dataset_id, split="validation")
-    
+    test_dataset = load_dataset(dataset_id, split="test")
+
     print(f"Train dataset size: {len(train_dataset)}")
-    print(f"Validation dataset size: {len(val_dataset)}")
-    
-    
-    return train_dataset, val_dataset
+    print(f"Test dataset size: {len(test_dataset)}")
+
+    return train_dataset, test_dataset
 
 
-def formatting_prompts_func(example):
-    """Create a list to store the formatted texts for each item in the example
+def formatting_prompts_func(examples):
+    """
+    Format the prompts for training.
 
     Args:
-        example (list of dataset): one batch from dataset. each line might consist of prompt context and target_label
+        examples (dict): The batch of data containing questions, answers, and context.
+
     Returns:
-        formatted_texts: formated prompts
+        list: The formatted prompt texts.
     """
-     
-    formatted_texts = []
+    global prompt_template
+    prompt_texts = []
+    for question, answer, context in zip(examples['question'], examples['answer'], examples['context']):
+        prompt_text = prompt_template.format(
+            question=question, context=context) + answer
+        prompt_texts.append(prompt_text)
+    return prompt_texts
 
-    # Iterate through each example in the batch
-    for text, raw_label in zip(example['prompt'], example['relation']):
-        # Format each example as a prompt-response pair
-        formatted_text = f"[INST] {text} [\INST] Answer:{raw_label}"
-        formatted_texts.append(formatted_text)
-    # Return the list of formatted texts
-    return formatted_texts
 
-def fine_tuning(model_id, dataset_id, target_labels):
-    """_summary_
+def get_cross_validation_splits(train_dataset, target_column, n_splits=5):
+    """
+    Get cross-validation splits for the train dataset.
 
     Args:
-        model_id (str): the id of model on Hugging Face
-        dataset_id (str): the id of dataset on HF
-        target_labels (list): the names of classes in the dataset
+        train_dataset (Dataset): The train dataset.
+        target_column (str): The name of the target column.
+        n_splits (int): Number of folds for cross-validation.
 
     Returns:
-        trainer: SFT trainer. The trainer can be used for future predictions later.
+        list: A list of tuples, each containing train indices and validation indices for each split.
     """
+    train_df = train_dataset.to_pandas()
+    X, y = train_df.drop(columns=[target_column]), train_df[target_column]
 
-    print("Fine tuning model: ", model_id, " on dataset: ", dataset_id)
+    skf = StratifiedKFold(n_splits=n_splits)
+    return [(train_idx, val_idx) for train_idx, val_idx in skf.split(X, y)]
 
-    train_dataset, val_dataset = load_dataset_from_hub(dataset_id)
-    global targets 
-    targets = get_targets(target_labels)
-    # quantized pretrained model
+
+def fine_tune_model(model_id, train_dataset, val_dataset):
+    """
+    Fine-tune the model on the provided dataset.
+
+    Args:
+        model_id (str): The ID of the model on Hugging Face.
+        train_dataset (Dataset): The training dataset.
+        val_dataset (Dataset): The validation dataset.
+
+    Returns:
+        SFTTrainer: The fine-tuned trainer.
+    """
     model = load_model(model_id)
+    tokenizer = load_tokenizer(model_id)
 
-    # apply LoRA configuration for CAUSAL LM, decode only models, such as Llama2-7B and Mistral-7B
     lora_config = LoraConfig(
         lora_alpha=16,
         lora_dropout=0.1,
@@ -224,68 +251,115 @@ def fine_tuning(model_id, dataset_id, target_labels):
         bias="none",
         task_type="CAUSAL_LM",
     )
-    repository_id = f"{model_id.split('/')[1]}-{dataset_id}"
-
     model.add_adapter(lora_config)
-    global tokenizer
-    tokenizer = load_tokenizer(model_id)
 
-
-    #declare training arguments
-    #please change it for more than one epoch. such as add val_loss for evaluation on epoch..
     training_args = TrainingArguments(
-            output_dir=repository_id,
-            num_train_epochs=1,
-            per_device_train_batch_size=4,
-            gradient_accumulation_steps=1,
-            optim="paged_adamw_32bit",
-            save_steps=25,
-            logging_steps=25,
-            learning_rate=2e-4,
-            weight_decay=0.001,
-            fp16=False,
-            bf16=False,
-            max_grad_norm=0.3,
-            max_steps=-1,
-            warmup_ratio=0.03,
-            group_by_length=True,
-            lr_scheduler_type="constant",
-            report_to="tensorboard",
-        )
+        output_dir=f"{model_id.split('/')[1]}-local",
+        num_train_epochs=1,
+        per_device_train_batch_size=4,
+        gradient_accumulation_steps=1,
+        optim="paged_adamw_32bit",
+        save_steps=25,
+        logging_steps=25,
+        learning_rate=2e-4,
+        weight_decay=0.001,
+        group_by_length=True,
+        lr_scheduler_type="constant",
+        report_to="tensorboard",
+    )
 
-
-    # declare trainer
-    trainer = SFTTrainer( #based on RLHF
-            model=model,
-            args=training_args,
-            train_dataset=train_dataset,
-            eval_dataset=val_dataset,
-            formatting_func=formatting_prompts_func,
-            peft_config=lora_config,
-            tokenizer=tokenizer,
-            compute_metrics=compute_metrics,        
-            max_seq_length= None,
-            packing=False,
-        )
+    trainer = SFTTrainer(
+        model=model,
+        args=training_args,
+        train_dataset=train_dataset,
+        eval_dataset=val_dataset,
+        formatting_func=formatting_prompts_func,
+        peft_config=lora_config,
+        tokenizer=tokenizer,
+        compute_metrics=compute_metrics,
+    )
 
     trainer.train()
-    
-    #save trainer
     trainer.save_model(training_args.output_dir)
-    # merge adapter and pretrained weights
     model = model.merge_and_unload()
-    #save fine-tuned model
     model.save_pretrained(training_args.output_dir)
     tokenizer.save_pretrained(training_args.output_dir)
-    
+
     return trainer
 
+
+def load_dataset_local(path_train):
+    """
+    Load datasets from local JSON files.
+
+    Args:
+        path_train (str): Path to the train dataset JSON file.
+
+    Returns:
+        Dataset: The train dataset as a Hugging Face Dataset object.
+    """
+    train_df = pd.read_json(path_train, orient='records')
+    return Dataset.from_pandas(train_df)
+
+
+def perform_cross_validation(model_id, path_train, target_column, n_splits=5):
+    """
+    Perform cross-validation and calculate the standard error.
+
+    Args:
+        model_id (str): The ID of the model on Hugging Face.
+        path_train (str): Path to the train dataset JSON file.
+        target_column (str): The name of the target column.
+        n_splits (int): Number of folds for cross-validation.
+
+    Returns:
+        tuple: The mean accuracy and standard error.
+    """
+    train_dataset = load_dataset_local(path_train)
+    splits = get_cross_validation_splits(
+        train_dataset, target_column, n_splits=n_splits)
+
+    accuracies = []
+
+    for i, (train_idx, val_idx) in enumerate(splits):
+        print(f"Processing fold {i + 1}/{n_splits}...")
+        train_split = train_dataset.select(train_idx)
+        val_split = train_dataset.select(val_idx)
+
+        trainer = fine_tune_model(model_id, train_split, val_split)
+        eval_results = trainer.evaluate()
+        accuracy = eval_results.get('eval_accuracy')
+        if accuracy is not None:
+            accuracies.append(accuracy)
+            print(f"Fold {i + 1} accuracy: {accuracy}")
+        else:
+            print(f"Accuracy not found in fold {i + 1} results")
+
+    mean_accuracy = np.mean(accuracies)
+    std_error = np.std(accuracies) / np.sqrt(n_splits)
+
+    print(f"Mean cross-validation accuracy: {mean_accuracy}")
+    print(f"Standard error: {std_error}")
+
+    return mean_accuracy, std_error
+
+
 if __name__ == "__main__":
-    
-    model_id = "mistralai/Mistral-7B-Instruct-v0.2" #change this
-    dataset_id = "Sefika/tacrev_prompt" #change this..
+    model_id = "google/flan-t5-large"
+    dataset_id = "Sefika/KGQA_triples"
+    # path_train = config['FilePaths']['finetune_path_train']
 
-    target_labels = 'rel2id.json' #file path to your target classes.
-    trainer = fine_tuning(model_id, dataset_id, target_labels )
+    target_column = "answer"
+    # trainer = perform_cross_validation(model_id, path_train, target_column)
+    train_dataset = load_dataset(
+        "wepolyu/new_QALD_train_dataset_prompt", split="train")
+    KGQA = get_cross_validation_splits(
+        train_dataset, target_column, n_splits=5)
+    for idx, (train_idx, val_idx) in enumerate(KGQA):
 
+        df_subset = pd.DataFrame(train_dataset[train_idx])
+        df_subset2 = pd.DataFrame(train_dataset[val_idx])
+        # Save the subset DataFrame to a JSON file
+        df_subset.to_json(f"data/processed/splits/train_{idx}.json", orient='records', lines=False)
+        df_subset2.to_json(f"data/processed/splits/test_{idx}.json", orient='records', lines=False)
 

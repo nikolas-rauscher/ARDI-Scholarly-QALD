@@ -59,7 +59,7 @@ Json of all processed triples, extracted from the DBLP KG
         "question": "What type of information sources were found to be lacking in organized information at Social Services offices according to the author's observation?",
         "answer": "oral communication and notes",
         "author_dblp_uri": "<https://dblp.org/pid/w/TDWilson>",
-        "tripples_number": 885,
+        "triples_number": 885,
         "all_triples": [
             {
                 "entity": "<https://dblp.org/pid/w/TDWilson>",
@@ -180,7 +180,7 @@ Ouput: Processed triples from OpenAlex KG plus the relevant wikipedia data
         "id": "6b8aa79c-3908-4f03-b85b-aa1a325d9fe6",
         "question": "What type of information sources were found to be lacking in organized information at Social Services offices according to the author's observation?",
         "answer": "oral communication and notes",
-        "tripples_number": 574,
+        "triples_number": 574,
         "author_uri": [
             "https://semopenalex.org/author/A5069855349"
         ],
