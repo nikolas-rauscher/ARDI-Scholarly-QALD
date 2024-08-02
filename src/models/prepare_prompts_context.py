@@ -20,7 +20,7 @@ config.read(PREFIX_PATH + 'config.ini')
 config = configparser.ConfigParser()
 config.read('config.ini')
 
-def prepare_data_only_ve(examples, prompt_template, output_file):
+def generate_contexts_with_evidence_and_verbalizer(examples, prompt_template, output_file, wiki_data=True):
     """
     Prepare the data by generating contexts for each example with all 3 resources
 
@@ -143,9 +143,10 @@ def prepare_data_4settings(examples, prompt_template, output_file, wiki=True):
         json.dump(prepared_data, file, indent=4, ensure_ascii=False)
 
 
-def process_file(input_file_path, prompt_template_path, output_file_path):
+def generate_context_for_file(input_file_path, prompt_template_path, output_file_path):
     """
-    Process the input file and generate prepared data.
+    Generate context for the input file and prepare data.
+    It runns the prepare_data_4settings function. So it will generate context for all 4 experiments.
 
     Args:
         input_file_path (str): Input file path.
@@ -174,9 +175,9 @@ def process_file(input_file_path, prompt_template_path, output_file_path):
 
 if __name__ == '__main__':
     with open("data/processed/train.json", 'r') as file:
-        examples = json.load(file)[:100]
+        examples = json.load(file)
     with open(config['FilePaths']['prompt_template'], 'r') as file:
         prompt_template = file.read()
 
     output_file = config['FilePaths']['prepared_data_file']
-    prepare_data_4settings(examples, prompt_template, output_file,wiki=False)
+    generate_contexts_with_evidence_and_verbalizer(examples, prompt_template, output_file,wiki=False)
