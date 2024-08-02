@@ -163,6 +163,13 @@ cython_debug/
 #  .idea/
 data/processed/processed_data.json
 data/processed/test_post_processed_data_dblp.json
+
+# do not push this..
+data/processed/alex
+data/processed/dblp
+data/processed/final
+data/processed/wikipedia_data
+data/external
 #.idea/
 
 
