@@ -229,8 +229,8 @@ def create_embeddings_from_triple(triple):
 
 
 if __name__ == "__main__":
-    with open("./data/processed/DBLP_first_10Q.json") as f:
-        data = json.load(f)[0]
+    with open("./data/processed/prepared_data_10q.json") as f:
+        data = json.load(f)[3]
     ems = evidence_triple_selection(
-        data['question'], data['all_triples'], conserved_percentage=0.1)
-    print(len(ems))
+        data['question'], data['contexts']['all_triples'], conserved_percentage=0.1)
+    print(data['triples_number'],len(ems))
