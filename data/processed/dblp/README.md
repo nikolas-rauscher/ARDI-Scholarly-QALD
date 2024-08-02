@@ -59,9 +59,8 @@ gives archived page URL of the person
 The differentFrom predicate in the triple you’ve provided is used within RDF data to explicitly assert that two resources (entities) are distinct from each other, despite potentially similar names or attributes. This is particularly important in databases like DBLP, where multiple individuals may share similar or identical names. 
 
 #### award page URL (can be extended/removed)
+
 #### gives award page URL of the person 
-
-
 
 #### All predicates, that do not have a label
 ['http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'http://www.w3.org/2000/01/rdf-schema#label', 'http://purl.org/spar/datacite/hasIdentifier']
