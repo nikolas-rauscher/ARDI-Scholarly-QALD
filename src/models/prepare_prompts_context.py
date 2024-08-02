@@ -20,6 +20,57 @@ config.read(PREFIX_PATH + 'config.ini')
 config = configparser.ConfigParser()
 config.read('config.ini')
 
+def prepare_data_only_ve(examples, prompt_template, output_file):
+    """
+    Prepare the data by generating contexts for each example with all 3 resources
+
+    Args:
+        examples (list): List of examples.
+        prompt_template (str): Prompt template.
+        output_file (str): Output file path.
+
+    Returns:
+        None
+    """
+    prepared_data = []
+
+    for example in tqdm(examples, desc="Preparing Data"):
+        # Number of triples
+        triples_number = len(example['all_triples'])
+
+        # Evidence Matching
+        triples_evidence = evidence_triple_selection(
+            example['question'], example['all_triples']
+        )
+
+        # Verbalizer + Evidence Matching
+        context_evidence_verbalizer = verbalise_triples(triples_evidence)
+
+        wiki_context = ""
+        if 'wiki_data' in example:
+            for wiki_text in example['wiki_data']:
+                # sentences = ['. '.join(list(item.values())) for item in wiki_text]
+                if len(wiki_text) > 0:
+                    sentences = str(wiki_text).split('.')
+                    wiki_evidence = evidence_sentence_selection(
+                        example['question'], sentences, conserved_percentage=0.2, max_num=40
+                    )
+                    wiki_context += '. '.join(wiki_evidence)
+
+        prepared_example = {
+            "id": example["id"],
+            "question": example["question"],
+            "triples_number": triples_number,
+            "contexts": context_evidence_verbalizer + wiki_context
+        }
+
+        if "answer" in example:
+            prepared_example["answer"] = example["answer"]
+
+        prepared_data.append(prepared_example)
+
+    with open(output_file, 'w') as file:
+        json.dump(prepared_data, file, indent=4, ensure_ascii=False)
 
 def prepare_data_4settings(examples, prompt_template, output_file, wiki=True):
     """
