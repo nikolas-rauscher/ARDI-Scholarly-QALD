@@ -186,7 +186,6 @@ def evidence_sentence_selection_per_triple(triple, sentences, num_sentences=2):
                              k=num_sentences, largest=True)
     return sentences[idx_list]
 
-
 def create_embeddings_from_sentence(sentence):
     """Create embeddings from a sentence using the Sentence-BERT model.
 

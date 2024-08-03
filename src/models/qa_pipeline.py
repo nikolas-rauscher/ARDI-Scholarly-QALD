@@ -1,17 +1,18 @@
+import json
+import configparser
+from tqdm import tqdm
+import os
+from data.data_extraction import run_question
+from src.models.zero_shot_prompting_pipeline import clean_context, truncate_context_to_max_chars
+from models.verbalizer.generatePrompt import verbalise_triples
+from data.evidence_selection import evidence_triple_selection, triple2text, evidence_sentence_selection
+from transformers import AutoModelForCausalLM, AutoTokenizer
+import torch
+import gc  # Garbage Collector Interface
 import sys
 # Append source directories to system path
 sys.path.append('./src')
 sys.path.append('..')
-import gc  # Garbage Collector Interface
-import torch
-from transformers import AutoModelForCausalLM, AutoTokenizer
-from data.evidence_selection import evidence_triple_selection, triple2text, evidence_sentence_selection
-from models.verbalizer.generatePrompt import verbalise_triples
-from src.models.zero_shot_prompting_pipeline import clean_context, truncate_context_to_max_chars
-import os
-from tqdm import tqdm
-import configparser
-import json
 
 # Read configuration file
 config = configparser.ConfigParser()
@@ -62,7 +63,8 @@ def qa(model, tokenizer, example, prompt_template):
         outputs, skip_special_tokens=True)[0]
     return response_text
 
-def question_answering(model, tokenizer, prompt_template, question, verbalizer=True, evidence_matching=True):
+
+def question_answering(model, tokenizer, prompt_template, question, author_dblp_uri, verbalizer=True, evidence_matching=True):
     """
     Perform question answering with context and evidence processing.
 
@@ -78,8 +80,8 @@ def question_answering(model, tokenizer, prompt_template, question, verbalizer=T
         str: The generated response based on the processed context.
     """
     wiki_data = {}  # Dictionary to hold Wikipedia data
-    all_triples = []  # List to store extracted triples
-
+    # List to store extracted triples
+    all_triples = run_question(question, author_dblp_uri)
     # Process Wikipedia data for context
     for key, wiki_text in wiki_data.items():
         if wiki_text and evidence_matching:

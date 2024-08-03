@@ -6,6 +6,50 @@ RESULT_KEYS = ["all_triples_results", "verbalizer_results",
                "evidence_matching", "verbalizer_plus_evidence_matching"]
 
 
+def process_all_files_in_folder(directory, process_func, result_keys):
+    """
+    Process all JSON files in a given directory.
+
+    Args:
+        directory (str): Path to the directory containing JSON files.
+        process_func (function): Function to process the data.
+        result_keys (list): List of result keys to use in processing.
+
+    Returns:
+        None
+    """
+    files = [f for f in os.listdir(directory) if f.endswith(".json")]
+    output_dir = os.path.join(directory, 'processed')
+    os.makedirs(output_dir, exist_ok=True)
+
+    for file_name in files:
+        file_path = os.path.join(directory, file_name)
+        print(f"Processing file: {file_name}")
+        process_file(file_path, process_func, output_dir, result_keys)
+
+def process_file(file_path, process_func, output_dir, result_keys):
+    """
+    Process a single JSON file and save the output.
+
+    Args:
+        file_path (str): Path to the JSON file to process.
+        process_func (function): Function to process the data.
+        output_dir (str): Directory to save the output files.
+        result_keys (list): List of result keys to use in processing.
+
+    Returns:
+        None
+    """
+    with open(file_path, "r") as file:
+        data = json.load(file)
+        output = process_func(data, result_keys)
+        for i, result in enumerate(output):
+            output_file_path = os.path.join(
+                output_dir, f"answer_{os.path.basename(file_path)[:-5]}_{result_keys[i]}.json")
+            with open(output_file_path, "w") as wf:
+                json.dump(result, wf, indent=2)
+            print(f"Processed and saved: {output_file_path}")
+
 def search_dict_list_by_answer(dict_list, answer):
     """
     Search for an item in a list of dictionaries by the 'answer' key.
@@ -135,50 +179,7 @@ def process_for_evaluation(data, result_keys):
     return output
 
 
-def process_file(file_path, process_func, output_dir, result_keys):
-    """
-    Process a single JSON file and save the output.
 
-    Args:
-        file_path (str): Path to the JSON file to process.
-        process_func (function): Function to process the data.
-        output_dir (str): Directory to save the output files.
-        result_keys (list): List of result keys to use in processing.
-
-    Returns:
-        None
-    """
-    with open(file_path, "r") as file:
-        data = json.load(file)
-        output = process_func(data, result_keys)
-        for i, result in enumerate(output):
-            output_file_path = os.path.join(
-                output_dir, f"answer_{os.path.basename(file_path)[:-5]}_{result_keys[i]}.json")
-            with open(output_file_path, "w") as wf:
-                json.dump(result, wf, indent=2)
-            print(f"Processed and saved: {output_file_path}")
-
-
-def process_all_files_in_folder(directory, process_func, result_keys):
-    """
-    Process all JSON files in a given directory.
-
-    Args:
-        directory (str): Path to the directory containing JSON files.
-        process_func (function): Function to process the data.
-        result_keys (list): List of result keys to use in processing.
-
-    Returns:
-        None
-    """
-    files = [f for f in os.listdir(directory) if f.endswith(".json")]
-    output_dir = os.path.join(directory, 'processed')
-    os.makedirs(output_dir, exist_ok=True)
-
-    for file_name in files:
-        file_path = os.path.join(directory, file_name)
-        print(f"Processing file: {file_name}")
-        process_file(file_path, process_func, output_dir, result_keys)
 
 
 def ensure_folder_exists(folder_path):
@@ -194,8 +195,25 @@ def ensure_folder_exists(folder_path):
     if not os.path.exists(folder_path):
         os.makedirs(folder_path)
 
+def preprocess_sparql(file_path):
+    # Open the JSON file
+    with open(file_path, 'r') as file:
+        data = json.load(file)
+
+    # Modify the dictionary key
+    for item in data:
+        if 'sparql_answers' in item:
+            answer=item.pop('sparql_answers')
+            if isinstance(answer,list):
+                item['answer'] = answer[0] if len(answer)==1 else '. '.join(answer)
+
+    # Save the modified data back to the JSON file
+    with open(file_path, 'w') as file:
+        json.dump(data, file, indent=4)
+    
 
 if __name__ == "__main__":
+    preprocess_sparql('/Users/celes/Documents/Projects/ARDI-Scholarly-QALD/data/external/sparql.json')
     # test_directory = "results/train_test_data"
     # gt_path = "data/raw/codalab_new_train_data.json"
     # data_directories = ['results/zero-shot_Flan_T5_large',
@@ -207,5 +225,5 @@ if __name__ == "__main__":
     #     ensure_folder_exists(data_directory + '_out')
     #     pipeline_question_ids(test_directory=data_directory,
     #                           ref_directory=test_directory, out_directory=data_directory + '_out')
-    process_all_files_in_folder(
-        "./data/processed/10q", process_for_evaluation, RESULT_KEYS)
+    # process_all_files_in_folder(
+    #     "./data/processed/100q", process_for_evaluation, RESULT_KEYS)
