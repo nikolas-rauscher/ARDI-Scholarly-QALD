@@ -227,10 +227,10 @@ def create_embeddings_from_triple(triple):
     embedding = model.encode(concatenated_triple, convert_to_tensor=True)
     return embedding
 
-
 if __name__ == "__main__":
     with open("./data/processed/prepared_data_10q.json") as f:
-        data = json.load(f)[3]
+        data = json.load(f)[6]
+    extract_triplet = load_triplet_extractor()
     ems = evidence_triple_selection(
-        data['question'], data['contexts']['all_triples'], conserved_percentage=0.1)
-    print(data['triples_number'],len(ems))
+        data['question'], data['contexts']['all_triples'], triplet_extractor=extract_triplet, llm=False, conserved_percentage=0.1)
+    print(data['triples_number'], len(ems))

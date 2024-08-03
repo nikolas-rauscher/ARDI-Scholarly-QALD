@@ -45,12 +45,20 @@ def run_question(question: str, author_dblp_uri: list, question_id: str, config)
     }]
 
     # Set the file path for saving the question data
-    save_path = os.path.join("data/raw", f"{question_id}.json")
+    save_path = os.path.join(config.get('FilePaths', 'custom_questions_path'), f"{question_id}.json")
     with open(save_path, 'w') as file:
         json.dump(question_dict, file, indent=4, ensure_ascii=False)
     
     # Update the path to the question in the config object
-    config.questions_path = save_path  # Ensure this config attribute is correctly used in create_dataset
-
+    config.questions_path = save_path 
     # Call create_dataset with the updated config
     create_dataset(config, question_id)
+
+    merged_data_path = os.path.join(config.get('FilePaths', 'merged_triples_and_wikipedia_path'), f"final_merged_{question_id}.json")
+    with open(merged_data_path, 'r', encoding='utf-8') as file:
+        merged_data = json.load(file)
+
+    return merged_data
+
+
+

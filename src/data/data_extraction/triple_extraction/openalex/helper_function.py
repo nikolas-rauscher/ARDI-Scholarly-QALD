@@ -18,11 +18,11 @@ def read_json(outputdata_name_path: str) -> dict:
     return formulations
 
 
-def save_intermediate_result(outputdata_path: str, new_dataset: dict) -> None:
+def save_intermediate_result(outputdata_path: str, new_dataset: list) -> None:
     """
     Args:
         outputdata_path (str): The file path where the dataset should be saved.
-        new_dataset (dict): The dataset to be saved
+        new_dataset (list): The dataset to be saved
     """
     with open(outputdata_path, 'w', encoding='utf-8') as file:
         json.dump(new_dataset, file, indent=4, ensure_ascii=False)

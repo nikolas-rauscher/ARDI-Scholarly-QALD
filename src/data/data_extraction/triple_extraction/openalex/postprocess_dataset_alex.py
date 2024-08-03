@@ -2,7 +2,7 @@ import json
 import os
 from .helper_function import run_query, read_json, save_intermediate_result
 import concurrent.futures
-
+import time
 
 predicates = ['modified', 'citedByCount', 'worksCount', 'h-index', 'name', '2YrMeanCitedness', 'i10Index', 'alternativeName', 'orcidId', 'scopus', 'twitter']
 predicates_process = ["creator", "countsByYear", "org#memberOf", "hasAuthor", "22-rdf-syntax-ns#type" ]
@@ -171,8 +171,8 @@ def process_in_parallel(data: dict, outputdata_path: str, endpoint_url: str, pro
     outputpathes = []
     data_segments = []
     if data_length < processes:
-       processes = data_length
-       print("warning: there a less questions then processes. Process number is reduced..")
+       processes = 1
+       print("warning: there are less questions then processes. Process number is reduced..")
     # Create segments and corresponding output names
     print(f"parallelize postprocessing on {processes} processes")
     for i in range(processes):
@@ -212,7 +212,7 @@ def merge_and_save(outputpathes: list, final_output_name: str):
     print(f"Data merged and saved to {final_output_name}")
   
     
-def post_process_alex_parallelized(data_alex_prepocessed_path: dict, outputdata_path: str, endpoint_url: str, processes = 1, delete_intermediate = True): 
+def post_process_alex_parallelized(data_alex_prepocessed_path: str, outputdata_path: str, endpoint_url: str, processes = 1, delete_intermediate = True): 
     """
     Manages the parallel processing of data for post-processing from a specified dataset.
 
@@ -232,6 +232,7 @@ def post_process_alex_parallelized(data_alex_prepocessed_path: dict, outputdata_
         post_process_alex(data_alex_prepocessed, outputdata_path, endpoint_url)
     elif processes>1 and type(processes) == int:
         outputnames = process_in_parallel(data_alex_prepocessed, outputdata_path, endpoint_url, processes)
+        time.sleep(1) # saving files takes some time..
         # Merging results into one file
         merge_and_save(outputnames, outputdata_path)
         # Delete intermediate files if needed

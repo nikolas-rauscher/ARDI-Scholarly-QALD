@@ -5,7 +5,7 @@ sys.path.append('..')
 import gc  # Garbage Collector Interface
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
-from features.evidence_selection import evidence_triple_selection, triple2text, evidence_sentence_selection
+from data.evidence_selection import evidence_triple_selection, triple2text, evidence_sentence_selection
 from models.verbalizer.generatePrompt import verbalise_triples
 from src.models.zero_shot_prompting_pipeline import clean_context, truncate_context_to_max_chars
 import os
