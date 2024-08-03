@@ -14,7 +14,7 @@ from tqdm import tqdm
 config = configparser.ConfigParser()
 config.read('config.ini')
 
-def generate_contexts_with_evidence_and_verbalizer(examples, prompt_template, output_file, wikipedia_data=True):
+def generate_contexts_with_evidence_and_verbalizer(examples, output_file, wikipedia_data=True):
     """
     Prepare the data by generating contexts for each example with all 3 resources
 
@@ -54,10 +54,11 @@ def generate_contexts_with_evidence_and_verbalizer(examples, prompt_template, ou
                 # sentences = ['. '.join(list(item.values())) for item in wiki_text]
                 if len(wiki_text) > 0:
                     sentences = str(wiki_text).split('.')
-                    wiki_evidence = evidence_sentence_selection(
-                        example['question'], sentences, conserved_percentage=0.2, max_num=40
-                    )
-                    wiki_context += '. '.join(wiki_evidence)
+                    if sentences:
+                        wiki_evidence = evidence_sentence_selection(
+                            example['question'], sentences, conserved_percentage=0.2, max_num=40
+                        )
+                        wiki_context += '. '.join(wiki_evidence)
 
         prepared_example = {
             "id": example["id"],
@@ -74,13 +75,12 @@ def generate_contexts_with_evidence_and_verbalizer(examples, prompt_template, ou
     with open(output_file, 'w') as file:
         json.dump(prepared_data, file, indent=4, ensure_ascii=False)
 
-def prepare_data_4settings(examples, prompt_template, output_file, wikipedia_data=True):
+def prepare_data_4settings(examples, output_file, wikipedia_data=True):
     """
-    Prepare the data by generating contexts for each example with dnlp and openalex
+    Prepare the data by generating contexts for each example with DBLP and openalex.
 
     Args:
         examples (list): List of examples. Also handles the case when examples is a dictionary or a list of lists.
-        prompt_template (str): Prompt template.
         output_file (str): Output file path.
 
     Returns:
@@ -138,10 +138,10 @@ def prepare_data_4settings(examples, prompt_template, output_file, wikipedia_dat
             "triples_number": triples_number,
             "contexts": {
                 "all_triples": all_triples_flat,
-                "plain": context_plain + wiki_context_plain,
-                "verbalizer_on_all_triples": context_verbalizer + wiki_context_plain,
-                "evidence_matching": context_evidence + wiki_context,
-                "verbalizer_plus_evidence_matching": context_evidence_verbalizer + wiki_context
+                "plain": str(context_plain) + wiki_context_plain,
+                "verbalizer_on_all_triples": str(context_verbalizer) + wiki_context_plain,
+                "evidence_matching": str(context_evidence) + wiki_context,
+                "verbalizer_plus_evidence_matching": str(context_evidence_verbalizer) + wiki_context
             }
         }
 
@@ -191,7 +191,7 @@ if __name__ == '__main__':
 
     output_file = config['FilePaths']['prepared_data_file']
     # generate_contexts_with_evidence_and_verbalizer(examples, prompt_template, output_file, wikipedia_data=True)
-    prepare_data_4settings(examples, prompt_template, output_file, wikipedia_data=True)
+    prepare_data_4settings(examples, output_file, wikipedia_data=True)
     
     
 
