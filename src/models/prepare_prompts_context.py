@@ -2,7 +2,7 @@ import sys
 sys.path.append('./src')
 sys.path.append('..')
 from data.evidence_selection import evidence_triple_selection, load_triplet_extractor, triple2text, evidence_sentence_selection
-from models.verbalizer.generatePrompt import verbalise_triples
+from models.verbalizer.prompt_verbalizer import verbalise_triples
 import json
 import configparser
 from tqdm import tqdm
@@ -87,7 +87,7 @@ def prepare_data_4settings(examples, prompt_template, output_file, wiki=True):
     prepared_data = []
 
     # Process only the first 100 examples
-    examples = examples[:100]
+    examples = examples[:1]
     triple_extractor=load_triplet_extractor()
     for example in tqdm(examples, desc="Preparing Data"):
         triples_number = len(example['all_triples'])
@@ -178,4 +178,4 @@ if __name__ == '__main__':
         prompt_template = file.read()
 
     output_file = config['FilePaths']['prepared_data_file']
-    generate_contexts_with_evidence_and_verbalizer(examples, prompt_template, output_file,wiki=False)
+    generate_contexts_with_evidence_and_verbalizer(examples, prompt_template, output_file, wiki_data=True)

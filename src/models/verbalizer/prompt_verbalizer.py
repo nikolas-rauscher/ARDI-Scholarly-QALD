@@ -107,7 +107,7 @@ def verbalise_triples(triples, use_predicate_based=True):
 
     Args:
         triples (list): A list of triples, where each triple is a dictionary with keys 'subject', 'predicate', and 'object'.
-        use_predicate_based (bool): Whether to use predicate-based verbalization.
+        use_predicate_based (bool): Whether to use predicate-based verbalisation.
 
     Returns:
         str: A string of verbalised triples.
