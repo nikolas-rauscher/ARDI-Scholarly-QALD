@@ -117,8 +117,7 @@ def evidence_sentence_selection(question, sentences, conserved_percentage=0.1, m
         A list of selected sentences that are relevant to the question.
     """
     if llm:
-        q_embeddings = [create_embeddings_from_sentence(
-            triple2text(sentence)) for sentence in extract_triple_from_question(question, triplet_extractor)]
+        q_embeddings = [create_embeddings_from_triple(sentence) for sentence in extract_triple_from_question(question, triplet_extractor)]
     else:
         q_embeddings = [create_embeddings_from_sentence(question)]
 
@@ -147,7 +146,7 @@ def evidence_triple_selection(question, triples, conserved_percentage=0.1, max_n
     """
     if llm:
         q_embeddings = [create_embeddings_from_triple(
-            triple2text(triple)) for triple in extract_triple_from_question(question, triplet_extractor)]
+            triple) for triple in extract_triple_from_question(question, triplet_extractor)]
     else:
         q_embeddings = [create_embeddings_from_sentence(question)]
 
