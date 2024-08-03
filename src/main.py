@@ -16,7 +16,7 @@ config = Config()
 ##################################################################################
 
 #Extract triples and add wikipedia context
-#experiment_name = "Test"
+experiment_name = "full_dataset"
 #create_dataset(config, experiment_name)
 
 ##################################################################################
