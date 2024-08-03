@@ -19,7 +19,7 @@ def generate_contexts_with_evidence_and_verbalizer(examples, prompt_template, ou
     Prepare the data by generating contexts for each example with all 3 resources
 
     Args:
-        examples (list): List of examples.
+        examples (list): List of examples. Also handles the case when examples is a dictionary or a list of lists.
         prompt_template (str): Prompt template.
         output_file (str): Output file path.
 
@@ -29,13 +29,21 @@ def generate_contexts_with_evidence_and_verbalizer(examples, prompt_template, ou
     prepared_data = []
 
     for example in tqdm(examples, desc="Preparing Data"):
+        # Check if all_triples is a list of lists, a flat list, or a dictionary
+        if isinstance(example['all_triples'], dict):
+            all_triples_flat = [example['all_triples']]
+        elif all(isinstance(i, list) for i in example['all_triples']):
+            all_triples_flat = [triple for triples in example['all_triples'] for triple in triples]
+        else:
+            all_triples_flat = example['all_triples']
+
         # Number of triples
-        triples_number = len(example['all_triples'])
+        triples_number = len(all_triples_flat)
 
         # Evidence Matching
         triples_evidence = evidence_triple_selection(
-            example['question'], example['all_triples'])
-        
+            example['question'], all_triples_flat
+        )
 
         # Verbalizer + Evidence Matching
         context_evidence_verbalizer = verbalise_triples(triples_evidence)
@@ -71,7 +79,7 @@ def prepare_data_4settings(examples, prompt_template, output_file, wikipedia_dat
     Prepare the data by generating contexts for each example with dnlp and openalex
 
     Args:
-        examples (list): List of examples.
+        examples (list): List of examples. Also handles the case when examples is a dictionary or a list of lists.
         prompt_template (str): Prompt template.
         output_file (str): Output file path.
 
