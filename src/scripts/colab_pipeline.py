@@ -3,7 +3,7 @@ from tqdm import tqdm
 import configparser
 import json
 from models.verbalizer.generatePrompt import verbalise_triples
-from features.evidence_selection import evidence_triple_selection, triple2text, evidence_sentence_selection
+from data.evidence_selection import evidence_triple_selection, triple2text, evidence_sentence_selection
 import sys
 import torch
 

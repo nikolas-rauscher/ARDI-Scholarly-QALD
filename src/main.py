@@ -1,11 +1,10 @@
-from src.data_extraction.triple_extraction.dblp.create_dataset_dblp import create_dataset_dblp
-from src.data_extraction.triple_extraction.dblp.postprocess_dataset_dblp import post_process_dblp
-from src.data_extraction.triple_extraction.openalex.create_dataset_alex import create_alex_dataset 
-from src.data_extraction.triple_extraction.openalex.postprocess_dataset_alex import post_process_alex_parallelized
-from src.data_extraction.wikipedia_data.add_wiki_data import add_wikidata
-from src.data_extraction.merge_data import merge_data
-
-import config
+from .data.data_extraction.triple_extraction.dblp.create_dataset_dblp import create_dataset_dblp
+from .data.data_extraction.triple_extraction.dblp.postprocess_dataset_dblp import post_process_dblp
+from .data.data_extraction.triple_extraction.openalex.create_dataset_alex import create_alex_dataset 
+from .data.data_extraction.triple_extraction.openalex.postprocess_dataset_alex import post_process_alex_parallelized
+from .data.data_extraction.wikipedia_data.add_wiki_data import add_wikidata
+from .data.data_extraction.merge_data import merge_data
+from .data.data_extraction import config
 
 def create_dataset(config):
     create_dataset_dblp(config.Qustions_path, 
@@ -33,4 +32,3 @@ def create_dataset(config):
             config.Final_name_merged_data)
     
 create_dataset(config)
-

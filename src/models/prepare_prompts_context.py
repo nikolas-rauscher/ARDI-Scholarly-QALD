@@ -1,7 +1,7 @@
 import sys
 sys.path.append('./src')
 sys.path.append('..')
-from features.evidence_selection import evidence_triple_selection, triple2text, evidence_sentence_selection
+from data.evidence_selection import evidence_triple_selection, load_triplet_extractor, triple2text, evidence_sentence_selection
 from models.verbalizer.generatePrompt import verbalise_triples
 import json
 import configparser
@@ -88,11 +88,9 @@ def prepare_data_4settings(examples, prompt_template, output_file, wiki=True):
 
     # Process only the first 100 examples
     examples = examples[:100]
-
+    triple_extractor=load_triplet_extractor()
     for example in tqdm(examples, desc="Preparing Data"):
-
         triples_number = len(example['all_triples'])
-
         # wiki
         wiki_context = ""
         wiki_context_plain = ""
@@ -102,7 +100,7 @@ def prepare_data_4settings(examples, prompt_template, output_file, wiki=True):
                 if len(wiki_text) > 0:
                     sentences = str(wiki_text).split('.')
                     wiki_evidence = evidence_sentence_selection(
-                        example['question'], sentences, conserved_percentage=0.2, max_num=40
+                        example['question'], sentences, conserved_percentage=0.2, max_num=40,llm=True,triplet_extractor=triple_extractor
                     )
                     wiki_context += '. '.join(wiki_evidence)
 
@@ -112,7 +110,7 @@ def prepare_data_4settings(examples, prompt_template, output_file, wiki=True):
 
         # Evidence Matching
         triples_evidence = evidence_triple_selection(
-            example['question'], example['all_triples'])
+            example['question'], example['all_triples'],llm=True,triplet_extractor=triple_extractor)
         context_evidence = '. '.join(
             [triple2text(triple) for triple in triples_evidence if isinstance(triple, dict)])
 
