@@ -167,7 +167,7 @@ data/processed/test_post_processed_data_dblp.json
 
 
 # Verbaliyzer
-src/models/verbalizer/graph2text/outputs/*
+src/data/verbalizer/graph2text/outputs/*
 src/models/verbalizer/processed_data.json
 test/
 .vscode/settings.json
