@@ -1,17 +1,14 @@
-from src.data.verbalizer.prompt_verbalizer import verbalise_triples
-from src.data.evidence_selection.evidence_selection import evidence_triple_selection, load_triplet_extractor, triple2text, evidence_sentence_selection
 import os
-from tqdm import tqdm
-import configparser
-import json
-from models.verbalizer.prompt_verbalizer import verbalise_triples
-from data.evidence_selection import evidence_triple_selection, load_triplet_extractor, triple2text, evidence_sentence_selection
 import sys
-import os
-
 sys.path.append(os.path.abspath(os.path.join(
     os.path.dirname(__file__), '../../..')))
 
+from src.data.verbalizer.prompt_verbalizer import verbalise_triples
+from src.data.evidence_selection.evidence_selection import evidence_triple_selection, load_triplet_extractor, triple2text, evidence_sentence_selection
+from tqdm import tqdm
+import configparser
+import json
+import os
 
 config = configparser.ConfigParser()
 config.read('config.ini')
