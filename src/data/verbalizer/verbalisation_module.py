@@ -2,7 +2,7 @@ from typing import Dict, List, Tuple, Union, Optional
 import torch
 import re
 import os
-from models.verbalizer.graph2text.finetune import Graph2TextModule
+from src.data.verbalizer.graph2text.finetune import Graph2TextModule
 
 if torch.cuda.is_available():
     DEVICE = 'cuda'

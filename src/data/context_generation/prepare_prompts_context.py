@@ -1,22 +1,16 @@
 import sys
-sys.path.append('./src')
-sys.path.append('..')
-from data.evidence_selection import evidence_triple_selection, load_triplet_extractor, triple2text, evidence_sentence_selection
-from models.verbalizer.prompt_verbalizer import verbalise_triples
+import os
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../..')))
+
+from src.data.evidence_selection.evidence_selection import evidence_triple_selection, load_triplet_extractor, triple2text, evidence_sentence_selection
+from src.data.verbalizer.prompt_verbalizer import verbalise_triples
 import json
 import configparser
 from tqdm import tqdm
-import os
-PACKAGE_PARENT = '.'
-SCRIPT_DIR = os.path.dirname(os.path.realpath(
-    os.path.join(os.getcwd(), os.path.expanduser(__file__))))
-sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
-PREFIX_PATH = "/".join(os.path.dirname(os.path.abspath(__file__)
-                                       ).split("/")[:-2]) + "/"
-print(PREFIX_PATH)
 
-config = configparser.ConfigParser()
-config.read(PREFIX_PATH + 'config.ini')
+
+
 config = configparser.ConfigParser()
 config.read('config.ini')
 
@@ -40,8 +34,8 @@ def generate_contexts_with_evidence_and_verbalizer(examples, prompt_template, ou
 
         # Evidence Matching
         triples_evidence = evidence_triple_selection(
-            example['question'], example['all_triples']
-        )
+            example['question'], example['all_triples'])
+        
 
         # Verbalizer + Evidence Matching
         context_evidence_verbalizer = verbalise_triples(triples_evidence)
@@ -179,3 +173,6 @@ if __name__ == '__main__':
 
     output_file = config['FilePaths']['prepared_data_file']
     generate_contexts_with_evidence_and_verbalizer(examples, prompt_template, output_file, wiki_data=True)
+    
+
+    
