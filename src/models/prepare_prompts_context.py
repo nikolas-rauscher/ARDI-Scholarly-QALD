@@ -174,7 +174,7 @@ def generate_context_for_file(input_file_path, prompt_template_path, output_file
 
 
 if __name__ == '__main__':
-    with open("data/processed/train.json", 'r') as file:
+    with open(config['FilePaths']['prepare_prompt_context_input'], 'r') as file:
         examples = json.load(file)
     with open(config['FilePaths']['prompt_template'], 'r') as file:
         prompt_template = file.read()
