@@ -6,7 +6,8 @@ class Dataset:
         self.direct_input = direct_input
 
         # Initialize static paths using the Config instance
-        if config.questions_path:
+        #if config.questions_path:
+        if hasattr(config, 'questions_path'):
              self.questions_path = config.questions_path
         else:
             self.questions_path = config.get('FilePaths', 'raw_questions_path')

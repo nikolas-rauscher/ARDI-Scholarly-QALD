@@ -5,7 +5,7 @@ sys.path.append('./src')
 sys.path.append('..')
 import configparser
 import json
-from models.verbalizer.generatePrompt import verbalise_triples
+from models.verbalizer.prompt_verbalizer import verbalise_triples
 from data.evidence_selection import evidence_triple_selection, triple2text, evidence_sentence_selection
 
 PACKAGE_PARENT = '.'
