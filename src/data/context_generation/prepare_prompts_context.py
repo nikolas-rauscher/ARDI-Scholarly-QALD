@@ -41,7 +41,7 @@ def generate_contexts_with_evidence_and_verbalizer(examples, prompt_template, ou
         context_evidence_verbalizer = verbalise_triples(triples_evidence)
 
         wiki_context = ""
-        if 'wiki_data' in example:
+        if wikipedia_data and 'wiki_data' in example:
             for wiki_text in example['wiki_data']:
                 # sentences = ['. '.join(list(item.values())) for item in wiki_text]
                 if len(wiki_text) > 0:
@@ -55,7 +55,7 @@ def generate_contexts_with_evidence_and_verbalizer(examples, prompt_template, ou
             "id": example["id"],
             "question": example["question"],
             "triples_number": triples_number,
-            "contexts": context_evidence_verbalizer + wiki_context
+            "contexts": str(context_evidence_verbalizer) + wiki_context
         }
 
         if "answer" in example:
@@ -99,7 +99,7 @@ def prepare_data_4settings(examples, prompt_template, output_file, wikipedia_dat
         # wiki
         wiki_context = ""
         wiki_context_plain = ""
-        if wiki and 'wiki_data' in example:
+        if wikipedia_data and 'wiki_data' in example:
             for wiki_text in example['wiki_data']:
                 wiki_context_plain += str(wiki_text)
                 if len(wiki_text) > 0:
