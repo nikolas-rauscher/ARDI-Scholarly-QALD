@@ -147,7 +147,7 @@ def evidence_triple_selection(question, triples, conserved_percentage=0.1, max_n
     """
     if llm:
         q_embeddings = [create_embeddings_from_triple(
-            triple2text(sentence)) for triple in extract_triple_from_question(question, triplet_extractor)]
+            triple2text(triple)) for triple in extract_triple_from_question(question, triplet_extractor)]
     else:
         q_embeddings = [create_embeddings_from_sentence(question)]
 
@@ -235,4 +235,4 @@ if __name__ == "__main__":
         for key,item in wiki_text.items():
             ems = evidence_sentence_selection(
                 data['question'], item.split('.'), triplet_extractor=extract_triplet, llm=True, conserved_percentage=0.1)
-    print(data['triples_number'], len(ems))
+    # print(data['triples_number'], len(ems))
