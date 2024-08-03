@@ -1,34 +1,31 @@
-from .data.data_extraction.triple_extraction.dblp.create_dataset_dblp import create_dataset_dblp
-from .data.data_extraction.triple_extraction.dblp.postprocess_dataset_dblp import post_process_dblp
-from .data.data_extraction.triple_extraction.openalex.create_dataset_alex import create_alex_dataset 
-from .data.data_extraction.triple_extraction.openalex.postprocess_dataset_alex import post_process_alex_parallelized
-from .data.data_extraction.wikipedia_data.add_wiki_data import add_wikidata
-from .data.data_extraction.merge_data import merge_data
-from .data.data_extraction import config
+import configparser
+from src.data.data_extraction.create_context import create_dataset
+from src.data.data_extraction.run_question import run_question
 
-def create_dataset(config):
-    create_dataset_dblp(config.Qustions_path, 
-                        config.DBLP_endpoint_url,
-                        config.DBLP_name_outputdata_PREprocessed, subset = 10) 
+class Config:
+    def __init__(self, filename='config.ini'):
+        self.config = configparser.ConfigParser()
+        self.config.read(filename)
 
-    post_process_dblp(config.DBLP_name_outputdata_PREprocessed,
-                    config.DBLP_name_outputdata_POSTprocessed)
+    def get(self, section, option):
+        # Get a value from the configuration file
+        return self.config.get(section, option)
 
-    create_alex_dataset(config.DBLP_name_outputdata_PREprocessed, 
-                        config.OpenAlex_name_outputdata_PREprocessed, 
-                        config.OpenAlex_endpoint_url)
+config = Config()
 
-    post_process_alex_parallelized(config.OpenAlex_name_outputdata_PREprocessed, 
-                                config.OpenAlex_name_outputdata_POSTprocessed, 
-                                config.OpenAlex_endpoint_url, processes=8)
+##################################################################################
 
-    add_wikidata(config.RAW_Wikipedia_path, 
-                config.OpenAlex_name_outputdata_POSTprocessed, 
-                config.Wikipedia_name_outputdata)
+#Extract triples and add wikipedia context
+#experiment_name = "Test"
+#create_dataset(config, experiment_name)
 
-    merge_data(config.DBLP_name_outputdata_POSTprocessed, 
-            config.OpenAlex_name_outputdata_POSTprocessed, 
-            config.Wikipedia_name_outputdata,
-            config.Final_name_merged_data)
-    
-create_dataset(config)
+##################################################################################
+
+question = "What is the field of study of Tom Wilson?"
+author_dblp_uri = ["https://dblp.org/pid/w/TDWilson"]
+question_identifier = "UNO"
+
+
+run_question(question, author_dblp_uri, question_identifier, config)
+
+##################################################################################
