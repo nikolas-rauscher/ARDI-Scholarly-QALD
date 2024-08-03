@@ -88,6 +88,19 @@ def extract_triplets(text):
         ), 'predicate': relation.strip(), 'object': object_.strip()})
     return triplets
 
+def triple2text(triple):
+    """Converts a triple dictionary into a text string.
+
+    Args:
+        triple: A dictionary containing 'subject', 'predicate', and 'object' of the triple.
+
+    Returns:
+        A string representation of the triple.
+    """
+    if isinstance(triple["object"], list):
+        triple["object"] = '+'.join(triple["object"])
+    return f"{triple['subject']} {triple['predicate']} {triple['object']}"
+
 
 def evidence_sentence_selection(question, sentences, conserved_percentage=0.1, max_num=50, triplet_extractor=None, llm=False):
     """Selects relevant sentences based on the input question and a list of sentences.
@@ -105,7 +118,7 @@ def evidence_sentence_selection(question, sentences, conserved_percentage=0.1, m
     """
     if llm:
         q_embeddings = [create_embeddings_from_sentence(
-            sentence) for sentence in extract_triple_from_question(question, triplet_extractor)]
+            triple2text(sentence)) for sentence in extract_triple_from_question(question, triplet_extractor)]
     else:
         q_embeddings = [create_embeddings_from_sentence(question)]
 
@@ -134,7 +147,7 @@ def evidence_triple_selection(question, triples, conserved_percentage=0.1, max_n
     """
     if llm:
         q_embeddings = [create_embeddings_from_triple(
-            triple) for triple in extract_triple_from_question(question, triplet_extractor)]
+            triple2text(sentence)) for triple in extract_triple_from_question(question, triplet_extractor)]
     else:
         q_embeddings = [create_embeddings_from_sentence(question)]
 
@@ -199,18 +212,6 @@ def create_embeddings_from_sentence(sentence):
     return embedding
 
 
-def triple2text(triple):
-    """Converts a triple dictionary into a text string.
-
-    Args:
-        triple: A dictionary containing 'subject', 'predicate', and 'object' of the triple.
-
-    Returns:
-        A string representation of the triple.
-    """
-    if isinstance(triple["object"], list):
-        triple["object"] = '+'.join(triple["object"])
-    return f"{triple['subject']} {triple['predicate']} {triple['object']}"
 
 
 def create_embeddings_from_triple(triple):
@@ -227,9 +228,11 @@ def create_embeddings_from_triple(triple):
     return embedding
 
 if __name__ == "__main__":
-    with open("./data/processed/prepared_data_10q.json") as f:
+    with open("./data/external/preprocessed_full_dataset_wiki.json") as f:
         data = json.load(f)[6]
     extract_triplet = load_triplet_extractor()
-    ems = evidence_triple_selection(
-        data['question'], data['contexts']['all_triples'], triplet_extractor=extract_triplet, llm=False, conserved_percentage=0.1)
+    for wiki_text in data['wiki_data']:
+        for key,item in wiki_text.items():
+            ems = evidence_sentence_selection(
+                data['question'], item.split('.'), triplet_extractor=extract_triplet, llm=True, conserved_percentage=0.1)
     print(data['triples_number'], len(ems))
