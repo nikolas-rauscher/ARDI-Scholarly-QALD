@@ -343,6 +343,7 @@ def perform_cross_validation(model_id, path_train, target_column, n_splits=5):
 
     return mean_accuracy, std_error
 
+
 if __name__ == "__main__":
     model_id = "google/flan-t5-large"
     dataset_id = "Sefika/KGQA_triples"
@@ -352,14 +353,15 @@ if __name__ == "__main__":
     # trainer = perform_cross_validation(model_id, path_train, target_column)
     train_dataset = load_dataset(
         "wepolyu/old_60001_prompt", split="train")
-    
+
     KGQA = get_cross_validation_splits(
         train_dataset, target_column, n_splits=5)
-    
+
     for idx, (train_idx, val_idx) in enumerate(KGQA):
         df_subset = pd.DataFrame(train_dataset[train_idx])
         df_subset2 = pd.DataFrame(train_dataset[val_idx])
         # Save the subset DataFrame to a JSON file
-        df_subset.to_json(f"data/processed/splits/train_{idx}.json", orient='records', lines=False)
-        df_subset2.to_json(f"data/processed/splits/test_{idx}.json", orient='records', lines=False)
-
+        df_subset.to_json(
+            f"data/processed/splits/train_{idx}.json", orient='records', lines=False)
+        df_subset2.to_json(
+            f"data/processed/splits/test_{idx}.json", orient='records', lines=False)

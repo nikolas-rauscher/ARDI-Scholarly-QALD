@@ -178,3 +178,7 @@ data/external/
 *.txt
 
 data/external/
+./test1.py
+./test2.py
+./test3.py
+*.zip
