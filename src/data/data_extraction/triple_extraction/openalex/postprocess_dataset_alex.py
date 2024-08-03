@@ -8,7 +8,7 @@ predicates = ['modified', 'citedByCount', 'worksCount', 'h-index', 'name', '2YrM
 predicates_process = ["creator", "countsByYear", "org#memberOf", "hasAuthor", "22-rdf-syntax-ns#type" ]
 
 
-def post_process_alex(data_prepocessed: dict, outputdata_name: str, endpoint_url: str) -> None:
+def post_process_alex(data_prepocessed: dict, outputdata_path: str, endpoint_url: str) -> None:
   """
     
     This function transforms the retieved triples from OpenAlex based on predefined rules, queries additional information from a SPARQL endpoint,
@@ -21,11 +21,9 @@ def post_process_alex(data_prepocessed: dict, outputdata_name: str, endpoint_url
         endpoint_url (str): The URL of the SPARQL endpoint to query additional data.
   """
   data = data_prepocessed
-  outputdata_path = "data/processed/alex/" + outputdata_name
-
   new_dataset =  []
   for question, i in zip(data, range(len(data))):
-      print(i)
+      print(i,"/",len(data))
       new_question = {}
       new_question["id"] = question["id"]
       new_question["question"] = question["question"]
@@ -155,7 +153,7 @@ def post_process_alex(data_prepocessed: dict, outputdata_name: str, endpoint_url
 
 
 
-def process_in_parallel(data: dict, outputdata_name: str, endpoint_url: str, processes: int) -> list:
+def process_in_parallel(data: dict, outputdata_path: str, endpoint_url: str, processes: int) -> list:
     """
     Splits the data into segments and processes each segment in parallel.
 
@@ -170,27 +168,33 @@ def process_in_parallel(data: dict, outputdata_name: str, endpoint_url: str, pro
     """
     data_length = len(data)
     segment_size = data_length // processes  # Calculate segment size
-    outputnames = []
+    outputpathes = []
     data_segments = []
+    if data_length < processes:
+       processes = data_length
+       print("warning: there a less questions then processes. Process number is reduced..")
     # Create segments and corresponding output names
+    print(f"parallelize postprocessing on {processes} processes")
     for i in range(processes):
-        outputname = f"{outputdata_name}_{i}.json"
+        outputdata_name  = os.path.basename(outputdata_path)
+        directory = os.path.dirname(outputdata_path)
+        outputpath = directory + "/" +f"{outputdata_name}_{i}.json"
         start_index = i * segment_size
         if i == processes - 1:
             data_segments.append(data[start_index:]) 
         else:
             end_index = start_index + segment_size
             data_segments.append(data[start_index:end_index])
-        outputnames.append(outputname)
+        outputpathes.append(outputpath)
     # Execute processing in parallel
     with concurrent.futures.ThreadPoolExecutor() as executor:
-        futures = [executor.submit(post_process_alex, data_segments[i], outputnames[i], endpoint_url) for i in range(processes)]
+        futures = [executor.submit(post_process_alex, data_segments[i], outputpathes[i], endpoint_url) for i in range(processes)]
         for future in concurrent.futures.as_completed(futures):
-            print(f"Task completed")  
-    return outputnames
+            print(f"One process finished")  
+    return outputpathes
 
 
-def merge_and_save(outputnames: list, final_output_name: str):
+def merge_and_save(outputpathes: list, final_output_name: str):
     """
     Merges data from multiple segment files into a single file and saves it.
 
@@ -199,8 +203,7 @@ def merge_and_save(outputnames: list, final_output_name: str):
     - final_output_name (str): The final output filename where the merged data will be saved.
     """
     merged_data = []
-    for filename in outputnames:
-        filepath = "data/processed/alex/"+filename
+    for filepath in outputpathes:
         with open(filepath, 'r') as f:
             data = json.load(f)
             merged_data.extend(data)
@@ -209,7 +212,7 @@ def merge_and_save(outputnames: list, final_output_name: str):
     print(f"Data merged and saved to {final_output_name}")
   
     
-def post_process_alex_parallelized(pre_processed_data_name: dict, outputdata_name: str, endpoint_url: str, processes = 1, delete_intermediate = True): 
+def post_process_alex_parallelized(data_alex_prepocessed_path: dict, outputdata_path: str, endpoint_url: str, processes = 1, delete_intermediate = True): 
     """
     Manages the parallel processing of data for post-processing from a specified dataset.
 
@@ -223,31 +226,31 @@ def post_process_alex_parallelized(pre_processed_data_name: dict, outputdata_nam
     Executes parallel processing if processes > 1, otherwise processes data serially.
     Merges all data into one final file and optionally deletes intermediate files.
     """
-    data_alex_prepocessed = read_json("data/processed/alex/"+pre_processed_data_name)
+    print("Postprocessing triples for OpenAlex KG...\n")
+    data_alex_prepocessed = read_json(data_alex_prepocessed_path)
     if processes ==1:
-        post_process_alex(data_alex_prepocessed, outputdata_name, endpoint_url)
+        post_process_alex(data_alex_prepocessed, outputdata_path, endpoint_url)
     elif processes>1 and type(processes) == int:
-        outputnames = process_in_parallel(data_alex_prepocessed, outputdata_name, endpoint_url, processes)
+        outputnames = process_in_parallel(data_alex_prepocessed, outputdata_path, endpoint_url, processes)
         # Merging results into one file
-        outputdata_path = "data/processed/alex/"+outputdata_name
         merge_and_save(outputnames, outputdata_path)
         # Delete intermediate files if needed
         if delete_intermediate:
-            for filename in outputnames:
-                filepath = "data/processed/alex/"+filename
+            for filepath in outputnames:
                 os.remove(filepath)
-                print(f"Deleted {filename}")
+                print(f"Deleted {filepath}")
+        print("Finished postprocessing triples for OpenAlex KG\n")
     else:
-      raise Exception("process number must be above 1 and integer")
+      raise Exception("Process number must be above 1 and integer")
 
 def main():
   """
     To run this script direcly run:
-        python -m src.data_extraction.triple_extraction.openalex.postprocess_dataset_alex  
+        python -m src.data.data_extraction.triple_extraction.openalex.postprocess_dataset_alex   
     from the root directory of this project 
   """
-  pre_processed_data_name = "pre_processed_data10.json"
-  outputdata_name =  "post_processed_data10s.json"
+  pre_processed_data_name = "data/interim/alex/pre_processed_data10.json"
+  outputdata_name =  "data/interim/alex/post_processed_data10.json"
   endpoint_url = "https://semoa.skynet.coypu.org/sparql"#"https://semopenalex.org/sparql"
 
   post_process_alex_parallelized(pre_processed_data_name,outputdata_name,endpoint_url,8)

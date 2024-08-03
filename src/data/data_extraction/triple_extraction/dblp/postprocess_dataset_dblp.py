@@ -10,20 +10,20 @@ skip_labels= ["signature creator", "sameAs", "full creator name", "orcid", "prim
 skip_uris = ["http://www.w3.org/2000/01/rdf-schema#label", "http://purl.org/spar/datacite/hasIdentifier"]
 
 
-def post_process_dblp(outputdata_name: str, pre_processed_data_path: str):
+def post_process_dblp(pre_processed_data_path: str, outputdata_path: str):
     """
     Processes DBLP data to reformat and filter triples based on specified conditions,
     and then saves the modified data.
 
     Parameters:
-    - outputdata_name (str): The name of the file to save the processed data to.
-    - pre_processed_data_path (str): Path to the pre-processed data file.
+        - pre_processed_data_path (str): Path to the pre-processed data file.
+        - outputdata_name (str): The name of the file to save the processed data to.
 
     The function reads a JSON file containing questions and their associated triples,
     filters and transforms these triples based on specific rules, and saves the new structured
     data into another JSON file in a specified directory.
     """
-
+    print("Postprocessing triples for DBLP KG...\n")
     data = read_json(pre_processed_data_path)
 
     post_processed_data= []
@@ -80,23 +80,21 @@ def post_process_dblp(outputdata_name: str, pre_processed_data_path: str):
         post_processed_data.append(questions_dict)
 
     # Save the new processed training data
-    save_processed_data_path = "data/processed/dblp"
-    file_path = os.path.join(save_processed_data_path, outputdata_name)
-    with open(file_path, 'w') as file:
+    with open(outputdata_path, 'w') as file:
         json.dump(post_processed_data, file, indent=4,ensure_ascii=False)
-
+    print("Finished postprocessing triples for DBLP KG...\n")
 
 def main():
     """
     To run this script direcly run:
-        python -m src.data_extraction.triple_extraction.dblp.postprocessing_dblp    
+        python -m src.data.data_extraction.triple_extraction.dblp.postprocess_dataset_dblp    
     from the root directory of this project 
     """
 
-    pre_processed_data_path = "data/processed/dblp/pre_processed_data10.json"
-    outputdata_name = "post_processed_data10.json"
+    pre_processed_data_path = "data/interim/dblp/pre_processed_data10.json"
+    outputdata_path = "data/interim/dblp/post_processed_data10.json"
 
-    post_process_dblp(outputdata_name, pre_processed_data_path) 
+    post_process_dblp(pre_processed_data_path, outputdata_path) 
 
 ##############################################################################
 if __name__ == "__main__":
@@ -106,4 +104,5 @@ if __name__ == "__main__":
                  
 
              
-            
+                  
+ 

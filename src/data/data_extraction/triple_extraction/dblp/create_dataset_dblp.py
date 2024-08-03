@@ -1,6 +1,5 @@
 import json
-import os
-from SPARQLWrapper import SPARQLWrapper, JSON
+from SPARQLWrapper import  JSON
 from .herlper_functions import read_json, get_triples_for_entity
 from typing import List, Dict
 from typing import Optional
@@ -59,7 +58,7 @@ def retrieve_triples_for_entity(entity: str, endpoint_url: str) -> List[Dict]:
     list_of_triples = list_of_triples_subject + list_of_triples_object
     return list_of_triples
 
-def create_dataset_dblp(trainingdata_path: str, endpoint_url: str, outputdata_name: str, subset: Optional[int] = None, direct_input = False):
+def create_dataset_dblp(trainingdata_path: str, endpoint_url: str, outputdata_path: str, subset: Optional[int] = None, direct_input = False):
     """
     Processes a dataset by reading JSON data, retrieving triples for each entity mentioned,
     and saving the processed data into a new JSON file.
@@ -69,14 +68,16 @@ def create_dataset_dblp(trainingdata_path: str, endpoint_url: str, outputdata_na
     - endpoint_url (str): URL of the SPARQL endpoint to fetch triples.
     - save_processed_data_path (str): Directory path where the processed data will be saved.
     - outputdata_name (str): Name for the output file that will contain the processed data.
-    - subset (Optional[int]): A subset of the data to process, useful for debugging or limited runs.
     - direct_input ((Optional[Bool]): Flag indicating whether data is passed directly or as paths to data file. 
-
+    - subset (Optional[int]): A subset of the data to process, useful for debugging or limited runs.
+    
     The function reads a JSON file containing data blocks, each with an "author_dblp_uri" key that might contain multiple entities.
     It fetches RDF triples for each entity using the `retrieve_triples_for_entity` function and stores the results.
     It calculates the total number of triples retrieved for each data block and appends this information along with all retrieved triples.
     Finally, it saves the enriched dataset to a new JSON file in the specified directory.
     """
+    print("Extracting triples for DBLP KG...\n")
+
     if direct_input:
         data = direct_input
     else:
@@ -84,7 +85,7 @@ def create_dataset_dblp(trainingdata_path: str, endpoint_url: str, outputdata_na
     processed_data = []
 
     for data_block,i in zip(data,range(len(data))):
-        print(i)
+        print(i,"/",len(data))
         list_of_tripples_for_authors= []
         tripples_for_one_author = []
         entities = data_block["author_dblp_uri"]
@@ -110,24 +111,24 @@ def create_dataset_dblp(trainingdata_path: str, endpoint_url: str, outputdata_na
         processed_data.append(data_block)
 
     # Save the new processed training data
-    save_processed_data_path = "data/processed/dblp"
-    file_path = os.path.join(save_processed_data_path, outputdata_name)
-    with open(file_path, 'w') as file:
+    
+    with open(outputdata_path, 'w') as file:
         json.dump(processed_data, file, indent=4,ensure_ascii=False)
 
+    print("Finished extracting triples for DBLP KG\n")
 
 
 ##############################################################################
 def main():
     """
     To run this script direcly run:
-        python -m src.data_extraction.triple_extraction.dblp.create_dataset_dblp
+        python -m src.data.data_extraction.triple_extraction.dblp.create_dataset_dblp
     from the root directory of this project 
     """
-    outputdata_name = "pre_processed_data10.json"
-    trainingdata_path = "data/raw/trainingdata.json"
+    outputdata_path = "data/interim/dblp/pre_processed_data10.json"
+    trainingdata_path = "data/raw/questions.json"
     endpoint_url ="https://dblp-april24.skynet.coypu.org/sparql" #SPARQL endpoint URL
-    create_dataset_dblp(trainingdata_path, endpoint_url, outputdata_name, subset = 10) 
+    create_dataset_dblp(trainingdata_path, endpoint_url, outputdata_path, subset = 10) 
 
 ##############################################################################
 if __name__ == "__main__":

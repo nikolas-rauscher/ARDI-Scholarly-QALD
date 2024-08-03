@@ -22,12 +22,13 @@ def format_man(input_str: str) -> str:
     return json_str
 
 
-def prepare_wikipedia_data(path_wikipedia_data: str):
+def prepare_wikipedia_data(path_wikipedia_data: str, save_path: str):
     """
     Processes raw Wikipedia data from a specified path, fixes any malformed JSON, and saves the cleaned data.
 
     Args:
         path_wikipedia_data (str): The file path where the raw Wikipedia data is stored.
+        save_path (str): Location where to save processed wikipedia file
 
     Raises:
         FileNotFoundError: If the raw data file is not found at the specified path.
@@ -49,7 +50,6 @@ def prepare_wikipedia_data(path_wikipedia_data: str):
             output = json.loads(output)
             data_dict.append(output)
 
-    save_path = "data/processed/wikipedia_data/wikipedia_data_processed" 
     with open(save_path, 'w') as file:
         json.dump(data_dict, file, indent=4, ensure_ascii=False)
     

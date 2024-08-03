@@ -4,7 +4,7 @@ import time
 
 
 
-def create_alex_dataset(dblp_processed_dataset_name: str, outputdata_name: str, endpoint_url: str):
+def create_alex_dataset(dblp_processed_dataset_path: str, outputdata_path: str, endpoint_url: str):
     """
     Retrieve all triples for the OpenAlex KG by taking Orcid from DBLP triples 
 
@@ -16,13 +16,13 @@ def create_alex_dataset(dblp_processed_dataset_name: str, outputdata_name: str, 
     Outputs:
         A new JSON file with the retrieved triples
     """
-    dblp_processed_dataset_path = "data/processed/dblp/"+ dblp_processed_dataset_name
+    print("Extracting triples for OpenAlex KG...\n")
     data = read_json(dblp_processed_dataset_path)
     alex_all_questions = []
 
     for question, iteration in zip(data, range(len(data))):
         time.sleep(1)
-        print(iteration)
+        print(iteration,"/",len(data))
         alex_question = {}
         alex_question["id"] = question["id"]
         alex_question["question"] = question["question"]
@@ -96,23 +96,24 @@ def create_alex_dataset(dblp_processed_dataset_name: str, outputdata_name: str, 
             
         alex_all_questions.append(alex_question)
 
-        with open(("data/processed/alex/"+outputdata_name), 'w') as file:
+        with open(outputdata_path, 'w') as file:
             json.dump(alex_all_questions, file, indent=4,ensure_ascii=False)
-
+        
+    print("Finished extracting triples for OpenAlex KG\n")
 
 
 ##############################################################################
 def main():
     """
     To run this script direcly run:
-        python -m src.data_extraction.triple_extraction.openalex.create_dataset_alex   
+        python -m src.data.data_extraction.triple_extraction.openalex.create_dataset_alex   
     from the root directory of this project 
     """
-    dblp_processed_dataset_name = "pre_processed_data10.json"
-    outputdata_name = "pre_processed_data10_test.json"
+    dblp_processed_dataset_path = "data/interim/dblp/pre_processed_data10.json"
+    outputdata_path = "data/interim/alex/pre_processed_data10.json"
     endpoint_url = "https://semopenalex.org/sparql" # Alternative smaller KG: "https://semoa.skynet.coypu.org/sparql"
 
-    create_alex_dataset(dblp_processed_dataset_name, outputdata_name, endpoint_url)
+    create_alex_dataset(dblp_processed_dataset_path, outputdata_path, endpoint_url)
 ##############################################################################
 if __name__ == "__main__":
     main()

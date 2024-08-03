@@ -6,7 +6,7 @@ def read_json_(outputdata_name_path) -> dict:
     return formulations
 
 
-def merge_data(dblp_processed_name: str, alex_processed_name: str, extracted_wiki_data_name: str, merged_data_name: str): 
+def merge_data(dblp_processed_path: str, alex_processed_path: str, extracted_wiki_data_path: str, merged_data_path: str): 
     """
     Merges data from DBLP, Alex, and Wikipedia datasets into a single dataset based on their IDs.
 
@@ -20,9 +20,9 @@ def merge_data(dblp_processed_name: str, alex_processed_name: str, extracted_wik
         This function reads three datasets, finds corresponding entries by ID, and merges them.
         It outputs the merged result into a specified file in the 'final' directory.
     """
-    dblp_data = read_json_(("data/processed/dblp/"+dblp_processed_name)) 
-    alex_data = read_json_(("data/processed/alex/"+alex_processed_name))
-    wikipedia_data = read_json_(("data/processed/wikipedia_data/"+extracted_wiki_data_name))
+    dblp_data = read_json_(dblp_processed_path) 
+    alex_data = read_json_(alex_processed_path)
+    wikipedia_data = read_json_(extracted_wiki_data_path)
     new_merged_dataset = []
     for alex_question in alex_data:
         new_merged_question = {}
@@ -51,10 +51,9 @@ def merge_data(dblp_processed_name: str, alex_processed_name: str, extracted_wik
         new_merged_question["wiki_data"] = wiki_article["wiki_data"]
         new_merged_dataset.append(new_merged_question)
 
-    save_path = "data/processed/final/"+merged_data_name
-    with open(save_path, 'w') as file: 
+    with open(merged_data_path, 'w') as file: 
             json.dump(new_merged_dataset, file, indent=4, ensure_ascii=False)
-
+    return new_merged_dataset
 
 def main():
   """

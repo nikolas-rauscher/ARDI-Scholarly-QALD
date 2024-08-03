@@ -105,14 +105,15 @@ def find_wiki_article_by_institution(institutions: list, data_dict: list) -> lis
 
     
 
-def add_wikidata(raw_wiki_data_path, alex_data_name,  outputdata_name):
+def add_wikidata(raw_wiki_data_path: str, processed_wiki_data_path: str, alex_data_path: str,  outputdata_path: str):
     """
     Integrates Wikipedia data into an Alex dataset by matching entities based on names and institutional affiliations.
 
     Parameters:
         - raw_wiki_data_path (str): Path to the raw Wikipedia data file.
-        - alex_data_name (str): File name of the Alex dataset to be enhanced with Wikipedia data.
-        - outputdata_name (str): File name for the output dataset with added Wikipedia data.
+        - processed_wiki_data_path (str): Path to the processed Wikipedia data file.
+        - alex_data_path (str): Path of the Alex dataset to be enhanced with Wikipedia data.
+        - outputdata_path (str): Path for the output dataset with added Wikipedia data.
 
     Description:
         This function first checks if the processed Wikipedia data exists. If not, it processes the raw Wikipedia data.
@@ -120,13 +121,15 @@ def add_wikidata(raw_wiki_data_path, alex_data_name,  outputdata_name):
         For each entity in the dataset, it extracts names and institutions and searches for matching Wikipedia articles.
         It adds these articles to the 'wiki_data' field in each question and saves the enhanced dataset to a specified location.
     """
-    if not os.path.exists("data/processed/wikipedia_data/wikipedia_data_processed"):
-        prepare_wikipedia_data(raw_wiki_data_path)
-    wiki_data = read_json("data/processed/wikipedia_data/wikipedia_data_processed")
-    alex_data = read_json(("data/processed/alex/"+alex_data_name))
+
+    print("Extracting wikipedia articles..\n")
+    if not os.path.exists(processed_wiki_data_path):
+        prepare_wikipedia_data(raw_wiki_data_path, processed_wiki_data_path)
+    wiki_data = read_json(processed_wiki_data_path)
+    alex_data = read_json(alex_data_path)
     new_dataset = []
     for question, i in zip(alex_data, range(len(alex_data))):
-        print(i)
+        print(i,"/",len(alex_data))
         question_dict = {}
         question_dict["question"] = question["question"]
         question_dict["id"] = question["id"]
@@ -149,18 +152,25 @@ def add_wikidata(raw_wiki_data_path, alex_data_name,  outputdata_name):
             question_dict["wiki_data"]= wiki_articles
         
         new_dataset.append(question_dict)
-        outputdata_path = "data/processed/wikipedia_data/" + outputdata_name
         save_intermediate_result(outputdata_path, new_dataset)
+    print("Finished extracting wikipedia articles..\n")
 
 
 
 def main():
-
-    alex_data_name = "post_processed_data10.json"
+    """
+    To run this script direcly run:
+        python -m src.data.data_extraction.wikipedia_data.add_wiki_data
+    from the root directory of this project 
+    """
+    alex_data_name = "data/interim/alex/post_processed_data10.json"
     raw_wiki_data_path = "data/external/wiki_data.txt"
-    outputdata_name =  "wikipedia_data_extracted.json"
+    processed_wiki_data_path = "data/interim/wikipedia_data/processed_wikipedia_data.txt"
+    outputdata_name =  "data/interim/wikipedia_data/wikipedia_data_extracted.json"
 
-    add_wikidata(raw_wiki_data_path, alex_data_name, outputdata_name)
+    add_wikidata(raw_wiki_data_path,processed_wiki_data_path, alex_data_name, outputdata_name)
 ##############################################################################
 if __name__ == "__main__":
     main()
+
+
