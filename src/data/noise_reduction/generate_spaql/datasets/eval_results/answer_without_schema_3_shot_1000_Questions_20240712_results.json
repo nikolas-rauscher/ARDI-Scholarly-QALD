@@ -1,0 +1,6794 @@
+{
+  "results": [
+    {
+      "id": "6b8aa79c-3908-4f03-b85b-aa1a325d9fe6",
+      "sparql_answers": [],
+      "given_answer": "oral communication and notes",
+      "similarity": 0.0
+    },
+    {
+      "id": "339bfd44-a71f-4057-a8a2-c84e1cc2c6ff",
+      "sparql_answers": [],
+      "given_answer": "3335304",
+      "similarity": 0.0
+    },
+    {
+      "id": "5da8b8e9-1ef5-4217-a06c-06b12324c991",
+      "sparql_answers": [],
+      "given_answer": "probability and statistics",
+      "similarity": 0.0
+    },
+    {
+      "id": "d808ca0f-9b70-47a6-9b96-fb8f75cf0f1a",
+      "sparql_answers": [],
+      "given_answer": "Indian Institute of Technology, Madras",
+      "similarity": 0.0
+    },
+    {
+      "id": "85c79cd1-0c96-4efd-a5a8-3ade69885173",
+      "sparql_answers": [],
+      "given_answer": "2021",
+      "similarity": 0.0
+    },
+    {
+      "id": "55d6d116-5fd7-4792-83e3-cecaeb3b35b9",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "15409629",
+      "similarity": 0.5379408001899719
+    },
+    {
+      "id": "4af2ea82-8bf9-46f6-a7e0-36b4604c5f67",
+      "sparql_answers": [],
+      "given_answer": "education",
+      "similarity": 0.0
+    },
+    {
+      "id": "9aad6d9b-fc97-4c55-9630-8966eedb6f17",
+      "sparql_answers": [],
+      "given_answer": "Machine learning and bioinformatics",
+      "similarity": 0.0
+    },
+    {
+      "id": "96650ffc-e614-4d50-be21-a8a01827b695",
+      "sparql_answers": [],
+      "given_answer": "402",
+      "similarity": 0.0
+    },
+    {
+      "id": "cf453550-d91c-4dbf-acec-510c5968e2e7",
+      "sparql_answers": [],
+      "given_answer": "Simon Fraser University",
+      "similarity": 0.0
+    },
+    {
+      "id": "29e0d2a3-7757-4af2-b95e-78f1d97d6387",
+      "sparql_answers": [],
+      "given_answer": "Qualcomm (United Kingdom)",
+      "similarity": 0.0
+    },
+    {
+      "id": "cda20ff7-b955-42ef-81d5-d18a8b4e49a7",
+      "sparql_answers": [
+        "121"
+      ],
+      "given_answer": "5",
+      "similarity": 0.5933098793029785
+    },
+    {
+      "id": "cec358c6-cfe1-49f8-a023-170f62a7f42f",
+      "sparql_answers": [],
+      "given_answer": "12 March 1965 in Amsterdam",
+      "similarity": 0.0
+    },
+    {
+      "id": "61178672-87e4-468c-bd03-2202995c3bb0",
+      "sparql_answers": [],
+      "given_answer": "education",
+      "similarity": 0.0
+    },
+    {
+      "id": "8c0c9490-b00b-42e4-9cca-691d0218d8db",
+      "sparql_answers": [],
+      "given_answer": "Esther Vidal",
+      "similarity": 0.0
+    },
+    {
+      "id": "f745ac07-b400-4480-93a1-c3ef241c8330",
+      "sparql_answers": [],
+      "given_answer": "1989",
+      "similarity": 0.0
+    },
+    {
+      "id": "8b7c3fc0-123c-4239-8aa9-4e4aed12fd26",
+      "sparql_answers": [],
+      "given_answer": "James L. McClelland",
+      "similarity": 0.0
+    },
+    {
+      "id": "072dae3c-eb22-48aa-894a-6c76cb719954",
+      "sparql_answers": [],
+      "given_answer": "education",
+      "similarity": 0.0
+    },
+    {
+      "id": "a76c1f84-07b3-4339-a621-a8cd92ce9c66",
+      "sparql_answers": [],
+      "given_answer": "Ian F. Akyildiz",
+      "similarity": 0.0
+    },
+    {
+      "id": "0ecac8d6-02b3-4b40-83b6-57edaab0eddb",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "63709",
+      "similarity": 0.573330283164978
+    },
+    {
+      "id": "47fb449d-976b-4fcd-b920-769aade06ed7",
+      "sparql_answers": [],
+      "given_answer": "Fellow of the Association for Computing Machinery and Fellow of the Association for Computing Machinery",
+      "similarity": 0.0
+    },
+    {
+      "id": "6e42427e-d11d-438f-b49a-18381c9d9042",
+      "sparql_answers": [],
+      "given_answer": "government",
+      "similarity": 0.0
+    },
+    {
+      "id": "1c44e85f-9c8f-4a7b-ab08-614b2dee755e",
+      "sparql_answers": [],
+      "given_answer": "1989",
+      "similarity": 0.0
+    },
+    {
+      "id": "046765db-a9b2-4c8c-93ea-6f0a5769dc87",
+      "sparql_answers": [],
+      "given_answer": "bioinformatics joint program with BIG",
+      "similarity": 0.0
+    },
+    {
+      "id": "3704895f-1f1c-4758-8416-bf3a215c8785",
+      "sparql_answers": [],
+      "given_answer": "Stephen A. Boppart",
+      "similarity": 0.0
+    },
+    {
+      "id": "f0cec0b8-9ef7-4447-bfb0-b003dcbf2aa0",
+      "sparql_answers": [],
+      "given_answer": "Iryna Gurevych",
+      "similarity": 0.0
+    },
+    {
+      "id": "eb9d495f-0413-414d-8217-c46ec487b3bf",
+      "sparql_answers": [],
+      "given_answer": "statistical relational artificial intelligence, probabilistic programming, and deep probabilistic learning",
+      "similarity": 0.0
+    },
+    {
+      "id": "007a1979-f034-4deb-88be-ca81527f2eda",
+      "sparql_answers": [],
+      "given_answer": "52",
+      "similarity": 0.0
+    },
+    {
+      "id": "db8c49dc-b75b-4e16-9886-14d096ab40b5",
+      "sparql_answers": [],
+      "given_answer": "education",
+      "similarity": 0.0
+    },
+    {
+      "id": "43a410c9-c07a-4e20-8e35-d9d54bf4cccf",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "244139",
+      "similarity": 0.6513296365737915
+    },
+    {
+      "id": "13b13157-3244-452d-8847-095f3f5c3bd4",
+      "sparql_answers": [],
+      "given_answer": "elected a member of the National Academy of Engineering in 2017",
+      "similarity": 0.0
+    },
+    {
+      "id": "0b24275e-87e3-4820-81b2-ff5757216b6d",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "263",
+      "similarity": 0.7190210223197937
+    },
+    {
+      "id": "2207b3a6-7457-4f9b-9c08-9b22af7d171b",
+      "sparql_answers": [],
+      "given_answer": "Department of Crop and Soil Sciences",
+      "similarity": 0.0
+    },
+    {
+      "id": "a709a65a-1cc7-4ce4-85e4-15365532c1c0",
+      "sparql_answers": [],
+      "given_answer": "education",
+      "similarity": 0.0
+    },
+    {
+      "id": "ae7d89aa-1f9f-4855-ab38-1bad98dfcf15",
+      "sparql_answers": [],
+      "given_answer": "Indian",
+      "similarity": 0.0
+    },
+    {
+      "id": "9d3bd0f3-2f4f-4dc1-ae14-d6db0fd16bdd",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "238693",
+      "similarity": 0.5815615653991699
+    },
+    {
+      "id": "f0619ac1-7749-4959-bed3-a8e2862dd764",
+      "sparql_answers": [],
+      "given_answer": "streaming video",
+      "similarity": 0.0
+    },
+    {
+      "id": "af1de84c-487c-44bc-9bd5-94b8a425f22e",
+      "sparql_answers": [],
+      "given_answer": "2017",
+      "similarity": 0.0
+    },
+    {
+      "id": "e3187b61-4b41-41d1-88bf-e18362bc62c9",
+      "sparql_answers": [
+        "351864",
+        "351864"
+      ],
+      "given_answer": "J. Michael Brady",
+      "similarity": 0.5433965921401978
+    },
+    {
+      "id": "b217d3f8-cba8-472e-8ca1-8f583d9a2a88",
+      "sparql_answers": [
+        "21150"
+      ],
+      "given_answer": "289418",
+      "similarity": 0.5855010747909546
+    },
+    {
+      "id": "afc4d974-303b-43f2-ab6d-d410150728c8",
+      "sparql_answers": [
+        "Texas A&M University at Qatar, Doha, Ad Dawhah, Qatar"
+      ],
+      "given_answer": "education",
+      "similarity": 0.24380606412887573
+    },
+    {
+      "id": "90f2c3f6-095c-4119-8937-211da24bfecb",
+      "sparql_answers": [],
+      "given_answer": "Amanda Randles",
+      "similarity": 0.0
+    },
+    {
+      "id": "52a6ce1e-cb6f-45be-9147-2d0faee91f26",
+      "sparql_answers": [],
+      "given_answer": "Vaneet Aggarwal",
+      "similarity": 0.0
+    },
+    {
+      "id": "83d5fb7a-a934-44c5-bbd9-da2a4c366211",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "252899",
+      "similarity": 0.6589199304580688
+    },
+    {
+      "id": "8f44b768-fad8-4633-bced-ad587b74dbc4",
+      "sparql_answers": [
+        "Harbin Institute of Technology, Center for Control Theory and Guidance Technology, China"
+      ],
+      "given_answer": "e",
+      "similarity": 0.17885726690292358
+    },
+    {
+      "id": "f7c1e570-75f8-49a2-8b68-a020358da21f",
+      "sparql_answers": [],
+      "given_answer": "2000",
+      "similarity": 0.0
+    },
+    {
+      "id": "4beea88a-3048-4bc4-881a-18249f94ba7a",
+      "sparql_answers": [
+        "27918"
+      ],
+      "given_answer": "257365",
+      "similarity": 0.7122155427932739
+    },
+    {
+      "id": "b3447d12-6570-4f3b-a4a6-dc985b40db81",
+      "sparql_answers": [],
+      "given_answer": "University of Geneva, Switzerland",
+      "similarity": 0.0
+    },
+    {
+      "id": "de0044b6-d366-464f-b883-1d246d4d3784",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "4245",
+      "similarity": 0.5895065069198608
+    },
+    {
+      "id": "3808087b-b65a-4811-90fb-4287fc8eca68",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "34893",
+      "similarity": 0.589672327041626
+    },
+    {
+      "id": "3d68944d-3e37-46e0-a539-8fc68c4de726",
+      "sparql_answers": [],
+      "given_answer": "Greece",
+      "similarity": 0.0
+    },
+    {
+      "id": "5901d733-e6e8-4968-87dd-92cc3674dbf1",
+      "sparql_answers": [],
+      "given_answer": "3.2068965",
+      "similarity": 0.0
+    },
+    {
+      "id": "95605db1-c7c1-44ee-abff-b80c1e615cd1",
+      "sparql_answers": [],
+      "given_answer": "Maxime Crochemore",
+      "similarity": 0.0
+    },
+    {
+      "id": "f59eaf10-b8f3-4c42-9a3c-da488ebea500",
+      "sparql_answers": [],
+      "given_answer": "Constraints",
+      "similarity": 0.0
+    },
+    {
+      "id": "004de319-ea6b-400b-adce-83bfa4080aa2",
+      "sparql_answers": [],
+      "given_answer": "nonprofit",
+      "similarity": 0.0
+    },
+    {
+      "id": "e6374686-ac73-4af2-af5b-c5baef9c715c",
+      "sparql_answers": [],
+      "given_answer": "Catholic University of Leuven, Belgium",
+      "similarity": 0.0
+    },
+    {
+      "id": "b80a0917-4c20-469a-a219-999a5a57baaa",
+      "sparql_answers": [],
+      "given_answer": "Editor-in-Chief",
+      "similarity": 0.0
+    },
+    {
+      "id": "97adefa0-b2ab-4b51-b839-33b5891262d7",
+      "sparql_answers": [],
+      "given_answer": "Wen mei Hwu",
+      "similarity": 0.0
+    },
+    {
+      "id": "8eee9a15-0ae1-413e-90a2-54985e5a9f3f",
+      "sparql_answers": [],
+      "given_answer": "5.962963",
+      "similarity": 0.0
+    },
+    {
+      "id": "04f16b02-46f0-4be2-9896-37d696236c97",
+      "sparql_answers": [],
+      "given_answer": "Georg Gottlob",
+      "similarity": 0.0
+    },
+    {
+      "id": "2edf4472-2a24-44de-aeda-ddd7710e583c",
+      "sparql_answers": [],
+      "given_answer": "Tsinghua University",
+      "similarity": 0.0
+    },
+    {
+      "id": "f01830db-c7f1-4746-b50b-7b121e94bc12",
+      "sparql_answers": [],
+      "given_answer": "Austin, Texas",
+      "similarity": 0.0
+    },
+    {
+      "id": "5d0f93ae-8b8d-4258-95bb-4f2e30d94941",
+      "sparql_answers": [],
+      "given_answer": "Chuck Cranor",
+      "similarity": 0.0
+    },
+    {
+      "id": "ef530a34-d6f6-42d7-be14-3c0ad4fabc72",
+      "sparql_answers": [],
+      "given_answer": "other",
+      "similarity": 0.0
+    },
+    {
+      "id": "83865c8a-2dc8-416a-af36-007afa0eb887",
+      "sparql_answers": [],
+      "given_answer": "Fellow of IEEE",
+      "similarity": 0.0
+    },
+    {
+      "id": "22f99b04-4636-4e4e-91b5-390fbb5c7250",
+      "sparql_answers": [
+        "124"
+      ],
+      "given_answer": "5",
+      "similarity": 0.6265642046928406
+    },
+    {
+      "id": "78a56644-f606-45a3-a1e0-e1196cd0b079",
+      "sparql_answers": [],
+      "given_answer": "Doctor of Science",
+      "similarity": 0.0
+    },
+    {
+      "id": "ceb4bf71-63e9-4f0f-9ae7-28ebe464a9de",
+      "sparql_answers": [],
+      "given_answer": "International Conference on Rewriting Techniques and Applications (RTA)",
+      "similarity": 0.0
+    },
+    {
+      "id": "c9d7ebd2-f270-4a42-9061-a37d3129e779",
+      "sparql_answers": [],
+      "given_answer": "Neil D. Lawrence",
+      "similarity": 0.0
+    },
+    {
+      "id": "2b624ef0-6c04-41a2-baa9-f7a31fc91cb0",
+      "sparql_answers": [],
+      "given_answer": "Deniz Ba\u015fkent",
+      "similarity": 0.0
+    },
+    {
+      "id": "67c8e675-7d7c-4431-a1ac-ffcc2ab06cec",
+      "sparql_answers": [],
+      "given_answer": "University of Udine",
+      "similarity": 0.0
+    },
+    {
+      "id": "dba2fcf1-a41b-4ee3-932c-3a9419a0951e",
+      "sparql_answers": [
+        "0",
+        "0"
+      ],
+      "given_answer": "Alan T. Sherman",
+      "similarity": 0.6182844638824463
+    },
+    {
+      "id": "78322f3e-2cb9-4b6d-a3c0-0b842574de73",
+      "sparql_answers": [],
+      "given_answer": "5.477612",
+      "similarity": 0.0
+    },
+    {
+      "id": "7e111d49-1171-4033-a152-df2bf6e1f975",
+      "sparql_answers": [],
+      "given_answer": "60",
+      "similarity": 0.0
+    },
+    {
+      "id": "6afeba89-d041-4bb1-9bb5-2b09c23dcb80",
+      "sparql_answers": [],
+      "given_answer": "41",
+      "similarity": 0.0
+    },
+    {
+      "id": "bda4cfcf-b985-420e-9a2d-eebe7a0f09d0",
+      "sparql_answers": [],
+      "given_answer": "Xiaole Shirley Liu",
+      "similarity": 0.0
+    },
+    {
+      "id": "a107e370-294b-490d-83f4-5f1309e87883",
+      "sparql_answers": [],
+      "given_answer": "2014",
+      "similarity": 0.0
+    },
+    {
+      "id": "b1c0b5b6-b196-412b-8dd6-379de162e886",
+      "sparql_answers": [],
+      "given_answer": "Caltech",
+      "similarity": 0.0
+    },
+    {
+      "id": "fadf8cfe-df69-4ab8-9f44-b0d07fcd8a29",
+      "sparql_answers": [],
+      "given_answer": "2007",
+      "similarity": 0.0
+    },
+    {
+      "id": "828cc6ce-c0a8-4950-beed-ca40a4a26940",
+      "sparql_answers": [],
+      "given_answer": "education",
+      "similarity": 0.0
+    },
+    {
+      "id": "88be3026-b051-4d35-a1d0-517ce8366a81",
+      "sparql_answers": [],
+      "given_answer": "Yves Moreau",
+      "similarity": 0.0
+    },
+    {
+      "id": "22f6ed1f-c168-4e66-9827-e8c15d957c9c",
+      "sparql_answers": [],
+      "given_answer": "education",
+      "similarity": 0.0
+    },
+    {
+      "id": "9c7e4356-b6be-4d2b-9ca5-acbb1bb7ec4f",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "23401",
+      "similarity": 0.6114292740821838
+    },
+    {
+      "id": "a4a9f604-f95e-49b3-b6f2-886bec773c49",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "406095",
+      "similarity": 0.5866265296936035
+    },
+    {
+      "id": "ce273f3a-6097-4252-bab8-45e5f4f1113b",
+      "sparql_answers": [],
+      "given_answer": "UCLA",
+      "similarity": 0.0
+    },
+    {
+      "id": "91439019-121d-43e4-9fd2-3543f16ba783",
+      "sparql_answers": [],
+      "given_answer": "Canadian",
+      "similarity": 0.0
+    },
+    {
+      "id": "14796648-65a0-4230-8b31-6ad58529b415",
+      "sparql_answers": [],
+      "given_answer": "December 2, 1972",
+      "similarity": 0.0
+    },
+    {
+      "id": "9367e380-f5a5-41f8-a776-725cb67295c6",
+      "sparql_answers": [],
+      "given_answer": "Royal Academy of Engineering",
+      "similarity": 0.0
+    },
+    {
+      "id": "3be929c6-708f-46d0-888e-32145b188320",
+      "sparql_answers": [],
+      "given_answer": "N/A",
+      "similarity": 0.0
+    },
+    {
+      "id": "545163f0-ada2-4afb-b03b-ea441ab4389c",
+      "sparql_answers": [],
+      "given_answer": "VERSEN (VEReniging Software Engineering Nederland)",
+      "similarity": 0.0
+    },
+    {
+      "id": "e04f4946-bd5b-476b-80b3-c114207ae458",
+      "sparql_answers": [],
+      "given_answer": "Radboud University, The Netherlands",
+      "similarity": 0.0
+    },
+    {
+      "id": "9f2bd7e0-2906-4f17-a97c-987476c0d29f",
+      "sparql_answers": [],
+      "given_answer": "Chris R. Johnson",
+      "similarity": 0.0
+    },
+    {
+      "id": "74d5bce7-9dc9-4fb7-8e6f-cb3095ad1497",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "University of Lahore",
+      "similarity": 0.4536097049713135
+    },
+    {
+      "id": "edb6066f-9bf3-4e55-968b-ce8a2e1945a1",
+      "sparql_answers": [],
+      "given_answer": "director of the Princeton Architecture Laboratory for Multimedia and Security",
+      "similarity": 0.0
+    },
+    {
+      "id": "9389fe28-6207-47f4-ad9c-c7f168442d2f",
+      "sparql_answers": [],
+      "given_answer": "Ralf Steinmetz",
+      "similarity": 0.0
+    },
+    {
+      "id": "c31a3456-890f-445b-b4aa-605ebe46990f",
+      "sparql_answers": [],
+      "given_answer": "31",
+      "similarity": 0.0
+    },
+    {
+      "id": "bb1c617f-469f-4c7b-9a89-4929e1f9c266",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "125",
+      "similarity": 0.6232039928436279
+    },
+    {
+      "id": "c71f0529-6f0c-4f1c-b79f-05b30d4dadb9",
+      "sparql_answers": [],
+      "given_answer": "University of Illinois at Urbana\u2013Champaign",
+      "similarity": 0.0
+    },
+    {
+      "id": "16603f10-c6aa-41ed-9f16-8eea4d0055e0",
+      "sparql_answers": [],
+      "given_answer": "Discovery Centre",
+      "similarity": 0.0
+    },
+    {
+      "id": "fbfb15c4-f410-48da-b2e4-1db37b4f451b",
+      "sparql_answers": [],
+      "given_answer": "1996-2007",
+      "similarity": 0.0
+    },
+    {
+      "id": "8c55bf5f-8fdf-4a21-b7c4-3fd1b06582e8",
+      "sparql_answers": [],
+      "given_answer": "education",
+      "similarity": 0.0
+    },
+    {
+      "id": "01e7bd0b-4f9c-47b5-be20-4940738d219a",
+      "sparql_answers": [],
+      "given_answer": "2005",
+      "similarity": 0.0
+    },
+    {
+      "id": "c12590a9-3ec4-4d54-9dc4-25ada989b738",
+      "sparql_answers": [],
+      "given_answer": "Indian Statistical Institute",
+      "similarity": 0.0
+    },
+    {
+      "id": "fcc83b07-1064-47be-8858-da2e89b35a65",
+      "sparql_answers": [],
+      "given_answer": "David Peleg",
+      "similarity": 0.0
+    },
+    {
+      "id": "7a71f709-e52e-4e37-bff0-735c7be6518b",
+      "sparql_answers": [],
+      "given_answer": "novel contributions to differentially private synthetic data and Bayesian modeling; for outstanding interdisciplinary research in clinical and public health studies; for leadership in education and training; and for service to the profession",
+      "similarity": 0.0
+    },
+    {
+      "id": "7bc2b214-9e29-4176-a6a7-132cdb4b52b7",
+      "sparql_answers": [],
+      "given_answer": "Tufts University",
+      "similarity": 0.0
+    },
+    {
+      "id": "9e9984e3-07e2-4838-88fa-42de1dc3f6b7",
+      "sparql_answers": [
+        "52"
+      ],
+      "given_answer": "390",
+      "similarity": 0.670846700668335
+    },
+    {
+      "id": "3e555978-a906-4bff-a80a-5ff5abb7d663",
+      "sparql_answers": [],
+      "given_answer": "circular coinduction",
+      "similarity": 0.0
+    },
+    {
+      "id": "518758d2-cdf4-4cf9-ab59-109a65c6cd8c",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "165745",
+      "similarity": 0.5132182836532593
+    },
+    {
+      "id": "4f479eeb-da5e-4bd9-837d-b363cf7e3f0d",
+      "sparql_answers": [],
+      "given_answer": "1979",
+      "similarity": 0.0
+    },
+    {
+      "id": "8a4e445c-1d99-4a1c-82c5-166c10581bce",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "201",
+      "similarity": 0.6740363836288452
+    },
+    {
+      "id": "95ce53d8-22a7-4283-92d4-50d336aea297",
+      "sparql_answers": [],
+      "given_answer": "Carnegie Mellon University",
+      "similarity": 0.0
+    },
+    {
+      "id": "664df79b-db28-4ab9-ab49-06404b40bb54",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "3323",
+      "similarity": 0.6644508838653564
+    },
+    {
+      "id": "034bc212-97c8-4704-be9d-8f87e591f606",
+      "sparql_answers": [],
+      "given_answer": "2007",
+      "similarity": 0.0
+    },
+    {
+      "id": "7d9d13ce-355c-482a-bf3f-c0d2329dfbcf",
+      "sparql_answers": [],
+      "given_answer": "392",
+      "similarity": 0.0
+    },
+    {
+      "id": "123fd1c2-d960-45c3-bab1-6ea0371d60e7",
+      "sparql_answers": [
+        "53"
+      ],
+      "given_answer": "308",
+      "similarity": 0.645359992980957
+    },
+    {
+      "id": "088fc651-b90d-43e1-9fad-d9308ab3580f",
+      "sparql_answers": [],
+      "given_answer": "1950",
+      "similarity": 0.0
+    },
+    {
+      "id": "a20aac09-2457-4205-a72b-f015d03aa1ff",
+      "sparql_answers": [],
+      "given_answer": "education",
+      "similarity": 0.0
+    },
+    {
+      "id": "ed5e65d4-6f23-4567-a82a-40d3dbb12af8",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "71200",
+      "similarity": 0.6877697706222534
+    },
+    {
+      "id": "73d5b8b8-e4e5-4bd2-ae9b-28e5691cf636",
+      "sparql_answers": [],
+      "given_answer": "26",
+      "similarity": 0.0
+    },
+    {
+      "id": "56200356-b530-48e6-934b-6c4a98762bc5",
+      "sparql_answers": [
+        "12177"
+      ],
+      "given_answer": "102671",
+      "similarity": 0.7553713917732239
+    },
+    {
+      "id": "90f0b3a9-331b-4061-b1a7-5c6338aad58b",
+      "sparql_answers": [
+        "Florida Atlantic University, Boca Raton, FL, USA",
+        "Temple University, Philadelphia, PA, USA"
+      ],
+      "given_answer": "Fort Washington, Pennsylvania",
+      "similarity": 0.7055805921554565
+    },
+    {
+      "id": "549f39b0-97ac-4b85-b163-6939b81eaaef",
+      "sparql_answers": [],
+      "given_answer": "Israel",
+      "similarity": 0.0
+    },
+    {
+      "id": "12eb5466-ecd7-4ef8-9e41-65b2e44225d5",
+      "sparql_answers": [],
+      "given_answer": "B.A. in Mathematics",
+      "similarity": 0.0
+    },
+    {
+      "id": "31fc72b0-8d79-43a0-9149-325828e4641b",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "149565",
+      "similarity": 0.5589094161987305
+    },
+    {
+      "id": "6da675bc-c7b3-4209-b81e-e03bfb41f3b6",
+      "sparql_answers": [],
+      "given_answer": "Haskell",
+      "similarity": 0.0
+    },
+    {
+      "id": "41af5a9e-baf3-455f-ba53-27d051ff265d",
+      "sparql_answers": [
+        "0",
+        "0"
+      ],
+      "given_answer": "Ge Wang",
+      "similarity": 0.665682852268219
+    },
+    {
+      "id": "ceed3c1f-fe54-4779-95c5-a010b324c163",
+      "sparql_answers": [],
+      "given_answer": "Austrian",
+      "similarity": 0.0
+    },
+    {
+      "id": "21a79ccd-f3a9-4ddc-9bf6-48dbf70e96e8",
+      "sparql_answers": [],
+      "given_answer": "0.7826087",
+      "similarity": 0.0
+    },
+    {
+      "id": "9b02a6c6-54e8-4c18-90bd-e3e62942ce3c",
+      "sparql_answers": [],
+      "given_answer": "Mary Shaw",
+      "similarity": 0.0
+    },
+    {
+      "id": "65e72f49-ddaf-4c8e-85db-2b31814eb3f8",
+      "sparql_answers": [],
+      "given_answer": "Sanghamitra Bandyopadhyay",
+      "similarity": 0.0
+    },
+    {
+      "id": "067ae5ea-54fc-49a6-af93-77dfb8094d5f",
+      "sparql_answers": [],
+      "given_answer": "Montenegro",
+      "similarity": 0.0
+    },
+    {
+      "id": "ec6cfb4d-ab69-4d73-81c3-b2f0df2d9973",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "4089",
+      "similarity": 0.5340384840965271
+    },
+    {
+      "id": "4613c903-e96f-4113-8e75-489feae3a57a",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "383525",
+      "similarity": 0.542936384677887
+    },
+    {
+      "id": "af158ac0-65e4-409d-9691-73b13fcf618d",
+      "sparql_answers": [],
+      "given_answer": "Deputy Minister for Education",
+      "similarity": 0.0
+    },
+    {
+      "id": "4c56198d-7ac0-4192-aa94-d9e1a7a91a8f",
+      "sparql_answers": [],
+      "given_answer": "German Informatics Society",
+      "similarity": 0.0
+    },
+    {
+      "id": "ecf3d63a-8ff1-4a65-82d4-5c640e19337f",
+      "sparql_answers": [],
+      "given_answer": "65",
+      "similarity": 0.0
+    },
+    {
+      "id": "7eb6d9a3-1f58-453f-890e-a156c25eba02",
+      "sparql_answers": [],
+      "given_answer": "Massachusetts Institute of Technology",
+      "similarity": 0.0
+    },
+    {
+      "id": "1f0ec4a2-2b8e-44ea-8a43-bc16b96a0d36",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "209692",
+      "similarity": 0.702002763748169
+    },
+    {
+      "id": "c3b319e0-9991-4c86-ab45-92740c93d7e4",
+      "sparql_answers": [],
+      "given_answer": "May 4, 1969",
+      "similarity": 0.0
+    },
+    {
+      "id": "053bf0a1-072e-4e9e-8887-496cb1fdc68a",
+      "sparql_answers": [],
+      "given_answer": "81",
+      "similarity": 0.0
+    },
+    {
+      "id": "646d6222-74e4-4325-8a1e-775c434f8738",
+      "sparql_answers": [],
+      "given_answer": "University of Cambridge",
+      "similarity": 0.0
+    },
+    {
+      "id": "bf5139b5-029a-4d81-bdd8-e0af9809aaf4",
+      "sparql_answers": [],
+      "given_answer": "gastrointestinal disease",
+      "similarity": 0.0
+    },
+    {
+      "id": "b6068ca6-7e8f-4af2-940e-939653eb179d",
+      "sparql_answers": [],
+      "given_answer": "Pune, India",
+      "similarity": 0.0
+    },
+    {
+      "id": "8d9438b2-6b30-49e6-8b58-b2d01c87c5e7",
+      "sparql_answers": [],
+      "given_answer": "2019",
+      "similarity": 0.0
+    },
+    {
+      "id": "cdf90cde-89a5-4d01-8d38-1349a8b0ae28",
+      "sparql_answers": [],
+      "given_answer": "Peking University",
+      "similarity": 0.0
+    },
+    {
+      "id": "81f927d9-6a46-4405-97ed-9b6e15c59ab4",
+      "sparql_answers": [],
+      "given_answer": "Randall A. Berry",
+      "similarity": 0.0
+    },
+    {
+      "id": "7f10a80e-4c45-42f7-b17a-eec7ccb7ed92",
+      "sparql_answers": [
+        "263",
+        "102"
+      ],
+      "given_answer": "Marina L. Gavrilova",
+      "similarity": 0.5426660180091858
+    },
+    {
+      "id": "c133e4b7-832a-4192-9749-e5967879763a",
+      "sparql_answers": [],
+      "given_answer": "105",
+      "similarity": 0.0
+    },
+    {
+      "id": "3af3a407-8c7d-4615-9bc0-23b98aadf4ce",
+      "sparql_answers": [],
+      "given_answer": "IIT Kanpur",
+      "similarity": 0.0
+    },
+    {
+      "id": "c1c3de96-6cdd-4fd5-b5b9-ad010f948e41",
+      "sparql_answers": [],
+      "given_answer": "BS in physics",
+      "similarity": 0.0
+    },
+    {
+      "id": "dfb3d415-a90d-4ec4-9f90-dd295b2b673f",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "197",
+      "similarity": 0.7868974208831787
+    },
+    {
+      "id": "019a2e04-fb36-416a-a8da-d708e7b1b0f1",
+      "sparql_answers": [
+        "248"
+      ],
+      "given_answer": "382651",
+      "similarity": 0.7082895040512085
+    },
+    {
+      "id": "d8b2a3ee-3493-4028-8663-5bc74e7421bf",
+      "sparql_answers": [],
+      "given_answer": "Active Adaptive Control Laboratory",
+      "similarity": 0.0
+    },
+    {
+      "id": "f92bec1a-353a-4a14-9c26-2fb23e4566c1",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "117003",
+      "similarity": 0.6655409336090088
+    },
+    {
+      "id": "48878249-2c3c-4097-82d6-733caeea3e22",
+      "sparql_answers": [],
+      "given_answer": "36",
+      "similarity": 0.0
+    },
+    {
+      "id": "f3956b52-d2d3-491e-9c4f-59656af63368",
+      "sparql_answers": [],
+      "given_answer": "Zhu Han",
+      "similarity": 0.0
+    },
+    {
+      "id": "d9698e9c-76d1-4d03-96e2-c72d45bf436b",
+      "sparql_answers": [],
+      "given_answer": "Abbas El Gamal",
+      "similarity": 0.0
+    },
+    {
+      "id": "ed8bad1b-cde5-4fd8-a415-6a8545cba7ea",
+      "sparql_answers": [],
+      "given_answer": "2006",
+      "similarity": 0.0
+    },
+    {
+      "id": "0408b510-b982-4a93-b86a-7be6e0e53a02",
+      "sparql_answers": [],
+      "given_answer": "2014",
+      "similarity": 0.0
+    },
+    {
+      "id": "1a61ad37-ff7c-4dab-bbd5-5fa200f1769a",
+      "sparql_answers": [],
+      "given_answer": "education",
+      "similarity": 0.0
+    },
+    {
+      "id": "ae4e7363-eee6-4b6a-9be9-875dfa69ec42",
+      "sparql_answers": [],
+      "given_answer": "Azerbaijani",
+      "similarity": 0.0
+    },
+    {
+      "id": "d68cf100-93ac-403f-ad09-8f385a9c19bc",
+      "sparql_answers": [],
+      "given_answer": "California Institute of Technology",
+      "similarity": 0.0
+    },
+    {
+      "id": "3de777f2-4034-468d-8ea8-13275d9ab1bd",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "11594457",
+      "similarity": 0.6302363276481628
+    },
+    {
+      "id": "46039cfe-0d2d-43fa-afb5-1281ff7f2c5b",
+      "sparql_answers": [
+        "University of Manchester, UK"
+      ],
+      "given_answer": "education",
+      "similarity": 0.5045419335365295
+    },
+    {
+      "id": "acd636b9-dceb-47a5-a6b9-cfa2b0c2ef31",
+      "sparql_answers": [],
+      "given_answer": "maChine Learning and quANtum computing (CLAN) research labs",
+      "similarity": 0.0
+    },
+    {
+      "id": "2da99885-faf8-4f8a-82a7-9a6d72378863",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "105223",
+      "similarity": 0.6214630603790283
+    },
+    {
+      "id": "c7aa9a36-e2dd-404b-b93f-01f95e88c9c4",
+      "sparql_answers": [],
+      "given_answer": "Iowa State University",
+      "similarity": 0.0
+    },
+    {
+      "id": "7ccc1eb6-f7ed-4b05-8b35-78ddb4add7c6",
+      "sparql_answers": [],
+      "given_answer": "Head of the Computational Bioinformatics Laboratory",
+      "similarity": 0.0
+    },
+    {
+      "id": "75301a67-d029-4271-aa5a-4a34439d114c",
+      "sparql_answers": [],
+      "given_answer": "Artificial intelligence",
+      "similarity": 0.0
+    },
+    {
+      "id": "335833b3-56fd-4fe9-a2b5-c170a99c9c6d",
+      "sparql_answers": [],
+      "given_answer": "University of Toronto",
+      "similarity": 0.0
+    },
+    {
+      "id": "53f57535-2983-4798-a637-6b47bab34637",
+      "sparql_answers": [],
+      "given_answer": "6.0",
+      "similarity": 0.0
+    },
+    {
+      "id": "5a8e57b4-a128-4e61-ab2c-06f7eff4ed3d",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "2",
+      "similarity": 0.7575656175613403
+    },
+    {
+      "id": "29acc2f6-4185-44d1-b779-855024258928",
+      "sparql_answers": [],
+      "given_answer": "University of Minnesota",
+      "similarity": 0.0
+    },
+    {
+      "id": "32b2db64-07b8-4aab-9ca8-6c5536c8dbe7",
+      "sparql_answers": [],
+      "given_answer": "David De Roure",
+      "similarity": 0.0
+    },
+    {
+      "id": "c41b2712-67c3-4e97-82c4-e4b4998d35e6",
+      "sparql_answers": [
+        "227"
+      ],
+      "given_answer": "18187",
+      "similarity": 0.6518816351890564
+    },
+    {
+      "id": "b6ea0e67-4151-49eb-b53d-eb87f68aefc3",
+      "sparql_answers": [],
+      "given_answer": "1966",
+      "similarity": 0.0
+    },
+    {
+      "id": "964f259e-6b36-4416-b8e6-0b8c58e022b8",
+      "sparql_answers": [],
+      "given_answer": "2020",
+      "similarity": 0.0
+    },
+    {
+      "id": "b7572007-e17c-4738-95eb-a1881503c617",
+      "sparql_answers": [],
+      "given_answer": "60",
+      "similarity": 0.0
+    },
+    {
+      "id": "b4dc1e25-db8e-47d2-bd64-3d9fd51c3fd1",
+      "sparql_answers": [],
+      "given_answer": "Raouf Boutaba",
+      "similarity": 0.0
+    },
+    {
+      "id": "7a0cae59-bfeb-4163-8afb-8377919d9833",
+      "sparql_answers": [],
+      "given_answer": "Giuseppe F. Italiano",
+      "similarity": 0.0
+    },
+    {
+      "id": "77939b50-8672-4085-beb1-598b690a2126",
+      "sparql_answers": [],
+      "given_answer": "2010",
+      "similarity": 0.0
+    },
+    {
+      "id": "6d08a6fd-93ba-464e-8496-5e93337185c4",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "328769",
+      "similarity": 0.5839585661888123
+    },
+    {
+      "id": "d5e48f62-8482-4a01-801e-cc2f0ed8c935",
+      "sparql_answers": [],
+      "given_answer": "Computer Science and Engineering",
+      "similarity": 0.0
+    },
+    {
+      "id": "2b8102ea-0081-47af-9869-0417dbd04c4d",
+      "sparql_answers": [],
+      "given_answer": "0.30769232",
+      "similarity": 0.0
+    },
+    {
+      "id": "9743ed2d-3a1a-49aa-b5c3-8c528bbf880a",
+      "sparql_answers": [],
+      "given_answer": "Hlaing Minn",
+      "similarity": 0.0
+    },
+    {
+      "id": "10192059-7f1e-4b0e-8c60-28d3336a01c2",
+      "sparql_answers": [],
+      "given_answer": "Rate-scalable UWB for WPAN with heterogeneous nodes",
+      "similarity": 0.0
+    },
+    {
+      "id": "08cbb4be-548c-456c-bb4f-aad995847e7e",
+      "sparql_answers": [],
+      "given_answer": "McNaughton Gold Medal",
+      "similarity": 0.0
+    },
+    {
+      "id": "9ad02f51-d9b3-446d-8d53-4b5d1ff97c57",
+      "sparql_answers": [],
+      "given_answer": "Rosa Mar\u00eda Badia Sala",
+      "similarity": 0.0
+    },
+    {
+      "id": "b3d07578-7cdc-4ac3-801f-094519f4239f",
+      "sparql_answers": [],
+      "given_answer": "2022",
+      "similarity": 0.0
+    },
+    {
+      "id": "eeeefc12-2307-4319-9875-a78d9c02aa27",
+      "sparql_answers": [],
+      "given_answer": "2007",
+      "similarity": 0.0
+    },
+    {
+      "id": "7ae9b914-decb-4bec-9a7b-55367f7e7bcf",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "14654",
+      "similarity": 0.6246029734611511
+    },
+    {
+      "id": "a47dcc61-7c6a-4660-ac0c-ec4b3f865938",
+      "sparql_answers": [],
+      "given_answer": "education",
+      "similarity": 0.0
+    },
+    {
+      "id": "04d5f607-2f80-438c-8fae-65e5a52955b7",
+      "sparql_answers": [],
+      "given_answer": "education",
+      "similarity": 0.0
+    },
+    {
+      "id": "35449401-48ee-4b87-831c-3752c673eb55",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "8844856",
+      "similarity": 0.5921850204467773
+    },
+    {
+      "id": "dd5f7630-69a6-4e25-a122-49802fb6b3b8",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "4820612",
+      "similarity": 0.5670173168182373
+    },
+    {
+      "id": "149c2bae-1a3d-4611-a33e-12dc82ba6c9a",
+      "sparql_answers": [],
+      "given_answer": "July 2017",
+      "similarity": 0.0
+    },
+    {
+      "id": "883b729b-09fb-4708-81f0-31f9cd1149cc",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "1769454",
+      "similarity": 0.5666999220848083
+    },
+    {
+      "id": "f52e999c-9b1a-4a12-adc0-503f19cf9ef0",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "497331",
+      "similarity": 0.6423146724700928
+    },
+    {
+      "id": "dca36c27-3d68-4c29-b687-341af1d0a64e",
+      "sparql_answers": [],
+      "given_answer": "Barbara Pernici",
+      "similarity": 0.0
+    },
+    {
+      "id": "f9730c29-054f-49dc-b614-bc15432aeb58",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "6938798",
+      "similarity": 0.6259628534317017
+    },
+    {
+      "id": "cd5d3966-f7e8-47c8-a3b7-949140ee4c39",
+      "sparql_answers": [],
+      "given_answer": "the Eindhoven University of Technology",
+      "similarity": 0.0
+    },
+    {
+      "id": "e186451e-a5b1-42f3-ad78-200ac4053117",
+      "sparql_answers": [],
+      "given_answer": "Purdue University",
+      "similarity": 0.0
+    },
+    {
+      "id": "4d7e1221-2d6c-49e7-9561-be3e34f84f88",
+      "sparql_answers": [],
+      "given_answer": "1951",
+      "similarity": 0.0
+    },
+    {
+      "id": "3d4bbb80-ca54-4245-ab75-f46adacc2daf",
+      "sparql_answers": [],
+      "given_answer": "David A. Engstr\u00f8m",
+      "similarity": 0.0
+    },
+    {
+      "id": "279c90f5-1e6b-4215-b546-ec1a3fb48eea",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "117175",
+      "similarity": 0.6249179840087891
+    },
+    {
+      "id": "e33c66e6-087d-406d-84f7-94f0f3176bfb",
+      "sparql_answers": [],
+      "given_answer": "discrete mathematics and computational biology",
+      "similarity": 0.0
+    },
+    {
+      "id": "24fd0216-c992-48c8-8761-7ea878dd5db1",
+      "sparql_answers": [],
+      "given_answer": "United States Naval Academy",
+      "similarity": 0.0
+    },
+    {
+      "id": "a981b9d0-d9d7-4d32-afb4-f3c9b53c1383",
+      "sparql_answers": [],
+      "given_answer": "Pennsylvania State University",
+      "similarity": 0.0
+    },
+    {
+      "id": "593e6b5c-7432-4f07-b2fe-9a651e14416b",
+      "sparql_answers": [],
+      "given_answer": "2004",
+      "similarity": 0.0
+    },
+    {
+      "id": "74518fa5-bc48-4957-93c0-9239dba19afb",
+      "sparql_answers": [],
+      "given_answer": "Yale University",
+      "similarity": 0.0
+    },
+    {
+      "id": "f8ff8b2d-0540-4e6b-b1bb-89be1b04c411",
+      "sparql_answers": [],
+      "given_answer": "Netherlands",
+      "similarity": 0.0
+    },
+    {
+      "id": "832a10e6-3d1a-47b4-8802-d72d1cbb2acc",
+      "sparql_answers": [],
+      "given_answer": "Zhisheng Niu",
+      "similarity": 0.0
+    },
+    {
+      "id": "389a13fb-8f3a-412f-8792-df139f9844ab",
+      "sparql_answers": [
+        "5556",
+        "5556"
+      ],
+      "given_answer": "Robert Sugden",
+      "similarity": 0.5765825510025024
+    },
+    {
+      "id": "b9fc7b73-955a-4566-84e4-54c73d2c81ab",
+      "sparql_answers": [],
+      "given_answer": "Sepp Hochreiter",
+      "similarity": 0.0
+    },
+    {
+      "id": "4f679660-9913-4a52-8022-ae06df67e84d",
+      "sparql_answers": [
+        "81"
+      ],
+      "given_answer": "6876",
+      "similarity": 0.5934102535247803
+    },
+    {
+      "id": "d3f95c5d-3340-460d-adb2-d17f4961a7ef",
+      "sparql_answers": [],
+      "given_answer": "1950",
+      "similarity": 0.0
+    },
+    {
+      "id": "e23952bb-4a18-486c-b70b-a4b82c923720",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "1",
+      "similarity": 0.7825912237167358
+    },
+    {
+      "id": "f17b94b0-0275-4059-ab64-ec9648597893",
+      "sparql_answers": [],
+      "given_answer": "J\u00f6rg-R\u00fcdiger Sack",
+      "similarity": 0.0
+    },
+    {
+      "id": "199a2097-3acc-4637-8cb4-34338a640af7",
+      "sparql_answers": [],
+      "given_answer": "S\u00e3o Paulo, Brazil",
+      "similarity": 0.0
+    },
+    {
+      "id": "a69c02a8-b489-493a-98c4-16ff6cb87eda",
+      "sparql_answers": [],
+      "given_answer": "nonprofit",
+      "similarity": 0.0
+    },
+    {
+      "id": "be07e60a-17b2-4b0a-91cf-1d46922c5300",
+      "sparql_answers": [],
+      "given_answer": "ACM SIGMOD Edward Codd Innovations Award",
+      "similarity": 0.0
+    },
+    {
+      "id": "7e1b476b-06f9-49d6-a585-54e1c03afba2",
+      "sparql_answers": [],
+      "given_answer": "education",
+      "similarity": 0.0
+    },
+    {
+      "id": "df828b26-0078-484b-b48b-37a674ac730e",
+      "sparql_answers": [],
+      "given_answer": "University at Buffalo",
+      "similarity": 0.0
+    },
+    {
+      "id": "c2da0982-39b1-4e67-8400-c8d1bc78ee5b",
+      "sparql_answers": [],
+      "given_answer": "Salt Lake City",
+      "similarity": 0.0
+    },
+    {
+      "id": "26c9c1b6-d6db-40e3-b26b-a7b8934e2921",
+      "sparql_answers": [],
+      "given_answer": "Ashok K. Goel",
+      "similarity": 0.0
+    },
+    {
+      "id": "418822a9-d6f4-416b-b29e-3d4c62591e10",
+      "sparql_answers": [],
+      "given_answer": "temperature and heart rate",
+      "similarity": 0.0
+    },
+    {
+      "id": "86c2a616-22e8-4fb6-b43b-8f9ec58483a5",
+      "sparql_answers": [],
+      "given_answer": "Frank Leymann",
+      "similarity": 0.0
+    },
+    {
+      "id": "919e0163-0dad-4980-af51-b1d710e5a6e0",
+      "sparql_answers": [],
+      "given_answer": "electrical and computer engineering",
+      "similarity": 0.0
+    },
+    {
+      "id": "a9fef406-8329-4392-990c-23bde6201763",
+      "sparql_answers": [],
+      "given_answer": "University of Cambridge, UK",
+      "similarity": 0.0
+    },
+    {
+      "id": "3599343d-06b4-4546-9dd5-e24d9c64e603",
+      "sparql_answers": [
+        "4"
+      ],
+      "given_answer": "9",
+      "similarity": 0.6771316528320312
+    },
+    {
+      "id": "b667008f-a32b-4e34-b77f-fa1f22363bfc",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "257383",
+      "similarity": 0.5523843765258789
+    },
+    {
+      "id": "5740e84e-5d3f-410c-9177-7956f5c1b094",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "5",
+      "similarity": 0.6858104467391968
+    },
+    {
+      "id": "aa71d21a-c153-4647-8e87-a426997e5a90",
+      "sparql_answers": [],
+      "given_answer": "Logic & Reasoning",
+      "similarity": 0.0
+    },
+    {
+      "id": "58573bd9-609a-4fa5-b9c2-db85c0c14525",
+      "sparql_answers": [],
+      "given_answer": "Shing-Tung Yau",
+      "similarity": 0.0
+    },
+    {
+      "id": "cdc02e43-f564-43eb-b405-0627714ffc97",
+      "sparql_answers": [],
+      "given_answer": "29",
+      "similarity": 0.0
+    },
+    {
+      "id": "114a9056-0815-46db-80f5-3a9b0dfbebaf",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "327",
+      "similarity": 0.7063162326812744
+    },
+    {
+      "id": "3be8dbc1-f684-4635-addf-8d8f2f78e897",
+      "sparql_answers": [],
+      "given_answer": "ACM Journal of Experimental Algorithmics",
+      "similarity": 0.0
+    },
+    {
+      "id": "3f64096d-44ca-4f69-a058-698d49af4492",
+      "sparql_answers": [],
+      "given_answer": "Carnegie Mellon University",
+      "similarity": 0.0
+    },
+    {
+      "id": "308ef625-f1a5-4441-8790-7f071197fbe7",
+      "sparql_answers": [],
+      "given_answer": "1991",
+      "similarity": 0.0
+    },
+    {
+      "id": "2b65c61f-5552-4df5-95f4-dd278a3a8315",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "33989",
+      "similarity": 0.654080867767334
+    },
+    {
+      "id": "c9fa0a2f-def4-4154-8f6f-5e2050befc8d",
+      "sparql_answers": [],
+      "given_answer": "65",
+      "similarity": 0.0
+    },
+    {
+      "id": "8fca664e-0eef-4bf5-86be-4b0b73279f9a",
+      "sparql_answers": [],
+      "given_answer": "1.0",
+      "similarity": 0.0
+    },
+    {
+      "id": "1726188f-7599-4fc3-a075-19e329e80331",
+      "sparql_answers": [],
+      "given_answer": "Menno-Jan Kraak",
+      "similarity": 0.0
+    },
+    {
+      "id": "895f72e1-f2c2-49e4-9a51-b4416f2a950d",
+      "sparql_answers": [],
+      "given_answer": "Milan, Italy",
+      "similarity": 0.0
+    },
+    {
+      "id": "d1648682-822b-4bf4-ab77-fa931cff773e",
+      "sparql_answers": [],
+      "given_answer": "Massachusetts Institute of Technology",
+      "similarity": 0.0
+    },
+    {
+      "id": "217bc0d8-1d51-4f6b-8400-e771d22cf393",
+      "sparql_answers": [],
+      "given_answer": "Indian Institute of Technology, Kharagpur, India",
+      "similarity": 0.0
+    },
+    {
+      "id": "09251e09-4064-458f-becd-7d3a27e1cacf",
+      "sparql_answers": [],
+      "given_answer": "37",
+      "similarity": 0.0
+    },
+    {
+      "id": "0f85a83e-7e1f-496a-96ba-6695000d1505",
+      "sparql_answers": [],
+      "given_answer": "University of California, Berkeley",
+      "similarity": 0.0
+    },
+    {
+      "id": "c18ac77b-2720-43b7-8caf-c0472bf2731f",
+      "sparql_answers": [
+        "377"
+      ],
+      "given_answer": "318",
+      "similarity": 0.7528247237205505
+    },
+    {
+      "id": "a5bbb7c3-1cce-401e-92a5-8b3b5dac6d90",
+      "sparql_answers": [],
+      "given_answer": "59",
+      "similarity": 0.0
+    },
+    {
+      "id": "a1cb6290-e38d-471c-a5d6-8b83d218d00f",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "123052",
+      "similarity": 0.5432335734367371
+    },
+    {
+      "id": "96533afc-e54a-462a-b7e4-8a1a33b2ff9e",
+      "sparql_answers": [],
+      "given_answer": "2.6",
+      "similarity": 0.0
+    },
+    {
+      "id": "80e9ecc8-17ac-498e-81a5-8379c1a60fc5",
+      "sparql_answers": [
+        "578"
+      ],
+      "given_answer": "18885",
+      "similarity": 0.6032091379165649
+    },
+    {
+      "id": "1a084862-5ae9-48bc-b41c-31ac4e3fa779",
+      "sparql_answers": [],
+      "given_answer": "39",
+      "similarity": 0.0
+    },
+    {
+      "id": "e378a2e7-3c4e-46a8-afef-dd221522bb3e",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "120",
+      "similarity": 0.691665768623352
+    },
+    {
+      "id": "6c441fc1-a793-48c5-adae-51489d19ee8b",
+      "sparql_answers": [],
+      "given_answer": "education",
+      "similarity": 0.0
+    },
+    {
+      "id": "8d520af9-60d5-4c32-9868-70153e2ba037",
+      "sparql_answers": [],
+      "given_answer": "Chancellor's Professor at Brown University",
+      "similarity": 0.0
+    },
+    {
+      "id": "9c1ae63e-a25f-41f1-8e98-3cb2720ea9e2",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "17927",
+      "similarity": 0.5246391296386719
+    },
+    {
+      "id": "4f46393f-5795-424c-8d63-1eb7d40fa9bb",
+      "sparql_answers": [],
+      "given_answer": "education",
+      "similarity": 0.0
+    },
+    {
+      "id": "b7022f3a-0615-47ef-b620-332a5de15c4c",
+      "sparql_answers": [],
+      "given_answer": "pervasive and mobile computing",
+      "similarity": 0.0
+    },
+    {
+      "id": "8732f61b-27ad-4067-bbab-338effb39bfd",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "28640",
+      "similarity": 0.6338859796524048
+    },
+    {
+      "id": "2ecb12e6-e456-4474-b2a5-90ea3c013c70",
+      "sparql_answers": [
+        "43665"
+      ],
+      "given_answer": "383525",
+      "similarity": 0.7111762166023254
+    },
+    {
+      "id": "76ca78e1-a798-429e-979d-4aba4058418e",
+      "sparql_answers": [],
+      "given_answer": "University of Michigan",
+      "similarity": 0.0
+    },
+    {
+      "id": "57bc8309-115b-47a2-90f2-6d1fee5ef110",
+      "sparql_answers": [],
+      "given_answer": "The Dark Eye",
+      "similarity": 0.0
+    },
+    {
+      "id": "599f792a-6983-47e1-9330-ea0208f15b6e",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "53553",
+      "similarity": 0.5961461067199707
+    },
+    {
+      "id": "891820c0-d653-45b5-8f74-365cc24695ae",
+      "sparql_answers": [],
+      "given_answer": "1947",
+      "similarity": 0.0
+    },
+    {
+      "id": "0e351893-5164-430c-aee9-dae11ab61396",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "8844856",
+      "similarity": 0.5921850204467773
+    },
+    {
+      "id": "81d623ea-241c-4555-a719-158615016ccf",
+      "sparql_answers": [],
+      "given_answer": "111",
+      "similarity": 0.0
+    },
+    {
+      "id": "8c2d4f1d-38b1-4194-a3d4-f21215bd7f74",
+      "sparql_answers": [],
+      "given_answer": "education",
+      "similarity": 0.0
+    },
+    {
+      "id": "97b0d24b-7067-4b98-adef-6f7408d9a9d1",
+      "sparql_answers": [],
+      "given_answer": "Chair in Computational Science and Engineering",
+      "similarity": 0.0
+    },
+    {
+      "id": "81b7ad53-78df-4e14-a561-7c82bf77d73c",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "452",
+      "similarity": 0.6840006113052368
+    },
+    {
+      "id": "a0dfb2f4-6efe-4522-be7f-cab2ab2998cc",
+      "sparql_answers": [],
+      "given_answer": "Logic & Reasoning",
+      "similarity": 0.0
+    },
+    {
+      "id": "d53ff6d7-d1ca-4c92-ad8a-06a2e3035314",
+      "sparql_answers": [],
+      "given_answer": "Shincliffe Station",
+      "similarity": 0.0
+    },
+    {
+      "id": "8dcc04ba-db63-4b8e-8db9-afb362b44419",
+      "sparql_answers": [],
+      "given_answer": "London School of Economics",
+      "similarity": 0.0
+    },
+    {
+      "id": "e8762de9-5d76-46ef-9de2-70bb39b96da2",
+      "sparql_answers": [],
+      "given_answer": "299",
+      "similarity": 0.0
+    },
+    {
+      "id": "c4bf2253-de85-447e-8824-5c8aa16b751a",
+      "sparql_answers": [],
+      "given_answer": "Stanford University",
+      "similarity": 0.0
+    },
+    {
+      "id": "c5ed96cb-39c9-4b31-b613-926d3af5d5a5",
+      "sparql_answers": [],
+      "given_answer": "Officer of the Order of the British Empire (OBE)",
+      "similarity": 0.0
+    },
+    {
+      "id": "7889b632-be2f-461e-bfcf-7946918ff283",
+      "sparql_answers": [],
+      "given_answer": "Lancaster University (United Kingdom)",
+      "similarity": 0.0
+    },
+    {
+      "id": "4a118e56-26fa-4da0-a6ac-267525b219f8",
+      "sparql_answers": [],
+      "given_answer": "Grenoble Institute of Technology",
+      "similarity": 0.0
+    },
+    {
+      "id": "c6dbd349-8b6c-476a-867c-29fa55aa6dd0",
+      "sparql_answers": [],
+      "given_answer": "1298",
+      "similarity": 0.0
+    },
+    {
+      "id": "75438c6d-7d20-41d3-88a8-ac4e849936c9",
+      "sparql_answers": [],
+      "given_answer": "Sally McClean",
+      "similarity": 0.0
+    },
+    {
+      "id": "9084b15b-d19d-4c1f-86d0-bca160cb6ac2",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "1",
+      "similarity": 0.7825912237167358
+    },
+    {
+      "id": "00cb1333-d622-4656-b9ce-28de9839c3de",
+      "sparql_answers": [],
+      "given_answer": "1954",
+      "similarity": 0.0
+    },
+    {
+      "id": "baf5ac0c-cf66-4800-881a-6779c2c77413",
+      "sparql_answers": [],
+      "given_answer": "Eli Turkel",
+      "similarity": 0.0
+    },
+    {
+      "id": "55eca162-b148-48f2-91c4-4c273bb9c727",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "99105",
+      "similarity": 0.5674914717674255
+    },
+    {
+      "id": "f31396c4-03a9-422a-bd72-1bf06212327b",
+      "sparql_answers": [],
+      "given_answer": "2006",
+      "similarity": 0.0
+    },
+    {
+      "id": "acb09fbf-a8f2-4d63-9e08-38e7a915b9d9",
+      "sparql_answers": [],
+      "given_answer": "20",
+      "similarity": 0.0
+    },
+    {
+      "id": "a71d5672-947d-4d82-8e34-b35beddd1a81",
+      "sparql_answers": [],
+      "given_answer": "Celera Genomics",
+      "similarity": 0.0
+    },
+    {
+      "id": "1144f06c-4a04-4e3b-b3c5-e0618a2581dd",
+      "sparql_answers": [
+        "New Jersey Institute of Technology, Newark, NJ, USA"
+      ],
+      "given_answer": "education",
+      "similarity": 0.4173162877559662
+    },
+    {
+      "id": "808b7e72-8361-453e-9165-40b67698cc43",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "110266",
+      "similarity": 0.6097310781478882
+    },
+    {
+      "id": "a3d50606-0b87-4d73-9815-ea5fc7e688c0",
+      "sparql_answers": [],
+      "given_answer": "Belgian",
+      "similarity": 0.0
+    },
+    {
+      "id": "c887b44e-56b5-4a7f-886f-725ae3eeb57a",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "13252531",
+      "similarity": 0.6021078824996948
+    },
+    {
+      "id": "911c4525-ed56-43a8-903c-6a3be6dd3223",
+      "sparql_answers": [],
+      "given_answer": "0",
+      "similarity": 0.0
+    },
+    {
+      "id": "0f5dd214-8d89-4b83-ab18-ab3ed2d59e41",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "15009",
+      "similarity": 0.41933977603912354
+    },
+    {
+      "id": "524369b9-0850-4771-a4e2-ea74763da2b9",
+      "sparql_answers": [],
+      "given_answer": "2016",
+      "similarity": 0.0
+    },
+    {
+      "id": "339d4cf2-776f-454b-9819-40cbf10d6a15",
+      "sparql_answers": [],
+      "given_answer": "23",
+      "similarity": 0.0
+    },
+    {
+      "id": "058900f8-cfd6-4ed8-ae14-222351fcc279",
+      "sparql_answers": [],
+      "given_answer": "David C. Parkes",
+      "similarity": 0.0
+    },
+    {
+      "id": "e6e92bb4-28a3-4859-a1a7-5f68d024347a",
+      "sparql_answers": [],
+      "given_answer": "Robots: Bringing Intelligent Machines to Life?",
+      "similarity": 0.0
+    },
+    {
+      "id": "6c312a28-bb93-4d67-8dba-1f8840f5f9b4",
+      "sparql_answers": [],
+      "given_answer": "British",
+      "similarity": 0.0
+    },
+    {
+      "id": "0a01b16d-d45a-4f32-9a2a-16c0945f5db7",
+      "sparql_answers": [],
+      "given_answer": "Trinity College Dublin",
+      "similarity": 0.0
+    },
+    {
+      "id": "dd48cb4f-0dfa-4ae4-b8dd-71c3017b1f86",
+      "sparql_answers": [],
+      "given_answer": "Stanford University",
+      "similarity": 0.0
+    },
+    {
+      "id": "7ce450a6-d9ee-457f-8f72-77ca91c43c7f",
+      "sparql_answers": [],
+      "given_answer": "education",
+      "similarity": 0.0
+    },
+    {
+      "id": "527268a6-3ef8-4a5a-9f69-60afbdc89fa9",
+      "sparql_answers": [],
+      "given_answer": "113",
+      "similarity": 0.0
+    },
+    {
+      "id": "5789090d-9a2b-455b-9c13-65ccf8dbef2e",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "5673",
+      "similarity": 0.5633452534675598
+    },
+    {
+      "id": "60aa492b-953d-4949-b8cc-328267d483eb",
+      "sparql_answers": [],
+      "given_answer": "67",
+      "similarity": 0.0
+    },
+    {
+      "id": "3e88c021-582a-4538-8ad2-42f7ce9cbfc9",
+      "sparql_answers": [
+        "8004"
+      ],
+      "given_answer": "20534",
+      "similarity": 0.5944325923919678
+    },
+    {
+      "id": "e5718f5a-bd67-44da-b695-c932a452fdf4",
+      "sparql_answers": [],
+      "given_answer": "26 June 1956, Trieste",
+      "similarity": 0.0
+    },
+    {
+      "id": "575c6071-6770-443b-92f5-111ee9e79b98",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "826",
+      "similarity": 0.6857321858406067
+    },
+    {
+      "id": "29fd0139-0217-420b-a08a-9d6a8cf79a09",
+      "sparql_answers": [],
+      "given_answer": "Visualizing Route Maps",
+      "similarity": 0.0
+    },
+    {
+      "id": "3e33e0bf-a7cc-4088-8278-7167791d592e",
+      "sparql_answers": [],
+      "given_answer": "Poland",
+      "similarity": 0.0
+    },
+    {
+      "id": "9d20700c-3a36-4b26-83c7-ee796f67eee6",
+      "sparql_answers": [],
+      "given_answer": "Genome Rearrangements and Sorting by Reversals",
+      "similarity": 0.0
+    },
+    {
+      "id": "191d29d2-81e9-42c8-a655-9388cd5571ac",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "19642",
+      "similarity": 0.5845648050308228
+    },
+    {
+      "id": "7dd003b6-ba7b-4f57-aac7-11347c7d5f15",
+      "sparql_answers": [],
+      "given_answer": "1982",
+      "similarity": 0.0
+    },
+    {
+      "id": "64e39dea-4ab2-4a6d-aabc-dbbd0ea7c107",
+      "sparql_answers": [],
+      "given_answer": "Viktor Jirsa",
+      "similarity": 0.0
+    },
+    {
+      "id": "d65cdabd-3383-41c7-b438-4bd2b9437c91",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "1997",
+      "similarity": 0.6803390383720398
+    },
+    {
+      "id": "94996842-d330-4760-938e-dac909e6a839",
+      "sparql_answers": [],
+      "given_answer": "1950",
+      "similarity": 0.0
+    },
+    {
+      "id": "86462a61-3f2c-429d-b3e4-c174c7883161",
+      "sparql_answers": [],
+      "given_answer": "University of Oxford",
+      "similarity": 0.0
+    },
+    {
+      "id": "90ce3d01-a8fb-4652-a7c0-8f601a09db40",
+      "sparql_answers": [],
+      "given_answer": "Association for Computing Machinery",
+      "similarity": 0.0
+    },
+    {
+      "id": "5899bd81-c456-416f-aa8d-67ef6a396297",
+      "sparql_answers": [],
+      "given_answer": "October 3, 2014",
+      "similarity": 0.0
+    },
+    {
+      "id": "895f38ce-5581-466d-a996-fc1f73ef1836",
+      "sparql_answers": [],
+      "given_answer": "1967",
+      "similarity": 0.0
+    },
+    {
+      "id": "93037606-21c7-460b-a2c0-6097dcb2f996",
+      "sparql_answers": [],
+      "given_answer": "Frances M. T. Brazier",
+      "similarity": 0.0
+    },
+    {
+      "id": "3fd5ea7b-c160-4171-a4c7-dbb2085eb147",
+      "sparql_answers": [],
+      "given_answer": "ACM Web Science 2014 Conference",
+      "similarity": 0.0
+    },
+    {
+      "id": "1cf2cd4b-ed3f-4772-bc98-02e092d70b23",
+      "sparql_answers": [],
+      "given_answer": "2017",
+      "similarity": 0.0
+    },
+    {
+      "id": "c530463a-5e26-4b95-b5af-648e9c26a960",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "317415",
+      "similarity": 0.63987797498703
+    },
+    {
+      "id": "7596ac3a-9acf-426c-8283-1888b6249031",
+      "sparql_answers": [],
+      "given_answer": "Karen Lee Isaac",
+      "similarity": 0.0
+    },
+    {
+      "id": "f1da4a16-f5a4-4998-a5a7-f00e868674c0",
+      "sparql_answers": [
+        "17"
+      ],
+      "given_answer": "138671",
+      "similarity": 0.6516071557998657
+    },
+    {
+      "id": "0669e1b0-f33d-4844-b299-88a3676b7371",
+      "sparql_answers": [],
+      "given_answer": "Bristol University",
+      "similarity": 0.0
+    },
+    {
+      "id": "46adb04d-50dc-446a-bc4e-573001733cad",
+      "sparql_answers": [],
+      "given_answer": "University of California, Los Angeles",
+      "similarity": 0.0
+    },
+    {
+      "id": "6da5acf1-d070-4bd6-b176-0b460133388a",
+      "sparql_answers": [],
+      "given_answer": "Expert Design of Local Area Networks",
+      "similarity": 0.0
+    },
+    {
+      "id": "060eddeb-4fb5-4b90-9e16-76a5ecbeb92e",
+      "sparql_answers": [],
+      "given_answer": "Eye Gaze in Intelligent User Interfaces: Gaze-based Analyses, Models and Applications (Springer, 2013)",
+      "similarity": 0.0
+    },
+    {
+      "id": "3dae325c-1676-4c87-b886-808a1a73a011",
+      "sparql_answers": [
+        "124"
+      ],
+      "given_answer": "281",
+      "similarity": 0.5284363627433777
+    },
+    {
+      "id": "dd832288-8c09-474d-9264-52ee67971ede",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "5829",
+      "similarity": 0.6470165848731995
+    },
+    {
+      "id": "aa48c4ce-d4ed-4497-a526-2621de893438",
+      "sparql_answers": [],
+      "given_answer": "University of Wollongong",
+      "similarity": 0.0
+    },
+    {
+      "id": "16b36467-2d77-491b-b860-7f907021ace8",
+      "sparql_answers": [],
+      "given_answer": "2016",
+      "similarity": 0.0
+    },
+    {
+      "id": "6b14cac4-e747-4397-8179-533d5fd32fa9",
+      "sparql_answers": [],
+      "given_answer": "Azerbaijan",
+      "similarity": 0.0
+    },
+    {
+      "id": "65934b39-2cd0-4792-bd85-3f656633ec91",
+      "sparql_answers": [],
+      "given_answer": "education",
+      "similarity": 0.0
+    },
+    {
+      "id": "3ef1a28f-8e81-4dce-9fb8-8300e174001a",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "4",
+      "similarity": 0.7071099281311035
+    },
+    {
+      "id": "8bd78aab-a7f2-4ee4-be63-bd644119a0a6",
+      "sparql_answers": [],
+      "given_answer": "California Institute of Technology",
+      "similarity": 0.0
+    },
+    {
+      "id": "1881410c-3b5d-4c48-85b5-933a781a0442",
+      "sparql_answers": [],
+      "given_answer": "University of Manchester",
+      "similarity": 0.0
+    },
+    {
+      "id": "d62ffc89-9db2-4be0-bea7-31c8e23ee15e",
+      "sparql_answers": [],
+      "given_answer": "education",
+      "similarity": 0.0
+    },
+    {
+      "id": "8833ef1c-4255-4550-a9c5-4ba8fc9f0ff3",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "10983",
+      "similarity": 0.6159860491752625
+    },
+    {
+      "id": "f7cf411c-3b5a-4401-bb94-229de22de7c7",
+      "sparql_answers": [],
+      "given_answer": "Theodore von K\u00e1rm\u00e1n Prize",
+      "similarity": 0.0
+    },
+    {
+      "id": "d309d4ba-4ded-4ec2-a7dc-d06201712013",
+      "sparql_answers": [],
+      "given_answer": "Eugene W. Myers",
+      "similarity": 0.0
+    },
+    {
+      "id": "a9d78716-44d4-4d52-814f-7bd6b0998617",
+      "sparql_answers": [
+        "269"
+      ],
+      "given_answer": "23401",
+      "similarity": 0.7206519842147827
+    },
+    {
+      "id": "50211486-0cb3-4860-a05a-1148fb4cb3c6",
+      "sparql_answers": [],
+      "given_answer": "1987",
+      "similarity": 0.0
+    },
+    {
+      "id": "269bbdb1-4fa1-446d-9735-61266dee8cbc",
+      "sparql_answers": [],
+      "given_answer": "Mohammad Taghi Hajiaghayi",
+      "similarity": 0.0
+    },
+    {
+      "id": "305cb142-f100-4b2b-b171-cf8471087ae9",
+      "sparql_answers": [],
+      "given_answer": "American Association for the Advancement of Science, IEEE, ACM, and the Institute of Combinatorics",
+      "similarity": 0.0
+    },
+    {
+      "id": "f26e919f-a61b-468b-8efa-545cf83f300f",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "907793",
+      "similarity": 0.6128958463668823
+    },
+    {
+      "id": "48cec8d2-655f-4c00-9b21-ad96d20922b8",
+      "sparql_answers": [],
+      "given_answer": "200",
+      "similarity": 0.0
+    },
+    {
+      "id": "4ca78458-ed84-406a-b04e-788657e4f7e4",
+      "sparql_answers": [],
+      "given_answer": "Michigan State University",
+      "similarity": 0.0
+    },
+    {
+      "id": "881c3248-c345-4905-bc30-23b22a5e3b6f",
+      "sparql_answers": [],
+      "given_answer": "Robert J. Elliott",
+      "similarity": 0.0
+    },
+    {
+      "id": "7fa9f252-7a47-41c4-bb90-f812d43f40ee",
+      "sparql_answers": [],
+      "given_answer": "2020",
+      "similarity": 0.0
+    },
+    {
+      "id": "e9a14a45-d62a-4754-8658-10777f94662a",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "16881",
+      "similarity": 0.5520809292793274
+    },
+    {
+      "id": "03480f23-0e16-4432-a6ff-d71a2b8d200e",
+      "sparql_answers": [],
+      "given_answer": "artificial intelligence, hyper-realistic visualization, and precision medicine",
+      "similarity": 0.0
+    },
+    {
+      "id": "aa520066-f313-4342-b2ee-64ca0178c3bf",
+      "sparql_answers": [],
+      "given_answer": "American",
+      "similarity": 0.0
+    },
+    {
+      "id": "4e10e1cd-712f-4010-a592-7d7050404a26",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "4774016",
+      "similarity": 0.5842528939247131
+    },
+    {
+      "id": "da06f454-fd7b-4b1b-8990-93af7aad6831",
+      "sparql_answers": [],
+      "given_answer": "Philippa Gardner",
+      "similarity": 0.0
+    },
+    {
+      "id": "0fc30826-07e0-4d4f-b8ee-0e49bee85e2d",
+      "sparql_answers": [],
+      "given_answer": "Toronto, Ontario",
+      "similarity": 0.0
+    },
+    {
+      "id": "6d3ac817-712a-4c90-ba4c-61e01a89c715",
+      "sparql_answers": [],
+      "given_answer": "Greg Turk",
+      "similarity": 0.0
+    },
+    {
+      "id": "8a7bc884-45ae-47ca-82c2-892447c8f834",
+      "sparql_answers": [],
+      "given_answer": "tableau reasoning",
+      "similarity": 0.0
+    },
+    {
+      "id": "fbb9fb13-5103-47b7-99e0-34935ecb281d",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "56608",
+      "similarity": 0.5744725465774536
+    },
+    {
+      "id": "1e6b46d6-46c4-4410-8c7c-629341054afa",
+      "sparql_answers": [],
+      "given_answer": "Douglas, Georgia",
+      "similarity": 0.0
+    },
+    {
+      "id": "699a5c0b-ee85-4f49-8125-e0492ebcbf6b",
+      "sparql_answers": [],
+      "given_answer": "University of Maryland, College Park",
+      "similarity": 0.0
+    },
+    {
+      "id": "9cf17d48-3108-4983-a280-c1a63451ad5b",
+      "sparql_answers": [],
+      "given_answer": "2012",
+      "similarity": 0.0
+    },
+    {
+      "id": "d363e103-4563-406f-8e31-38c057c08d98",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "14661139",
+      "similarity": 0.5721738934516907
+    },
+    {
+      "id": "b3e69dc3-e883-4c8b-99fc-c4430a3e1313",
+      "sparql_answers": [],
+      "given_answer": "1997",
+      "similarity": 0.0
+    },
+    {
+      "id": "34b1c927-e960-492f-a112-6d0e6a700835",
+      "sparql_answers": [],
+      "given_answer": "2015",
+      "similarity": 0.0
+    },
+    {
+      "id": "f3645f96-f149-43e3-9328-2b2bc4519da6",
+      "sparql_answers": [],
+      "given_answer": "Ford Professor of Engineering and a MacVicar Faculty Fellow",
+      "similarity": 0.0
+    },
+    {
+      "id": "e6a09298-b88f-4c55-a47e-fe38a045d3d6",
+      "sparql_answers": [],
+      "given_answer": "May 3, 2012",
+      "similarity": 0.0
+    },
+    {
+      "id": "e4410150-2328-4446-a9c9-60b3590c1e8d",
+      "sparql_answers": [],
+      "given_answer": "929",
+      "similarity": 0.0
+    },
+    {
+      "id": "72c5ea6f-f948-4bd9-939d-7d3a6f24043e",
+      "sparql_answers": [],
+      "given_answer": "David Silver",
+      "similarity": 0.0
+    },
+    {
+      "id": "f8dda856-c6f3-4252-a938-140f6bbe6a2a",
+      "sparql_answers": [],
+      "given_answer": "Massachusetts Institute of Technology",
+      "similarity": 0.0
+    },
+    {
+      "id": "807fca51-290c-4d59-9291-0bee8681f31b",
+      "sparql_answers": [],
+      "given_answer": "19 November 1962",
+      "similarity": 0.0
+    },
+    {
+      "id": "f8ed0087-8c48-4ddd-b9c0-3c0fa70795ad",
+      "sparql_answers": [],
+      "given_answer": "numerical linear algebra",
+      "similarity": 0.0
+    },
+    {
+      "id": "6accc140-0774-4379-a6af-794b313ef275",
+      "sparql_answers": [],
+      "given_answer": "University of Bologna",
+      "similarity": 0.0
+    },
+    {
+      "id": "f36e1a6f-8655-449b-ba6a-fbd22e3d616f",
+      "sparql_answers": [],
+      "given_answer": "King Abdullah University of Science and Technology",
+      "similarity": 0.0
+    },
+    {
+      "id": "c5f87354-9f27-4171-8067-71fb98421685",
+      "sparql_answers": [],
+      "given_answer": "Grenoble Institute of Technology",
+      "similarity": 0.0
+    },
+    {
+      "id": "1bf5e40b-68a3-48be-b30e-43cf38384d27",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "56764",
+      "similarity": 0.5726971626281738
+    },
+    {
+      "id": "80d3c699-ed01-4b7c-8560-1a7821ac574f",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "117003",
+      "similarity": 0.6655409336090088
+    },
+    {
+      "id": "eecd5a65-d9ea-42e5-b8d1-9c9fd7eac3ba",
+      "sparql_answers": [],
+      "given_answer": "1987",
+      "similarity": 0.0
+    },
+    {
+      "id": "e4ae9de0-f857-46ff-b518-bdae12376ef6",
+      "sparql_answers": [],
+      "given_answer": "Canadian",
+      "similarity": 0.0
+    },
+    {
+      "id": "6bad9b93-06b8-4f3f-959b-70a251abb56e",
+      "sparql_answers": [],
+      "given_answer": "Texas A&M University",
+      "similarity": 0.0
+    },
+    {
+      "id": "7127243f-8ed2-4498-9842-041bcde13749",
+      "sparql_answers": [],
+      "given_answer": "36",
+      "similarity": 0.0
+    },
+    {
+      "id": "46bb5eb3-d9e7-4261-b2d7-0f02e4463f36",
+      "sparql_answers": [],
+      "given_answer": "University of Helsinki",
+      "similarity": 0.0
+    },
+    {
+      "id": "5150948f-6df0-422b-ba97-e4bbfd42c67b",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "15832",
+      "similarity": 0.6549251079559326
+    },
+    {
+      "id": "2f3d42d2-7383-43e2-ac23-5a92d3c99fcd",
+      "sparql_answers": [],
+      "given_answer": "University of Erlangen-Nuremberg",
+      "similarity": 0.0
+    },
+    {
+      "id": "d949b525-b3f2-4b2d-ba00-01d2d104e727",
+      "sparql_answers": [],
+      "given_answer": "Richard H. Wilhelm Award in Chemical Reaction Engineering",
+      "similarity": 0.0
+    },
+    {
+      "id": "2f72a1ae-af60-4761-8046-2bcde61f9394",
+      "sparql_answers": [],
+      "given_answer": "BCS Lovelace Medal",
+      "similarity": 0.0
+    },
+    {
+      "id": "fe259e00-36a8-49e0-8291-02038093f5ec",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "197801",
+      "similarity": 0.6550691723823547
+    },
+    {
+      "id": "f0c8c1f4-d106-41b1-aa59-ef469142c216",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "1484418",
+      "similarity": 0.5301014184951782
+    },
+    {
+      "id": "ce2db3f8-8845-421a-827b-a5f968eca417",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "over 20,000 times",
+      "similarity": 0.32070469856262207
+    },
+    {
+      "id": "68750dcd-bf72-480b-af7b-935b75c102cf",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "985038",
+      "similarity": 0.6196345090866089
+    },
+    {
+      "id": "7e61350a-4d93-4b63-9cbd-7a5247075287",
+      "sparql_answers": [],
+      "given_answer": "1976",
+      "similarity": 0.0
+    },
+    {
+      "id": "cbb98aed-f7e8-464a-bfd9-5f856f37abc5",
+      "sparql_answers": [],
+      "given_answer": "Dieter Schmalstieg",
+      "similarity": 0.0
+    },
+    {
+      "id": "d3ce1c75-a02d-4fe2-b6b4-ceef2335e433",
+      "sparql_answers": [],
+      "given_answer": "1984",
+      "similarity": 0.0
+    },
+    {
+      "id": "ddf9ffaa-7846-4d01-99d5-cb046180a0cb",
+      "sparql_answers": [],
+      "given_answer": "141",
+      "similarity": 0.0
+    },
+    {
+      "id": "097f89a7-fd94-4a0b-8280-0c2ed93b61bb",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "Karon E. MacLean",
+      "similarity": 0.6352487802505493
+    },
+    {
+      "id": "cae2e188-7d9c-47d9-ae38-61d5f190604a",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "109213",
+      "similarity": 0.6468847990036011
+    },
+    {
+      "id": "b057869f-6d05-436a-ba1f-a37f9973e414",
+      "sparql_answers": [],
+      "given_answer": "2016",
+      "similarity": 0.0
+    },
+    {
+      "id": "315956eb-6cae-4176-96a4-0719e04d100d",
+      "sparql_answers": [],
+      "given_answer": "19476719",
+      "similarity": 0.0
+    },
+    {
+      "id": "9603be00-cb82-48f0-8289-23eb5d203fcf",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "Houman Owhadi",
+      "similarity": 0.6503599286079407
+    },
+    {
+      "id": "9bfcef8c-464a-4c8a-85fe-a96e297eb9e3",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "363",
+      "similarity": 0.639886736869812
+    },
+    {
+      "id": "038ee631-49c7-40be-a872-78f78c928ff8",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "550608",
+      "similarity": 0.6017603874206543
+    },
+    {
+      "id": "15ece9dd-abd1-4f6b-b428-592965de8a49",
+      "sparql_answers": [
+        "https://dblp.org/pid/s/TajanaSimunic"
+      ],
+      "given_answer": "Tajana Rosing",
+      "similarity": 0.6490269303321838
+    },
+    {
+      "id": "53aed5c4-a7a9-4a4e-ba37-5b7d95e7f04a",
+      "sparql_answers": [],
+      "given_answer": "Senior Staff Research Scientist and Group Manager at Google",
+      "similarity": 0.0
+    },
+    {
+      "id": "9953ad9d-c0b0-4bfe-a900-9e3bfa3b2417",
+      "sparql_answers": [],
+      "given_answer": "1995",
+      "similarity": 0.0
+    },
+    {
+      "id": "300a2c6c-f4e0-4d39-9973-c3c3725b6daf",
+      "sparql_answers": [],
+      "given_answer": "Tracy Lynn Zawaski",
+      "similarity": 0.0
+    },
+    {
+      "id": "95fbd969-dd22-429e-a0e5-120d744657c4",
+      "sparql_answers": [],
+      "given_answer": "H. Eugene Stanley",
+      "similarity": 0.0
+    },
+    {
+      "id": "314182a0-4266-4270-827c-bcb42eca424e",
+      "sparql_answers": [],
+      "given_answer": "43",
+      "similarity": 0.0
+    },
+    {
+      "id": "ea78a829-a0a5-442e-ab1b-b90ec13d710a",
+      "sparql_answers": [],
+      "given_answer": "Belfast",
+      "similarity": 0.0
+    },
+    {
+      "id": "9182bce8-0577-48d3-865d-d8d279e95a58",
+      "sparql_answers": [],
+      "given_answer": "University of New South Wales",
+      "similarity": 0.0
+    },
+    {
+      "id": "74e56ada-c436-4766-85b3-21640675229a",
+      "sparql_answers": [],
+      "given_answer": "2021",
+      "similarity": 0.0
+    },
+    {
+      "id": "3386cdf9-cf7d-4520-a6fa-04635de9f11e",
+      "sparql_answers": [],
+      "given_answer": "Instituto Polit\u00e9cnico de Lisboa",
+      "similarity": 0.0
+    },
+    {
+      "id": "782c36cb-9980-41f1-9134-e4db9af419c2",
+      "sparql_answers": [],
+      "given_answer": "61",
+      "similarity": 0.0
+    },
+    {
+      "id": "26b5b18b-2f53-4343-bea0-c6d23b4e08ce",
+      "sparql_answers": [],
+      "given_answer": "2017",
+      "similarity": 0.0
+    },
+    {
+      "id": "5be9050c-8386-4073-bf26-a108032e8373",
+      "sparql_answers": [],
+      "given_answer": "52",
+      "similarity": 0.0
+    },
+    {
+      "id": "2f5c9c83-f642-49d8-8143-73498570eea3",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "270460",
+      "similarity": 0.6244115233421326
+    },
+    {
+      "id": "fd5c90ef-d543-4658-91fa-543ec75ff16f",
+      "sparql_answers": [],
+      "given_answer": "Carleton University",
+      "similarity": 0.0
+    },
+    {
+      "id": "02121d8a-cd72-4482-9fec-1622e5aa4732",
+      "sparql_answers": [],
+      "given_answer": "3.0",
+      "similarity": 0.0
+    },
+    {
+      "id": "6c85b1fa-695b-4930-a98f-ecbf01c83115",
+      "sparql_answers": [],
+      "given_answer": "28",
+      "similarity": 0.0
+    },
+    {
+      "id": "772c2220-e609-45c2-a5fb-4b3815d28755",
+      "sparql_answers": [],
+      "given_answer": "fundamental fluid mechanics phenomenon and numerical analysis",
+      "similarity": 0.0
+    },
+    {
+      "id": "5a84af5a-db40-4418-977b-2de7510898bd",
+      "sparql_answers": [],
+      "given_answer": "John H. Reif",
+      "similarity": 0.0
+    },
+    {
+      "id": "ab57cbb1-be0b-480e-a7b9-bb1d8f22041c",
+      "sparql_answers": [],
+      "given_answer": "26",
+      "similarity": 0.0
+    },
+    {
+      "id": "9ce8d1c1-ff69-4eb8-87ab-0aafc221371a",
+      "sparql_answers": [],
+      "given_answer": "0.25",
+      "similarity": 0.0
+    },
+    {
+      "id": "2c749c8f-388a-42b1-bc2d-c4cb6d072a38",
+      "sparql_answers": [],
+      "given_answer": "biometrics",
+      "similarity": 0.0
+    },
+    {
+      "id": "db4abf36-8ff3-44a5-a966-9d2a8f680c0c",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "566",
+      "similarity": 0.580715537071228
+    },
+    {
+      "id": "c5d2f77f-430e-4226-9e85-986f5d6c6f69",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "138671",
+      "similarity": 0.5883482098579407
+    },
+    {
+      "id": "ec168658-c5fe-4889-aa3c-be1458c65e4a",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "32009535",
+      "similarity": 0.6245051622390747
+    },
+    {
+      "id": "f2d2d256-6594-4dac-bb9e-d4750648564b",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "349",
+      "similarity": 0.6491165161132812
+    },
+    {
+      "id": "52c9e024-8e28-49b2-a06b-fef564c606d6",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "165745",
+      "similarity": 0.5132182836532593
+    },
+    {
+      "id": "e5985498-3d37-45ae-b0d9-e08c5e09bfeb",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "7231",
+      "similarity": 0.657585084438324
+    },
+    {
+      "id": "c5b14577-51d0-4ef2-9ad0-9c626278ea63",
+      "sparql_answers": [
+        "123"
+      ],
+      "given_answer": "406095",
+      "similarity": 0.532365083694458
+    },
+    {
+      "id": "a3396a1a-5238-4ef6-ba72-7b89c097a30f",
+      "sparql_answers": [],
+      "given_answer": "Gordon V. Cormack",
+      "similarity": 0.0
+    },
+    {
+      "id": "34d6fb45-245a-4dea-bda5-a42d6b88389f",
+      "sparql_answers": [],
+      "given_answer": "Konrad Zuse Medal",
+      "similarity": 0.0
+    },
+    {
+      "id": "ebb0368f-ff97-4d4b-a12f-3ebbc094a06b",
+      "sparql_answers": [],
+      "given_answer": "86",
+      "similarity": 0.0
+    },
+    {
+      "id": "19e77b88-68c6-486c-8a3d-cf803721a919",
+      "sparql_answers": [],
+      "given_answer": "4317482",
+      "similarity": 0.0
+    },
+    {
+      "id": "235ba106-2297-4b16-9b58-0a9817165592",
+      "sparql_answers": [],
+      "given_answer": "62",
+      "similarity": 0.0
+    },
+    {
+      "id": "3e4bb0bf-a0f7-435e-ba1b-ee22d72e3694",
+      "sparql_answers": [],
+      "given_answer": "1950",
+      "similarity": 0.0
+    },
+    {
+      "id": "39aec0fb-21d1-436f-bfbb-017b179e0896",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "5",
+      "similarity": 0.6858104467391968
+    },
+    {
+      "id": "1ed4eb84-fc84-4f76-a54e-1ec77d1cac75",
+      "sparql_answers": [],
+      "given_answer": "Michael A. Osborne",
+      "similarity": 0.0
+    },
+    {
+      "id": "20ba42ad-7c30-481c-8069-38673be24067",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "170260",
+      "similarity": 0.594390332698822
+    },
+    {
+      "id": "0ffb3889-5e9e-4671-a4a0-e9122c8a6ba3",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "12196",
+      "similarity": 0.6330856680870056
+    },
+    {
+      "id": "75a64c5b-5717-47e5-8ffa-8d11e320ec33",
+      "sparql_answers": [],
+      "given_answer": "Ray Dolan",
+      "similarity": 0.0
+    },
+    {
+      "id": "9433c488-1f16-4a42-ae76-26708ba61e57",
+      "sparql_answers": [],
+      "given_answer": "University of California at Berkeley",
+      "similarity": 0.0
+    },
+    {
+      "id": "47b157b2-556d-424d-bf4d-65e10a0469de",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "16881",
+      "similarity": 0.5520809292793274
+    },
+    {
+      "id": "acf438a1-ea44-4ec7-9b0a-8dde29f0b1e9",
+      "sparql_answers": [],
+      "given_answer": "43",
+      "similarity": 0.0
+    },
+    {
+      "id": "f46ead6a-3119-41d5-9433-83d01e10c9ba",
+      "sparql_answers": [],
+      "given_answer": "106",
+      "similarity": 0.0
+    },
+    {
+      "id": "344b5b0e-a5f4-425b-bc31-ec5447a43933",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "49757",
+      "similarity": 0.6131354570388794
+    },
+    {
+      "id": "d0ce8426-fc13-44ec-87b0-a0dbd5681e31",
+      "sparql_answers": [
+        "106"
+      ],
+      "given_answer": "383525",
+      "similarity": 0.6319611668586731
+    },
+    {
+      "id": "c60f1fb7-c110-4f90-bc0a-3561cb8405df",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "300337",
+      "similarity": 0.6145493984222412
+    },
+    {
+      "id": "c1559490-826e-406e-add1-4e52bacad3b8",
+      "sparql_answers": [],
+      "given_answer": "computational combinatorics and algorithmic graph theory",
+      "similarity": 0.0
+    },
+    {
+      "id": "80105510-4d3d-4da5-9bc8-0f2ca1878e72",
+      "sparql_answers": [],
+      "given_answer": "education",
+      "similarity": 0.0
+    },
+    {
+      "id": "bafe2680-f303-4f04-807b-dc8b6693dc67",
+      "sparql_answers": [],
+      "given_answer": "Center of Leading Innovation & Cooperation (CLIC)",
+      "similarity": 0.0
+    },
+    {
+      "id": "92b94c84-3299-44c1-9b35-4fe2126c4409",
+      "sparql_answers": [],
+      "given_answer": "Fuzhou, Fujian, People\u2019s Republic of China",
+      "similarity": 0.0
+    },
+    {
+      "id": "2386ee3f-2d19-4762-b3cc-0aeb498d81bb",
+      "sparql_answers": [],
+      "given_answer": "University of Michigan",
+      "similarity": 0.0
+    },
+    {
+      "id": "ffbbeed1-ab68-4b00-b38a-77011f75d71c",
+      "sparql_answers": [],
+      "given_answer": "Dominik Wodarz",
+      "similarity": 0.0
+    },
+    {
+      "id": "a626056b-6da8-44b9-a0fc-175b74dcce2a",
+      "sparql_answers": [],
+      "given_answer": "Vrije Universiteit Amsterdam",
+      "similarity": 0.0
+    },
+    {
+      "id": "62a8231e-9548-4b4b-bf41-194d76f97ead",
+      "sparql_answers": [],
+      "given_answer": "Mexican Academy of Sciences",
+      "similarity": 0.0
+    },
+    {
+      "id": "64deb2db-30e1-4693-b22f-06f8826656a6",
+      "sparql_answers": [],
+      "given_answer": "University of La Laguna",
+      "similarity": 0.0
+    },
+    {
+      "id": "1f17f62a-d6c2-41ef-b4a2-5c6e4939d114",
+      "sparql_answers": [],
+      "given_answer": "2017",
+      "similarity": 0.0
+    },
+    {
+      "id": "4131b555-f1c8-43ff-8d2c-22ef5d9a293f",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "138671",
+      "similarity": 0.5883482098579407
+    },
+    {
+      "id": "024320e4-8585-41ef-9826-d3a5af8c733e",
+      "sparql_answers": [],
+      "given_answer": "Dr. Chan-Woo Park and Dr. Larry Capots",
+      "similarity": 0.0
+    },
+    {
+      "id": "4582df31-6b37-43e6-838d-44257556b750",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "more than 300",
+      "similarity": 0.43495726585388184
+    },
+    {
+      "id": "8ae2a0ed-9de9-4e1c-93c0-5132ded23e4e",
+      "sparql_answers": [],
+      "given_answer": "M.D.",
+      "similarity": 0.0
+    },
+    {
+      "id": "def4ffb0-edc9-4dd2-94a1-b6f3ec67f285",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "6820",
+      "similarity": 0.6544191837310791
+    },
+    {
+      "id": "8ea0108a-eece-48e8-8552-348b5237edf8",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "3165146",
+      "similarity": 0.6581886410713196
+    },
+    {
+      "id": "5ca31509-1a59-4c0f-8725-2e79c71d291a",
+      "sparql_answers": [],
+      "given_answer": "152",
+      "similarity": 0.0
+    },
+    {
+      "id": "58e0492d-2d01-467b-92ba-2f83068e6f1f",
+      "sparql_answers": [],
+      "given_answer": "341",
+      "similarity": 0.0
+    },
+    {
+      "id": "e9d63a3d-57ae-4175-810e-380092442835",
+      "sparql_answers": [],
+      "given_answer": "2014",
+      "similarity": 0.0
+    },
+    {
+      "id": "638a6e27-2638-4fd6-9faa-5e8ce9df96b4",
+      "sparql_answers": [],
+      "given_answer": "14",
+      "similarity": 0.0
+    },
+    {
+      "id": "90f3b83f-bddc-434e-a201-978b10ab3902",
+      "sparql_answers": [],
+      "given_answer": "Editor-in-Chief of Complex & Intelligent Systems",
+      "similarity": 0.0
+    },
+    {
+      "id": "3c6a4ca7-3e1a-4fe5-8660-c6aa1c7f6324",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "613",
+      "similarity": 0.6814782023429871
+    },
+    {
+      "id": "ec6106ed-6863-4fd0-83d8-8207a832b22d",
+      "sparql_answers": [],
+      "given_answer": "University College London",
+      "similarity": 0.0
+    },
+    {
+      "id": "43585c83-1a00-4a2a-b94d-2efeb8a1f73f",
+      "sparql_answers": [],
+      "given_answer": "Massachusetts Institute of Technology",
+      "similarity": 0.0
+    },
+    {
+      "id": "d604c43b-a83d-4ebb-9cdc-c1aacc42281a",
+      "sparql_answers": [],
+      "given_answer": "National Tsing Hua University",
+      "similarity": 0.0
+    },
+    {
+      "id": "6c877eb8-e16c-4189-bbd6-d00eacfbd441",
+      "sparql_answers": [],
+      "given_answer": "30",
+      "similarity": 0.0
+    },
+    {
+      "id": "f6f05c45-b045-4fa8-8cd1-d42f0272dce0",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "52256",
+      "similarity": 0.5333548784255981
+    },
+    {
+      "id": "c9ea6727-4ba2-4cde-8754-2b552f9abc9d",
+      "sparql_answers": [],
+      "given_answer": "Arkadi Nemirovski",
+      "similarity": 0.0
+    },
+    {
+      "id": "f3819e33-2856-465d-a16c-38d56149c264",
+      "sparql_answers": [],
+      "given_answer": "Center of Integrated Quantum Science and Technology (IQST)",
+      "similarity": 0.0
+    },
+    {
+      "id": "58011a9c-61fe-44fd-a9c6-5991bc84fe07",
+      "sparql_answers": [],
+      "given_answer": "National Academy of Engineering",
+      "similarity": 0.0
+    },
+    {
+      "id": "1e19e356-3c51-4f77-b13a-24bcc8361704",
+      "sparql_answers": [],
+      "given_answer": "education",
+      "similarity": 0.0
+    },
+    {
+      "id": "d0251412-c17c-446c-bf14-a6aeb8b56b51",
+      "sparql_answers": [],
+      "given_answer": "Ashok Agrawala",
+      "similarity": 0.0
+    },
+    {
+      "id": "d15ec36a-010e-4232-b385-dd2ef3ba4e48",
+      "sparql_answers": [],
+      "given_answer": "Christoph Steinbeck",
+      "similarity": 0.0
+    },
+    {
+      "id": "564c2de1-2734-4bc3-a326-b6cd1af57b97",
+      "sparql_answers": [],
+      "given_answer": "Eduardo D. Sontag",
+      "similarity": 0.0
+    },
+    {
+      "id": "e0c1d629-403b-4d6d-98ca-89ae5f575bbf",
+      "sparql_answers": [],
+      "given_answer": "Singapore",
+      "similarity": 0.0
+    },
+    {
+      "id": "79551a60-14b7-44a8-aa4c-539669880fa1",
+      "sparql_answers": [
+        "281"
+      ],
+      "given_answer": "over 80",
+      "similarity": 0.6332293748855591
+    },
+    {
+      "id": "71968ea3-b4c8-45d3-8089-e67775dd0e79",
+      "sparql_answers": [],
+      "given_answer": "UCLA",
+      "similarity": 0.0
+    },
+    {
+      "id": "f4903ee8-819a-48cb-be3a-8b81242db30b",
+      "sparql_answers": [],
+      "given_answer": "Tec de Monterrey, Monterrey Campus",
+      "similarity": 0.0
+    },
+    {
+      "id": "a376922f-75b7-48f0-9e4b-c145c6c23dd6",
+      "sparql_answers": [],
+      "given_answer": "66",
+      "similarity": 0.0
+    },
+    {
+      "id": "cfc4f407-b070-47cc-a3f9-4644a81c6018",
+      "sparql_answers": [],
+      "given_answer": "Peter Wonka",
+      "similarity": 0.0
+    },
+    {
+      "id": "eacb1772-c054-460b-b847-517f258bef12",
+      "sparql_answers": [],
+      "given_answer": "National Institute of Health in Bethesda, Maryland",
+      "similarity": 0.0
+    },
+    {
+      "id": "03eb5649-0c40-4576-9288-bb9b88520280",
+      "sparql_answers": [],
+      "given_answer": "Verdoliva",
+      "similarity": 0.0
+    },
+    {
+      "id": "496a32b7-0668-400d-9c21-91725ec66624",
+      "sparql_answers": [],
+      "given_answer": "education",
+      "similarity": 0.0
+    },
+    {
+      "id": "c2e16bb4-22bb-44b7-a75f-89618d7131ba",
+      "sparql_answers": [
+        "629"
+      ],
+      "given_answer": "150877",
+      "similarity": 0.7242252230644226
+    },
+    {
+      "id": "848e0b0f-cc48-44de-8d5f-2816e07f6a1a",
+      "sparql_answers": [],
+      "given_answer": "173",
+      "similarity": 0.0
+    },
+    {
+      "id": "abdcd938-d79b-46b5-aa54-e74126e49d3f",
+      "sparql_answers": [],
+      "given_answer": "California Institute of Technology",
+      "similarity": 0.0
+    },
+    {
+      "id": "f1898ffa-ffb0-4923-bb26-04b6912c11de",
+      "sparql_answers": [],
+      "given_answer": "University of Colorado at Boulder",
+      "similarity": 0.0
+    },
+    {
+      "id": "4f963610-be88-4721-bf85-c1fab642f43e",
+      "sparql_answers": [],
+      "given_answer": "Montreal, Quebec, Canada",
+      "similarity": 0.0
+    },
+    {
+      "id": "b2edd2cf-b8fe-4403-951a-1b7023f868e0",
+      "sparql_answers": [],
+      "given_answer": "Kentaro Toyama",
+      "similarity": 0.0
+    },
+    {
+      "id": "b2e2f9c6-58b5-4e50-a73a-a3e93b6a3d56",
+      "sparql_answers": [],
+      "given_answer": "1989",
+      "similarity": 0.0
+    },
+    {
+      "id": "b0ae9e5b-d928-4858-a920-26c959d27f0c",
+      "sparql_answers": [],
+      "given_answer": "Utica Center for Math, Science, and Technology",
+      "similarity": 0.0
+    },
+    {
+      "id": "2cc9f8c3-da9c-40d4-b736-64f8e72ef336",
+      "sparql_answers": [
+        "524"
+      ],
+      "given_answer": "219127",
+      "similarity": 0.6525830030441284
+    },
+    {
+      "id": "3354d13a-970b-4753-b5b9-1ee44afe1a10",
+      "sparql_answers": [],
+      "given_answer": "49757",
+      "similarity": 0.0
+    },
+    {
+      "id": "2734108f-c20c-4ed9-85f4-5a00e5011365",
+      "sparql_answers": [],
+      "given_answer": "Finale Doshi\u2010Velez",
+      "similarity": 0.0
+    },
+    {
+      "id": "3d33d834-d78d-4780-8f57-fce157c1cdcd",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "6876",
+      "similarity": 0.5763024091720581
+    },
+    {
+      "id": "8f7c66ff-15a3-477c-b528-f0fa7dda511c",
+      "sparql_answers": [],
+      "given_answer": "Resistencia",
+      "similarity": 0.0
+    },
+    {
+      "id": "ce4b1179-917a-4723-a91d-abba4251ea47",
+      "sparql_answers": [],
+      "given_answer": "University of Udine",
+      "similarity": 0.0
+    },
+    {
+      "id": "5d3d12c6-9eb3-416f-8fdd-15ecdf34800c",
+      "sparql_answers": [],
+      "given_answer": "Andr\u00e9a Prosperetti",
+      "similarity": 0.0
+    },
+    {
+      "id": "d6a09a9f-0cc8-4c67-9232-8575e6789831",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "11594457",
+      "similarity": 0.6302363276481628
+    },
+    {
+      "id": "a9024d77-28e5-475b-891e-7d99b5959895",
+      "sparql_answers": [
+        "345"
+      ],
+      "given_answer": "3047",
+      "similarity": 0.709904670715332
+    },
+    {
+      "id": "b564bc6e-2555-4931-8d2d-8b0da52f8949",
+      "sparql_answers": [],
+      "given_answer": "Godfrey Hewitt",
+      "similarity": 0.0
+    },
+    {
+      "id": "172a42c5-6cbf-4e3f-87ae-e66980099ce6",
+      "sparql_answers": [],
+      "given_answer": "12162239",
+      "similarity": 0.0
+    },
+    {
+      "id": "cd3c086d-fcdc-44e1-a0d5-b19e334e128c",
+      "sparql_answers": [],
+      "given_answer": "41",
+      "similarity": 0.0
+    },
+    {
+      "id": "73cf7ef6-0d03-47ad-8b1f-bdf5e38f00fd",
+      "sparql_answers": [],
+      "given_answer": "1999",
+      "similarity": 0.0
+    },
+    {
+      "id": "e8691c87-5898-4649-ae97-9b0258209d5b",
+      "sparql_answers": [],
+      "given_answer": "University of Western Australia",
+      "similarity": 0.0
+    },
+    {
+      "id": "75a24c1b-67e6-43e7-8e60-8f8dd6c3c865",
+      "sparql_answers": [],
+      "given_answer": "South Weymouth, Massachusetts",
+      "similarity": 0.0
+    },
+    {
+      "id": "ba08ce29-cb00-42b2-8ff2-01b8ae9236b9",
+      "sparql_answers": [],
+      "given_answer": "Carleton University",
+      "similarity": 0.0
+    },
+    {
+      "id": "8f1e6a0b-cc06-402f-9b96-b177c98be822",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "64942",
+      "similarity": 0.5751596093177795
+    },
+    {
+      "id": "b9c7b34f-5f30-42be-89e7-a2caa2d42cbd",
+      "sparql_answers": [],
+      "given_answer": "Moustafa Youssef",
+      "similarity": 0.0
+    },
+    {
+      "id": "cf42f5d7-0fa2-418c-9d19-a4519d831bf4",
+      "sparql_answers": [],
+      "given_answer": "Sapienza University of Rome",
+      "similarity": 0.0
+    },
+    {
+      "id": "352f601a-ef97-4ae2-8638-31ba9d23b71c",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "1758",
+      "similarity": 0.5731807947158813
+    },
+    {
+      "id": "adced575-7583-4f91-852a-52df4499ad2f",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "19663",
+      "similarity": 0.5767651796340942
+    },
+    {
+      "id": "fed38a91-4fd6-4e63-93cd-46e137b3d49a",
+      "sparql_answers": [],
+      "given_answer": "Montenegro",
+      "similarity": 0.0
+    },
+    {
+      "id": "2e5c34cb-21ce-41e9-ad98-9500f3509f7d",
+      "sparql_answers": [],
+      "given_answer": "Yaochu Jin",
+      "similarity": 0.0
+    },
+    {
+      "id": "a2833776-3799-4b43-b270-113345004f00",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "3439533",
+      "similarity": 0.6393704414367676
+    },
+    {
+      "id": "f5131d84-bb4e-4e51-a93f-f3f986defbfc",
+      "sparql_answers": [],
+      "given_answer": "American",
+      "similarity": 0.0
+    },
+    {
+      "id": "28b3d02d-d0a4-4236-9f3e-faef0c758736",
+      "sparql_answers": [],
+      "given_answer": "1968",
+      "similarity": 0.0
+    },
+    {
+      "id": "7db37fe0-60da-4337-b3a2-a2b1485a969c",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "497331",
+      "similarity": 0.6423146724700928
+    },
+    {
+      "id": "878452cb-bf66-42c6-8176-d5f3e651a687",
+      "sparql_answers": [],
+      "given_answer": "80",
+      "similarity": 0.0
+    },
+    {
+      "id": "5bd213c5-60ee-498d-9bdf-42e60bfe312f",
+      "sparql_answers": [],
+      "given_answer": "Vaneet Aggarwal",
+      "similarity": 0.0
+    },
+    {
+      "id": "f3bb8c27-9a04-4fda-8345-c69ab2bd8bc0",
+      "sparql_answers": [],
+      "given_answer": "Russell Greiner",
+      "similarity": 0.0
+    },
+    {
+      "id": "e0de5827-92a9-4b6c-aeba-54d3feafe514",
+      "sparql_answers": [],
+      "given_answer": "Manish Parashar",
+      "similarity": 0.0
+    },
+    {
+      "id": "3368dbab-4d87-4c9e-8af1-c23d91172c8d",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "238693",
+      "similarity": 0.5815615653991699
+    },
+    {
+      "id": "ba4ff2e5-6ccf-4803-94c7-0683da9cc4ee",
+      "sparql_answers": [],
+      "given_answer": "2020",
+      "similarity": 0.0
+    },
+    {
+      "id": "d8884b0d-1aec-4ece-a26e-928b0e8f4d2a",
+      "sparql_answers": [],
+      "given_answer": "Carnegie Mellon University",
+      "similarity": 0.0
+    },
+    {
+      "id": "2e0cdd20-92be-412f-987c-4b5104935cc1",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "178742",
+      "similarity": 0.5549681186676025
+    },
+    {
+      "id": "a23ba332-f087-4416-9054-60ca57b343ca",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "158273",
+      "similarity": 0.6202527284622192
+    },
+    {
+      "id": "5c702c36-3a70-4e68-b091-2d7d338341f4",
+      "sparql_answers": [],
+      "given_answer": "597",
+      "similarity": 0.0
+    },
+    {
+      "id": "87ea076e-e5bc-4163-9139-7baba0bc16bf",
+      "sparql_answers": [],
+      "given_answer": "Electrical Engineering",
+      "similarity": 0.0
+    },
+    {
+      "id": "b2b2e01a-a82d-499b-afe5-e714106b4616",
+      "sparql_answers": [],
+      "given_answer": "Northwestern University",
+      "similarity": 0.0
+    },
+    {
+      "id": "89b01b3d-ab3e-4866-a222-5d715b2feef2",
+      "sparql_answers": [],
+      "given_answer": "Brigham Young University",
+      "similarity": 0.0
+    },
+    {
+      "id": "8c81394b-b137-40c0-8658-cb306677a5c9",
+      "sparql_answers": [],
+      "given_answer": "379",
+      "similarity": 0.0
+    },
+    {
+      "id": "78d6ba22-5a5a-40e3-a1fe-44888bec16ed",
+      "sparql_answers": [],
+      "given_answer": "experimental plasma physics and chaos theory",
+      "similarity": 0.0
+    },
+    {
+      "id": "b8bfd38c-9741-428e-b852-c858687cb110",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "339",
+      "similarity": 0.8154464960098267
+    },
+    {
+      "id": "c48a7dda-76b1-4536-bf02-c02e3850f8ab",
+      "sparql_answers": [],
+      "given_answer": "88",
+      "similarity": 0.0
+    },
+    {
+      "id": "a33c578b-5eda-4aab-b9ea-64ce564dcf96",
+      "sparql_answers": [],
+      "given_answer": "Alfred P. Sloan Foundation",
+      "similarity": 0.0
+    },
+    {
+      "id": "2234e1c5-3341-4da3-aee4-753c1922d0dd",
+      "sparql_answers": [],
+      "given_answer": "Ya\u2010Jun Pan",
+      "similarity": 0.0
+    },
+    {
+      "id": "731722af-dc7e-48a3-8e71-4f0d6184e01b",
+      "sparql_answers": [],
+      "given_answer": "Numerical Objects",
+      "similarity": 0.0
+    },
+    {
+      "id": "776bed50-38e5-497c-a153-8bf5224bebf0",
+      "sparql_answers": [],
+      "given_answer": "Stanford University",
+      "similarity": 0.0
+    },
+    {
+      "id": "5be05f60-d359-4da3-a9ad-0dbc71d389bb",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "4220",
+      "similarity": 0.6280562877655029
+    },
+    {
+      "id": "151007b6-1727-4525-bf4a-c068a78eac90",
+      "sparql_answers": [
+        "Florida Atlantic University, Boca Raton, FL, USA",
+        "Temple University, Philadelphia, PA, USA"
+      ],
+      "given_answer": "Fort Washington, Pennsylvania",
+      "similarity": 0.7055805921554565
+    },
+    {
+      "id": "f9b743ed-60c6-4902-92cf-f3cfab551aab",
+      "sparql_answers": [],
+      "given_answer": "\u00c9cole polytechnique",
+      "similarity": 0.0
+    },
+    {
+      "id": "74893b7b-0b21-4a7d-b2ab-f9e9eebc6504",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "over fifty patents",
+      "similarity": 0.16520312428474426
+    },
+    {
+      "id": "4f44f59e-99ab-4439-8b24-e845059a5278",
+      "sparql_answers": [],
+      "given_answer": "Sri Lanka",
+      "similarity": 0.0
+    },
+    {
+      "id": "6a51927b-357a-4467-9443-791f633ce395",
+      "sparql_answers": [],
+      "given_answer": "Princeton University",
+      "similarity": 0.0
+    },
+    {
+      "id": "1f2e29bd-4c97-4783-8c2c-43b3d4ca2bb8",
+      "sparql_answers": [],
+      "given_answer": "Swanwick, Derbyshire",
+      "similarity": 0.0
+    },
+    {
+      "id": "eda0e4dc-5f83-4e68-846c-8224bcfe98f7",
+      "sparql_answers": [],
+      "given_answer": "University of Washington",
+      "similarity": 0.0
+    },
+    {
+      "id": "adff375f-3434-4bce-b41b-e1b7d5071291",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "148866",
+      "similarity": 0.49007105827331543
+    },
+    {
+      "id": "acf67f17-a7d0-46ee-bf9a-fba8b82f363d",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "4538514",
+      "similarity": 0.6102716326713562
+    },
+    {
+      "id": "aaf42052-b68b-45e9-92d6-db4f95710214",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "5166323",
+      "similarity": 0.6039304733276367
+    },
+    {
+      "id": "60193156-65cd-42b4-b3ff-cd7f7a27f3a9",
+      "sparql_answers": [],
+      "given_answer": "University of Pittsburgh",
+      "similarity": 0.0
+    },
+    {
+      "id": "76a0c88b-d4e9-4293-8f25-e8e3cc0ef5cb",
+      "sparql_answers": [],
+      "given_answer": "University of Calgary",
+      "similarity": 0.0
+    },
+    {
+      "id": "2c7af761-b5a6-4479-a88c-04f88fc12194",
+      "sparql_answers": [],
+      "given_answer": "University of Maryland at College Park",
+      "similarity": 0.0
+    },
+    {
+      "id": "30f3f0fe-c667-4809-86e0-7a6526daa098",
+      "sparql_answers": [],
+      "given_answer": "education",
+      "similarity": 0.0
+    },
+    {
+      "id": "f108e4dc-6168-4279-a1c1-cfd10636a115",
+      "sparql_answers": [],
+      "given_answer": "210867",
+      "similarity": 0.0
+    },
+    {
+      "id": "62905530-6c8d-471b-bcb2-1b2f8258fb48",
+      "sparql_answers": [],
+      "given_answer": "Chris D. Godsil",
+      "similarity": 0.0
+    },
+    {
+      "id": "28616fb8-a720-47f7-acdd-f6582b8d99a3",
+      "sparql_answers": [],
+      "given_answer": "30",
+      "similarity": 0.0
+    },
+    {
+      "id": "41e70ce3-8ef7-468b-90ca-403e9aa3310b",
+      "sparql_answers": [],
+      "given_answer": "University of Alberta",
+      "similarity": 0.0
+    },
+    {
+      "id": "c8708349-ba0f-408c-a139-6b35860aa103",
+      "sparql_answers": [],
+      "given_answer": "2016",
+      "similarity": 0.0
+    },
+    {
+      "id": "d437a7de-229e-4006-b21e-5829e7842818",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "23",
+      "similarity": 0.6825246810913086
+    },
+    {
+      "id": "20ad2df3-af6b-42ee-8366-959a50ff8ffa",
+      "sparql_answers": [],
+      "given_answer": "education",
+      "similarity": 0.0
+    },
+    {
+      "id": "498e0855-9506-4d7b-bb90-b1e2f2d6aabc",
+      "sparql_answers": [],
+      "given_answer": "Eun Jung Kim",
+      "similarity": 0.0
+    },
+    {
+      "id": "28146526-04ac-4e92-928a-5f62e4a0f785",
+      "sparql_answers": [],
+      "given_answer": "University of Utah",
+      "similarity": 0.0
+    },
+    {
+      "id": "2dc466c7-bce3-4738-bc31-f1f4062b0d84",
+      "sparql_answers": [],
+      "given_answer": "University of Freiburg",
+      "similarity": 0.0
+    },
+    {
+      "id": "856f93e8-df87-4675-9416-5866d6e9270c",
+      "sparql_answers": [],
+      "given_answer": "education",
+      "similarity": 0.0
+    },
+    {
+      "id": "1485b834-9b93-4636-8172-552337fcee13",
+      "sparql_answers": [],
+      "given_answer": "education",
+      "similarity": 0.0
+    },
+    {
+      "id": "805c2ddd-417b-43f5-a2a5-d6273a04869d",
+      "sparql_answers": [],
+      "given_answer": "Stephen A. Boppart",
+      "similarity": 0.0
+    },
+    {
+      "id": "3739cc20-8bcc-42af-ba94-dca4d434410f",
+      "sparql_answers": [],
+      "given_answer": "IEEE CIS Neural Networks Pioneer Prize",
+      "similarity": 0.0
+    },
+    {
+      "id": "e2e34af0-1a65-45ca-948c-b919d71827d4",
+      "sparql_answers": [],
+      "given_answer": "Ioannis G. Kevrekidis",
+      "similarity": 0.0
+    },
+    {
+      "id": "404b84b3-e1a6-49fa-bb25-74338913bcc3",
+      "sparql_answers": [],
+      "given_answer": "Trieste",
+      "similarity": 0.0
+    },
+    {
+      "id": "f8bcf4eb-f8e2-4d31-b507-c87f2019f817",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "148866",
+      "similarity": 0.49007105827331543
+    },
+    {
+      "id": "7cd9c0c8-6c3c-474a-be7e-af78f2949dd3",
+      "sparql_answers": [],
+      "given_answer": "1951",
+      "similarity": 0.0
+    },
+    {
+      "id": "cc551a2b-71e9-4444-b171-b3e84f75c773",
+      "sparql_answers": [],
+      "given_answer": "Admela Jukan",
+      "similarity": 0.0
+    },
+    {
+      "id": "8ec3c975-8ecd-4b97-9817-680c8d7d26dd",
+      "sparql_answers": [],
+      "given_answer": "26",
+      "similarity": 0.0
+    },
+    {
+      "id": "96339108-3caf-4e05-bfc0-864fdb8fb5b9",
+      "sparql_answers": [],
+      "given_answer": "University of Colorado",
+      "similarity": 0.0
+    },
+    {
+      "id": "9fa9df2d-02d6-46a3-9f05-01dbe815a00c",
+      "sparql_answers": [],
+      "given_answer": "1998",
+      "similarity": 0.0
+    },
+    {
+      "id": "5b398526-12cc-41e0-9e48-c17e4649ffdc",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "3742",
+      "similarity": 0.6271307468414307
+    },
+    {
+      "id": "058bd325-1a58-4ee5-a0f6-91139847e199",
+      "sparql_answers": [],
+      "given_answer": "565904",
+      "similarity": 0.0
+    },
+    {
+      "id": "8243d782-d14b-416b-929d-066206c911fe",
+      "sparql_answers": [],
+      "given_answer": "1961",
+      "similarity": 0.0
+    },
+    {
+      "id": "ae3121b1-2b51-46ef-b59a-06302ead7ab5",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "429",
+      "similarity": 0.6175779104232788
+    },
+    {
+      "id": "b56fb26d-eeac-4924-8c25-0baf0701db1d",
+      "sparql_answers": [],
+      "given_answer": "Science Oxford",
+      "similarity": 0.0
+    },
+    {
+      "id": "d3f41e12-5318-4ff8-a434-238b84e26d45",
+      "sparql_answers": [],
+      "given_answer": "Robert Sugden",
+      "similarity": 0.0
+    },
+    {
+      "id": "79cd72e9-8a79-41ea-8cc8-3562030ccc38",
+      "sparql_answers": [],
+      "given_answer": "Resistencia",
+      "similarity": 0.0
+    },
+    {
+      "id": "0eb54f9b-cb9a-4e1b-9cc7-39df48d23495",
+      "sparql_answers": [],
+      "given_answer": "tableau reasoning",
+      "similarity": 0.0
+    },
+    {
+      "id": "461dc3a0-ea3b-485d-850d-566de77a2dea",
+      "sparql_answers": [],
+      "given_answer": "Politecnico di Milano",
+      "similarity": 0.0
+    },
+    {
+      "id": "972ac9f1-0481-45fb-9a99-063db3544a80",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "823",
+      "similarity": 0.6827858686447144
+    },
+    {
+      "id": "5d6f0169-5e60-4a48-8ff1-e38b47196d47",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "433",
+      "similarity": 0.6889269351959229
+    },
+    {
+      "id": "1dfe6d13-5132-4a94-9104-13d9e2abe0fe",
+      "sparql_answers": [],
+      "given_answer": "2018",
+      "similarity": 0.0
+    },
+    {
+      "id": "c8953532-e0f2-456d-b0cc-dda45473b639",
+      "sparql_answers": [],
+      "given_answer": "King Abdullah University of Science and Technology",
+      "similarity": 0.0
+    },
+    {
+      "id": "0d822cd8-f4aa-4a13-b8d0-2d172dff8894",
+      "sparql_answers": [],
+      "given_answer": "2010",
+      "similarity": 0.0
+    },
+    {
+      "id": "d3bd49a5-1880-4455-990b-31adf1e93559",
+      "sparql_answers": [],
+      "given_answer": "usable privacy and security",
+      "similarity": 0.0
+    },
+    {
+      "id": "de372ec9-8406-4bd3-a82d-5cd6e8ac42e7",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "453002",
+      "similarity": 0.6459345817565918
+    },
+    {
+      "id": "c248f88a-f9c5-43c2-8960-6e2d298dffb7",
+      "sparql_answers": [],
+      "given_answer": "Best Promising Paper Award",
+      "similarity": 0.0
+    },
+    {
+      "id": "a666ba15-4114-468a-83ad-d707d8d472d1",
+      "sparql_answers": [
+        "102"
+      ],
+      "given_answer": "5",
+      "similarity": 0.5235127210617065
+    },
+    {
+      "id": "16526429-3e44-4f82-b6cc-af38ff6305da",
+      "sparql_answers": [],
+      "given_answer": "1.5925926",
+      "similarity": 0.0
+    },
+    {
+      "id": "e3089891-9779-4d49-8f74-7d52d32f217d",
+      "sparql_answers": [],
+      "given_answer": "Ilkay Alt\u0131nta\u015f",
+      "similarity": 0.0
+    },
+    {
+      "id": "7ce80229-89b5-4ff1-b362-b780d625a8c4",
+      "sparql_answers": [],
+      "given_answer": "facility",
+      "similarity": 0.0
+    },
+    {
+      "id": "4ce7c8f0-6347-4733-b4fa-336ad1838c71",
+      "sparql_answers": [
+        "0",
+        "0"
+      ],
+      "given_answer": "W. Bruce Croft",
+      "similarity": 0.5982204675674438
+    },
+    {
+      "id": "cd4cab59-f463-4e21-86ec-9da6efb2433f",
+      "sparql_answers": [],
+      "given_answer": "Laura Waller",
+      "similarity": 0.0
+    },
+    {
+      "id": "3ffbf948-7d73-469a-90e2-dc6bfdd6c0df",
+      "sparql_answers": [],
+      "given_answer": "Stephen P. Boyd",
+      "similarity": 0.0
+    },
+    {
+      "id": "a687c035-410d-4203-af81-ed4572b35631",
+      "sparql_answers": [],
+      "given_answer": "dLIST - Digital Library of Information Science and Technology",
+      "similarity": 0.0
+    },
+    {
+      "id": "25ce9ec6-dac5-42ff-86b6-fd4d9297b562",
+      "sparql_answers": [
+        "322"
+      ],
+      "given_answer": "68499",
+      "similarity": 0.5672904253005981
+    },
+    {
+      "id": "1e7c6df7-abad-4e31-a949-06e9555f6c75",
+      "sparql_answers": [],
+      "given_answer": "Philippa Gardner",
+      "similarity": 0.0
+    },
+    {
+      "id": "916fe553-24ea-47d9-b6d6-fe16ad07c55f",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "5",
+      "similarity": 0.6858104467391968
+    },
+    {
+      "id": "111f1431-1ef1-460e-8d47-f744b302dd45",
+      "sparql_answers": [],
+      "given_answer": "bioinformatics joint program with BIG",
+      "similarity": 0.0
+    },
+    {
+      "id": "7b7e5d43-9d58-40dc-b2e2-2e6f9489b9e6",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "71688",
+      "similarity": 0.6064789891242981
+    },
+    {
+      "id": "ec18973f-c8a8-482a-bdd8-13408954f643",
+      "sparql_answers": [],
+      "given_answer": "Ed H. Chi",
+      "similarity": 0.0
+    },
+    {
+      "id": "c85e6111-6ada-4518-98d0-0f9945ffb55e",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "77019",
+      "similarity": 0.6895787119865417
+    },
+    {
+      "id": "305ef998-39a2-4fea-8951-5f5ed81e1a4b",
+      "sparql_answers": [],
+      "given_answer": "25",
+      "similarity": 0.0
+    },
+    {
+      "id": "46711c72-91d3-4a22-9e81-3f8e7c7444c2",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "13034",
+      "similarity": 0.6598945260047913
+    },
+    {
+      "id": "90d7bd9e-1414-473c-b7ed-42caa709f841",
+      "sparql_answers": [],
+      "given_answer": "Mark S. Fox",
+      "similarity": 0.0
+    },
+    {
+      "id": "ba29aab8-33d1-44ff-a3b0-064297556057",
+      "sparql_answers": [],
+      "given_answer": "University of Vienna",
+      "similarity": 0.0
+    },
+    {
+      "id": "edf8fe4c-c465-4681-81bd-b82983939451",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "2965394",
+      "similarity": 0.6204854249954224
+    },
+    {
+      "id": "e98d7b81-6781-4efe-b916-14bc6fbeed04",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "4702",
+      "similarity": 0.6792499423027039
+    },
+    {
+      "id": "f4a14743-8130-483c-9cc0-f4200c5e2146",
+      "sparql_answers": [],
+      "given_answer": "Randal W. Beard",
+      "similarity": 0.0
+    },
+    {
+      "id": "5b11ecb8-f728-49ed-aaac-5861f1540c1e",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "1412921",
+      "similarity": 0.6339861154556274
+    },
+    {
+      "id": "c98c07c5-428f-4dba-8a7f-2fcc01be9c6f",
+      "sparql_answers": [],
+      "given_answer": "Leuven, Belgium",
+      "similarity": 0.0
+    },
+    {
+      "id": "b0f7f765-4d67-420d-9c73-6c1259acf59c",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "8844856",
+      "similarity": 0.5921850204467773
+    },
+    {
+      "id": "962bc0d2-605e-4f69-97b3-cfbeda46cb37",
+      "sparql_answers": [],
+      "given_answer": "ACM Fellow",
+      "similarity": 0.0
+    },
+    {
+      "id": "1933ccd1-8c6f-493a-8cf2-95dcb10eebbf",
+      "sparql_answers": [],
+      "given_answer": "2000",
+      "similarity": 0.0
+    },
+    {
+      "id": "c2781f04-f225-4965-8814-fc2dcae54d69",
+      "sparql_answers": [],
+      "given_answer": "231",
+      "similarity": 0.0
+    },
+    {
+      "id": "8532a5b3-4e2a-442c-8459-c7bc86ab1277",
+      "sparql_answers": [],
+      "given_answer": "2014",
+      "similarity": 0.0
+    },
+    {
+      "id": "1f85e027-86fe-4ee4-b85f-acd40b107ce8",
+      "sparql_answers": [
+        "Wright State University, Information Technology Research Institute"
+      ],
+      "given_answer": "education",
+      "similarity": 0.5242892503738403
+    },
+    {
+      "id": "62f10de0-799b-4d42-8ae3-29f6969db699",
+      "sparql_answers": [],
+      "given_answer": "Bethesda, MD",
+      "similarity": 0.0
+    },
+    {
+      "id": "b45ece40-eb5a-4ec6-b145-e3ca87e4de72",
+      "sparql_answers": [],
+      "given_answer": "in 1961",
+      "similarity": 0.0
+    },
+    {
+      "id": "5961324c-439c-4006-a9c7-b3bb482c8b96",
+      "sparql_answers": [],
+      "given_answer": "University of Washington",
+      "similarity": 0.0
+    },
+    {
+      "id": "fb0097f9-e419-461c-9661-df16787b61f6",
+      "sparql_answers": [],
+      "given_answer": "2015",
+      "similarity": 0.0
+    },
+    {
+      "id": "a06abd67-13e4-446f-8e35-ffe2c5e01678",
+      "sparql_answers": [],
+      "given_answer": "1944",
+      "similarity": 0.0
+    },
+    {
+      "id": "24807482-1cd8-4478-8584-d85ae32a028e",
+      "sparql_answers": [
+        "234"
+      ],
+      "given_answer": "12634",
+      "similarity": 0.6256473064422607
+    },
+    {
+      "id": "007e7ea7-ed0e-4f88-a6f2-0a76d60aac21",
+      "sparql_answers": [],
+      "given_answer": "Mark de Berg",
+      "similarity": 0.0
+    },
+    {
+      "id": "b0f7c60e-fab2-4deb-a6c0-66550deaf7e7",
+      "sparql_answers": [
+        "291"
+      ],
+      "given_answer": "110266",
+      "similarity": 0.7082467079162598
+    },
+    {
+      "id": "d7ed855b-3122-403d-84dc-3d9ff4ed74cc",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "191841",
+      "similarity": 0.581294059753418
+    },
+    {
+      "id": "207ed0cf-3d6a-41e2-abc5-c9d1db4415c2",
+      "sparql_answers": [],
+      "given_answer": "33",
+      "similarity": 0.0
+    },
+    {
+      "id": "39896290-5097-4df7-b9ad-49b8d75355c3",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "82285",
+      "similarity": 0.624140739440918
+    },
+    {
+      "id": "b51ec678-5943-46db-b16b-b7ee7600ee5e",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "145152",
+      "similarity": 0.5006864666938782
+    },
+    {
+      "id": "5292e4fc-9e4f-423a-9683-abf9fe0df9df",
+      "sparql_answers": [],
+      "given_answer": "Jorge Urrutia",
+      "similarity": 0.0
+    },
+    {
+      "id": "40772526-8e0d-4fe0-ba6d-4a9b1d8b6746",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "252899",
+      "similarity": 0.6589199304580688
+    },
+    {
+      "id": "ca7c4d5c-5a1b-4800-942e-98b8b589e0b1",
+      "sparql_answers": [],
+      "given_answer": "Elisa E. Konofagou",
+      "similarity": 0.0
+    },
+    {
+      "id": "32eb69dd-16fb-4f3f-9182-4856cd1369a6",
+      "sparql_answers": [
+        "Institute of the creator of Quantized agreement under time-varying communication topology"
+      ],
+      "given_answer": "KTH Royal Institute of Technology",
+      "similarity": 0.6358323097229004
+    },
+    {
+      "id": "5fdaecae-abc6-4f30-8397-a7056babc868",
+      "sparql_answers": [],
+      "given_answer": "X. Shirley Liu",
+      "similarity": 0.0
+    },
+    {
+      "id": "63110fdd-2521-4dd5-b7fe-b08891f32b8f",
+      "sparql_answers": [],
+      "given_answer": "2015",
+      "similarity": 0.0
+    },
+    {
+      "id": "2199852a-25d6-439b-993b-e26a7100b36b",
+      "sparql_answers": [],
+      "given_answer": "37",
+      "similarity": 0.0
+    },
+    {
+      "id": "ba5f76f2-bceb-4538-89ed-408ba44dcad8",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "85744",
+      "similarity": 0.6452965140342712
+    },
+    {
+      "id": "65d87b6c-b0cb-4074-bace-45ca4a6228f3",
+      "sparql_answers": [],
+      "given_answer": "D\u00fcsseldorf",
+      "similarity": 0.0
+    },
+    {
+      "id": "6478a10f-6a77-49fc-a132-a79426faa2a5",
+      "sparql_answers": [],
+      "given_answer": "Eye Gaze in Intelligent User Interfaces: Gaze-based Analyses, Models and Applications (Springer, 2013)",
+      "similarity": 0.0
+    },
+    {
+      "id": "fde32414-3297-4b70-a102-b8ac788ba487",
+      "sparql_answers": [],
+      "given_answer": "79",
+      "similarity": 0.0
+    },
+    {
+      "id": "469153de-699b-4aed-99ee-4655ca7ace96",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "117175",
+      "similarity": 0.6249179840087891
+    },
+    {
+      "id": "35f7faae-57eb-4eb8-aa7d-c0ad0f7c2fea",
+      "sparql_answers": [],
+      "given_answer": "Connecticut College",
+      "similarity": 0.0
+    },
+    {
+      "id": "cb215cb5-7a19-48e6-88b8-d4e8e02a0c82",
+      "sparql_answers": [],
+      "given_answer": "Barry, Vale of Glamorgan",
+      "similarity": 0.0
+    },
+    {
+      "id": "d075d22a-42ee-43b6-a52a-8690f7fd33a4",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "22917",
+      "similarity": 0.6820902824401855
+    },
+    {
+      "id": "3a109dad-c219-42a7-8ac7-89daccd9e685",
+      "sparql_answers": [],
+      "given_answer": "2010\u20132012",
+      "similarity": 0.0
+    },
+    {
+      "id": "55838720-f6fd-47ab-a9e3-abfdaec17b3e",
+      "sparql_answers": [
+        "New York University, NY, USA"
+      ],
+      "given_answer": "education",
+      "similarity": 0.40377116203308105
+    },
+    {
+      "id": "8fb4d22c-cb47-4b4a-8999-8838939c1182",
+      "sparql_answers": [
+        "Purdue University, West Lafayette, School of Electrical Electrical and Computer Engineering"
+      ],
+      "given_answer": "education",
+      "similarity": 0.339746356010437
+    },
+    {
+      "id": "26389a33-dd39-43dd-8f22-c3684833962e",
+      "sparql_answers": [],
+      "given_answer": "142",
+      "similarity": 0.0
+    },
+    {
+      "id": "a55ced27-fdb1-4749-b076-ad5ebaceb110",
+      "sparql_answers": [],
+      "given_answer": "1017978",
+      "similarity": 0.0
+    },
+    {
+      "id": "9615b65e-ac4f-46a7-972f-3f2700db3da6",
+      "sparql_answers": [],
+      "given_answer": "1.5714285",
+      "similarity": 0.0
+    },
+    {
+      "id": "e775cc8e-7431-464c-a7d1-88a8a9ad20d4",
+      "sparql_answers": [],
+      "given_answer": "government",
+      "similarity": 0.0
+    },
+    {
+      "id": "333c5f9b-5936-4d6e-9bbd-4be0646c8e4e",
+      "sparql_answers": [],
+      "given_answer": "47",
+      "similarity": 0.0
+    },
+    {
+      "id": "e71e8de0-add2-47e0-9471-47e6e5b6c718",
+      "sparql_answers": [],
+      "given_answer": "1971",
+      "similarity": 0.0
+    },
+    {
+      "id": "d1ed6080-b5a7-4074-b4be-72c221b189ae",
+      "sparql_answers": [],
+      "given_answer": "Yanshan University",
+      "similarity": 0.0
+    },
+    {
+      "id": "0d17b3d0-3220-4391-ab21-82e86ce418cd",
+      "sparql_answers": [],
+      "given_answer": "John H. Reif",
+      "similarity": 0.0
+    },
+    {
+      "id": "dd90841e-e2cf-474a-a5c7-9e50ce717498",
+      "sparql_answers": [],
+      "given_answer": "Indian Institute of Technology Kanpur",
+      "similarity": 0.0
+    },
+    {
+      "id": "dab11d7e-3b22-4a0f-b1e5-f418dc08bea7",
+      "sparql_answers": [],
+      "given_answer": "21",
+      "similarity": 0.0
+    },
+    {
+      "id": "a8110a0d-4d24-401f-b2f2-4b5bdf40fdcf",
+      "sparql_answers": [],
+      "given_answer": "60",
+      "similarity": 0.0
+    },
+    {
+      "id": "79caa203-7a9e-4bf4-babc-6885bceba125",
+      "sparql_answers": [],
+      "given_answer": "Stanford University",
+      "similarity": 0.0
+    },
+    {
+      "id": "6d9f913e-ffb7-4268-81e6-e940931f2f28",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "64021",
+      "similarity": 0.6698205471038818
+    },
+    {
+      "id": "0f7f5bd3-d44c-452d-b395-def1ba90d26c",
+      "sparql_answers": [],
+      "given_answer": "Chris Godsil",
+      "similarity": 0.0
+    },
+    {
+      "id": "d55327df-aeee-4f47-886a-d3cdc217d732",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "496",
+      "similarity": 0.6300146579742432
+    },
+    {
+      "id": "52f5887b-5e02-49f7-a52c-aea36f9837ff",
+      "sparql_answers": [],
+      "given_answer": "Andrew M. Stuart",
+      "similarity": 0.0
+    },
+    {
+      "id": "cfbc9ad1-29bd-40f0-8e08-d3853a3b0fe2",
+      "sparql_answers": [],
+      "given_answer": "Z",
+      "similarity": 0.0
+    },
+    {
+      "id": "e0509f1d-5530-47db-bbe8-6f45b29b231f",
+      "sparql_answers": [
+        "1"
+      ],
+      "given_answer": "19305",
+      "similarity": 0.6440972685813904
+    },
+    {
+      "id": "a3101b43-b282-4629-89d0-b7699b9ca7b3",
+      "sparql_answers": [],
+      "given_answer": "Ning Wang",
+      "similarity": 0.0
+    },
+    {
+      "id": "d48807d3-807c-4958-a1ef-e32d967da59e",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "3335304",
+      "similarity": 0.6114321351051331
+    },
+    {
+      "id": "a8c98a2d-f3f0-45cf-ad9c-a07ff14c2f39",
+      "sparql_answers": [],
+      "given_answer": "Carnegie Mellon University",
+      "similarity": 0.0
+    },
+    {
+      "id": "fa557818-da05-4da7-91ea-871facb32920",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "51679",
+      "similarity": 0.5859095454216003
+    },
+    {
+      "id": "d7d66c88-9505-4591-a39a-5e2e1dd8d949",
+      "sparql_answers": [],
+      "given_answer": "Mark Chignell",
+      "similarity": 0.0
+    },
+    {
+      "id": "4227075f-d148-4cfb-8317-5b80403ec426",
+      "sparql_answers": [],
+      "given_answer": "Abbas El Gamal",
+      "similarity": 0.0
+    },
+    {
+      "id": "71875954-c6e8-4dd7-91a5-3383509953b1",
+      "sparql_answers": [],
+      "given_answer": "Ingemar J. Cox",
+      "similarity": 0.0
+    },
+    {
+      "id": "56552dde-453f-485b-a06c-9de9b4f1a7f1",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "2309070",
+      "similarity": 0.6164385080337524
+    },
+    {
+      "id": "f76279b5-ac05-4a44-825e-bc958606724c",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "149401",
+      "similarity": 0.5811887383460999
+    },
+    {
+      "id": "504bec7d-0658-42d4-9bb2-408020cd6a84",
+      "sparql_answers": [],
+      "given_answer": "information retrieval",
+      "similarity": 0.0
+    },
+    {
+      "id": "c71fa688-e3f9-42c4-8ca4-4c0e056b082b",
+      "sparql_answers": [],
+      "given_answer": "224",
+      "similarity": 0.0
+    },
+    {
+      "id": "b82f9d53-be70-4957-b572-faea30312ff0",
+      "sparql_answers": [],
+      "given_answer": "Robert J. Elliott",
+      "similarity": 0.0
+    },
+    {
+      "id": "bea87730-5ea4-4316-871b-79f2a535d9d6",
+      "sparql_answers": [],
+      "given_answer": "facility",
+      "similarity": 0.0
+    },
+    {
+      "id": "3d5937ca-1b99-4e0b-b364-744333b6d78b",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "150877",
+      "similarity": 0.538649320602417
+    },
+    {
+      "id": "9569ceab-fdc9-42e0-8f48-d9be9e798f50",
+      "sparql_answers": [],
+      "given_answer": "Siemens Healthcare",
+      "similarity": 0.0
+    },
+    {
+      "id": "8c0aa36b-7a87-4d3e-9e07-2dd983eedb65",
+      "sparql_answers": [],
+      "given_answer": "2000",
+      "similarity": 0.0
+    },
+    {
+      "id": "ab168921-0c11-430a-931e-5b160876a85c",
+      "sparql_answers": [],
+      "given_answer": "Fraunhofer Institute for Intelligent Analysis and Information Systems IAIS",
+      "similarity": 0.0
+    },
+    {
+      "id": "15afa625-c4b5-47cf-a868-3ca15ecd3023",
+      "sparql_answers": [],
+      "given_answer": "39",
+      "similarity": 0.0
+    },
+    {
+      "id": "5f486f8b-a8eb-4f75-9c97-16cc3eb356fb",
+      "sparql_answers": [],
+      "given_answer": "Laura Waller",
+      "similarity": 0.0
+    },
+    {
+      "id": "85f2e832-1b67-4d9a-9eb7-ec3051831021",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "28088",
+      "similarity": 0.6292065978050232
+    },
+    {
+      "id": "c6bdce90-500e-4db8-bc90-786e38b71b84",
+      "sparql_answers": [],
+      "given_answer": "3646404",
+      "similarity": 0.0
+    },
+    {
+      "id": "ffdca873-fb3f-4b4d-b0e6-d59c47541f62",
+      "sparql_answers": [],
+      "given_answer": "International Society for Computational Biology (ISCB)",
+      "similarity": 0.0
+    },
+    {
+      "id": "1a24dc6d-a521-49ab-a4e9-5a9651fde3c5",
+      "sparql_answers": [],
+      "given_answer": "24",
+      "similarity": 0.0
+    },
+    {
+      "id": "d5101b75-5908-4466-a898-576a6dba8894",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "63709",
+      "similarity": 0.573330283164978
+    },
+    {
+      "id": "094ed27e-5afc-46dc-8636-944a4ad21f9c",
+      "sparql_answers": [],
+      "given_answer": "Shanghai",
+      "similarity": 0.0
+    },
+    {
+      "id": "e12aad82-5e90-4cb5-91b4-d2de19be7b44",
+      "sparql_answers": [],
+      "given_answer": "robust nonlinear control and networked control systems",
+      "similarity": 0.0
+    },
+    {
+      "id": "68f43d07-261f-41f7-a562-c461fabc5fff",
+      "sparql_answers": [],
+      "given_answer": "San Francisco Bay Area, California",
+      "similarity": 0.0
+    },
+    {
+      "id": "83a65859-1cc7-4474-a4cf-2d23498e498e",
+      "sparql_answers": [],
+      "given_answer": "2017",
+      "similarity": 0.0
+    },
+    {
+      "id": "a1ea2ce9-5a56-4779-bf0f-f7c696a90a8f",
+      "sparql_answers": [],
+      "given_answer": "2013",
+      "similarity": 0.0
+    },
+    {
+      "id": "20b983ce-edf2-4953-b551-cb5541b0a0ec",
+      "sparql_answers": [],
+      "given_answer": "Pomona, California",
+      "similarity": 0.0
+    },
+    {
+      "id": "04174e25-9cf5-4427-9af0-c9bf0772ab3c",
+      "sparql_answers": [],
+      "given_answer": "education",
+      "similarity": 0.0
+    },
+    {
+      "id": "6714d717-ae52-48b4-8c8c-e5313ae5ec0a",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "68106",
+      "similarity": 0.588337779045105
+    },
+    {
+      "id": "9bb435aa-1ac3-4605-aa1a-2da224f453bf",
+      "sparql_answers": [],
+      "given_answer": "An approach to incremental compilation of optimized code",
+      "similarity": 0.0
+    },
+    {
+      "id": "b9c66437-d406-4d64-bec6-7379ba3be954",
+      "sparql_answers": [],
+      "given_answer": "education",
+      "similarity": 0.0
+    },
+    {
+      "id": "a2da65a5-851d-466b-903e-25ba396755f0",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "110266",
+      "similarity": 0.6097310781478882
+    },
+    {
+      "id": "dc02b551-64f0-45a1-9f68-0720dca711ea",
+      "sparql_answers": [],
+      "given_answer": "61",
+      "similarity": 0.0
+    },
+    {
+      "id": "848da786-f9c7-42f2-833c-2da0bd414f6c",
+      "sparql_answers": [],
+      "given_answer": "Nuremberg, Germany",
+      "similarity": 0.0
+    },
+    {
+      "id": "c9e3cd5f-d2ee-41fa-9cdb-38fbe34a64c2",
+      "sparql_answers": [],
+      "given_answer": "2009",
+      "similarity": 0.0
+    },
+    {
+      "id": "3dcfb077-7e16-4e55-a7c7-e86c423ad2b9",
+      "sparql_answers": [],
+      "given_answer": "Aruquia Peixot",
+      "similarity": 0.0
+    },
+    {
+      "id": "0aed8ca4-575a-45b4-bd7c-bd089bdcb73d",
+      "sparql_answers": [],
+      "given_answer": "regret theory",
+      "similarity": 0.0
+    },
+    {
+      "id": "d81189a8-6679-42b8-a513-1d50bf647e4b",
+      "sparql_answers": [
+        "4"
+      ],
+      "given_answer": "60767",
+      "similarity": 0.563532829284668
+    },
+    {
+      "id": "70be4672-5c47-4336-b216-984f2ec3c21d",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "3487",
+      "similarity": 0.6029043793678284
+    },
+    {
+      "id": "26205212-b4de-4834-b7f8-667a2a0ab006",
+      "sparql_answers": [],
+      "given_answer": "University of Toronto",
+      "similarity": 0.0
+    },
+    {
+      "id": "93bfe240-d564-4c96-8735-faefe38a5579",
+      "sparql_answers": [],
+      "given_answer": "University of Washington",
+      "similarity": 0.0
+    },
+    {
+      "id": "1cce5a1e-0cdf-4ef6-9b32-2b502450791a",
+      "sparql_answers": [],
+      "given_answer": "G. Meneghesso",
+      "similarity": 0.0
+    },
+    {
+      "id": "66b3d14d-86ff-40c3-bd7d-b4478b9370bf",
+      "sparql_answers": [],
+      "given_answer": "Graz University of Technology",
+      "similarity": 0.0
+    },
+    {
+      "id": "caf14b94-e45f-4cc4-8588-325c62e1dda6",
+      "sparql_answers": [],
+      "given_answer": "2002",
+      "similarity": 0.0
+    },
+    {
+      "id": "172765e8-5372-4612-931d-3ae0a645c35f",
+      "sparql_answers": [],
+      "given_answer": "Olin Business School at Washington University in St. Louis",
+      "similarity": 0.0
+    },
+    {
+      "id": "6970b285-0435-4697-a553-978d268e1994",
+      "sparql_answers": [],
+      "given_answer": "online museums",
+      "similarity": 0.0
+    },
+    {
+      "id": "e563a905-d09e-447a-93e6-c65817cecccb",
+      "sparql_answers": [],
+      "given_answer": "2010",
+      "similarity": 0.0
+    },
+    {
+      "id": "fcd30c40-17c1-47bb-b38b-662c433747a1",
+      "sparql_answers": [],
+      "given_answer": "26",
+      "similarity": 0.0
+    },
+    {
+      "id": "d9c7852c-5087-43c6-be20-0f8376b90ddb",
+      "sparql_answers": [
+        "24750",
+        "24750"
+      ],
+      "given_answer": "Otto-von-Guericke University Magdeburg",
+      "similarity": 0.4534611999988556
+    },
+    {
+      "id": "1d9f078e-6df1-4267-aa7e-c8f27aada23c",
+      "sparql_answers": [],
+      "given_answer": "data collected at patients' bedsides along with noninvasive 3D sensors",
+      "similarity": 0.0
+    },
+    {
+      "id": "db8d0761-ca05-46ab-8015-20d3feab7eb6",
+      "sparql_answers": [],
+      "given_answer": "healthcare",
+      "similarity": 0.0
+    },
+    {
+      "id": "19c744c7-99ef-4fbc-945a-2182794278fd",
+      "sparql_answers": [],
+      "given_answer": "Tajana Rosing",
+      "similarity": 0.0
+    },
+    {
+      "id": "0638daff-4ca8-47cd-8de4-e9775f64346f",
+      "sparql_answers": [],
+      "given_answer": "Romania",
+      "similarity": 0.0
+    },
+    {
+      "id": "f35cd18d-308a-48ba-88a4-2128ed010b18",
+      "sparql_answers": [],
+      "given_answer": "Social computing and human-computer interaction",
+      "similarity": 0.0
+    },
+    {
+      "id": "4b16bc67-fe45-4f63-9a89-32bf6934c8ec",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "122545",
+      "similarity": 0.6023029088973999
+    },
+    {
+      "id": "50907667-4b67-4ee6-9406-f82edda3ec20",
+      "sparql_answers": [],
+      "given_answer": "2011",
+      "similarity": 0.0
+    },
+    {
+      "id": "00e4c8e7-665a-42de-b2d0-f38013a1f75d",
+      "sparql_answers": [],
+      "given_answer": "K framework",
+      "similarity": 0.0
+    },
+    {
+      "id": "27e310fd-cbaf-48bf-ae0e-8894fbba61ef",
+      "sparql_answers": [],
+      "given_answer": "Fellow of the Institute of Electrical and Electronics Engineers (IEEE)",
+      "similarity": 0.0
+    },
+    {
+      "id": "f0dd5fd2-51f3-4807-879a-cfd444d25a48",
+      "sparql_answers": [],
+      "given_answer": "Constraint-directed search: a case-study of job-shop scheduling",
+      "similarity": 0.0
+    },
+    {
+      "id": "f63b26c0-164f-44fe-a265-b91b8875bc78",
+      "sparql_answers": [],
+      "given_answer": "University of Arizona",
+      "similarity": 0.0
+    },
+    {
+      "id": "eee62dcc-1c83-4a17-acdf-090f9ad26a45",
+      "sparql_answers": [],
+      "given_answer": "0.8076923",
+      "similarity": 0.0
+    },
+    {
+      "id": "c04872f6-fbb2-4b02-8446-4c4a1ceb5342",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "1",
+      "similarity": 0.7825912237167358
+    },
+    {
+      "id": "1a79b8f2-62af-48a4-b3e1-cfb240ff09d4",
+      "sparql_answers": [],
+      "given_answer": "University of Michigan",
+      "similarity": 0.0
+    },
+    {
+      "id": "e3264f35-6f02-4503-8c34-a1dd9636d38f",
+      "sparql_answers": [],
+      "given_answer": "1900013",
+      "similarity": 0.0
+    },
+    {
+      "id": "414e52f0-1710-40d4-a765-0e3980518f99",
+      "sparql_answers": [
+        "68"
+      ],
+      "given_answer": "550608",
+      "similarity": 0.7173320055007935
+    },
+    {
+      "id": "f6408dd0-d872-4eb7-9762-870831f069c5",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "252899",
+      "similarity": 0.6589199304580688
+    },
+    {
+      "id": "4500f856-76f7-4590-a7a0-798b7d3633e2",
+      "sparql_answers": [],
+      "given_answer": "Stephen Boyd",
+      "similarity": 0.0
+    },
+    {
+      "id": "fc35e8fe-2139-40a2-9cac-25542e81bbc0",
+      "sparql_answers": [],
+      "given_answer": "51",
+      "similarity": 0.0
+    },
+    {
+      "id": "7e0b6c87-7dd4-45cc-892d-68ed205d0885",
+      "sparql_answers": [],
+      "given_answer": "David De Roure",
+      "similarity": 0.0
+    },
+    {
+      "id": "f02c14fa-1e37-468b-9e1a-4811280f04ec",
+      "sparql_answers": [],
+      "given_answer": "79",
+      "similarity": 0.0
+    },
+    {
+      "id": "b341fd4d-af08-4909-9b9f-e164cd9d0e6e",
+      "sparql_answers": [],
+      "given_answer": "Harvard University",
+      "similarity": 0.0
+    },
+    {
+      "id": "62e605ef-63f3-40e2-bda5-aa1ead7180a9",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "19476719",
+      "similarity": 0.5929905772209167
+    },
+    {
+      "id": "ab854184-be7c-4f42-bd11-dcd7dafe6466",
+      "sparql_answers": [],
+      "given_answer": "Chris D. Godsil",
+      "similarity": 0.0
+    },
+    {
+      "id": "1420aaf3-f4f8-4a4c-85de-508c5996de15",
+      "sparql_answers": [],
+      "given_answer": "Kurt VanLehn",
+      "similarity": 0.0
+    },
+    {
+      "id": "b00e2baf-6ca1-42a6-bfc3-a22ab8c69432",
+      "sparql_answers": [],
+      "given_answer": "292",
+      "similarity": 0.0
+    },
+    {
+      "id": "1aaf55a6-54d5-4c6d-a7b1-d5b1c180c478",
+      "sparql_answers": [],
+      "given_answer": "American",
+      "similarity": 0.0
+    },
+    {
+      "id": "e0481659-b3a9-4bcb-b441-d2d4e4e8ba29",
+      "sparql_answers": [],
+      "given_answer": "2018",
+      "similarity": 0.0
+    },
+    {
+      "id": "94711567-cc66-43be-b055-b788a5732a13",
+      "sparql_answers": [],
+      "given_answer": "education",
+      "similarity": 0.0
+    },
+    {
+      "id": "52e79a1d-a38c-4ec0-808d-a4d50ae31efd",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "247924",
+      "similarity": 0.5840133428573608
+    },
+    {
+      "id": "38aad3d8-6e45-4177-936e-0c69d67b8a54",
+      "sparql_answers": [],
+      "given_answer": "Colorado State University, Fort Collins, Colorado",
+      "similarity": 0.0
+    },
+    {
+      "id": "93ff6028-559b-4a05-9cfc-3b2eec973ad9",
+      "sparql_answers": [],
+      "given_answer": "University of Padova, Padova, Italy",
+      "similarity": 0.0
+    },
+    {
+      "id": "9c6ccb4c-2c33-4e69-ad8b-c790b02d74bf",
+      "sparql_answers": [],
+      "given_answer": "biometrics",
+      "similarity": 0.0
+    },
+    {
+      "id": "7837a66e-9517-4470-8fee-572f89d9b0a7",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "8540",
+      "similarity": 0.6088073253631592
+    },
+    {
+      "id": "ebeea8da-d9cf-4a91-937f-c03c9647d11f",
+      "sparql_answers": [],
+      "given_answer": "University of Maryland",
+      "similarity": 0.0
+    },
+    {
+      "id": "23590620-ea94-41b7-8bbb-dff1b3a64839",
+      "sparql_answers": [],
+      "given_answer": "Roussos Dimitrakopoulos",
+      "similarity": 0.0
+    },
+    {
+      "id": "6cbab246-1658-4002-b5c0-712b8aa22c0a",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "71200",
+      "similarity": 0.6877697706222534
+    },
+    {
+      "id": "0b5bf23a-6eb8-4448-9fb9-36b43d6762b2",
+      "sparql_answers": [],
+      "given_answer": "Laura M. Haas",
+      "similarity": 0.0
+    },
+    {
+      "id": "f9c33c6c-cff6-44e6-b8ab-16df9a15631f",
+      "sparql_answers": [],
+      "given_answer": "Niagara Falls, Ontario, Canada",
+      "similarity": 0.0
+    },
+    {
+      "id": "b922ab78-fab9-41f2-bc55-e1fa42939efd",
+      "sparql_answers": [],
+      "given_answer": "David Silver",
+      "similarity": 0.0
+    },
+    {
+      "id": "f1fb65b6-e565-4260-a92e-4c80fd1bc7f4",
+      "sparql_answers": [],
+      "given_answer": "2023",
+      "similarity": 0.0
+    },
+    {
+      "id": "7d983478-c4af-4071-a4b4-f0772b30bf33",
+      "sparql_answers": [],
+      "given_answer": "Austria",
+      "similarity": 0.0
+    },
+    {
+      "id": "c6a343a0-32b8-4ca6-8668-9ccc18f4e20a",
+      "sparql_answers": [
+        "https://dblp.org/pid/w/JieWu1"
+      ],
+      "given_answer": "Jie Wu",
+      "similarity": 0.6508369445800781
+    },
+    {
+      "id": "8558f043-f142-4130-b8d1-57ea8237ec34",
+      "sparql_answers": [],
+      "given_answer": "Australian National University and the University of Cambridge",
+      "similarity": 0.0
+    },
+    {
+      "id": "9b7a1210-7253-4a1f-add3-d51104a88ee4",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "234",
+      "similarity": 0.70124751329422
+    },
+    {
+      "id": "dbca522a-6e73-496f-8d80-b660f9b16d6f",
+      "sparql_answers": [],
+      "given_answer": "Northwestern University",
+      "similarity": 0.0
+    },
+    {
+      "id": "933a1d88-4573-49c2-b0a3-492b613965ca",
+      "sparql_answers": [],
+      "given_answer": "45",
+      "similarity": 0.0
+    },
+    {
+      "id": "85d6f3f6-7b22-46c1-9f06-d8d4602ca97a",
+      "sparql_answers": [],
+      "given_answer": "66",
+      "similarity": 0.0
+    },
+    {
+      "id": "db254b89-f148-4a44-9cd0-84c4f0c759cf",
+      "sparql_answers": [],
+      "given_answer": "Evolutionary Programming Society",
+      "similarity": 0.0
+    },
+    {
+      "id": "4ec3e4be-4060-424c-8355-6ae74b0b7e5c",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "3323",
+      "similarity": 0.6644508838653564
+    },
+    {
+      "id": "cac78c18-855e-4197-b177-506bdab5953c",
+      "sparql_answers": [],
+      "given_answer": "Jorge Urrutia",
+      "similarity": 0.0
+    },
+    {
+      "id": "83892d59-a5dd-47b6-aed8-d8fb518e17a9",
+      "sparql_answers": [
+        "https://dblp.org/pid/31/1596",
+        "33"
+      ],
+      "given_answer": "Xiaole Shirley Liu",
+      "similarity": 0.5982509255409241
+    },
+    {
+      "id": "4602d15f-91e3-44ea-8422-44c56be106f2",
+      "sparql_answers": [],
+      "given_answer": "University of Washington",
+      "similarity": 0.0
+    },
+    {
+      "id": "87abe568-ad3a-4723-a393-3f92b5e08f37",
+      "sparql_answers": [],
+      "given_answer": "education",
+      "similarity": 0.0
+    },
+    {
+      "id": "0be856ed-280f-4666-bb0b-069a15d0a6e3",
+      "sparql_answers": [],
+      "given_answer": "1969",
+      "similarity": 0.0
+    },
+    {
+      "id": "f5fde033-99a6-4a4f-a1c4-6948fc0b673d",
+      "sparql_answers": [],
+      "given_answer": "U",
+      "similarity": 0.0
+    },
+    {
+      "id": "d199c68b-449e-4acb-bd82-6bdc8dff702a",
+      "sparql_answers": [],
+      "given_answer": "South Korea",
+      "similarity": 0.0
+    },
+    {
+      "id": "1a77c9ed-8050-4fd0-b21f-d188d07e9d08",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "170260",
+      "similarity": 0.594390332698822
+    },
+    {
+      "id": "295c155f-8253-4b2e-b583-c8996d19ae32",
+      "sparql_answers": [],
+      "given_answer": "Sukumar Nandi",
+      "similarity": 0.0
+    },
+    {
+      "id": "e3471921-a16a-4b89-87be-b2fbb1904f8a",
+      "sparql_answers": [
+        "3049"
+      ],
+      "given_answer": "H. Vincent Poor",
+      "similarity": 0.5847554206848145
+    },
+    {
+      "id": "9b38c420-92ae-4004-8b8b-cc14d2112a61",
+      "sparql_answers": [
+        "https://dblp.org/pid/r/RonaldLRivest",
+        "https://dblp.org/pid/c/THCormen",
+        "https://dblp.org/pid/l/CELeiserson",
+        "https://dblp.org/pid/s/CliffordStein"
+      ],
+      "given_answer": "David A. Engstr\u00f8m",
+      "similarity": 0.6414187550544739
+    },
+    {
+      "id": "18828ce8-d54d-40ab-8071-3960a708f296",
+      "sparql_answers": [
+        "16289"
+      ],
+      "given_answer": "122545",
+      "similarity": 0.6184242963790894
+    },
+    {
+      "id": "3ee3a312-c65b-4ebb-ac86-9eb88aa6d337",
+      "sparql_answers": [],
+      "given_answer": "Yves Moreau",
+      "similarity": 0.0
+    },
+    {
+      "id": "163d3aa7-3ae6-4c94-b036-c8b426224e1a",
+      "sparql_answers": [
+        "844"
+      ],
+      "given_answer": "389102",
+      "similarity": 0.6540545225143433
+    },
+    {
+      "id": "58ffdc61-06fc-413a-b511-bf01cc0e3ccb",
+      "sparql_answers": [],
+      "given_answer": "Frederikshavn Technical School, Denmark",
+      "similarity": 0.0
+    },
+    {
+      "id": "dfd7151f-53eb-498b-b183-75914a5be22d",
+      "sparql_answers": [],
+      "given_answer": "8787751",
+      "similarity": 0.0
+    },
+    {
+      "id": "a6f0d32d-9516-404b-8941-0b76fe18709c",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "300337",
+      "similarity": 0.6145493984222412
+    },
+    {
+      "id": "4c0b2db7-9b54-430b-a117-2a3953fedc7b",
+      "sparql_answers": [],
+      "given_answer": "Chris Godsil",
+      "similarity": 0.0
+    },
+    {
+      "id": "e0e5a59c-4e2d-4648-bf24-fe787df64be9",
+      "sparql_answers": [],
+      "given_answer": "Romania",
+      "similarity": 0.0
+    },
+    {
+      "id": "613dabe4-358a-4991-aeba-ee56dd4e0233",
+      "sparql_answers": [],
+      "given_answer": "Robert Sugden",
+      "similarity": 0.0
+    },
+    {
+      "id": "981604b9-950b-4e51-ad58-0376dfea96b5",
+      "sparql_answers": [],
+      "given_answer": "46",
+      "similarity": 0.0
+    },
+    {
+      "id": "31c231c8-d119-4e63-b708-22ec99723652",
+      "sparql_answers": [],
+      "given_answer": "8787751",
+      "similarity": 0.0
+    },
+    {
+      "id": "ad716aeb-3256-4719-86a8-b3f4443a027b",
+      "sparql_answers": [],
+      "given_answer": "Rasim Alguliyev",
+      "similarity": 0.0
+    },
+    {
+      "id": "d3ed7e33-504b-46c4-81db-dd4b8f4b2b07",
+      "sparql_answers": [],
+      "given_answer": "David De Roure",
+      "similarity": 0.0
+    },
+    {
+      "id": "0e65a65c-615c-4b9a-9afc-4755fde89359",
+      "sparql_answers": [],
+      "given_answer": "China",
+      "similarity": 0.0
+    },
+    {
+      "id": "b4f7a128-fbd6-458b-8400-b4654b346e6e",
+      "sparql_answers": [],
+      "given_answer": "University of Calgary",
+      "similarity": 0.0
+    },
+    {
+      "id": "8fec8c94-3458-4dc1-bab3-d71a156cf2dd",
+      "sparql_answers": [],
+      "given_answer": "Kuibyshev (Samara) State University",
+      "similarity": 0.0
+    },
+    {
+      "id": "282d78ae-ff6a-4606-9f92-d3ed6eb9ed3e",
+      "sparql_answers": [],
+      "given_answer": "Thouron Award",
+      "similarity": 0.0
+    },
+    {
+      "id": "6894fdef-0479-4a52-8a3b-6d2c7fc9427a",
+      "sparql_answers": [],
+      "given_answer": "Technical University of Munich",
+      "similarity": 0.0
+    },
+    {
+      "id": "ceb7ca69-3021-412d-9b26-119d335fe7ea",
+      "sparql_answers": [],
+      "given_answer": "Samer Hassan",
+      "similarity": 0.0
+    },
+    {
+      "id": "d108c1b9-af38-455a-8e77-1b14eb0abd61",
+      "sparql_answers": [],
+      "given_answer": "1994",
+      "similarity": 0.0
+    },
+    {
+      "id": "68410184-f06e-4991-9740-ae4fbb8811bf",
+      "sparql_answers": [],
+      "given_answer": "Sanghamitra Bandyopadhyay",
+      "similarity": 0.0
+    },
+    {
+      "id": "3b5fb026-176a-4bf5-84df-383890042c1a",
+      "sparql_answers": [],
+      "given_answer": "Tsinghua University",
+      "similarity": 0.0
+    },
+    {
+      "id": "d1f282a1-e792-4c4f-a308-13016cac42e7",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "6121",
+      "similarity": 0.6857136487960815
+    },
+    {
+      "id": "fec89064-45b0-487d-a8ca-4427f54e0355",
+      "sparql_answers": [],
+      "given_answer": "experimental plasma physics and chaos theory",
+      "similarity": 0.0
+    },
+    {
+      "id": "17e3a2e6-1a1e-46a5-a031-0ced9eee2483",
+      "sparql_answers": [],
+      "given_answer": "157805",
+      "similarity": 0.0
+    },
+    {
+      "id": "c76c410d-442c-46f4-9960-08bbadb83a04",
+      "sparql_answers": [],
+      "given_answer": "Menno-Jan Kraak",
+      "similarity": 0.0
+    },
+    {
+      "id": "1e2d9d8e-3e83-4eb0-b518-66df36286355",
+      "sparql_answers": [
+        "94"
+      ],
+      "given_answer": "72533",
+      "similarity": 0.6557091474533081
+    },
+    {
+      "id": "4f9697dc-d2b5-4ba8-b541-38a979d5f59f",
+      "sparql_answers": [],
+      "given_answer": "Rafail Ostrovsky",
+      "similarity": 0.0
+    },
+    {
+      "id": "ad3ebc26-53cc-4fcb-b34b-c305f084d7ee",
+      "sparql_answers": [],
+      "given_answer": "University of Padua",
+      "similarity": 0.0
+    },
+    {
+      "id": "84b46480-1443-468d-8651-818354eea597",
+      "sparql_answers": [],
+      "given_answer": "HotCRP",
+      "similarity": 0.0
+    },
+    {
+      "id": "6feb1c8f-c333-4197-ae45-47abb6b4f83a",
+      "sparql_answers": [],
+      "given_answer": "4204140",
+      "similarity": 0.0
+    },
+    {
+      "id": "b0455fdc-3e14-41d0-a279-984c7a3feca8",
+      "sparql_answers": [
+        "183"
+      ],
+      "given_answer": "91764",
+      "similarity": 0.6762404441833496
+    },
+    {
+      "id": "d1cd7826-4896-4afd-8aaa-3d70c9f023dd",
+      "sparql_answers": [],
+      "given_answer": "2016",
+      "similarity": 0.0
+    },
+    {
+      "id": "98f71119-7cb1-4a5d-9fa4-b6c2cf50d12b",
+      "sparql_answers": [],
+      "given_answer": "33",
+      "similarity": 0.0
+    },
+    {
+      "id": "3674c9ce-6d89-486f-9518-1c4bb2dc67e0",
+      "sparql_answers": [],
+      "given_answer": "204",
+      "similarity": 0.0
+    },
+    {
+      "id": "8bcfab12-cb31-46e0-816b-29f55599a316",
+      "sparql_answers": [],
+      "given_answer": "Germany",
+      "similarity": 0.0
+    },
+    {
+      "id": "0e7643f5-369d-45f2-af7e-0e5cbcb4c03d",
+      "sparql_answers": [],
+      "given_answer": "University of Michigan",
+      "similarity": 0.0
+    },
+    {
+      "id": "0a185900-9c2c-4082-b72e-0827549d2b51",
+      "sparql_answers": [],
+      "given_answer": "Princeton University",
+      "similarity": 0.0
+    },
+    {
+      "id": "07a6c663-7778-42a6-ab6b-798db4cbd783",
+      "sparql_answers": [],
+      "given_answer": "Pontificia Universidad Catolica de Chile",
+      "similarity": 0.0
+    },
+    {
+      "id": "aae8c05a-22c4-4f18-8e19-d0371e2ad39c",
+      "sparql_answers": [],
+      "given_answer": "computing",
+      "similarity": 0.0
+    },
+    {
+      "id": "c34ccbbf-64b5-4da9-81b1-e98601bea6dc",
+      "sparql_answers": [],
+      "given_answer": "23",
+      "similarity": 0.0
+    },
+    {
+      "id": "a5c9e439-0901-436c-bad6-16f7dfb74d96",
+      "sparql_answers": [],
+      "given_answer": "Jon Crowcroft",
+      "similarity": 0.0
+    },
+    {
+      "id": "a22447d3-8c6b-48b9-94a2-02def3c19b87",
+      "sparql_answers": [],
+      "given_answer": "139",
+      "similarity": 0.0
+    },
+    {
+      "id": "65f22b5c-8051-4ca9-8b59-cbdfbe5280c3",
+      "sparql_answers": [],
+      "given_answer": "Robert Sugden",
+      "similarity": 0.0
+    },
+    {
+      "id": "e602f1b0-7b45-45fe-9f34-2c5af64e9406",
+      "sparql_answers": [],
+      "given_answer": "Russell Kerr",
+      "similarity": 0.0
+    },
+    {
+      "id": "2ccb25a2-f3de-42b0-942f-d7c951be83e5",
+      "sparql_answers": [],
+      "given_answer": "23.09.1997",
+      "similarity": 0.0
+    },
+    {
+      "id": "6d43523b-c01c-48d7-b35f-1a75282cf7b0",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "51518",
+      "similarity": 0.6077825427055359
+    },
+    {
+      "id": "f5e852ed-b470-400e-8552-1ae09e994e63",
+      "sparql_answers": [],
+      "given_answer": "University Medical Center Groningen",
+      "similarity": 0.0
+    },
+    {
+      "id": "5255b965-0cf0-45b2-9a9d-60dab0800468",
+      "sparql_answers": [
+        "20532"
+      ],
+      "given_answer": "837568",
+      "similarity": 0.5620067119598389
+    },
+    {
+      "id": "e9eba9b0-3618-41f9-89d1-3f8da394b722",
+      "sparql_answers": [],
+      "given_answer": "46",
+      "similarity": 0.0
+    },
+    {
+      "id": "ad08bd45-764b-4174-b3c3-c9170994b2d7",
+      "sparql_answers": [],
+      "given_answer": "Prasant Mohapatra",
+      "similarity": 0.0
+    },
+    {
+      "id": "d22ce907-7069-4634-b62e-fe1db5c7da5d",
+      "sparql_answers": [],
+      "given_answer": "Ian Akyildiz",
+      "similarity": 0.0
+    },
+    {
+      "id": "1b778e7e-c54b-4dbb-a632-a2b779859a15",
+      "sparql_answers": [],
+      "given_answer": "March 28, 1941",
+      "similarity": 0.0
+    },
+    {
+      "id": "cc2f39b0-664c-4272-9f6e-e4490286d042",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "Jonathan Katz",
+      "similarity": 0.6612796783447266
+    },
+    {
+      "id": "52d25ab1-1d0b-4afe-a3bb-b451e4df38bc",
+      "sparql_answers": [],
+      "given_answer": "National Institute of Technology, Rourkela",
+      "similarity": 0.0
+    },
+    {
+      "id": "b0f8f575-f711-478c-bf2c-9f67b036caea",
+      "sparql_answers": [],
+      "given_answer": "education",
+      "similarity": 0.0
+    },
+    {
+      "id": "1e1aca60-ef51-4a83-8e81-2c02eb742113",
+      "sparql_answers": [],
+      "given_answer": "University of Montreal",
+      "similarity": 0.0
+    },
+    {
+      "id": "49e7574b-0c56-43f8-a609-b6072a6b9001",
+      "sparql_answers": [],
+      "given_answer": "Purdue University",
+      "similarity": 0.0
+    },
+    {
+      "id": "f53cb8db-fcdf-4f2d-8d75-ce9125d26636",
+      "sparql_answers": [],
+      "given_answer": "Linda Price",
+      "similarity": 0.0
+    },
+    {
+      "id": "e16e9fb5-757c-4516-98f5-294414b1194c",
+      "sparql_answers": [],
+      "given_answer": "2021",
+      "similarity": 0.0
+    },
+    {
+      "id": "6aaa022c-f623-432d-be62-0533b44df18d",
+      "sparql_answers": [],
+      "given_answer": "Computational Geometry: Algorithms and Applications",
+      "similarity": 0.0
+    },
+    {
+      "id": "387b761c-eecc-4cd3-b1bc-80ac22c23a03",
+      "sparql_answers": [],
+      "given_answer": "Luanda, Angola",
+      "similarity": 0.0
+    },
+    {
+      "id": "db7cc2ad-769f-43f9-b86e-c483e2ae4fc2",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "15442383",
+      "similarity": 0.5598984360694885
+    },
+    {
+      "id": "548069f4-ce8e-41cb-b739-897071d12afd",
+      "sparql_answers": [],
+      "given_answer": "Laren, the Netherlands",
+      "similarity": 0.0
+    },
+    {
+      "id": "d5b2bf32-f9ff-443e-b377-1080f93170ba",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "1017978",
+      "similarity": 0.6110238432884216
+    },
+    {
+      "id": "6f9ea25e-07a1-43cd-8c2a-6117a43689b8",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "110266",
+      "similarity": 0.6097310781478882
+    },
+    {
+      "id": "b09b912e-519a-445e-957e-10e9957eb765",
+      "sparql_answers": [],
+      "given_answer": "0",
+      "similarity": 0.0
+    },
+    {
+      "id": "7bd0948f-cd0b-4ff8-9373-7d3ed05c4e0c",
+      "sparql_answers": [],
+      "given_answer": "Center of Integrated Quantum Science and Technology (IQST)",
+      "similarity": 0.0
+    },
+    {
+      "id": "3ca01b18-012d-4db0-becf-cb5943ec84b7",
+      "sparql_answers": [],
+      "given_answer": "University of Michigan",
+      "similarity": 0.0
+    },
+    {
+      "id": "53ceeb2b-715d-457f-a131-773860f81e92",
+      "sparql_answers": [],
+      "given_answer": "Hlaing Minn",
+      "similarity": 0.0
+    },
+    {
+      "id": "b6793194-fe3c-4da8-a33c-94ce99b121f7",
+      "sparql_answers": [],
+      "given_answer": "Thomas G. Dietterich",
+      "similarity": 0.0
+    },
+    {
+      "id": "b6f15359-25a9-4884-bcae-faf3575bb299",
+      "sparql_answers": [],
+      "given_answer": "181",
+      "similarity": 0.0
+    },
+    {
+      "id": "89ea5303-84da-4c65-b412-987d104efa64",
+      "sparql_answers": [],
+      "given_answer": "Stanford University",
+      "similarity": 0.0
+    },
+    {
+      "id": "87f81151-94e5-49b2-81f8-1475279c4b37",
+      "sparql_answers": [],
+      "given_answer": "60",
+      "similarity": 0.0
+    },
+    {
+      "id": "436a02cf-63c5-4edc-add8-aa5ba7afd817",
+      "sparql_answers": [],
+      "given_answer": "Princeton University",
+      "similarity": 0.0
+    },
+    {
+      "id": "e435ba38-9b1f-4c7b-8915-c063e3f76831",
+      "sparql_answers": [],
+      "given_answer": "T\u00e4by Municipality, Stockholm, Sweden",
+      "similarity": 0.0
+    },
+    {
+      "id": "1c8e5cff-8e14-436d-9b8d-98fb6283f0c4",
+      "sparql_answers": [],
+      "given_answer": "Venezuela",
+      "similarity": 0.0
+    },
+    {
+      "id": "d8afeb85-d713-4205-8a4d-d5ef3f8cb67f",
+      "sparql_answers": [],
+      "given_answer": "Mary Lou Soffa",
+      "similarity": 0.0
+    },
+    {
+      "id": "0a2d8c3f-a48d-4ac8-8ce1-8d17e13e5ca8",
+      "sparql_answers": [],
+      "given_answer": "Chinese and Canadian",
+      "similarity": 0.0
+    },
+    {
+      "id": "41bbf4cf-fd3f-4175-b258-3526acfe1c88",
+      "sparql_answers": [],
+      "given_answer": "2010",
+      "similarity": 0.0
+    },
+    {
+      "id": "1e22dcc3-610a-4879-b8d8-80bcc505942c",
+      "sparql_answers": [],
+      "given_answer": "Edinburgh",
+      "similarity": 0.0
+    },
+    {
+      "id": "0c2a66c3-eab8-4cd1-8b07-f8e09045348f",
+      "sparql_answers": [
+        "183"
+      ],
+      "given_answer": "149401",
+      "similarity": 0.614665687084198
+    },
+    {
+      "id": "34df9172-c3ad-43fa-8002-2915d00b9394",
+      "sparql_answers": [],
+      "given_answer": "505",
+      "similarity": 0.0
+    },
+    {
+      "id": "d611388d-b8f3-4672-8095-8ca015d655ff",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "68499",
+      "similarity": 0.6442761421203613
+    },
+    {
+      "id": "0483ce23-f39e-4822-a9ef-111c4ee568fa",
+      "sparql_answers": [],
+      "given_answer": "Adolf von Baeyer Medal",
+      "similarity": 0.0
+    },
+    {
+      "id": "cf8d6073-b70f-403c-86ee-eeb33424bd25",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "56764",
+      "similarity": 0.5726971626281738
+    },
+    {
+      "id": "a360119a-bcb1-4f74-98de-c501eb05773f",
+      "sparql_answers": [],
+      "given_answer": "Rineke Verbrugge",
+      "similarity": 0.0
+    },
+    {
+      "id": "c2b25254-48de-4346-965e-90fa0487a6c9",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "1",
+      "similarity": 0.7825912237167358
+    },
+    {
+      "id": "f187ddaa-2d52-4525-889b-407e368503fb",
+      "sparql_answers": [],
+      "given_answer": "Pune, India",
+      "similarity": 0.0
+    },
+    {
+      "id": "1ca9f3e4-f387-43e4-ac62-863a1be3fdfe",
+      "sparql_answers": [],
+      "given_answer": "2022",
+      "similarity": 0.0
+    },
+    {
+      "id": "50b14f92-03e5-4d9e-b8a6-ca1e8270f7e1",
+      "sparql_answers": [],
+      "given_answer": "Stephen Muggleton",
+      "similarity": 0.0
+    },
+    {
+      "id": "e668be8e-640c-4641-9a16-6c2c500ef4e4",
+      "sparql_answers": [],
+      "given_answer": "John D. Cressler",
+      "similarity": 0.0
+    },
+    {
+      "id": "5bb5e13d-7b54-44d5-aadb-8dc373a4d2fd",
+      "sparql_answers": [],
+      "given_answer": "6.9402986",
+      "similarity": 0.0
+    },
+    {
+      "id": "ee2b7746-9022-4dc4-9c11-11cd03d9e87c",
+      "sparql_answers": [],
+      "given_answer": "6.9307227",
+      "similarity": 0.0
+    },
+    {
+      "id": "f0bf6ab7-70b7-4dff-bd52-d51fcc044561",
+      "sparql_answers": [],
+      "given_answer": "University of Illinois at Urbana-Champaign",
+      "similarity": 0.0
+    },
+    {
+      "id": "7ffc11a8-13c4-4e97-977e-9c6ad486286d",
+      "sparql_answers": [],
+      "given_answer": "Utrecht University",
+      "similarity": 0.0
+    },
+    {
+      "id": "c5e9ba7e-17d1-4eb8-8165-736ba40e2ae3",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "17779",
+      "similarity": 0.5310111045837402
+    },
+    {
+      "id": "c5a2ee22-d8ba-409f-9f90-7ce8c66a9b4f",
+      "sparql_answers": [],
+      "given_answer": "2020",
+      "similarity": 0.0
+    },
+    {
+      "id": "148df94f-98cb-4e82-a2ec-6dd29b54dbcc",
+      "sparql_answers": [],
+      "given_answer": "Peter Wonka",
+      "similarity": 0.0
+    },
+    {
+      "id": "e7cb1c3a-6635-4b01-94ab-e347c0e296af",
+      "sparql_answers": [],
+      "given_answer": "Cologne",
+      "similarity": 0.0
+    },
+    {
+      "id": "5f3ac94e-9c0f-4bc0-920f-624f83d67486",
+      "sparql_answers": [],
+      "given_answer": "Christel Baier",
+      "similarity": 0.0
+    },
+    {
+      "id": "c9421a37-44b9-49e9-b86e-9e5d058c2fae",
+      "sparql_answers": [],
+      "given_answer": "University of Chicago",
+      "similarity": 0.0
+    },
+    {
+      "id": "4efbc419-7a70-478f-b690-ccb862f02bff",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "175604",
+      "similarity": 0.5377611517906189
+    },
+    {
+      "id": "feccd1bf-ac49-4be9-bc8a-9618dbb7c13b",
+      "sparql_answers": [],
+      "given_answer": "Yizhou Sun, Jiawei Han, Xifeng Yan, and Tianyi Wu",
+      "similarity": 0.0
+    },
+    {
+      "id": "4c698373-a407-46ee-b761-c6757f38ae1a",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "85692",
+      "similarity": 0.5994629859924316
+    },
+    {
+      "id": "f67e5d2f-2d8e-4cdb-a76c-630b50a3abc9",
+      "sparql_answers": [],
+      "given_answer": "Buenos Aires",
+      "similarity": 0.0
+    },
+    {
+      "id": "1832a55f-1ac1-4027-a5ca-e0bd6c617a7a",
+      "sparql_answers": [],
+      "given_answer": "28",
+      "similarity": 0.0
+    },
+    {
+      "id": "ac5420c2-a667-4f27-8990-b263cd74cbe3",
+      "sparql_answers": [],
+      "given_answer": "McGill University School of Computer Science",
+      "similarity": 0.0
+    },
+    {
+      "id": "dd240200-b5bd-46ff-856c-284e0188d8a0",
+      "sparql_answers": [],
+      "given_answer": "179",
+      "similarity": 0.0
+    },
+    {
+      "id": "fa8d7b21-4cb7-4715-9293-341b5c9e257e",
+      "sparql_answers": [],
+      "given_answer": "Canadian",
+      "similarity": 0.0
+    },
+    {
+      "id": "ef02da91-875f-46b8-b174-c9a71e4b8ba1",
+      "sparql_answers": [],
+      "given_answer": "Science and Engineering",
+      "similarity": 0.0
+    },
+    {
+      "id": "72d28ff3-5763-4231-adf1-57176201772e",
+      "sparql_answers": [],
+      "given_answer": "Yale University",
+      "similarity": 0.0
+    },
+    {
+      "id": "90b970f6-7aa2-43e6-8cf2-aace2f4a4d73",
+      "sparql_answers": [],
+      "given_answer": "Distinguished Professor",
+      "similarity": 0.0
+    },
+    {
+      "id": "44004a5e-7e2b-4c69-bea0-f7dd7448a954",
+      "sparql_answers": [],
+      "given_answer": "University of Annaba, Algeria",
+      "similarity": 0.0
+    },
+    {
+      "id": "ade61ff9-a8a5-4dc6-95ca-48ae17eb5f88",
+      "sparql_answers": [],
+      "given_answer": "University College London",
+      "similarity": 0.0
+    },
+    {
+      "id": "f16e101c-4212-4d74-84e1-cbfe5a5f6683",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "204246",
+      "similarity": 0.5938242673873901
+    },
+    {
+      "id": "6243c1f2-c6d9-4e86-a205-e479f3466e30",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "389102",
+      "similarity": 0.6049253940582275
+    },
+    {
+      "id": "e119e889-8da1-4e05-8731-9714289ab5f8",
+      "sparql_answers": [],
+      "given_answer": "RWTH Aachen University",
+      "similarity": 0.0
+    },
+    {
+      "id": "c43da298-efda-49f5-a48a-8e24482e984f",
+      "sparql_answers": [],
+      "given_answer": "education",
+      "similarity": 0.0
+    },
+    {
+      "id": "48429578-716c-44c4-a220-2230de8c7642",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "40853",
+      "similarity": 0.5592448711395264
+    },
+    {
+      "id": "0a2d39a0-fd14-4ea0-a490-18e283eab028",
+      "sparql_answers": [],
+      "given_answer": "University of California, Berkeley",
+      "similarity": 0.0
+    },
+    {
+      "id": "3dab986d-736c-428d-8725-cbfd2d823773",
+      "sparql_answers": [],
+      "given_answer": "2021",
+      "similarity": 0.0
+    },
+    {
+      "id": "b48cabed-edc1-42cb-8d54-ca62322d08ab",
+      "sparql_answers": [],
+      "given_answer": "Washington University in St. Louis",
+      "similarity": 0.0
+    },
+    {
+      "id": "73165a32-d3b9-44bf-810a-e1e05ad73d03",
+      "sparql_answers": [],
+      "given_answer": "2017",
+      "similarity": 0.0
+    },
+    {
+      "id": "7d1ef59c-a45b-4fb6-97b0-67211c15ca04",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "194",
+      "similarity": 0.7751349806785583
+    },
+    {
+      "id": "cb9eac31-a4fe-4ad3-87f7-f187fb1a211d",
+      "sparql_answers": [],
+      "given_answer": "48",
+      "similarity": 0.0
+    },
+    {
+      "id": "570720ed-5cd8-4c0b-9d38-bd262a09e2e7",
+      "sparql_answers": [],
+      "given_answer": "Steven Strogatz",
+      "similarity": 0.0
+    },
+    {
+      "id": "923a1c35-b08e-4c6e-b4fa-9d6a843ad594",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "120",
+      "similarity": 0.691665768623352
+    },
+    {
+      "id": "649c11ed-cf1e-4a37-9508-ec6a2bd3c1bf",
+      "sparql_answers": [],
+      "given_answer": "utilizing quantum mechanical effects",
+      "similarity": 0.0
+    },
+    {
+      "id": "d01d7ce5-5a11-467b-96e7-bfec538b309b",
+      "sparql_answers": [],
+      "given_answer": "the Oon Prize on Preventative Medicine",
+      "similarity": 0.0
+    },
+    {
+      "id": "6bda83a7-f83e-483f-adcb-3aabc7332e14",
+      "sparql_answers": [],
+      "given_answer": "Pierre and Marie Curie University",
+      "similarity": 0.0
+    },
+    {
+      "id": "d44eaf22-c3a8-4593-9b57-cbca80c6e9ef",
+      "sparql_answers": [],
+      "given_answer": "2.8125",
+      "similarity": 0.0
+    },
+    {
+      "id": "4e0091a8-5659-48c6-8d96-7176749598d5",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "1",
+      "similarity": 0.7825912237167358
+    },
+    {
+      "id": "c7184d79-129c-4932-b859-e90cc2b9acd1",
+      "sparql_answers": [],
+      "given_answer": "Daivd Haussler",
+      "similarity": 0.0
+    },
+    {
+      "id": "5615c1c2-8d37-4579-8c7c-06d9d3f9640c",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "472",
+      "similarity": 0.6988128423690796
+    },
+    {
+      "id": "f0b2371f-fa37-4400-bd52-5aaad4ee8f25",
+      "sparql_answers": [],
+      "given_answer": "50",
+      "similarity": 0.0
+    },
+    {
+      "id": "52d68eef-6ed1-45b8-bc74-7ab51080b748",
+      "sparql_answers": [],
+      "given_answer": "2015",
+      "similarity": 0.0
+    },
+    {
+      "id": "36f54861-e5f2-40c6-bbb0-31860422d7c1",
+      "sparql_answers": [],
+      "given_answer": "University of Maribor",
+      "similarity": 0.0
+    },
+    {
+      "id": "de78e7d7-d7d3-441e-b135-fb4417d96a31",
+      "sparql_answers": [],
+      "given_answer": "University of Cambridge",
+      "similarity": 0.0
+    },
+    {
+      "id": "8eb654c9-2ad1-4e13-bb1f-a14f54f74b13",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "234",
+      "similarity": 0.70124751329422
+    },
+    {
+      "id": "068855ea-db33-4526-bc29-afc8a4342f7d",
+      "sparql_answers": [],
+      "given_answer": "education",
+      "similarity": 0.0
+    },
+    {
+      "id": "a07ea552-bfbf-47ef-a8ac-2c5a02c056d5",
+      "sparql_answers": [],
+      "given_answer": "29",
+      "similarity": 0.0
+    },
+    {
+      "id": "d8bfca6a-e054-4247-9eb0-0097e0cd8eef",
+      "sparql_answers": [],
+      "given_answer": "Yuejie Chi",
+      "similarity": 0.0
+    },
+    {
+      "id": "41d51e3c-7cba-41e4-94a4-9c52030a1a76",
+      "sparql_answers": [
+        "5"
+      ],
+      "given_answer": "158",
+      "similarity": 0.5069143176078796
+    },
+    {
+      "id": "cbc5a97c-1f16-4384-b66d-20faed4191a0",
+      "sparql_answers": [
+        "306"
+      ],
+      "given_answer": "4702",
+      "similarity": 0.6715790033340454
+    },
+    {
+      "id": "cd2fe209-58ff-437a-89f3-c3880fb719ec",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "53890",
+      "similarity": 0.6482427716255188
+    },
+    {
+      "id": "fea71f0a-174f-47dc-a107-ef03e89d4ecd",
+      "sparql_answers": [],
+      "given_answer": "California Institute of Technology",
+      "similarity": 0.0
+    },
+    {
+      "id": "0c8ba0fb-d0fa-463e-9f29-8f93cf86ec7b",
+      "sparql_answers": [],
+      "given_answer": "Amparo Alonso-Betanzos",
+      "similarity": 0.0
+    },
+    {
+      "id": "45f1723d-b1fe-4309-80cf-1048db5514ca",
+      "sparql_answers": [],
+      "given_answer": "Ghent University",
+      "similarity": 0.0
+    },
+    {
+      "id": "6a4195ef-c4d3-49ed-a23a-8d5599ee5696",
+      "sparql_answers": [],
+      "given_answer": "5966412",
+      "similarity": 0.0
+    },
+    {
+      "id": "d8929067-8fca-41e7-837b-d3d30e3a7dfe",
+      "sparql_answers": [],
+      "given_answer": "Massachusetts Institute of Technology",
+      "similarity": 0.0
+    },
+    {
+      "id": "6d75dd25-6853-4d3e-84ff-0c0b183d257d",
+      "sparql_answers": [],
+      "given_answer": "2012",
+      "similarity": 0.0
+    },
+    {
+      "id": "0cdc923b-5318-48dc-9c86-aecfa0e850dc",
+      "sparql_answers": [
+        "271"
+      ],
+      "given_answer": "over 300 research articles",
+      "similarity": 0.3099548816680908
+    },
+    {
+      "id": "ff3461f0-f28b-4dd1-8df8-cc1eb836014d",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "92293",
+      "similarity": 0.6275909543037415
+    },
+    {
+      "id": "1a91fa23-34c9-4c4b-903e-fabaa1cb87cd",
+      "sparql_answers": [],
+      "given_answer": "32",
+      "similarity": 0.0
+    },
+    {
+      "id": "aaee3207-45f3-4bf0-9fe8-f16da723ae8d",
+      "sparql_answers": [
+        "5425"
+      ],
+      "given_answer": "303398",
+      "similarity": 0.6923158168792725
+    },
+    {
+      "id": "2a35318f-172f-4fcc-97e4-5b2155aa4e53",
+      "sparql_answers": [],
+      "given_answer": "Rice University",
+      "similarity": 0.0
+    },
+    {
+      "id": "fc2313c0-d405-4da4-b1b3-185d47a60557",
+      "sparql_answers": [],
+      "given_answer": "power and reliability management of Systems-on-Chip",
+      "similarity": 0.0
+    },
+    {
+      "id": "1b53c597-0717-4e67-b652-3fc4028d8f5f",
+      "sparql_answers": [],
+      "given_answer": "University of Science and Technology of China",
+      "similarity": 0.0
+    },
+    {
+      "id": "23c225fa-f615-4a4a-81c1-33519fd1a7a7",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "3950",
+      "similarity": 0.6033544540405273
+    },
+    {
+      "id": "a90ab2ab-b760-42a9-81e8-c4e42b8ca974",
+      "sparql_answers": [],
+      "given_answer": "Oxford-Man Institute of Quantitative Finance",
+      "similarity": 0.0
+    },
+    {
+      "id": "3f94a9af-6af0-420d-8818-f75ea4076e4b",
+      "sparql_answers": [],
+      "given_answer": "15428",
+      "similarity": 0.0
+    },
+    {
+      "id": "e5420636-7dbb-45c2-8c81-aa37bd102a2e",
+      "sparql_answers": [],
+      "given_answer": "25 September 1957",
+      "similarity": 0.0
+    },
+    {
+      "id": "bcfda993-6f8a-41a2-b989-6f20fbd409c7",
+      "sparql_answers": [],
+      "given_answer": "N",
+      "similarity": 0.0
+    },
+    {
+      "id": "e65a502d-5fb6-4dc7-976f-e0fd6fbf64df",
+      "sparql_answers": [],
+      "given_answer": "2000",
+      "similarity": 0.0
+    },
+    {
+      "id": "7f9bb6b7-3ba5-4e79-89a2-a657e9021705",
+      "sparql_answers": [
+        "4"
+      ],
+      "given_answer": "1799",
+      "similarity": 0.579680323600769
+    },
+    {
+      "id": "763b7b86-2b49-4d1e-b491-e2382b424039",
+      "sparql_answers": [],
+      "given_answer": "2001",
+      "similarity": 0.0
+    },
+    {
+      "id": "4dc4fab3-f8b4-4fcf-84bd-f7bbdc203d09",
+      "sparql_answers": [],
+      "given_answer": "Cardiff University",
+      "similarity": 0.0
+    },
+    {
+      "id": "b030f2f4-ca0a-4828-907c-bb2baa24e317",
+      "sparql_answers": [],
+      "given_answer": "University of S\u00e3o Paulo",
+      "similarity": 0.0
+    },
+    {
+      "id": "078d14b9-b868-4baf-8dad-c78885113793",
+      "sparql_answers": [],
+      "given_answer": "28",
+      "similarity": 0.0
+    },
+    {
+      "id": "8cac6f6a-a171-4b23-961b-707dea072131",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "138671",
+      "similarity": 0.5883482098579407
+    },
+    {
+      "id": "7db3662b-6af3-4294-b3c7-6aa9d90268b4",
+      "sparql_answers": [],
+      "given_answer": "Ireland",
+      "similarity": 0.0
+    },
+    {
+      "id": "3d2327be-58b9-48f5-9754-97b098643cfa",
+      "sparql_answers": [],
+      "given_answer": "1997",
+      "similarity": 0.0
+    },
+    {
+      "id": "88f0743b-3c83-4791-9064-c28d5c62e1d8",
+      "sparql_answers": [],
+      "given_answer": "Jos\u00e9 Rui Figueira",
+      "similarity": 0.0
+    },
+    {
+      "id": "b53108e3-6197-4f92-bbd1-ba8cd98e9648",
+      "sparql_answers": [],
+      "given_answer": "Pennsylvania State University",
+      "similarity": 0.0
+    },
+    {
+      "id": "0e0c3e53-ec31-483c-9405-651f1b1f481c",
+      "sparql_answers": [],
+      "given_answer": "Nayla Rizk",
+      "similarity": 0.0
+    },
+    {
+      "id": "bd493b7a-a90e-490a-9b3c-055f5ee7b079",
+      "sparql_answers": [],
+      "given_answer": "Z",
+      "similarity": 0.0
+    },
+    {
+      "id": "b5e19739-ea7d-4472-a428-a41b9c961d4f",
+      "sparql_answers": [],
+      "given_answer": "Calvin College",
+      "similarity": 0.0
+    },
+    {
+      "id": "268bdfed-16e2-4290-88af-3fb87ed17e50",
+      "sparql_answers": [],
+      "given_answer": "Katia Sycara",
+      "similarity": 0.0
+    },
+    {
+      "id": "341b2ddf-c7b5-43ad-a298-dce7cc3c45bd",
+      "sparql_answers": [],
+      "given_answer": "Eersel, Netherlands",
+      "similarity": 0.0
+    },
+    {
+      "id": "75188314-942d-4db4-ba94-c78c23fb6f4b",
+      "sparql_answers": [],
+      "given_answer": "Wireless Research Center, Egypt",
+      "similarity": 0.0
+    },
+    {
+      "id": "187c8485-d669-4f7b-9086-e49853436517",
+      "sparql_answers": [],
+      "given_answer": "1.9777777",
+      "similarity": 0.0
+    },
+    {
+      "id": "522b3bca-fbcf-4f44-9c79-582a75a40c81",
+      "sparql_answers": [],
+      "given_answer": "Stockholm University",
+      "similarity": 0.0
+    },
+    {
+      "id": "87e8513d-f6d8-4010-af1e-c079ed12f08f",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "154204",
+      "similarity": 0.5633069276809692
+    },
+    {
+      "id": "c2a3a7e4-c148-4676-9532-b11ca7fded0e",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "2791752",
+      "similarity": 0.6610186696052551
+    },
+    {
+      "id": "60435abf-00aa-4b71-89b9-ed3787cec4b8",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "4288",
+      "similarity": 0.6000072956085205
+    },
+    {
+      "id": "486c6763-0585-4587-bde3-312e41797440",
+      "sparql_answers": [],
+      "given_answer": "Formal methods for programming languages",
+      "similarity": 0.0
+    },
+    {
+      "id": "0992d1c4-ffa8-4644-8091-5565dbea10eb",
+      "sparql_answers": [],
+      "given_answer": "Umakishore Ramachandran",
+      "similarity": 0.0
+    },
+    {
+      "id": "e5397ab8-5b02-423a-bea3-abae5a2e16ca",
+      "sparql_answers": [],
+      "given_answer": "Danish",
+      "similarity": 0.0
+    },
+    {
+      "id": "52ad2fb7-fcdf-4a83-8910-a5ceae6641eb",
+      "sparql_answers": [],
+      "given_answer": "Marina Jirotka",
+      "similarity": 0.0
+    },
+    {
+      "id": "1730dc5e-2b44-4131-8817-f61dc7254757",
+      "sparql_answers": [
+        "272"
+      ],
+      "given_answer": "317415",
+      "similarity": 0.6953168511390686
+    },
+    {
+      "id": "a6612c3d-5826-4dea-9bb1-73ea383cddef",
+      "sparql_answers": [],
+      "given_answer": "University at Buffalo",
+      "similarity": 0.0
+    },
+    {
+      "id": "c610073f-cf77-4f60-bdd4-0294cb91e426",
+      "sparql_answers": [],
+      "given_answer": "",
+      "similarity": 0.0
+    },
+    {
+      "id": "b4c87de1-05b6-4565-87ea-108c783546b7",
+      "sparql_answers": [],
+      "given_answer": "14",
+      "similarity": 0.0
+    },
+    {
+      "id": "f899d6f9-f46e-40cd-a2ee-58dfdbe216cc",
+      "sparql_answers": [],
+      "given_answer": "Stanford University",
+      "similarity": 0.0
+    },
+    {
+      "id": "62c28e46-0b20-48d6-b470-94c91aef2836",
+      "sparql_answers": [],
+      "given_answer": "archive",
+      "similarity": 0.0
+    },
+    {
+      "id": "8ec05fcb-cae2-4ada-b783-19adbe2e424b",
+      "sparql_answers": [
+        "https://dblp.org/rec/reference/complexity/Brameier09",
+        "https://dblp.org/rec/conf/cec/NordinHFBB99",
+        "https://dblp.org/rec/conf/evoW/HeddadBM04",
+        "https://dblp.org/rec/conf/cec/KantschikDBB99",
+        "https://dblp.org/rec/journals/bmcbi/BrameierHKM06",
+        "https://dblp.org/rec/journals/bioinformatics/BrameierKM07",
+        "https://dblp.org/rec/conf/gecco/BrameierHNBF99",
+        "https://dblp.org/rec/journals/tec/BrameierB01",
+        "https://dblp.org/rec/journals/jbi/BrameierW07",
+        "https://dblp.org/rec/phd/de/Brameier2005",
+        "https://dblp.org/rec/journals/bmcbi/BrameierW07",
+        "https://dblp.org/rec/conf/eurogp/BrameierB02",
+        "https://dblp.org/rec/conf/eurogp/BrameierB03",
+        "https://dblp.org/rec/conf/eurogp/KantschikDBB99",
+        "https://dblp.org/rec/journals/nar/BrameierHRWG11",
+        "https://dblp.org/rec/journals/ras/NordinBB98",
+        "https://dblp.org/rec/journals/dagstuhl-reports/BanzhafFMS14",
+        "https://dblp.org/rec/reference/complexity/Banzhaf09",
+        "https://dblp.org/rec/series/sci/HardingB12",
+        "https://dblp.org/rec/conf/alife/StraatmanWB08",
+        "https://dblp.org/rec/conf/alife/YamamotoB10",
+        "https://dblp.org/rec/conf/gecco/BolandiBLBA19",
+        "https://dblp.org/rec/conf/gecco/Chen0B023",
+        "https://dblp.org/rec/conf/gecco/DittrichSKB99",
+        "https://dblp.org/rec/conf/gecco/FranconeCBN99",
+        "https://dblp.org/rec/conf/gecco/GrossAKB02",
+        "https://dblp.org/rec/conf/gecco/GuhaAKBGBD23",
+        "https://dblp.org/rec/conf/gecco/HardingMB07",
+        "https://dblp.org/rec/conf/gecco/HardingMB09",
+        "https://dblp.org/rec/conf/gecco/HuCBB09",
+        "https://dblp.org/rec/conf/gecco/KowaliwBD13",
+        "https://dblp.org/rec/conf/gecco/LeierB03",
+        "https://dblp.org/rec/conf/gecco/LeierB04",
+        "https://dblp.org/rec/conf/gecco/LiPSRB22",
+        "https://dblp.org/rec/conf/gecco/PeelerLSR0B22",
+        "https://dblp.org/rec/conf/gecco/WilsonB10",
+        "https://dblp.org/rec/conf/gecco/WuB08",
+        "https://dblp.org/rec/conf/gecco/WuB10",
+        "https://dblp.org/rec/conf/gecco/WuB11",
+        "https://dblp.org/rec/conf/gecco/ZhangC0B023",
+        "https://dblp.org/rec/conf/evoW/HuCB10",
+        "https://dblp.org/rec/conf/evoW/WilsonB09",
+        "https://dblp.org/rec/conf/cec/HardingMB09",
+        "https://dblp.org/rec/conf/icmla/RicaldeB17",
+        "https://dblp.org/rec/conf/gecco/HuB16",
+        "https://dblp.org/rec/conf/eccv/LuDGBB20",
+        "https://dblp.org/rec/conf/ae/GrafB95",
+        "https://dblp.org/rec/conf/cgames/WatsonVBW15",
+        "https://dblp.org/rec/conf/eb/Banzhaf95",
+        "https://dblp.org/rec/conf/eb/BanzhafE95",
+        "https://dblp.org/rec/conf/ecal/Banzhaf03",
+        "https://dblp.org/rec/conf/ecal/BuschB03",
+        "https://dblp.org/rec/conf/ecal/DittrichB01",
+        "https://dblp.org/rec/conf/ecal/FenizioB01",
+        "https://dblp.org/rec/conf/ecal/FenizioDB01",
+        "https://dblp.org/rec/conf/ecal/MeyerYBT09",
+        "https://dblp.org/rec/conf/ecal/VorobyevVB13",
+        "https://dblp.org/rec/conf/ecal/WuB09",
+        "https://dblp.org/rec/conf/ecal/WuB11",
+        "https://dblp.org/rec/conf/gecco/Cussat-BlancB15",
+        "https://dblp.org/rec/conf/gecco/HardingB11",
+        "https://dblp.org/rec/conf/gecco/HardingMB11a",
+        "https://dblp.org/rec/conf/gecco/HautPB23",
+        "https://dblp.org/rec/conf/gecco/KellyNBG20",
+        "https://dblp.org/rec/conf/gecco/LangdonB22",
+        "https://dblp.org/rec/conf/gecco/LasarczykB05",
+        "https://dblp.org/rec/conf/gecco/LuWBDDGB19",
+        "https://dblp.org/rec/conf/gecco/MeloB16",
+        "https://dblp.org/rec/conf/gecco/MeloVB19",
+        "https://dblp.org/rec/conf/gecco/ReidMKBG21",
+        "https://dblp.org/rec/conf/gecco/WilsonLB11",
+        "https://dblp.org/rec/conf/gecco/YuanB19",
+        "https://dblp.org/rec/conf/cig/WatsonBV14",
+        "https://dblp.org/rec/conf/wopplot/Banzhaf89",
+        "https://dblp.org/rec/conf/evoW/DittrichBB98",
+        "https://dblp.org/rec/conf/ijcai/LuWDDGBB20",
+        "https://dblp.org/rec/conf/pricai/ZhangCXBZ23",
+        "https://dblp.org/rec/conf/bcec/NorinBF97",
+        "https://dblp.org/rec/reference/nc/BanzhafM12",
+        "https://dblp.org/rec/conf/icmas/BuschB00",
+        "https://dblp.org/rec/conf/gptp/DolsonBO17",
+        "https://dblp.org/rec/conf/gptp/HuB16",
+        "https://dblp.org/rec/conf/gptp/KellyB19",
+        "https://dblp.org/rec/conf/gptp/OOCLBG19",
+        "https://dblp.org/rec/conf/gptp/WhiteFBB19",
+        "https://dblp.org/rec/conf/gptp/YuanB19",
+        "https://dblp.org/rec/conf/cec/KowaliwB09",
+        "https://dblp.org/rec/conf/cec/KowaliwBKH09",
+        "https://dblp.org/rec/conf/cec/WilsonB08",
+        "https://dblp.org/rec/conf/cec/WilsonB09",
+        "https://dblp.org/rec/conf/cec/WilsonHHDB12",
+        "https://dblp.org/rec/conf/isda/WilsonHHDB10",
+        "https://dblp.org/rec/conf/upp/BanzhafL04",
+        "https://dblp.org/rec/conf/ppsn/Banzhaf94",
+        "https://dblp.org/rec/conf/ppsn/BanzhafFN96",
+        "https://dblp.org/rec/conf/ppsn/HuB08",
+        "https://dblp.org/rec/conf/ppsn/HuBM14",
+        "https://dblp.org/rec/conf/ppsn/KuoLB04",
+        "https://dblp.org/rec/conf/ppsn/LangdonB00",
+        "https://dblp.org/rec/conf/ppsn/PillayB08",
+        "https://dblp.org/rec/conf/hpcs/HardingB07",
+        "https://dblp.org/rec/series/ncs/HardingB11",
+        "https://dblp.org/rec/series/ncs/HardingMB11",
+        "https://dblp.org/rec/series/ncs/SekaninaHBK11",
+        "https://dblp.org/rec/series/ncs/YamamotoCB13",
+        "https://dblp.org/rec/journals/nc/LangdonB08",
+        "https://dblp.org/rec/journals/telo/KellySHB21",
+        "https://dblp.org/rec/journals/bc/Banzhaf93",
+        "https://dblp.org/rec/journals/bc/Banzhaf93a",
+        "https://dblp.org/rec/journals/bc/BanzhafK91",
+        "https://dblp.org/rec/journals/jasss/DittrichKB03",
+        "https://dblp.org/rec/conf/gecco/BanzhafH09",
+        "https://dblp.org/rec/conf/gecco/Cussat-BlancB17",
+        "https://dblp.org/rec/conf/gecco/HardingMB10",
+        "https://dblp.org/rec/conf/gecco/HardingMB11",
+        "https://dblp.org/rec/conf/gecco/HautBP22",
+        "https://dblp.org/rec/conf/gecco/HuB08",
+        "https://dblp.org/rec/conf/gecco/HuB09",
+        "https://dblp.org/rec/conf/gecco/KowaliwB12",
+        "https://dblp.org/rec/conf/gecco/MorenoBO18",
+        "https://dblp.org/rec/conf/gecco/TavafiB17",
+        "https://dblp.org/rec/conf/gecco/WangQLGB16",
+        "https://dblp.org/rec/conf/gecco/WilsonB09",
+        "https://dblp.org/rec/conf/gecco/WilsonB09a",
+        "https://dblp.org/rec/conf/gecco/WilsonHHDB11",
+        "https://dblp.org/rec/conf/cec/LeierB03",
+        "https://dblp.org/rec/conf/cec/WilsonB10",
+        "https://dblp.org/rec/conf/cec/WilsonLB12",
+        "https://dblp.org/rec/conf/bracis/MeloB15",
+        "https://dblp.org/rec/conf/bracis/MeloFB15",
+        "https://dblp.org/rec/conf/dars/VorobyevVB12",
+        "https://dblp.org/rec/conf/icec/Banzhaf94",
+        "https://dblp.org/rec/conf/isalalife/BaoWB18",
+        "https://dblp.org/rec/conf/isalalife/LangdonB19",
+        "https://dblp.org/rec/conf/isalalife/RecioBW20",
+        "https://dblp.org/rec/journals/ki/SkusaBBDZ00",
+        "https://dblp.org/rec/conf/iros/KellyPSMNGBDBTR23",
+        "https://dblp.org/rec/journals/alife/HuBM14",
+        "https://dblp.org/rec/journals/alife/TaylorBCABBDFHI16",
+        "https://dblp.org/rec/journals/tse/YuanB20",
+        "https://dblp.org/rec/journals/ec/LasarczykDB04",
+        "https://dblp.org/rec/journals/ec/NiehausIB07",
+        "https://dblp.org/rec/journals/compsys/Banzhaf94",
+        "https://dblp.org/rec/journals/compsys/LangdonB05",
+        "https://dblp.org/rec/journals/compsys/NaraB94",
+        "https://dblp.org/rec/journals/tib/BanzhafBBDFMMMS16",
+        "https://dblp.org/rec/journals/aiedam/StadelhoferBS08",
+        "https://dblp.org/rec/journals/peerjpre/DolsonBO18",
+        "https://dblp.org/rec/journals/tec/KozaBCDDFGGIR99",
+        "https://dblp.org/rec/journals/tec/YuanB22",
+        "https://dblp.org/rec/journals/isci/MeloB18",
+        "https://dblp.org/rec/journals/eor/PillayB09",
+        "https://dblp.org/rec/journals/tec/LuWDDGBB21",
+        "https://dblp.org/rec/journals/ijuc/TimmisABT06",
+        "https://dblp.org/rec/journals/cim/ZhangCXBZ23",
+        "https://dblp.org/rec/journals/corr/abs-1902-09215",
+        "https://dblp.org/rec/journals/corr/abs-2005-00603",
+        "https://dblp.org/rec/journals/corr/abs-2005-05859",
+        "https://dblp.org/rec/journals/corr/abs-2201-13305",
+        "https://dblp.org/rec/conf/gamesem/WatsonVB12",
+        "https://dblp.org/rec/conf/eurogp/FowlerB16",
+        "https://dblp.org/rec/conf/eurogp/HardingMB09",
+        "https://dblp.org/rec/conf/eurogp/HuBM13",
+        "https://dblp.org/rec/conf/eurogp/HuPBM11",
+        "https://dblp.org/rec/conf/eurogp/KantschikB01",
+        "https://dblp.org/rec/conf/eurogp/LangdonB05",
+        "https://dblp.org/rec/conf/eurogp/LasarczykB05",
+        "https://dblp.org/rec/conf/eurogp/NicolauSB10",
+        "https://dblp.org/rec/conf/eurogp/NiehausB03",
+        "https://dblp.org/rec/conf/eurogp/ZhangCTXBZ23",
+        "https://dblp.org/rec/conf/dna/FeldkampSBR01",
+        "https://dblp.org/rec/journals/csur/TelikaniTBG22",
+        "https://dblp.org/rec/journals/corr/abs-2209-04114",
+        "https://dblp.org/rec/journals/corr/abs-1712-07804",
+        "https://dblp.org/rec/journals/corr/abs-2205-15990",
+        "https://dblp.org/rec/journals/corr/abs-2307-16890",
+        "https://dblp.org/rec/journals/corr/abs-2102-04871",
+        "https://dblp.org/rec/journals/corr/abs-1810-03522",
+        "https://dblp.org/rec/conf/icga/Banzhaf93",
+        "https://dblp.org/rec/conf/icga/IwamotoBK93",
+        "https://dblp.org/rec/conf/icga/NordinB95",
+        "https://dblp.org/rec/conf/icga/NordinB95a",
+        "https://dblp.org/rec/conf/epia/PillayB07",
+        "https://dblp.org/rec/conf/epia/YamamotoBC11",
+        "https://dblp.org/rec/journals/ijns/BanzhafS91",
+        "https://dblp.org/rec/journals/asc/PillayB10",
+        "https://dblp.org/rec/journals/alife/Cussat-BlancHB18",
+        "https://dblp.org/rec/journals/alife/DittrichB98",
+        "https://dblp.org/rec/journals/alife/DittrichZB01",
+        "https://dblp.org/rec/journals/alife/LangdonB22",
+        "https://dblp.org/rec/journals/alife/RecioBW22",
+        "https://dblp.org/rec/journals/alife/ZieglerB01",
+        "https://dblp.org/rec/journals/trs/AnarakiSBE16",
+        "https://dblp.org/rec/journals/nn/BanzhafH90",
+        "https://dblp.org/rec/journals/ijon/MeloB17",
+        "https://dblp.org/rec/journals/swarm/VardyVB14",
+        "https://dblp.org/rec/journals/swarm/YamamotoMCB11",
+        "https://dblp.org/rec/conf/dagstuhl/Banzhaf03",
+        "https://dblp.org/rec/journals/ijhpsa/HardingB08",
+        "https://dblp.org/rec/journals/asc/WuB10",
+        "https://dblp.org/rec/journals/adb/NordinB97",
+        "https://dblp.org/rec/journals/advcs/LeierKB07",
+        "https://dblp.org/rec/journals/access/VegaOLOBGMM20",
+        "https://dblp.org/rec/journals/corr/abs-2106-12659",
+        "https://dblp.org/rec/journals/corr/abs-1901-07357",
+        "https://dblp.org/rec/journals/corr/abs-1912-01369",
+        "https://dblp.org/rec/journals/corr/abs-2007-10396",
+        "https://dblp.org/rec/journals/corr/abs-1005-2815",
+        "https://dblp.org/rec/journals/corr/abs-1904-08658",
+        "https://dblp.org/rec/conf/eurogp/BuschZARSB02",
+        "https://dblp.org/rec/conf/eurogp/ConradsNB98",
+        "https://dblp.org/rec/conf/eurogp/HardingB07",
+        "https://dblp.org/rec/conf/eurogp/HuB09",
+        "https://dblp.org/rec/conf/eurogp/HuOB23",
+        "https://dblp.org/rec/conf/eurogp/HuTB19",
+        "https://dblp.org/rec/conf/eurogp/KantschikB02",
+        "https://dblp.org/rec/conf/eurogp/LangdonB08",
+        "https://dblp.org/rec/conf/eurogp/LeierKBB06",
+        "https://dblp.org/rec/conf/eurogp/MiralavyB23",
+        "https://dblp.org/rec/conf/eurogp/NiehausB01",
+        "https://dblp.org/rec/conf/eurogp/RicaldeB16",
+        "https://dblp.org/rec/conf/eurogp/WilsonB08",
+        "https://dblp.org/rec/conf/eurogp/ZieglerB03",
+        "https://dblp.org/rec/conf/eps/GrafB95",
+        "https://dblp.org/rec/journals/tosem/YuanB20",
+        "https://dblp.org/rec/journals/complexity/BanzhafP07",
+        "https://dblp.org/rec/journals/corr/MeloB17",
+        "https://dblp.org/rec/journals/corr/abs-2204-13261",
+        "https://dblp.org/rec/journals/corr/abs-2308-00672",
+        "https://dblp.org/rec/journals/pami/LuSGBDB21",
+        "https://dblp.org/rec/journals/gpem/Banzhaf00",
+        "https://dblp.org/rec/journals/gpem/Banzhaf00a",
+        "https://dblp.org/rec/journals/gpem/Banzhaf01",
+        "https://dblp.org/rec/journals/gpem/Banzhaf03",
+        "https://dblp.org/rec/journals/gpem/Banzhaf04",
+        "https://dblp.org/rec/journals/gpem/Banzhaf04a",
+        "https://dblp.org/rec/journals/gpem/Banzhaf05",
+        "https://dblp.org/rec/journals/gpem/Banzhaf05a",
+        "https://dblp.org/rec/journals/gpem/Banzhaf06",
+        "https://dblp.org/rec/journals/gpem/Banzhaf06a",
+        "https://dblp.org/rec/journals/gpem/Banzhaf07",
+        "https://dblp.org/rec/journals/gpem/Banzhaf07a",
+        "https://dblp.org/rec/journals/gpem/Banzhaf08",
+        "https://dblp.org/rec/journals/gpem/Banzhaf14",
+        "https://dblp.org/rec/journals/gpem/Banzhaf14a",
+        "https://dblp.org/rec/journals/gpem/BanzhafF04",
+        "https://dblp.org/rec/journals/gpem/BanzhafL02",
+        "https://dblp.org/rec/journals/gpem/FeldkampRB03",
+        "https://dblp.org/rec/journals/gpem/HardingMB10",
+        "https://dblp.org/rec/journals/gpem/HuHB10",
+        "https://dblp.org/rec/journals/gpem/HuPBM12",
+        "https://dblp.org/rec/journals/gpem/HuTB20",
+        "https://dblp.org/rec/journals/gpem/HuangMZZB24",
+        "https://dblp.org/rec/journals/gpem/KellyVBG21",
+        "https://dblp.org/rec/journals/gpem/LangdonPB08",
+        "https://dblp.org/rec/journals/gpem/ONeillVGB10",
+        "https://dblp.org/rec/journals/gpem/WilsonB10",
+        "https://dblp.org/rec/journals/gpem/ZhangCXBZ24",
+        "https://dblp.org/rec/journals/nca/MeloB18",
+        "https://dblp.org/rec/journals/ai/YuanB23",
+        "https://dblp.org/rec/journals/corr/abs-2202-04039",
+        "https://dblp.org/rec/journals/corr/abs-cs-0512071",
+        "https://dblp.org/rec/journals/corr/abs-2202-04708",
+        "https://dblp.org/rec/journals/corr/abs-2007-02934",
+        "https://dblp.org/rec/journals/corr/abs-2202-13040",
+        "https://dblp.org/rec/journals/corr/abs-2211-08516",
+        "https://dblp.org/rec/journals/corr/abs-2402-08011",
+        "https://dblp.org/rec/books/sp/08/HardingB08",
+        "https://dblp.org/rec/books/daglib/p/KowaliwB12"
+      ],
+      "given_answer": "Yodi",
+      "similarity": 0.6022698283195496
+    },
+    {
+      "id": "7cd46478-4a99-4b15-bc6e-3e6fb88a5430",
+      "sparql_answers": [],
+      "given_answer": "education",
+      "similarity": 0.0
+    },
+    {
+      "id": "2ac98ceb-1644-442f-93a0-2fd765c12c06",
+      "sparql_answers": [],
+      "given_answer": "University of Michigan",
+      "similarity": 0.0
+    },
+    {
+      "id": "aa088cfb-0a1b-472f-ae8f-9c135dc12917",
+      "sparql_answers": [
+        "52"
+      ],
+      "given_answer": "238",
+      "similarity": 0.688030481338501
+    },
+    {
+      "id": "08ca4a36-862f-4797-939e-fd812fe4814a",
+      "sparql_answers": [],
+      "given_answer": "90",
+      "similarity": 0.0
+    },
+    {
+      "id": "f70ca38a-30a3-4937-8d85-dd75a3bde355",
+      "sparql_answers": [],
+      "given_answer": "Science and Engineering",
+      "similarity": 0.0
+    },
+    {
+      "id": "00d3f8e8-a212-4df7-ad30-d8d543cfcd52",
+      "sparql_answers": [],
+      "given_answer": "Alfred P. Sloan Foundation",
+      "similarity": 0.0
+    },
+    {
+      "id": "c58c95ad-b1a2-42c1-b17a-61cb69c88284",
+      "sparql_answers": [
+        "0"
+      ],
+      "given_answer": "289418",
+      "similarity": 0.6752431392669678
+    },
+    {
+      "id": "bcebe1cf-09ef-4dbe-bf1a-30bd90210999",
+      "sparql_answers": [],
+      "given_answer": "Jon Kleinberg",
+      "similarity": 0.0
+    }
+  ],
+  "summary": {
+    "total_questions": 1000,
+    "num_given_answers": 999,
+    "num_sparql_answers": 531,
+    "num_sparql_answers_non_zero": 342,
+    "average_similarity": 0.613201983332634,
+    "max_similarity": 0.8154464960098267,
+    "min_similarity": 0.16520312428474426
+  }
+}

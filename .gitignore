@@ -176,3 +176,5 @@ results/hm_results/todo
 data/external/
 *.json
 *.txt
+
+data/external/
