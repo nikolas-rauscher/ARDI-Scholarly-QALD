@@ -10,7 +10,7 @@ from .experiment import Dataset
 def create_dataset(config, expriment_name):
     dataset = Dataset(config, expriment_name)
 
-    """# Creating and preprocessing the DBLP dataset
+    # Creating and preprocessing the DBLP dataset
     create_dataset_dblp(dataset.questions_path, 
                         dataset.dblp_endpoint_url,
                         dataset.dblp_path_outputdata_preprocessed, subset=2) 
@@ -31,7 +31,7 @@ def create_dataset(config, expriment_name):
     add_wikidata(dataset.raw_wikipedia_path, 
                  dataset.processed_wikipedia_path,
                  dataset.openalex_path_outputdata_postprocessed, 
-                 dataset.wikipedia_path_outputdata)"""
+                 dataset.wikipedia_path_outputdata)
 
     # Merging all data
     merge_data(dataset.dblp_path_outputdata_postprocessed, 
