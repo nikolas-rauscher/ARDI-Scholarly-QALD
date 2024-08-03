@@ -14,7 +14,7 @@ from tqdm import tqdm
 config = configparser.ConfigParser()
 config.read('config.ini')
 
-def generate_contexts_with_evidence_and_verbalizer(examples, prompt_template, output_file, wiki_data=True):
+def generate_contexts_with_evidence_and_verbalizer(examples, prompt_template, output_file, wikipedia_data=True):
     """
     Prepare the data by generating contexts for each example with all 3 resources
 
@@ -66,7 +66,7 @@ def generate_contexts_with_evidence_and_verbalizer(examples, prompt_template, ou
     with open(output_file, 'w') as file:
         json.dump(prepared_data, file, indent=4, ensure_ascii=False)
 
-def prepare_data_4settings(examples, prompt_template, output_file, wiki=True):
+def prepare_data_4settings(examples, prompt_template, output_file, wikipedia_data=True):
     """
     Prepare the data by generating contexts for each example with dnlp and openalex
 
@@ -81,10 +81,21 @@ def prepare_data_4settings(examples, prompt_template, output_file, wiki=True):
     prepared_data = []
 
     # Process only the first 100 examples
-    examples = examples[:1]
-    triple_extractor=load_triplet_extractor()
+    examples = examples[:100]
+    triple_extractor = load_triplet_extractor()
+
     for example in tqdm(examples, desc="Preparing Data"):
-        triples_number = len(example['all_triples'])
+
+        # Check if all_triples is a list of lists, a flat list, or a dictionary
+        if isinstance(example['all_triples'], dict):
+            all_triples_flat = [example['all_triples']]
+        elif all(isinstance(i, list) for i in example['all_triples']):
+            all_triples_flat = [triple for triples in example['all_triples'] for triple in triples]
+        else:
+            all_triples_flat = example['all_triples']
+
+        triples_number = len(all_triples_flat)
+
         # wiki
         wiki_context = ""
         wiki_context_plain = ""
@@ -94,22 +105,21 @@ def prepare_data_4settings(examples, prompt_template, output_file, wiki=True):
                 if len(wiki_text) > 0:
                     sentences = str(wiki_text).split('.')
                     wiki_evidence = evidence_sentence_selection(
-                        example['question'], sentences, conserved_percentage=0.2, max_num=40,llm=True,triplet_extractor=triple_extractor
+                        example['question'], sentences, conserved_percentage=0.2, max_num=40, llm=True, triplet_extractor=triple_extractor
                     )
                     wiki_context += '. '.join(wiki_evidence)
 
         # Plain Triples
-        context_plain = '. '.join([triple2text(triple)
-                                  for triple in example['all_triples'] if isinstance(triple, dict)])
+        context_plain = '. '.join([triple2text(triple) for triple in all_triples_flat if isinstance(triple, dict)])
 
         # Evidence Matching
         triples_evidence = evidence_triple_selection(
-            example['question'], example['all_triples'],llm=True,triplet_extractor=triple_extractor)
+            example['question'], all_triples_flat, llm=True, triplet_extractor=triple_extractor)
         context_evidence = '. '.join(
             [triple2text(triple) for triple in triples_evidence if isinstance(triple, dict)])
 
         # Verbalizer
-        context_verbalizer = verbalise_triples(example['all_triples'])
+        context_verbalizer = verbalise_triples(all_triples_flat)
 
         # Verbalizer + Evidence Matching
         context_evidence_verbalizer = verbalise_triples(triples_evidence)
@@ -119,7 +129,7 @@ def prepare_data_4settings(examples, prompt_template, output_file, wiki=True):
             "question": example["question"],
             "triples_number": triples_number,
             "contexts": {
-                "all_triples": example['all_triples'],
+                "all_triples": all_triples_flat,
                 "plain": context_plain + wiki_context_plain,
                 "verbalizer_on_all_triples": context_verbalizer + wiki_context_plain,
                 "evidence_matching": context_evidence + wiki_context,
@@ -172,7 +182,9 @@ if __name__ == '__main__':
         prompt_template = file.read()
 
     output_file = config['FilePaths']['prepared_data_file']
-    generate_contexts_with_evidence_and_verbalizer(examples, prompt_template, output_file, wiki_data=True)
+    # generate_contexts_with_evidence_and_verbalizer(examples, prompt_template, output_file, wikipedia_data=True)
+    prepare_data_4settings(examples, prompt_template, output_file, wikipedia_data=True)
+    
     
 
     
