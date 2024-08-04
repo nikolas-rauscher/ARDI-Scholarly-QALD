@@ -34,13 +34,13 @@ To install the verbalizer, follow these steps:
 Before executing the experiment, ensure to install the source code as a package by running the following command:
 
 ```bash
-pip install -e .
+pip install -r requirements.txt
 ```
 
 and then install the required dependencies by running:
 
 ```bash
-pip install -r requirements.txt
+pip install -e .
 ```
 
 ## Usage
