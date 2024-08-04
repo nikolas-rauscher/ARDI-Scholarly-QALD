@@ -14,7 +14,7 @@ To install the verbalizer, follow these steps:
 2. Place the downloaded file in the `graph2text` folder:
 
     ```bash
-    cd src/models/verbalizer/graph2text
+    cd src/data/verbalizer/graph2text
     ```
 
 3. Unpack the file in the `graph2text` folder:
