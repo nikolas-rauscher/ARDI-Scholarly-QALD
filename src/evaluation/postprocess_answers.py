@@ -227,4 +227,4 @@ if __name__ == "__main__":
     #     pipeline_question_ids(test_directory=data_directory,
     #                           ref_directory=test_directory, out_directory=data_directory + '_out')
     process_all_files_in_folder(
-        "./data/processed/100q", process_for_evaluation, RESULT_KEYS)
+        "/Users/celes/Documents/Projects/ARDI-Scholarly-QALD/results/experiments_10q", process_for_evaluation, RESULT_KEYS)

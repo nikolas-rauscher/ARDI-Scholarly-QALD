@@ -255,7 +255,7 @@ def process_metric_for_all_files(directory, gt_path):
         reference_answers = json.load(f)
 
     for filename in os.listdir(directory):
-        if "answer" not in filename or not filename.endswith(".json"):
+        if "test" not in filename or not filename.endswith(".json"):
             continue
 
         answer_file_path = os.path.join(directory, filename)

@@ -165,3 +165,4 @@ data/external/
 
 # Results and logs
 *.txt
+src/utils/

@@ -1,0 +1,402 @@
+[
+    {
+        "id": "6b8aa79c-3908-4f03-b85b-aa1a325d9fe6",
+        "question": "What type of information sources were found to be lacking in organized information at Social Services offices according to the author's observation?",
+        "true_answer": "oral communication and notes",
+        "model": "mixtral-8x7b-32768",
+        "technique": "zero_shot",
+        "results": [
+            {
+                "prompt_template": "data/raw/prompt_template.txt",
+                "all_triples_results": {
+                    "response": "According to the author's observation, the type of information sources that were found to be lacking in organized information at Social Services offices are external training materials for strengthening health information management.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "verbalizer_results": {
+                    "response": "The context does not provide information about Thomas D Wilson's observation regarding the lack of organized information at Social Services offices.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "evidence_matching": {
+                    "response": "The context does not provide information about the type of information sources that were found to be lacking in organized information at Social Services offices according to the author's observation.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "verbalizer_plus_evidence_matching": {
+                    "response": "The context does not provide information about the type of information sources that were found to be lacking in organized information at Social Services offices according to the author's observation.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "339bfd44-a71f-4057-a8a2-c84e1cc2c6ff",
+        "question": "What is the cited by count for the writer's institution who published the paper 'MAGMA: a multiagent architecture for metaheuristics'?",
+        "true_answer": "3335304",
+        "model": "mixtral-8x7b-32768",
+        "technique": "zero_shot",
+        "results": [
+            {
+                "prompt_template": "data/raw/prompt_template.txt",
+                "all_triples_results": {
+                    "response": "The cited by count for the University of Bologna, Italy, as per the given context, is not explicitly provided. However, it can be found by looking up the University of Bologna and the authors mentioned in a citation database.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "verbalizer_results": {
+                    "response": "The provided context does not include information on the cited by count for the University of Bologna, Italy, in relation to the paper 'MAGMA: a multiagent architecture for metaheuristics'.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "evidence_matching": {
+                    "response": "The cited by count for the writer's institution who published the paper 'MAGMA: a multiagent architecture for metaheuristics' is not directly provided in the context. However, you can calculate it by looking at the number of papers auth",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "verbalizer_plus_evidence_matching": {
+                    "response": "The cited by count for the writer's institution who published the paper 'MAGMA: a multiagent architecture for metaheuristics' cannot be directly determined from the provided context. However, Michela Milano's Google Scholar profile (",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "5da8b8e9-1ef5-4217-a06c-06b12324c991",
+        "question": "What was the focus of the author's undergraduate studies at Oberlin College?",
+        "true_answer": "probability and statistics",
+        "model": "mixtral-8x7b-32768",
+        "technique": "zero_shot",
+        "results": [
+            {
+                "prompt_template": "data/raw/prompt_template.txt",
+                "all_triples_results": {
+                    "response": "The focus of Thomas G. Dietterich's undergraduate studies at Oberlin College is not explicitly mentioned in the provided context.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "verbalizer_results": {
+                    "response": "The focus of Thomas G. Dietterich's undergraduate studies at Oberlin College is not specified in the provided context.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "evidence_matching": {
+                    "response": "The focus of Thomas G. Dietterich's undergraduate studies at Oberlin College is not specified in the provided context.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "verbalizer_plus_evidence_matching": {
+                    "response": "The provided context does not include information on Thomas G. Dietterich's undergraduate studies at Oberlin College.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "d808ca0f-9b70-47a6-9b96-fb8f75cf0f1a",
+        "question": "Where did the author of SPAA 1999 - Guest Editors' Foreword receive a B.Tech degree from?",
+        "true_answer": "Indian Institute of Technology, Madras",
+        "model": "mixtral-8x7b-32768",
+        "technique": "zero_shot",
+        "results": [
+            {
+                "prompt_template": "data/raw/prompt_template.txt",
+                "all_triples_results": {
+                    "response": "The Indian Institute of Technology (IIT), Kharagpur.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "verbalizer_results": {
+                    "response": "The context does not provide information about where Ramesh K. Sitaraman received his B.Tech degree from.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "evidence_matching": {
+                    "response": "IIT Madras (Indian Institute of Technology Madras)",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "verbalizer_plus_evidence_matching": {
+                    "response": "The provided context does not include information about where the author of SPAA 1999 - Guest Editors' Foreword received a B.Tech degree from.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "85c79cd1-0c96-4efd-a5a8-3ade69885173",
+        "question": "In which year did the author join Epic Games as an engineering fellow?",
+        "true_answer": "2021",
+        "model": "mixtral-8x7b-32768",
+        "technique": "zero_shot",
+        "results": [
+            {
+                "prompt_template": "data/raw/prompt_template.txt",
+                "all_triples_results": {
+                    "response": "The context does not provide information on when Simon L. Peyton Jones joined Epic Games as an engineering fellow.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "verbalizer_results": {
+                    "response": "There is no information provided in the context about when Simon L. Peyton Jones joined Epic Games as an engineering fellow.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "evidence_matching": {
+                    "response": "The provided context does not include information on when Simon L. Peyton Jones joined Epic Games as an engineering fellow.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "verbalizer_plus_evidence_matching": {
+                    "response": "The provided context does not include information about the year Simon L. Peyton Jones joined Epic Games as an engineering fellow.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "55d6d116-5fd7-4792-83e3-cecaeb3b35b9",
+        "question": "How many citations are there for the institution to which the author of the paper 'Dynamic Knowledge Graph Construction for Zero-shot Commonsense Question Answering' belongs?",
+        "true_answer": "15409629",
+        "model": "mixtral-8x7b-32768",
+        "technique": "zero_shot",
+        "results": [
+            {
+                "prompt_template": "data/raw/prompt_template.txt",
+                "all_triples_results": {
+                    "response": "The exact number of citations for the University of Washington, School of Computer Science & Engineering cannot be provided as the context only indicates authorship and not the number of citations. However, the total number of papers authored by Yejin Ch",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "verbalizer_results": {
+                    "response": "The provided context does not include information about the number of citations for Yejin Choi at Cornell University, Stony Brook University, or the University of Washington.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "evidence_matching": {
+                    "response": "The author, Yejin Choi, has 34 papers in the provided context.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "verbalizer_plus_evidence_matching": {
+                    "response": "The provided context does not include the number of citations for the institution to which the author of the paper 'Dynamic Knowledge Graph Construction for Zero-shot Commonsense Question Answering' belongs.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "4af2ea82-8bf9-46f6-a7e0-36b4604c5f67",
+        "question": "What is the type of organization where the author of the paper 'First order convergence and roots' works?",
+        "true_answer": "education",
+        "model": "mixtral-8x7b-32768",
+        "technique": "zero_shot",
+        "results": [
+            {
+                "prompt_template": "data/raw/prompt_template.txt",
+                "all_triples_results": {
+                    "response": "The author of the paper 'First order convergence and roots' works at Masaryk University, Department of Computer Science, Brno, Czech Republic.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "verbalizer_results": {
+                    "response": "The type of organization where the author of the paper 'First order convergence and roots' works is a university. Specifically, Daniel Král primarily works at the Masaryk University, Department of Computer Science, Brno, Czech Republic.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "evidence_matching": {
+                    "response": "The author, Daniel Král, is affiliated with a research institute or university, based on the context provided. However, the specific name or type of organization is not mentioned in the context.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "verbalizer_plus_evidence_matching": {
+                    "response": "The type of organization where the author of the paper 'First order convergence and roots' works is not specified in the provided context. However, based on the affiliations of the papers and the links provided, it can be inferred that Daniel Král",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "9aad6d9b-fc97-4c55-9630-8966eedb6f17",
+        "question": "In which field is Russell Greiner a specialist?",
+        "true_answer": "Machine learning and bioinformatics",
+        "model": "mixtral-8x7b-32768",
+        "technique": "zero_shot",
+        "results": [
+            {
+                "prompt_template": "data/raw/prompt_template.txt",
+                "all_triples_results": {
+                    "response": "Russell Greiner is a specialist in the field of machine learning and artificial intelligence, as evidenced by his research interests, affiliations, and numerous authored works in this domain.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "verbalizer_results": {
+                    "response": "Russell Greiner is a specialist in the field of Computer Science, specifically in Artificial Intelligence and Machine Learning. This is evident from his affiliation with the University of Alberta's Department of Computing Science and his contributions to various research publications related",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "evidence_matching": {
+                    "response": "Machine Learning, Artificial Intelligence, and Machine Learning Theory.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "verbalizer_plus_evidence_matching": {
+                    "response": "Machine learning and artificial intelligence.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "96650ffc-e614-4d50-be21-a8a01827b695",
+        "question": "What is the i10Index of the researcher who published A Dynamic, Distributed, Hierarchical Load Balancing for HLA-Based Simulations on Large-Scale Environments in 2010 with Robson E. De Grande from Brock University, Canada?",
+        "true_answer": "402",
+        "model": "mixtral-8x7b-32768",
+        "technique": "zero_shot",
+        "results": [
+            {
+                "prompt_template": "data/raw/prompt_template.txt",
+                "all_triples_results": {
+                    "response": "The i10Index of the researcher who published \"A Dynamic, Distributed, Hierarchical Load Balancing for HLA-Based Simulations on Large-Scale Environments\" in 2010 with Robson E",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "verbalizer_results": {
+                    "response": "The provided context does not include the i10Index for the researcher Azzedine Boukerche or the publication A Dynamic, Distributed, Hierarchical Load Balancing for HLA-Based Simulations on Large-Scale Env",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "evidence_matching": {
+                    "response": "The i10Index of the researcher who published \"A Dynamic, Distributed, Hierarchical Load Balancing for HLA-Based Simulations on Large-Scale Environments\" in 2010 with Robson E",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "verbalizer_plus_evidence_matching": {
+                    "response": "I'm unable to generate the i10Index for the researcher as they are not named in the provided context. The context includes several papers and a conference edited by Azzedine Boukerche, but it does not mention the i",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "cf453550-d91c-4dbf-acec-510c5968e2e7",
+        "question": "From which university did the creator of Affect Modeling with Field-based Physiological Responses receive a Bachelor of Applied Science?",
+        "true_answer": "Simon Fraser University",
+        "model": "mixtral-8x7b-32768",
+        "technique": "zero_shot",
+        "results": [
+            {
+                "prompt_template": "data/raw/prompt_template.txt",
+                "all_triples_results": {
+                    "response": "The creator of Affect Modeling with Field-based Physiological Responses received a Bachelor of Applied Science from the University of Washington, Seattle, WA, USA.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "verbalizer_results": {
+                    "response": "Anind K. Dey received a Bachelor of Applied Science from the University of Waterloo, Canada.\n\nReference(s):\nhttp://www.cs.cmu.edu/~anind/",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "evidence_matching": {
+                    "response": "Carnegie Mellon University. (Reference: Anind K. Dey link <https://mathgenealogy.org/id.php?id=78267>)",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "verbalizer_plus_evidence_matching": {
+                    "response": "Carnegie Mellon University",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                }
+            }
+        ]
+    }
+]
