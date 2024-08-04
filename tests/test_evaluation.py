@@ -14,5 +14,5 @@ def evaluation4settings():
 
 if __name__ == '__main__':
     # evaluation4settings()
-    process_metric_for_all_files("/Users/celes/Documents/Projects/ARDI-Scholarly-QALD/results/sparql",
-                                 "/Users/celes/Documents/Projects/ARDI-Scholarly-QALD/data/raw/raw_train_dataset.json")
+    process_metric_for_all_files("/results/experiments_templates/processed",
+                                 "/data/raw/raw_train_dataset.json")

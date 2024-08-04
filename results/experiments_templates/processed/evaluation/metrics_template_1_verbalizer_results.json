@@ -1,8 +1,8 @@
 {
-    "rouge1": 13.0781,
+    "rouge1": 13.2695,
     "rouge2": 3.2,
-    "rougeL": 12.7921,
-    "rougeLsum": 13.0305,
+    "rougeL": 12.9477,
+    "rougeLsum": 13.0177,
     "gen_len": 100.0,
     "f1": 0.1065,
     "recall": 0.0562,
