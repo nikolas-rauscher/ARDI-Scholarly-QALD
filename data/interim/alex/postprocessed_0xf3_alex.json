@@ -1,0 +1,2890 @@
+[
+    {
+        "id": "0xf3",
+        "question": "hello",
+        "answer": "-",
+        "tripples_number": 0,
+        "author_uri": [
+            "https://semopenalex.org/author/A5069855349"
+        ],
+        "all_triples": [
+            {
+                "entity": "https://orcid.org/0000-0003-4941-8443",
+                "triples": [
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "is",
+                        "object": "Author"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "modified",
+                        "object": "2024-05-22"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "citedByCount",
+                        "object": "6205"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "worksCount",
+                        "object": "360"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": " written paper amount in year 2012:",
+                        "object": "12"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": " written paper amount in year 2012:",
+                        "object": "12"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": " written paper amount in year 2013:",
+                        "object": "18"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": " written paper amount in year 2013:",
+                        "object": "18"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": " written paper amount in year 2014:",
+                        "object": "9"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": " written paper amount in year 2014:",
+                        "object": "9"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": " written paper amount in year 2015:",
+                        "object": "8"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": " written paper amount in year 2015:",
+                        "object": "8"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": " written paper amount in year 2016:",
+                        "object": "11"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": " written paper amount in year 2016:",
+                        "object": "11"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": " written paper amount in year 2017:",
+                        "object": "8"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": " written paper amount in year 2017:",
+                        "object": "8"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": " written paper amount in year 2018:",
+                        "object": "8"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": " written paper amount in year 2018:",
+                        "object": "8"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": " written paper amount in year 2019:",
+                        "object": "7"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": " written paper amount in year 2019:",
+                        "object": "7"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": " written paper amount in year 2020:",
+                        "object": "3"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": " written paper amount in year 2020:",
+                        "object": "3"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": " written paper amount in year 2021:",
+                        "object": "6"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": " written paper amount in year 2021:",
+                        "object": "6"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": " written paper amount in year 2022:",
+                        "object": "4"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": " written paper amount in year 2022:",
+                        "object": "4"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": " written paper amount in year 2023:",
+                        "object": "5"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": " written paper amount in year 2023:",
+                        "object": "5"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": " written paper amount in year 2024:",
+                        "object": "1"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": " written paper amount in year 2024:",
+                        "object": "1"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "h-index",
+                        "object": "36"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "name",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "2YrMeanCitedness",
+                        "object": "1.6"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "i10Index",
+                        "object": "77"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "alternativeName",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "alternativeName",
+                        "object": "T. Wilson"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "alternativeName",
+                        "object": "T. D. Wilson"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "alternativeName",
+                        "object": "T.D Wilson"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "alternativeName",
+                        "object": "Thomas D. Wilson"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "alternativeName",
+                        "object": "T D. Wilson"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "alternativeName",
+                        "object": "TK Wilson"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "alternativeName",
+                        "object": "Taryn Wilson"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "alternativeName",
+                        "object": "Tom D. Wilson"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "member of",
+                        "object": [
+                            "Glasgow Caledonian University"
+                        ]
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "orcidId",
+                        "object": "https://orcid.org/0000-0003-4941-8443"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "scopus",
+                        "object": "http://www.scopus.com/inward/authorDetails.url?authorID=7403496067&partnerID=MN8TOARS"
+                    },
+                    {
+                        "subject": "IT strategies for information management",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Disinformation as Collaborative Work",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Automation and customization of rendered web pages",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Understanding the Structure and Dynamics of Multi-platform Information Operations",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Implementing a new health management information system in Uganda",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "ON USER STUDIES AND INFORMATION NEEDS",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "The management information requirements of heads of university departments: a critical success factors approach",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Information seeking and mediated searching study. Part 3. Successive searching",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Exploring models of information behaviour: the ‘uncertainty’ project",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "The nonsense of knowledge management",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "UPA and CHI surveys on usability processes",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Information Literacy Training for Postgraduate and Postdoctoral Researchers: a National Survey and its Implications",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "User modeling: a globalperspective",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "2013 IEEE Consumer Electronics Society Officers and Committee Chairs",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Information systems concepts for management",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Managing information as a corporate resource",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Teams, markets and systems: business innovation and information technology",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Knowledge application: the knowledge system in society",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Integration of Hazard Identification Software with Process Design Systems",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Information intermediaries for industry in Portugal: a training programme and its impact",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "On conceptual models for information seeking and retrieval research.",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Information overload: context and causes",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Education for Information and the Internet",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Revisiting user studies and information needs",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Human inquiry: a sourcebook of new paradigm research",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "The Income Terms of Trade of Developed and Developing Countries",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Models in Information Behavior Research",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Business information courses: a consideration of requirements",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Research Needs in Librarianship",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Developing a Digital Libraries Master’s Programme",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Business use of the world-wide web",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Information‐seeking and mediated searching. Part 1. Theoretical framework and research design",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": " Reservoir Characterization Using Intelligent Seismic Inversion ",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Information seeking and mediated searching: Part 2. Uncertainty and its correlates",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Approaches to Information Management in County Planning Authorities in England and Wales",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "A community living management program for people with disabilities who have moved out of nursing homes: a pilot study",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Modeling Users' Successive Searches in Digital Environments",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "The cognitive approach to information-seeking behaviour and information use",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "INFORMATION NEEDS IN LOCAL AUTHORITY SOCIAL SERVICES DEPARTMENTS: AN INTERIM REPORT ON PROJECT INISS",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Trade Unions of the World 1992-93",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Deconstructing ‘knowledge management’",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Business process redesign and the UK insurance industry",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "THE EPISTEMOLOGICAL DIMENSION OF INFORMATION SCIENCE AND ITS IMPACT ON LIBRARY AND ARCHIVAL EDUCATION",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Towards an information management curriculum",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Structural Studies on Dinuclear Ruthenium(II) Complexes That Bind Diastereoselectively to an Antiparallel Folded Human Telomere Sequence",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "EQUIP: a European Survey of Quality Criteria for the Evaluation of Databases",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Monosomy and trisomy in bovine embryos sired by bulls heterozygous for the Robertsonian translocation chromosome",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "MBBR and IFAS Pilot Program for Denitrification at Fairfax County's Noman Cole Pollution Control Plant",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Editorial",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "The information user: past, present and future",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Reviews",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Library/Information Services in Local Authority Social Services Departments: Results of Two Surveys",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Optimal Management of a Renewable and Replaceable Resource: The Case of Coastal Groundwater",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Assembling Strategic Narratives",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Mapping the curriculum in information studies",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Information system strategies in the UK Insurance Industry",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Evaluating the SHAMAN framework by memory and industrial engineering institutions",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Trust in Healthcare: An Information Perspective",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Inside an Occupational Therapy–Disability Community Partnership to Promote Health Management: Ethnography of a Research Collaboration",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "A Model of University-Community Partnerships for Occupational Therapy Scholarship and Practice",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Publishing, bookselling and the World Wide Web",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "The case of the e-book in small language culture: media technology and the digital society",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Information overload: implications for healthcare services",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Managing information for the competitive edge",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Information seeking and mediated searching. Part 4. Cognitive styles in information seeking",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Information strategies in UK higher education institutions",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "The new internet business book",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "The Local Impact of Libraries in a Global Society",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Informacijos naudojimas priimant sprendimus : visuomeninio judejimo Pasaulio prekiautojai už sažininga prekyba pavyzdys [Use of information in decision making: case of a social movement Världsbutikerna för Rättvishandel]",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "The impact of social services research",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Future Scenarios: The Context of Strategic Planning",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Local library co-operation in the service of higher education",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "A dinuclear ruthenium(ii) complex that functions as a label-free colorimetric sensor for DNA",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Business use of the World Wide Web, with particular reference to UK companies",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Cross-Platform Disinformation Campaigns: Lessons Learned and Next Steps",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Supporting strengths: the work of Julian Housing",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "The tensions of e-book creation and distribution in a small-language culture",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Information seeking and mediated searching. Part 5. User–intermediary interaction",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Managing information: Information systems for today's general manager",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Institutional repository and publication of university research results : a case of a Swedish regional university",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Ambulances on stamps.",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Cross-platform Information Operations: Mobilizing Narratives &amp; Building Resilience through both 'Big' &amp; 'Alt' Tech",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "E-Books in Swedish Public Libraries: Policy Implications",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Ecosystem or Echo-System? Exploring Content Sharing across Alternative Media Domains",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Differentiating quadruplexes: binding preferences of a luminescent dinuclear ruthenium(ii) complex with four-stranded DNA structures",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Software failure: management failure. Amazing stories and cautionary tales",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Publish or perish: Meet the editors a special panel",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "INFORMATION INNOVATIONS IN SOCIAL SERVICES DEPARTMENTS: A THIRD REPORT ON PROJECT INISS",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "‘Information Science’ and Research Methods",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Optimizing weight loss outcomes for bariatric surgery patients: the role of physical activity",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Information science and information systems: Conjunct subjects disjunct disciplines",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Strengthening health information management in an East African country using external training materials",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Information Management: A New Focus for Integration?",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Strategic planning for information and technology in higher education",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "A re-examination of information seeking behaviour in the context of activity theory",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Tensions and contradictions in the information behaviour of board members of a voluntary organization",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Designing large-scale web sites: A visual design methodology",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Rejection of an innovation: health information management training materials in east Africa",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "The information user: past, present and future",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Plus Ça Change, Plus C'est Différent: A Report from the KALIPER Project on Six Case Studies in LIS Education",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Philosophical foundations and research relevance: issues for information research",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "A guide for selecting statistical techniques for analyzing social science data",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "INFORMATION SERVICES IN ENGLISH SOCIAL SERVICES DEPARTMENTS:",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "e-book phenomenon",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Contact: human communication and its history",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "WordPerfect",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Publishing activity and attitudes towards open access publishing in the University of Borås : results of a study undertaken by the Library & Learning Resources and the Swedish School of Library and Information Science",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "På säker grund : en delfiundersökning om vilken biblioteksforskning som behövs",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Assessing digital preservation frameworks",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Professional education and subsequent careers in library/information work: a follow-up study of former students on the MA/MSc Information Studies (Social Sciences) course at the University of Sheffield",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Tendencias recientes en los estudios de usuarios: investigación acción y métodos cualitativos Recent trends in user studies: action research and qualitative methods",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Review of: Wooffitt, R. Conversation analysis and discourse analysis: a comparative and critical introduction. London: Sage Publications, 2005.",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "PERICLES - Promoting and Enhancing Reuse of Information throughout the Content Lifecycle taking account of Evolving Semantics : Poster - iPres 2013 - Lisbon.",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Informacijos naudojimas priimant sprendimus : visuomeninio judejimo",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Coal trade model",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Business information needs. Research and the information provider",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "President's Column: Greetings LITA Members and Friends!",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "An unexpected selectivity of a propranolol-derived molecular imprint for tamoxifen",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "A Delphi investigation into the research needs in Swedish librarianship",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Training information service specialists in the less-favoured regions of the European Union (TRAIN-ISS): the diploma/MSc programme at the University of Sheffield",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "An illuminative evaluation programme for assessing information services",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Overcoming the barriers to the implementation of information system strategies",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Book Reviews, Part 1",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Vertical trust/mistrust during information strategy formation",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Our Peers—Empowerment and Navigational Support (OP-ENS): Development of a Peer Health Navigator Intervention to Support Medicaid Beneficiaries With Physical Disabilities",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Union Learning Representatives as a Tool for Workforce Development in the UK Public Services",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Information for business: the business of information",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "The implementation of information system strategies in UK companies: Aims and barriers to success",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Toward a theoretical framework for information retrieval (IR) evaluation in an information seeking context",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "TPAD vs Other Thermophilic Anaerobic Digestion Processes: A Re-Evaluation",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "PERICLES - Promoting and Enhancing Reuse of Information throughout the Content Lifecycle taking account of Evolving Semantics",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Carbon Sequestration and Sustainable Forest Management: Common Aspects and Assessment Procedures",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Microcomputer methods for social scientists",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Information on the move: the use of mobile information systems by UK police forces",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Managing information as a corporate resource",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "E-books",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "The IRM imperative: Strategies for managing information resources",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "An introduction to information engineering: From strategic planning to information systems",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Information services to industry in Northern Portugal: Planning RIA (rede de informação associativa)",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "En Delfi-studie om forskningsbehovet i biblioteksverksamhet",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Monitoring and evaluating information-related research",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Sixth IEEE International Conference on Consumer Electronics-Berlin [Conference Reports]",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Overcoming the Barriers to the Implementation of Information System Strategies",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "R Interface to the ClassyFire RESTful API [R package classyfireR version 0.3.6]",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Evaluating the SHAMAN Digital Preservation Framework for memory institutions",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Shaman : D14.3 - Report on demonstration and evaluation activity in the domain of industrial design and engineering",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "The HTML sourcebook. A complete guide to HTML 3.0",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Theoretical approaches to e-book research",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "We Have Ways of Making You . . . . . Read",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Uncertainty and its correlates",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "The impact of research",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Book Reviews : Ford, N. Expert systems and artificial intelligence: an information manager's guide. 1991, London: Library Association Publishing Ltd., 304pp, £32.50, ISBN 0 85365 909 5",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Silicon samurai: how Japan conquered the world's IT industry",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Interface to the 'Metabolights' REST API [R package metabolighteR version 0.1.2]",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Technology 2001: The future of computing and communications",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Designing and implementing a balanced scorecard: lessons learned in nonprofit implementation.",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Conference Report: Third Nordic Conference on Scholarly Communication, Lund 24-25 April, 2006",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "WeCanConnect: Development of a Community-Informed mHealth Tool for People with Disabilities and Cancer",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Information science and information systems: Conjunct subjects disjunct disciplines",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Review of: Herrero, L. Viral change: the alternative of slow, painful and unsuccessful management of change in organizations. Beaconsfield, UK: Meeting Minds, 2006",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Review of : Hoekman, R. Designing the obvious: a common sense approach to Web application design. Berkeley, CA: New Riders, 2006",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "The evaluation of current awareness services in local government",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "The microelectronic revolution: the complete guide to the new technology and its impact on society",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Information and Business Performance: A Study of Information Systems and Services in High-Performing Companies",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Shaman: D14.2 - report on demonstration and evaluation activity in the domain of memory institututions",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Institutional open archives : where are we now?",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "The context of information strategies: Competition or collaboration?",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "A local study of journal use",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "The e-book phenomenon: a disruptive technology",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Managing international development",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "<i>Information Research</i>: a case study in the free electronic publication of research",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Assessment of an illuminative evaluation programme for information services",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Information in local government: challenge and opportunity",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Keynesian Economics.",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Spotlight Tweets: A Lens for Exploring Attention Dynamics within Online Sensemaking During Crisis Events",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Research Priorities in Social Welfare Library and Information Work",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Business use of the World Wide Web: a report on further investigations",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Planet Google. How one company is transforming our lives.",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Designing a Strategy to Effectively Communicate the Balanced Scorecard",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Generating evidence : a research priorities agenda for Swedish librarianship",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Review : Case, Donald O. Looking for information: a survey of research on information seeking, needs, and behavior. 2nd ed. Amsterdam: Academic Press, 2007",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Introducing information management",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Review of: Kling, R., Rosenbaum, H. & Sawyer, S. Understanding and communicating social informatics: a framework for studying and teaching the human contexts of information and communication technologies. Medford, NJ: Information Today, Inc., 2005.",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Review : Choo Chun Wei. The knowing organization: how organizations use information to construct meaning, create knowledge, and make decisions. 2nd. ed. New York, Oxford: Oxford University Press, 2006",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "ScreenABLE: Breast Cancer Screening among Women with Disabilities from Community Identified Challenges to Community-Based Programs",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Review of : Abramson, B. Digital phoenix: why the information economy collapsed and how it will rise again. Cambridge, MA: MIT Press, 2006",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "askSam for windows",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Review of the work of Bailer HoDS Committee",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "What's newsworthy about 'information seeking'? An analysis of Google's News Alerts",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Review of : Kaptelinin, V. & Nardi, B.A. Acting with technology: activity theory and interaction design. Cambridge, MA: MIT Press, 2006",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Software Systems for Managerial Work: Some Conclusions from Information Research",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Research and practice: 21 years of library research in the UK (Nick Moore)",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Švedijos bibliotekų mokslinio tyrimo reikmės [Research needs of Swedish libraries]",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Information, communication and society",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Fenomen e-knjige: tehnološka prekretnica",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "A Delphi study of research needs for Swedish libraries",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Tendencias do ensino de biblioteconomia e ciencia da informacao no reino unido",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "‘In the beginning was the word…’: social and economic factors in scholarly electronic communication",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Review of : Sunstein, C.R. Infotopia: how many minds produce knowledge. Oxford: Oxford University Press, 2006",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "The e-book phenomenon in Sweden",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Report from Vancouver District",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Information uses in social services departments",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Review of : Sawchuk, Peter H., Duarte, Newton and Elhammoumi, Mohamed, (Editors). Critical perspectives on activity theory: explorations across education, work, and everyday life. Cambridge: Cambridge University Press, 2006",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Gestão da eficiência em Serviços de Documentação e Informação",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Critical Approaches to Information Technology in Librarianship: Foundations and Applications",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Review of : Jaffe, Adam B. and Lerner, Josh. Innovation and its discontents: how our broken patent system is endangering innovation and progress, and what to do about it. Princeton, NJ: Princeton University Press, 2007",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Mastering intranets: The windows 95/NT edition",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "ULSTER AND EIRE",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Review of: Morville, P. and Rosenfeld, L. Information architecture for the World Wide Web. 3rd ed. Sebastopol, CA: O'Reilly, 2007",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Computation and controversy: Value conflicts and social choices",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Reviews : Gray, J. National information policies: problems and progress. London, Mansell Publishing Ltd, 1988. viii, 143 pp. £27.50. ISBN 0 7201 1994 9",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Reviews : Buckland, Michael K. Library services in theory and context, 2nd edn. Oxford, Pergamon Press, 1988. xiv, 251 pp. £21.95 hbk: ISBN 008 035755 5. £8.95 pbk: ISBN 008 135754 7",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Steering a course with Magellan",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "The HTML sourcebook. A complete guide to HTML 3.0 (2nd edition)",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Social and educational forces and education for librarians",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Herald of Holiness - January 19, 1966",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Review of: Cole, Charles Information need: a theory connecting information search to knowledge formation. Medford, NJ: Information Today, Inc., 2012.",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Long live radio",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "EQUIP: a European survey of quality criteria for the evaluation of databases",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "The development of the information management research area",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "White Helmets Twitter Dataset",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "INFORMATION NEEDS IN LOCAL AUTHORITY SOCIAL SERVICES DEPARTMENTS: A SECOND REPORT ON PROJECT INISS",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Moments of Impact",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "The development of user studies at Sheffield University, 1963-88",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Stress Characterization Above and Below a Locked Subduction Interface",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Demographics of an International Influence Operation Affecting Facebook Users in the United States",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "The SHAMAN project on digital preservation",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Review of: Koizumi, Masanori. Inherent strategies in library management. Kidlington, UK: Chandos Publishing, 2017.",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Information and business performance: a study of information systems and services in high-performing companies",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "The conceptual framework",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Information misbehaviour: modelling the motivations for the creation, acceptance and dissemination of misinformation",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Information behaviour in research network building by relocated scholars in Swedish higher education: a report on a pilot project",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "The New Review of Information Behaviour Research Volume 1 Issue December",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Simplicity, usability: secrets of Web design - Review of: Creative HTML design.2, by Lynda and William Weinman. Learning Web design: a beginner's guide to HTML, graphics, and beyond, by Jennifer Niederst. Don't make me think! A common sense approach to Web usability, by Steve Krug. Designing Web usability, by Jakob Nielsen.",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Review of: Research Information Network. E-journals: their use, value and impact. London: Research Information Network, 2009.",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Review of: Fidel, Raya Human information interaction: an ecological approach to information behavior. Cambridge, MA: MIT Press, 2012.",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "rawReadeR: Version 0.1.0 - Stable Relase",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Review of: Cravens, Jesse & Burtoft, Jeff. HTML5 hacks: tips & tools for creating interactive Web applications. Sebastopol, CA: O'Reilly, 2013.",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Review of: McFarlane, Nigel. Firefox hacks: tips & tools for next-generation Web browsing. Sebastopol, CA: O'Reilly, 2005.",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "EndNote plus 2.3 (enhanced reference database and bibliography maker), with EndLink 2.1 (link to on-line and CD-ROM databases)",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "The development of the European information market through education and training – the Portuguese experience",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "National information policy: the Portuguese legal framework ( 1980-1992)",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Leadership of organizations: The executive's complete handbook",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Part 503 Comes of Age",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Review of: Disk Drill PRO. Atlanta, GA: 508 Software LLC.",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Supporting institution-to-community transitions for people with psychiatric disabilities: Findings and implications from a participatory action research project",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Information engineering: Strategic systems development",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Book Reviews",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Summary report on a survey of e-book provision in Swedish public libraries",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Proceedings of the 7th conference on Information Seeking in Context",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "LIS research : What do practitioners want to see researched?",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Curiosity and information-seeking behaviour: a review of psychological research and a comparison with the information science literature",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Demography and COVID-19: risks, responses and impacts",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Assembly language for the 6502",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Editorial Commentary",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Preliminary Material",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Afterword",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "2013 IEEE Consumer Electronics Society Officers and Committee Chairs",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Social dimensions of information technology: issues for the new millenium",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "2013 IEEE Consumer Electronics Society Officers and Committee Chairs",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Bibliography",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Hypopharynx tumors",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Degree of success",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Book Reviews Part 1",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Editorial",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Book Reviews",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "The MSc in Information Management of the University of Sheffield taught in Portugal: an example of knowledge transfer in education",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Oropharynx tumors",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Population forecasting 1895–1945: The transition to modernity by Henk de Gans. Kluwer Academic Publishers, Dordrecht, 1999. No. of pages: xviii + 291. Price: £75.00 (hardback). ISBN 0 7923 5537 7.",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Editorial",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Guest Editorial",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Preface",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "ScreenABLE: Breast Cancer Screening among Women with Disabilities from Community Identified Challenges to Community-Based Programs",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Oropharynx tumors",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Editorial",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "askSam",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Fractured Rock Geophysical Studies in the Clare Valley, South Australia",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "ENGLAND AD 2200: HOW WOULD YOU LIKE IT TO BE? by John Barker. Gaia Watch, Sheffield, 1998. No. of pages: 189. Price: £7.00 (paperback). ISBN 0 95335320 6",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Oropharynx tumors",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Teorijski pristupi istraživanju e-knjige",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Data base administration",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Programming for the BBC micro",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Assessing digital preservation frameworks: the approach of the SHAMAN projectapproach of the SHAMAN project",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Evaluation and action in the social environment",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "The attitudes and opinions to beef carcass classification of retailers who trade with Kilcoy abattoir.",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Information management in public administration",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "The information technology revolution",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Investigating the impact of the e-book in Sweden.",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Understanding CONTEST: the foundation and the future",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Review of : Hoekman, R. Designing the obvious: a common sense approach to Web application design. Berkeley, CA: New Riders, 2006, review no. R250",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "You are Here, We are There: Tracing Nid’s Design Histories",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "The Smithsonian Institution and Its Anthropologic Work",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "AN INTERNATIONAL COMPARISON OF ANAEROBIC DIGESTER DESIGNS AND COSTS",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Review of: Sarokin, David and Schulkin, Jay. Missed information. Better information for building a wealthier, more sustainable future.. Cambridge, MA: MIT Press, 2016.",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Review of: Boden, Margaret A. AI, its nature and future. Oxford: Oxford University Press, 2016.",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "THE EPISTEMOLOGICAL DIMENSION OF INFORMATION SCIENCE AND ITS IMPACT ON LIBRARY AND ARCHIVAL EDUCATION",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Review of : TiddlyWiki 2.1.3. Osmosoft.com, 2007,review no. SR24",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Review of: Bates, Marcia J. Selected works. Three volumes. Berkeley, CA: Ketchikan Press, 2016.",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "A Search on the Internet for Evidence of Time Travel",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Wilsontom/Classyfirer: Version 0.1.1",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Number Eighty Seven: Part 1",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "The Birmingham Consultative Institution",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Wellsprings of knowledge: Building and sustaining the sources of innovation",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Turning the Big Mac Index into the Medical MAC Index",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "ICCE 2014 Preview [Conference Reports]",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Review of : TiddlyWiki 2.1.3. Osmosoft.com, 2007",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Lotus screencam: multimedia screen and sound capture utility for windows (Release 1.1)",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "The end of bureaucracy and the rise of the intelligent organization",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "From the ICCE 2014 Conference Chair [Conference Review]",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "ARCHIVE: “In the Beginning was the Word...” Social and Economic Factors in Scholarly Electronic Communication",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "ICCE 2013 Maintains Growth Trend [Society News]",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "The CE Society AdCom Election Procedure [Society News]",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "From Librarianship to Information Management",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "For Truth In Testing, Try An Independent Lab",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "What to study: Generating and developing research questions",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "The managerial challenge of new office technology",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "FIEmspro: Stable version of FIEmspo legacy",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Tietojärjestelmästrategiat ja niiden merkitys tietohallinnon koulutukselle",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "The philosophy of social research",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Applying computers in social service and mental health agencies: A guide to selecting equipment, procedures and strategies",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "The cognitive paradigm",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Teletex",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "SHAMAN D14.4 : Report on demonstration and evaluation activity in the domain of e-science",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "A Política de Informação na UE Enquadramento Legislativo em Portugal (1980-1992)",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Memories of Paulo",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Principles of management information systems",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Organizational Aspects of Collaboration on Local Information Management by Thai Provincial University Libraries",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "ULSTER AND EIRE",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Reflex",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Kurt W. Weiler (1943–2016)",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Book Reviews",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Teaching information management at the University of Sheffield",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Australia's uncertain demographic future",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Information technology and the research process. Proceedings of a conference held at Cranfield Institute of Technology, UK, 18–21 July 1989",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Smart cards: Principles, practice, applications",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Information seeking: Assessing and anticipating user needs",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Language Limitations in Rumor Research? Comparing French and English Tweets Sent During the 2015 Paris Attacks.",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Prem Rawat and Counterculture: Glastonbury and New Spiritualities, RonGeaves, Bloomsbury Academic, 2020 (ISBN 978‐1‐350‐09087‐3), xiv + 238 pp., hb £85",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "The Future for Unions",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "The Making of a Modern Temple and a Hindu City: Kalighat and Kolkata, DeonnieMoodie, Oxford University Press, 2019 (ISBN 978‐0‐19‐088526‐7), xvi + 224 pp., hb £64",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Charleston and Savannah: The Rise, Fall, and Reinvention of Two Rival Cities",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "P22 Fibrosis in delayed wound healing in diabetes: the role of insulin-like growth factor binding proteins",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "White Helmets YouTube Dataset",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Proceedings of the Anaesthetic Research Society Meeting Royal College of Anaesthetists, London, UK, December 13–14, 2012",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "The Question Questioned",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "The electronic office: A management guide to the office of the future",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "It is Not All Fun and Games: Breaking News Consumption on Snapchat",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Trials and Tribulations? Editing Information Research, an Open Access Electronic Journal",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Electronic service delivery: Themes and issues in the public sector. A forum discussion",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Herald of Holiness - December 27, 1967",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Book review : An introduction to chain indexing: Web edition of a programmed text. Originally published in 1971 by Clive Bingley Ltd",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "松本盆地低重力の解釈〔英文〕 (日本の新生代地史とテクトニクス )",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Oropharynx tumors",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Book Review: Libraries in the information society, Artificial neural networks for information retrieval in a libraries context, Chipcard use in libraries and information webs. Recommendations to create intelligent libraries in Europe, Business analysis of the library system market in Europe, Library performance indicators and library management tools, Deposit collections of electronic publications, Technical briefings for system librarians, Knowledge models for networked library services, …",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Editorial",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Hypopharynx tumors",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "MBBR AND IFAS PILOT PROGRAM FOR DENITRIFICATION AT FAIRFAX COUNTY'S NOMAN COLE POLLUTION CONTROL PLANT",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "WeCanConnect: Development of a Community-Informed mHealth Tool for People with Disabilities and Cancer",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Youth advocacy and campaigning in the lead up to COP26",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Interview With the Entrepreneur—Anna Iarotska",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "A Model of University-Community Partnerships for Occupational Therapy Scholarship and Practice",
+                        "predicate": "written by",
+                        "object": "Tom Wilson"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies, University of Sheffield, Sheffield S10 2TN, United Kingdom while writing paper: Business information courses: a consideration of requirements"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Chemistry, University of Sheffield, Sheffield, UK while writing paper: A dinuclear ruthenium(ii) complex that functions as a label-free colorimetric sensor for DNA"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies, University of Sheffield, Sheffield S10 2TN, England while writing paper: WordPerfect"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Senior Lecturer in Information Studies, Postgraduate School of Librarianship and Information Science, University of Sheffield, and Project Head, Project INISS and Project LOGI while writing paper: INFORMATION SERVICES IN ENGLISH SOCIAL SERVICES DEPARTMENTS:"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies; University of Sheffield, UK while writing paper: Overcoming the Barriers to the Implementation of Information System Strategies"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Information Research: an international electronic journal while writing paper: Conference Report: Third Nordic Conference on Scholarly Communication, Lund 24-25 April, 2006"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies, University of Sheffield, UK while writing paper: Information seeking and mediated searching: Part 2. Uncertainty and its correlates"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies, University of Sheffield, Sheffield S10 2TN, UK while writing paper: Information seeking and mediated searching. Part 4. Cognitive styles in information seeking"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies, University of Sheffield, Sheffield S10 2TN, UK while writing paper: Information seeking and mediated searching study. Part 3. Successive searching"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies, University of Sheffield, Western Bank, Sheffield S10 2TN, UK. Tel: + ; fax: while writing paper: Review of the work of Bailer HoDS Committee"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies, University of Sheffield, UK while writing paper: Software Systems for Managerial Work: Some Conclusions from Information Research"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies, University of Sheffield, Sheffield, UK while writing paper: Research and practice: 21 years of library research in the UK (Nick Moore)"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Borås, Borås, Švedska while writing paper: Fenomen e-knjige: tehnološka prekretnica"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "1105 Broadway W., Vancouver while writing paper: Report from Vancouver District"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Sheffield, UK while writing paper: Future Scenarios: The Context of Strategic Planning"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Faculdade de Engenharia da#R##N#Universidade do Porto while writing paper: Gestão da eficiência em Serviços de Documentação e Informação"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Sheffield Sheffield, UK while writing paper: Critical Approaches to Information Technology in Librarianship: Foundations and Applications"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Sheffield, UK while writing paper: Mastering intranets: The windows 95/NT edition"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies University of Sheffield Sheffield S10 2TN U.K. while writing paper: Computation and controversy: Value conflicts and social choices"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Sheffield while writing paper: Reviews : Gray, J. National information policies: problems and progress. London, Mansell Publishing Ltd, 1988. viii, 143 pp. £27.50. ISBN 0 7201 1994 9"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Sheffield while writing paper: Reviews : Buckland, Michael K. Library services in theory and context, 2nd edn. Oxford, Pergamon Press, 1988. xiv, 251 pp. £21.95 hbk: ISBN 008 035755 5. £8.95 pbk: ISBN 008 135754 7"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies, University of Sheffield, Sheffield S10 2TN, England while writing paper: Steering a course with Magellan"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Sheffield, UK while writing paper: The HTML sourcebook. A complete guide to HTML 3.0 (2nd edition)"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Professor and Head of Department, Department of Information Studies, Sheffield University while writing paper: Social and educational forces and education for librarians"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "(University of Washington) while writing paper: White Helmets Twitter Dataset"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Access Living, 614 W. Roosevelt Road, Chicago, IL, 60607 while writing paper: A Model of University-Community Partnerships for Occupational Therapy Scholarship and Practice"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Emeritus in Information Management while writing paper: ‘Information Science’ and Research Methods"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Postgraduate School of Librarianship and Information Science, University of Sheffield while writing paper: INFORMATION NEEDS IN LOCAL AUTHORITY SOCIAL SERVICES DEPARTMENTS: AN INTERIM REPORT ON PROJECT INISS"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Sheffield Sheffield U.K while writing paper: The New Review of Information Behaviour Research Volume 1 Issue December"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies, University of Sheffield, Sheffield S10 2TN, UK while writing paper: The cognitive approach to information-seeking behaviour and information use"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies University of Sheffield Sheffield SI0 2TN UK while writing paper: Managing information for the competitive edge"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Sheffield while writing paper: Information and business performance: a study of information systems and services in high-performing companies"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Leeds University Business School, UK, while writing paper: The information user: past, present and future"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies, University of Sheffield, UK, while writing paper: Information overload: implications for healthcare services"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies, University of Sheffield, Sheffield S10 2TN, UK while writing paper: The development of the European information market through education and training – the Portuguese experience"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Sheffield, UK while writing paper: National information policy: the Portuguese legal framework ( 1980-1992)"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Sheffield, UK while writing paper: Leadership of organizations: The executive's complete handbook"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Systems University of Sheffield, UK while writing paper: askSam for windows"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Sveučilište u Boråsu while writing paper: Theoretical approaches to e-book research"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Chemistry, University of Sheffield, Sheffield, UK while writing paper: Differentiating quadruplexes: binding preferences of a luminescent dinuclear ruthenium(ii) complex with four-stranded DNA structures"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Washington, Department of Human Centered Design & Engineering while writing paper: Cross-Platform Disinformation Campaigns: Lessons Learned and Next Steps"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Washington while writing paper: Demographics of an International Influence Operation Affecting Facebook Users in the United States"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Postgraduate School of Librarianship and Information Science, University of Sheffield while writing paper: INFORMATION NEEDS IN LOCAL AUTHORITY SOCIAL SERVICES DEPARTMENTS: A SECOND REPORT ON PROJECT INISS"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": " University of Sheffield, UK while writing paper: Software failure: management failure. Amazing stories and cautionary tales"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Professor, Department of Information Studies, University of Sheffield, Western Bank, Sheffield S10 2TN while writing paper: Deconstructing ‘knowledge management’"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Washington while writing paper: Ecosystem or Echo-System? Exploring Content Sharing across Alternative Media Domains"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Leeds University Business School while writing paper: The information user: past, present and future"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Högskolan i Bora °s, Sweden and Professor Emeritus,                        University of Sheffield, UK while writing paper: Philosophical foundations and research relevance: issues for information research"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Demography and Ageing Unit, Melbourne School of Population and Global Health, The University of Melbourne, 3010, Parkville, Vic, USA while writing paper: Demography and COVID-19: risks, responses and impacts"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Access Living while writing paper: Supporting institution-to-community transitions for people with psychiatric disabilities: Findings and implications from a participatory action research project"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "CE Society Committees while writing paper: 2013 IEEE Consumer Electronics Society Officers and Committee Chairs"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "CE Society Committees while writing paper: 2013 IEEE Consumer Electronics Society Officers and Committee Chairs"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies, University of Sheffield,Sheffield S10 2TN, UK while writing paper: Towards an information management curriculum"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Centre for Health, Management Information Research, Department of Information Studies, University of Sheffield, UK while writing paper: Strengthening health information management in an East African country using external training materials"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Postgraduate School of Librarianship and Information Science, University of Sheffield. Fellow of the Library Association while writing paper: Library/Information Services in Local Authority Social Services Departments: Results of Two Surveys"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Glasgow while writing paper: Book Reviews"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies, University of Sheffield while writing paper: The evaluation of current awareness services in local government"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Borås; Sweden while writing paper: Publish or perish: Meet the editors a special panel"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies, University of Sheffield, Sheffield S10 2TN, UK while writing paper: Information intermediaries for industry in Portugal: a training programme and its impact"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Visiting Professor, University of Borås, Sweden while writing paper: Preface"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies, University of Sheffield, Sheffield S10 2TN, UK while writing paper: askSam"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Leeds, UK while writing paper: ENGLAND AD 2200: HOW WOULD YOU LIKE IT TO BE? by John Barker. Gaia Watch, Sheffield, 1998. No. of pages: 189. Price: £7.00 (paperback). ISBN 0 95335320 6"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Sheffield, UK while writing paper: Technology 2001: The future of computing and communications"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Texas, Houston, USA while writing paper: Optimizing weight loss outcomes for bariatric surgery patients: the role of physical activity"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies , University of Sheffield , while writing paper: The context of information strategies: Competition or collaboration?"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Tom Wilson, MS, is Community Activist, Chicago. At the time of the study, Wilson was Community Development Organizer for Health Care, Access Living Center for Independent Living, Chicago. while writing paper: Inside an Occupational Therapy–Disability Community Partnership to Promote Health Management: Ethnography of a Research Collaboration"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Departments of Occupational Therapy and Disability Studies, University of Illinois at Chicago, 1919 W. Taylor, Chicago, IL 60612. while writing paper: WeCanConnect: Development of a Community-Informed mHealth Tool for People with Disabilities and Cancer"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Professor, Swedish School of Library and Information Science, University of Borås, Borås, Sweden while writing paper: Organizational Aspects of Collaboration on Local Information Management by Thai Provincial University Libraries"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Faculty of Communication, Vilnius University, Vilnius, Lithuania, Swedish School of Library and Information Science, University of Bor as, Bor as, Sweden, and while writing paper: Information misbehaviour: modelling the motivations for the creation, acceptance and dissemination of misinformation"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies, University of Sheffield, Sheffield S10 2TN, UK while writing paper: Social dimensions of information technology: issues for the new millenium"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Chiyoda Building 2-37 Ichigayatamachi, Shinjuku-ku, Tokyo 162-0843 Japan while writing paper: Long live radio"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies, University of Sheffield, Sheffield S10 2TN, UK while writing paper: Vertical trust/mistrust during information strategy formation"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "T.D. Wilson is Professor Emeritus of the University of Sheffield, Sheffield, UK. while writing paper: Mapping the curriculum in information studies"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies University of Sheffield, UK while writing paper: An introduction to information engineering: From strategic planning to information systems"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Washington, Seattle, WA, USA while writing paper: Assembling Strategic Narratives"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Sheffield, UK while writing paper: Designing large-scale web sites: A visual design methodology"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies, University of Sheffield, UK while writing paper: Overcoming the barriers to the implementation of information system strategies"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "T.D. Wilson is with the Department of Information Studies, University of Sheffield, Sheffield S10 2TN, UK. while writing paper: Information services to industry in Northern Portugal: Planning RIA (rede de informação associativa)"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Professor Emeritus, University of Sheffield, U.K. while writing paper: Research Needs in Librarianship"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies, University of Sheffield while writing paper: ‘In the beginning was the word…’: social and economic factors in scholarly electronic communication"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Veterinary Surgery and Reproduction University of Glasgow Veterinary School Bearsden Road, Bearsden, Glasgow G61 1QH United Kingdom while writing paper: Monosomy and trisomy in bovine embryos sired by bulls heterozygous for the Robertsonian translocation chromosome"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Sveučilište Borås, Švedska while writing paper: e-book phenomenon"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Sheffield Postgraduate School of Librarianship and Information Science while writing paper: Local library co-operation in the service of higher education"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies, University of Sheffield, Western Bank, Sheffield S10 2TN, United Kingdom while writing paper: Professional education and subsequent careers in library/information work: a follow-up study of former students on the MA/MSc Information Studies (Social Sciences) course at the University of Sheffield"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Julian Housing Support while writing paper: Supporting strengths: the work of Julian Housing"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies University of Sheffield, UK while writing paper: Information technology and the research process. Proceedings of a conference held at Cranfield Institute of Technology, UK, 18–21 July 1989"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Sheffield, UK while writing paper: Smart cards: Principles, practice, applications"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Head of Universities Dept, National Association for Teachers in Further and Higher Education while writing paper: Degree of success"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Švedska škola za knjižnične i informacijske znanosti, Sveučilište u Boråsu while writing paper: E-books"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Professor Tom Wilson is Head of the Department of Information Studies, University of Sheffield, UK while writing paper: The implementation of information system strategies in UK companies: Aims and barriers to success"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Postgraduate School of Librarianship and Information Science, University of Sheffield while writing paper: ON USER STUDIES AND INFORMATION NEEDS"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Sheffield, UK, [email protected] while writing paper: EQUIP: a European Survey of Quality Criteria for the Evaluation of Databases"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Glasgow while writing paper: Reviews"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies at the University of Sheffield, UK while writing paper: Business use of the world-wide web"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "MIT, Cambridge, MA while writing paper: Automation and customization of rendered web pages"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Washington, Seattle, WA, USA while writing paper: Disinformation as Collaborative Work"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies, University of Sheffield, UK while writing paper: Teaching information management at the University of Sheffield"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies, University of Sheffield, Sheffield, UK while writing paper: Exploring models of information behaviour: the ‘uncertainty’ project"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Gastrointestinal Surgical Unit, Flinders Medical Centre, Adelaide, Australia while writing paper: Number Eighty Seven: Part 1"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Sheffield, UK while writing paper: EndNote plus 2.3 (enhanced reference database and bibliography maker), with EndLink 2.1 (link to on-line and CD-ROM databases)"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Sheffield, UK while writing paper: Wellsprings of knowledge: Building and sustaining the sources of innovation"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Head of Department of Information Studies, University of Sheffield while writing paper: Book Reviews : Ford, N. Expert systems and artificial intelligence: an information manager's guide. 1991, London: Library Association Publishing Ltd., 304pp, £32.50, ISBN 0 85365 909 5"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Wilson's Recruitment Solutions, Mackay, Australia while writing paper: Turning the Big Mac Index into the Medical MAC Index"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Sheffield, UK while writing paper: Lotus screencam: multimedia screen and sound capture utility for windows (Release 1.1)"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Sheffield, UK while writing paper: The end of bureaucracy and the rise of the intelligent organization"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Sheffield, Leeds University Business School, UK and Swedish School of Library and Information Science, Gothenburg University and Högskolan i Borås, Sweden while writing paper: Revisiting user studies and information needs"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Sheffield, Department for Studies of the Information Science, Sheffield, Yorkshire, Reino Unido while writing paper: Business information needs. Research and the information provider"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies, University of Sheffield, Sheffield S10 2TN, UK while writing paper: Information seeking and mediated searching. Part 5. User–intermediary interaction"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies University of Sheffield, UK while writing paper: Information engineering: Strategic systems development"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": ") Access Living; ( while writing paper: ScreenABLE: Breast Cancer Screening among Women with Disabilities from Community Identified Challenges to Community-Based Programs"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "(University of Washington) while writing paper: White Helmets YouTube Dataset"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Formerly of Access Living, Chicago, IL, USA while writing paper: Our Peers—Empowerment and Navigational Support (OP-ENS): Development of a Peer Health Navigator Intervention to Support Medicaid Beneficiaries With Physical Disabilities"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Borås while writing paper: Teorijski pristupi istraživanju e-knjige"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies, University of Sheffield, UK while writing paper: Book Reviews"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Sheffield. Sheffield, UK while writing paper: The MSc in Information Management of the University of Sheffield taught in Portugal: an example of knowledge transfer in education"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Human Centered Design and Engineering University of Washington, Seattle while writing paper: It is Not All Fun and Games: Breaking News Consumption on Snapchat"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "(Trades Union Congress) while writing paper: Union Learning Representatives as a Tool for Workforce Development in the UK Public Services"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies, University of Sheffield, Sheffield S10 2TN, United Kingdom while writing paper: Information science and information systems: Conjunct subjects disjunct disciplines"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Borås, Borås, Švedska while writing paper: The e-book phenomenon: a disruptive technology"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Borås while writing paper: The tensions of e-book creation and distribution in a small-language culture"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Research Professor in Information Management Department of Information Studies University of Sheffield while writing paper: <i>Information Research</i>: a case study in the free electronic publication of research"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Project INISS while writing paper: Assessment of an illuminative evaluation programme for information services"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Postgraduate School of Librarianship and Information Science, University of Sheffield while writing paper: An illuminative evaluation programme for assessing information services"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies , University of Sheffield while writing paper: Strategic planning for information and technology in higher education"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Sheffield, UK while writing paper: A local study of journal use"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies, University of Sheffield while writing paper: Information in local government: challenge and opportunity"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Town and Regional Planning and the Department of Information Studies at the University of Sheffield while writing paper: Approaches to Information Management in County Planning Authorities in England and Wales"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Swedish School of Library and Information Science, University of Borås, Allégatan 1, Borås, 50190, Sweden while writing paper: Developing a Digital Libraries Master’s Programme"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Washington, Seattle, WA, USA while writing paper: Cross-platform Information Operations: Mobilizing Narratives &amp; Building Resilience through both 'Big' &amp; 'Alt' Tech"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies, University of Sheffield, Western Bank, Sheffield S10 2TN, UK. Tel.: while writing paper: Monitoring and evaluating information-related research"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies at the University of Sheffield, Sheffield S10 2TN, UK while writing paper: Information Management: A New Focus for Integration?"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies University of Sheffield U.K. while writing paper: Managing information: Information systems for today's general manager"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Sheffield Postgraduate School of Librarianship and Information Science while writing paper: Research Priorities in Social Welfare Library and Information Work"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Sheffield, UK while writing paper: The IRM imperative: Strategies for managing information resources"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies, University of Sheffield while writing paper: Book Review: Libraries in the information society, Artificial neural networks for information retrieval in a libraries context, Chipcard use in libraries and information webs. Recommendations to create intelligent libraries in Europe, Business analysis of the library system market in Europe, Library performance indicators and library management tools, Deposit collections of electronic publications, Technical briefings for system librarians, Knowledge models for networked library services, …"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Concured, Ltd. while writing paper: Interview With the Entrepreneur—Anna Iarotska"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "UK Youth Climate Coalition while writing paper: Youth advocacy and campaigning in the lead up to COP26"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies, University of Sheffield, Sheffield S10 2TN, UK while writing paper: Information‐seeking and mediated searching. Part 1. Theoretical framework and research design"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Departmentof Chemistry, University of Sheffield, Dainton Building, Brook Hill, Sheffield S3 7HF, U.K. while writing paper: Structural Studies on Dinuclear Ruthenium(II) Complexes That Bind Diastereoselectively to an Antiparallel Folded Human Telomere Sequence"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Leicester while writing paper: Prem Rawat and Counterculture: Glastonbury and New Spiritualities, RonGeaves, Bloomsbury Academic, 2020 (ISBN 978‐1‐350‐09087‐3), xiv + 238 pp., hb £85"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Leicester while writing paper: The Making of a Modern Temple and a Hindu City: Kalighat and Kolkata, DeonnieMoodie, Oxford University Press, 2019 (ISBN 978‐0‐19‐088526‐7), xvi + 224 pp., hb £64"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Sheffield while writing paper: Education for Information and the Internet"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Information Research: an international electronic journal while writing paper: Trials and Tribulations? Editing Information Research, an Open Access Electronic Journal"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies University of Sheffield, UK while writing paper: Electronic service delivery: Themes and issues in the public sector. A forum discussion"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Glasgow Caledonian University , Glasgow , UK while writing paper: P22 Fibrosis in delayed wound healing in diabetes: the role of insulin-like growth factor binding proteins"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Access Living, Center for Independent Living, Chicago, IL, USA while writing paper: A community living management program for people with disabilities who have moved out of nursing homes: a pilot study"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Sheffield; Sheffield; UK while writing paper: Information science and information systems: Conjunct subjects disjunct disciplines"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies, University of Sheffield, Western Bank, Sheffield S10 2TN, UK while writing paper: Training information service specialists in the less-favoured regions of the European Union (TRAIN-ISS): the diploma/MSc programme at the University of Sheffield"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies, University of Sheffield, Sheffield S10 2TN, USA while writing paper: Information strategies in UK higher education institutions"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Washington while writing paper: Spotlight Tweets: A Lens for Exploring Attention Dynamics within Online Sensemaking During Crisis Events"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Sheffield#N# while writing paper: Information and Business Performance: A Study of Information Systems and Services in High-Performing Companies"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Swedish School of Library and Information Science, University of Borås, Allégatan 1, Borås, Sweden while writing paper: E-Books in Swedish Public Libraries: Policy Implications"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Sheffield Sheffield U.K while writing paper: Uncertainty and its correlates"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "CE Society Committees while writing paper: 2013 IEEE Consumer Electronics Society Officers and Committee Chairs"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Drug Metabolism and Pharmacokinetics, AstraZeneca Pharmaceuticals, Mereside, Alderley Park, Cheshire, Macclesfield, UK while writing paper: An unexpected selectivity of a propranolol-derived molecular imprint for tamoxifen"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies, University of Sheffield, Sheffield S102TN, UK while writing paper: The management information requirements of heads of university departments: a critical success factors approach"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies, University of Sheffield, Sheffield S10 2TN, UK while writing paper: Business use of the World Wide Web, with particular reference to UK companies"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Glasgow. while writing paper: The Income Terms of Trade of Developed and Developing Countries"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Sheffield, UK while writing paper: The new internet business book"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Sheffield while writing paper: Information for business: the business of information"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Swedish School for Library and Information Science, University College,                        501 90 BorÂs, Sweden while writing paper: Trust in Healthcare: An Information Perspective"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies University of Sheffield Sheffield, UK while writing paper: Toward a theoretical framework for information retrieval (IR) evaluation in an information seeking context"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": " University of Sheffield, UK while writing paper: Managing information as a corporate resource"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "Department of Information Studies University of Sheffield U.K. while writing paper: IT strategies for information management"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Borås, Sweden while writing paper: Assessing digital preservation frameworks"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Sheffield, UK, while writing paper: EQUIP: a European survey of quality criteria for the evaluation of databases"
+                    },
+                    {
+                        "subject": "Tom Wilson",
+                        "predicate": "was working in",
+                        "object": "University of Sheffield, UK while writing paper: The HTML sourcebook. A complete guide to HTML 3.0"
+                    }
+                ]
+            }
+        ]
+    }
+]

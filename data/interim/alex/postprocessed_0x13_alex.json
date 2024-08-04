@@ -1,0 +1,3231 @@
+[
+    {
+        "id": "0x13",
+        "question": "What term did the author of 'On implementing behavioral rewriting' coin in 2001?",
+        "answer": "-",
+        "tripples_number": 0,
+        "author_uri": [
+            "https://semopenalex.org/author/A5053878331"
+        ],
+        "all_triples": [
+            {
+                "entity": "https://orcid.org/0000-0002-3102-0421",
+                "triples": [
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "is",
+                        "object": "Author"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "modified",
+                        "object": "2024-05-22"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "citedByCount",
+                        "object": "7796"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "worksCount",
+                        "object": "342"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": " written paper amount in year 2012:",
+                        "object": "25"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": " written paper amount in year 2012:",
+                        "object": "25"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": " written paper amount in year 2013:",
+                        "object": "7"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": " written paper amount in year 2013:",
+                        "object": "7"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": " written paper amount in year 2014:",
+                        "object": "20"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": " written paper amount in year 2014:",
+                        "object": "20"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": " written paper amount in year 2015:",
+                        "object": "18"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": " written paper amount in year 2015:",
+                        "object": "18"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": " written paper amount in year 2016:",
+                        "object": "12"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": " written paper amount in year 2016:",
+                        "object": "12"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": " written paper amount in year 2017:",
+                        "object": "7"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": " written paper amount in year 2017:",
+                        "object": "7"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": " written paper amount in year 2018:",
+                        "object": "13"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": " written paper amount in year 2018:",
+                        "object": "13"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": " written paper amount in year 2019:",
+                        "object": "12"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": " written paper amount in year 2019:",
+                        "object": "12"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": " written paper amount in year 2020:",
+                        "object": "13"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": " written paper amount in year 2020:",
+                        "object": "13"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": " written paper amount in year 2021:",
+                        "object": "8"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": " written paper amount in year 2021:",
+                        "object": "8"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": " written paper amount in year 2022:",
+                        "object": "1"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": " written paper amount in year 2022:",
+                        "object": "1"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": " written paper amount in year 2023:",
+                        "object": "2"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": " written paper amount in year 2023:",
+                        "object": "2"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": " written paper amount in year 2024:",
+                        "object": "2"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": " written paper amount in year 2024:",
+                        "object": "2"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "h-index",
+                        "object": "47"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "name",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "2YrMeanCitedness",
+                        "object": "1.875"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "i10Index",
+                        "object": "141"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "alternativeName",
+                        "object": "Rosu Grigore"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "alternativeName",
+                        "object": "G. Rosu"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "alternativeName",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "alternativeName",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "alternativeName",
+                        "object": "Grigore Roșu"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "member of",
+                        "object": [
+                            "University of Illinois Urbana-Champaign"
+                        ]
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "orcidId",
+                        "object": "https://orcid.org/0000-0002-3102-0421"
+                    },
+                    {
+                        "subject": "A Rewriting Logic Semantics Approach to Modular Program Analysis",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "The Rewriting Logic Semantics Project",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "A Rewriting Logic Approach to Static Checking of Units of Measurement in C",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "A Rewrite Framework for Language Definitions and for Generation of Efficient Interpreters",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "The rewriting logic semantics project",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Rule-Based Analysis of Dimensional Safety",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Certifying measurement unit safety policy",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "K: A Rewriting-Based Framework for Computations -- Preliminary version --",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Rewriting Logic Semantics: From Language Specifications to Formal Analysis Tools",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "The rewriting logic semantics project: A progress report",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "An overview of the K semantic framework",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "A Rewriting Logic Approach to Operational Semantics (Extended Abstract)",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "From Rewriting Logic, to Programming Language Semantics, to Program Verification",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "K: A semantic framework for programming languages and formal analysis tools",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Matching logic: the foundation of the K framework (invited talk)",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Monitoring Algorithms for Metric Temporal Logic Specifications",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Towards a Trustworthy Semantics-Based Language Framework via Proof Generation",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "K-Maude: A Rewriting Based Tool for Semantics of Programming Languages",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Matching Logic: An Alternative to Hoare/Floyd Logic",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "A formal executable semantics of Verilog",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "An executable formal semantics of C with applications",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "A rewriting logic approach to operational semantics",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "An overview of the MOP runtime verification framework",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "On Formal Analysis of OO Languages Using Rewriting Logic: Designing for Performance",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Parametric and Termination-Sensitive Control Dependence",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Circular Coinduction with Special Contexts",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Parametric Trace Slicing and Monitoring",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Algebraic Methodology and Software Technology",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Synthesizing Monitors for Safety Properties",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Rewriting-Based Techniques for Runtime Verification",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Maximal sound predictive race detection with control flow abstraction",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "CIRC: A Behavioral Verification Tool Based on Circular Coinduction",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "CIRC: A Circular Coinductive Prover",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Formal JVM Code Analysis in JavaFAN",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Formal Analysis of Java Programs in JavaFAN",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "A Formal Monitoring-Based Framework for Software Development and Analysis",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "From Hoare Logic to Matching Logic",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Program Instrumentation and Trace Analysis",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Weak inclusion systems",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Runtime safety analysis of multithreaded programs",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "An Executable Rewriting Logic Semantics of K-Scheme",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "KJS: a complete formal semantics of JavaScript",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Monitoring Java Programs with Java PathExplorer",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Formal Techniques for Distributed Systems",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Generating Proof Certificates for a Language-Agnostic Deductive Program Verifier",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "KEVM: A Complete Formal Semantics of the Ethereum Virtual Machine",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Java-MOP: A Monitoring Oriented Programming Environment for Java",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Extensional Theories and Rewriting",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "An Overview of the Runtime Verification Tool Java PathExplorer",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Checking and Correcting Behaviors of Java Programs at Runtime with Java-MOP",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Language-parametric compiler validation with application to LLVM",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Scalable Parametric Runtime Monitoring",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Program Verification by Coinduction",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "A Total Approach to Partial Algebraic Specification",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Detecting Errors in Multithreaded Programs by Generalized Predictive Analysis of Executions",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "The $$mathbb {K}$$ Vision for the Future of Programming Language Design and Analysis",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Equality of streams is a Π0 over 2-complete problem",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Weak Inclusion Systems: Part Two",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "An executable formal semantics of C with applications",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "IMUnit",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Finite-Trace Linear Temporal Logic: Coinductive Completeness",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "An equational specification for the Scheme language",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "A Formal Semantics of C with Applications: Technical Report",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Towards Monitoring-Oriented Programming",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Mop",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Dependent advice",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Automating Coinduction with Case Analysis",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Towards a Module System for K",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Towards a Unified Theory of Operational and Axiomatic Semantics",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "From Hoare Logic to Matching Logic Reachability",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "From Rewriting Logic Executable Semantics to Matching Logic Program Verification",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "All-Path Reachability Logic",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "A Tree Based Router Search Engine Architecture with Single Port Memories",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Allen Linear (Interval) Temporal Logic – Translation to LTL and Monitor Synthesis",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Synthesizing Dynamic Programming Algorithms fromLinear Temporal Logic Formulae",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Hiding more of hidden algebra",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Incompleteness of Behavioral Logics",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Circular Coinduction",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Efficient Monitoring of ω-Languages",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Monitoring-Oriented Programming: A Tool-Supported Methodology for Higher Quality Object-Oriented Software",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Computationally Equivalent Elimination of Conditions",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "A MODULAR REWRITING APPROACH TO LANGUAGE DESIGN, EVOLUTION AND ANALYSIS",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Matching Logic Rewriting: Unifying Operational and Axiomatic Semantics in a Practical and Generic Framework",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Checking reachability using matching logic",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Monitoring Java Programs with Java PathExplorer",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Mining parametric specifications",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Maximal Causal Models for Sequentially Consistent Systems",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Combining test case generation and runtime verification",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Axiomatizability in inclusive equational logics",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "K-Java",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Monitoring programs using rewriting",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "jPredictor",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Equational axiomatizability for coalgebra",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "A rewriting approach to concurrent programming language design and semantics",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Testing Linear Temporal Logic Formulae on Finite Execution Traces",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "&#120130;: A Semantic Framework for Programming Languages and Formal Analysis Tools.",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "A Tree Based Router Search Engine Architecture with Single Port Memories",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Semantics-based program verifiers for all languages",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Improved multithreaded unit testing",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Finite-trace linear temporal logic: coinductive completeness",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "One-Path Reachability Logic",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Efficient monitoring of safety properties",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Weak Inclusion Systems: Part Two",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "A language-independent proof system for full program equivalence",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Defining the undefinedness of C",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "K-Java",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Semantics-based program verifiers for all languages",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "JavaMOP: efficient parametric runtime monitoring framework",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Language Definitions as Rewrite Theories",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "<mml:math xmlns:mml=http://www.w3.org/1998/Math/MathML altimg=si1.gif overflow=scroll><mml:mi mathvariant=double-struck>K</mml:mi></mml:math> Overview and SIMPLE Case Study",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Mop",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Runtime Verification with the RV System",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Parametric and Sliced Causality",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Online efficient predictive safety analysis of multithreaded programs",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Towards Categorizing and Formalizing the JDK API",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Maximal Causal Models for Sequentially Consistent Multithreaded Systems",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Session details: Program verification I",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Semantics and Algorithms for Parametric Monitoring",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "ROSRV: Runtime Verification for Robots",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Program verification using reachability logic",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Runtime Verification of C Memory Safety",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "RV-Monitor: Efficient Parametric Runtime Verification with Simultaneous Properties",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "RV-Android: Efficient Parametric Android Runtime Verification, a Brief Tutorial",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "On equational Craig interpolation",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "IELE: An Intermediate-Level Blockchain Language Designed and Implemented Using Formal Semantics",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Specification and Error Pattern Based Program Monitoring",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Java PathExplorer: A Runtime Verification Tool",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "The AutoBayes Program Synthesis System - System Description -",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "07011 Executive Summary -- Runtime Verification",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Garbage collection for monitoring parametric properties",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Efficient monitoring of parametric context-free patterns",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Efficient Formalism-Independent Monitoring of Parametric Properties",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Hardware Runtime Monitoring for Dependable COTS-Based Real-Time Embedded Systems",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Experiments with Test Case Generation and Runtime Analysis",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Generating Optimal Linear Temporal Logic Monitors by Coinduction",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "KEVM: A Complete Semantics of the Ethereum Virtual Machine",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Checking reachability using matching logic",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "How good are the specs? a study of the bug-finding effectiveness of existing Java API specifications",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "EnforceMOP: a runtime property enforcement system for multithreaded programs",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Institution Morphisms",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Defining and Executing P Systems with Structured Data in K",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Computational Logical Frameworks and Generic Program Analysis Technologies",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "On Safety Properties and Their Monitoring",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Testing Extended Regular Language Membership Incrementally by Rewriting",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Proceedings of the 14th joint IFIP WG 6.1 international conference and Proceedings of the 32nd IFIP WG 6.1 international conference on Formal Techniques for Distributed Systems",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "First international Competition on Runtime Verification: rules, benchmarks, tools, and final results of CRV 2014",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Rewriting Logic Systems",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Towards Behavioral Maude",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Runtime safety analysis of multithreaded programs",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "JavaMOP: Efficient parametric runtime monitoring framework",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Connecting Constrained Constructor Patterns and Matching Logic",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Circular Coinduction: A Proof Theoretical Foundation",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Efficient parametric runtime verification with deterministic string rewriting",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "A Rewriting-Based Approach to Trace Analysis",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Towards semantics-based WCET analysis",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "A Formal Semantics of C with Applications",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "A formal verification tool for Ethereum VM bytecode",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "A Language-Independent Program Verification Framework",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Towards a unified proof framework for automated fixpoint reasoning using matching logic",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Defining the undefinedness of C",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "The <mml:math xmlns:mml=http://www.w3.org/1998/Math/MathML altimg=si1.gif overflow=scroll><mml:mi mathvariant=double-struck>K</mml:mi></mml:math> Primer (version 3.3)",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Maximal sound predictive race detection with control flow abstraction",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "A complete formal semantics of x86-64 user-level instruction set architecture",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Garbage collection for monitoring parametric properties",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Introduction to the special issue on runtime verification",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "KRAM--Extended Report",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Executing Formal Semantics with the $mathbb K$ Tool",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "A Birkhoff-like Axiomatizability Result for Hidden Algebra and Coalgebra",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Preface",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Formal Approaches to Software Testing and Runtime Verification",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "GPredict: generic predictive concurrency analysis",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Maximal Causal Models for Multithreaded Systems",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Matching Logic - Extended Report",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Certifying Optimality of State Estimation Programs",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "A rewriting approach to the design and evolution of object-oriented languages",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "KOOL: An Application of Rewriting Logic to Language Prototyping and Analysis",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "A Rewriting Logic Approach to Type Inference",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Matching logic",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Behavioral abstraction is hiding information",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Composing Hidden Information Modules over Inclusive Institutions",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "An Interactive Theorem Prover for Matching Logic with Proof Object Generation",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Efficient decentralized monitoring of safety in distributed systems",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Evolution-aware monitoring-oriented programming",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "A general approach to define binders using matching logic",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Online Efficient Predictive Safety Analysis of Multithreaded Programs",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Formal analysis of Java programs in JavaFAN",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Efficient decentralized monitoring of safety in distributed systems",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Statistical Model Checking of RANDAO’s Resilience to Pre-computed Reveal Strategies",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "An instrumentation technique for online analysis of multithreaded programs",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "$$mathbb {K}$$—A Semantic Framework for Programming Languages and Formal Analysis",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "P4K: A Formal Semantics of P4 and Applications",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "A Language-Independent Proof System for Mutual Program Equivalence",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Conditional circular coinductive rewriting with case analysis",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "MOP: Reliable Software Development using Abstract Aspects",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Generating Optimal Monitors for Extended Regular Expressions",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Decentralized runtime analysis of multithreaded applications",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Effective Predictive Runtime Analysis Using Sliced Causality and Atomicity",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "A semantic approach to interpolation",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Preface",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Certifying and synthesizing membership equational proofs",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Matching Logic",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Synthesizing Monitors for Safety Properties: This Time with Calls and Returns",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "A Rewrite Logic Approach to Semantic Definition, Design and Analysis of Object-Oriented Languages",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Preface",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "RV-Match: Practical Semantics-Based Program Analysis",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "The Rewriting Logic Semantics Project: A Progress Report",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Efficient Monitoring of Parametric Context-Free Patterns",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Matching Logic - Extended Abstract (Invited Talk)",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Matching μ-Logic",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Matching logic explained",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Proofs on Safety for Untrusted Code",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "A Truly Concurrent Semantics for the $mathbb{K}$ Framework Based on Graph Transformations",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Making Maude Definitions More Interactive",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Towards Effectively Eliminating Conditional Rewrite Rules",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "KJS: a complete formal semantics of JavaScript",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "End-to-End Formal Verification of Ethereum 2.0 Deposit Smart Contract",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "A Rewriting Logic Approach to Type Inference: Technical Report",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "An Executable Semantic Definition of the Beta Language using Rewriting Logic",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "From Conditional to Unconditional Rewriting",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Runtime Verification - First International Conference, RV 2010, St. Julians, Malta, November 1-4, 2010. Proceedings",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Systematic Concurrency Testing with Maximal Causality",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Matching µ-logic: Foundation of K framework",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Executing Formal Semantics with the K Tool",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "A K Definition of Scheme",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Runtime safety analysis of multithreaded programs",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Trustworthy Program Verification via Proof Generation",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Language definitions as rewrite theories",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Towards a Unified Theory of Operational and Axiomatic Semantics — Extended Abstract",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Inductive Behavioral Proofs by Unhiding",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "IELE: A Rigorously Designed Language and Tool Ecosystem for the Blockchain",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "An Executable Formal Semantics of C with Applications: Technical Report",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "K: a Rewrite-based Framework for Modular Language Design, Semantics, Analysis and Implementation -Version 1-",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Specifying Languages and Verifying Programs with K",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "$mathbb{K}$ Framework Distilled",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Dealing With C's Original Sin",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Programming Language Aggregation with Applications in Equivalence Checking",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "07011 Abstracts Collection -- Runtime Verification.",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Proceedings of the 12th international conference on Algebraic Methodology and Software Technology",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "CS322 Fall 2003: Programming Language Design -Lecture Notes-",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Algebraic methodology and software technology : 12th International Conference, AMAST 2008, Urbana, IL, USA, July 28-31, 2008 : proceedings",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Runtime Verification - 17 Years Later",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "On implementing behavioral rewriting",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Technical Report: Decidable Fragments of Matching Logic",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Towards a Verified Model of the Algorand Consensus Protocol in Coq",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Hidden Congruent Deduction",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Monitoring Oriented Programming - A Project Overview",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Behavioral and Coinductive Rewriting (invited talk)",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "All-Path Reachability Logic",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "On Equational Craig Interpolation",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Formally Defining and Verifying Master/Slave Speculative Parallelization",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Online Efficient Predictive Safety Analysis of Multithreaded Programs",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Term-generic logic",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Predictive Runtime Analysis of Multithreaded Programs",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Verification of Casper in the Coq Proof Assistant",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "An Equational Specification for the Scheme Language",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "An instrumentation technique for online analysis of multithreaded programs",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Regular Strategies as Proof Tactics for CIRC",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Certifying domain-specific policies",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Matching mu-Logic",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Formal Design, Implementation and Verification of Blockchain Languages (Invited Talk)",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Runtime Verification Past Experiences and Future Projections",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Certifying and Synthesizing Membership Equational Proofs",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "A Rewriting Based Approach to OO Language Prototyping and Design",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Abstract Semantics for <mml:math xmlns:mml=http://www.w3.org/1998/Math/MathML altimg=si1.gif overflow=scroll><mml:mi mathvariant=double-struck>K</mml:mi></mml:math> Module Composition",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "The Institution of Order-Sorted Equational Logic.",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Abstract Semantics for Module Composition",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Mining Parametric State-Based Specifications from Executions",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Matching Logic: A Logic for Structural Reasoning",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Towards certifying domain-specific properties of synthesized code",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Behavioral Extensions of Institutions",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "On Compiling Rewriting Logic Language Definitions into Competitive Interpreters",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Complete Categorical Equational Deduction",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "RV-ECU: Maximum Assurance In-Vehicle Safety Monitoring",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Foreword - Selected Papers from the First International Workshop on Runtime Verification held in Paris, July 2001 (RV'01).",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Reachability Logic in K",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "A Theoretical Foundation for Programming Languages Aggregation",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Open Problems and Challenges 2017",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "A protocol for distributed cooperative work",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "A Language-Independent Approach to Smart Contract Verification",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Conditional Circular Coinductive Rewriting with Case Analysis",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Initial Algebra Semantics in Matching Logic",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Foreword",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Editorial",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Generating optimal linear temporal logic monitors by coinduction",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Runtime Verification at Work: A Tutorial",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Predicting Concurrency Errors at Runtime using Sliced Causality",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "07011 Abstracts Collection -- Runtime Verification",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Static Analysis to Enforce Safe Value Flow in Embedded Control Systems",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Complete Categorical Deduction for Satisfaction as Injectivity",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Efficient Monitoring of omega-Languages.",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Techniques for Evolution-Aware Runtime Verification",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "How effective are existing Java API specifications for finding bugs during runtime verification?",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Evolution-Aware Monitoring-Oriented Programming",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Distributed cooperative formal methods tools",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Specification of the Giskard Consensus Protocol",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Automatic and Precise Dimensional Analysis",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "A Formal Rewriting Logic Semantic Definition of Scheme",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "GPredict: Generic Predictive Concurrency Analysis",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Open Problems and Challenges 2016",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "GFOL: A Term-Generic Logic for Defining Lambda-Calculi",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Garbage collection for monitoring parametric properties",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Applicative matching logic",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Why and How Does K Work? The Logical Infrastructure Behind It",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Towards Certifying Domain-Specific Properties of Synthesized Code - Extended Abstract -",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Decentralized runtime analysis of multithreaded applications",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "KOOL: A K-based Object-Oriented Language",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "An Effective Algorithm for the Membership Problem for Extended Regular Expressions",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Equality of streams is a Π02-complete problem",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Session details: Program verification I",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Formal semantics of hybrid automata",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Pluggable Policies for C",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Equality of streams is a Π0 over 2-complete problem",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Behavioral Rewrite Systems and Behavioral Productivity",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Matching logic: a new program verification approach.",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Hyperproperties in Matching Logic",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Kan Extensions of Institutions",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Automating Coinduction with Case Analysis",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "A Semantic Approach to Interpolation",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Term-Generic First-Order Logic",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "A Logical Treatment of Finite Automata",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Language Definitions as Rewrite Theories",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "On the complexity of stream equality",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Term-Generic Logic",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Matching Logic",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Proceedings of the First combined international conference on Formal Approaches to Software Testing and Runtime Verification",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Interpreting Abstract Interpretations in Membership Equational Logic",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "An Overview of the Tatami Project*",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Formalizing Correct-by-Construction Casper in Coq",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Foreword",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "マッチング論理を用いた自動不動点推論のための統一証明フレームワークに向けて【JST・京大機械翻訳】",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Formal Approaches to Software Testing and Runtime Verification: First Combined International Workshops FATES 2006 and RV 2006 Seattle, WA, USA, ... Papers (Lecture Notes in Computer Science)",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "07011 Executive Summary -- Runtime Verification.",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Matching mu-Logic: Foundation of K Framework (Invited Paper).",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "ROSRV: Runtime verification for robots",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Model Checking Software",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Preface",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "P Systems with Control Nuclei",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Capturing constrained constructor patterns in matching logic",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Kan Extensions of Institutions",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "A Unifying Logical Foundation for Initial Algebra Semantics and Induction",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Maximality of Atomic Causality",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Towards a $$mathbb {K}$$ K ool Future",
+                        "predicate": "written by",
+                        "object": "Grigore Roşu"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, UIUC while writing paper: A Rewriting Logic Semantics Approach to Modular Program Analysis"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Bucharest, Faculty of Mathematics, Department of Computer Science, Str. Academiei 14, R70109, Romania while writing paper: Weak inclusion systems"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois, Urbana, USA while writing paper: Finite-trace linear temporal logic: coinductive completeness"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "***University of Illinois at Urbana-Champaign while writing paper: Runtime Verification with the RV System"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign while writing paper: Session details: Program verification I"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science & Engineering, University of California at San Diego, USA while writing paper: Hiding more of hidden algebra"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, Champaign, USA while writing paper: RV-Android: Efficient Parametric Android Runtime Verification, a Brief Tutorial"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Bucharest, University of California at San Diego while writing paper: On equational Craig interpolation"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Research Inst. for Advanced Computer Science Moffett Field, CA United States while writing paper: Specification and Error Pattern Based Program Monitoring"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, Urbana, IL, USA while writing paper: Garbage collection for monitoring parametric properties"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Information Trust Institute while writing paper: Towards semantics-based WCET analysis"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "***University of Illinois at Urbana-Champaign while writing paper: GPredict: generic predictive concurrency analysis"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, Urbana, IL, USA while writing paper: Garbage collection for monitoring parametric properties"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "***University of Illinois at Urbana-Champaign while writing paper: A rewriting approach to concurrent programming language design and semantics"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign while writing paper: A Tree Based Router Search Engine Architecture with Single Port Memories"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Runtime Verification Inc., Urbana, IL, 61801, USA while writing paper: Statistical Model Checking of RANDAO’s Resilience to Pre-computed Reveal Strategies"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana-Champaign, USA, 201 N Goodwin Ave, Urbana, IL 61801, while writing paper: KOOL: An Application of Rewriting Logic to Language Prototyping and Analysis"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana-Champaign, Urbana, IL, U.S.A. while writing paper: JavaMOP: efficient parametric runtime monitoring framework"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "***University of Illinois at Urbana-Champaign while writing paper: Making Maude Definitions More Interactive"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois, Urbana, IL, USA while writing paper: An executable formal semantics of C with applications"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "***University of Illinois at Urbana-Champaign while writing paper: KRAM--Extended Report"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana while writing paper: Runtime safety analysis of multithreaded programs"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Research Inst. for Advanced Computer Science Moffett Field, CA United States while writing paper: Monitoring Java Programs with Java PathExplorer"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois, Urbana, IL, USA while writing paper: Improved multithreaded unit testing"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science & Engineering, University of California, San Diego, United States of America while writing paper: On Equational Craig Interpolation"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, while writing paper: Formally Defining and Verifying Master/Slave Speculative Parallelization"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "***University of Illinois at Urbana-Champaign while writing paper: Predictive Runtime Analysis of Multithreaded Programs"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Information Trust Institute while writing paper: Matching Logic - Extended Abstract (Invited Talk)"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Information Trust Institute while writing paper: Formal Design, Implementation and Verification of Blockchain Languages (Invited Talk)"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Computer Science Department University of Illinois at Urbana - Champaign Urbana, USA while writing paper: Abstract Semantics for <mml:math xmlns:mml=http://www.w3.org/1998/Math/MathML altimg=si1.gif overflow=scroll><mml:mi mathvariant=double-struck>K</mml:mi></mml:math> Module Composition"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana-Champaign, USA, 201 N Goodwin Ave, Urbana, IL 61801, USA while writing paper: On Formal Analysis of OO Languages Using Rewriting Logic: Designing for Performance"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana-Champaign, USA while writing paper: Circular Coinduction with Special Contexts"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "[Department of Computer Science, University of Illinois at Urbana Champaign] while writing paper: Parametric and Termination-Sensitive Control Dependence"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, Champaign, USA while writing paper: Towards a Trustworthy Semantics-Based Language Framework via Proof Generation"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Research Inst. for Advanced Computer Science Moffett Field, CA United States while writing paper: Java PathExplorer: A Runtime Verification Tool"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "***University of Illinois at Urbana-Champaign while writing paper: An Executable Rewriting Logic Semantics of K-Scheme"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign [Urbana] while writing paper: Formal Techniques for Distributed Systems"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, USA while writing paper: Language-parametric compiler validation with application to LLVM"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Research Inst. for Advanced Computer Science Moffett Field, CA United States while writing paper: Testing Linear Temporal Logic Formulae on Finite Execution Traces"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, Urbana, IL, USA while writing paper: Program Verification by Coinduction"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign while writing paper: Equality of streams is a Π0 over 2-complete problem"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Runtime Verification, Inc., Urbana, IL, USA while writing paper: End-to-End Formal Verification of Ethereum 2.0 Deposit Smart Contract"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, Urbana, IL while writing paper: IMUnit"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "***University of Illinois at Urbana-Champaign while writing paper: Scalable Parametric Runtime Monitoring"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "NASA Ames Research Center - RIACS, USA while writing paper: A Total Approach to Partial Algebraic Specification"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois, Champaign, USA while writing paper: Finite-Trace Linear Temporal Logic: Coinductive Completeness"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois, Urbana, USA while writing paper: Efficient Monitoring of Parametric Context-Free Patterns"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "[Department of Computer Science, University of Illinois at Urbana Champaign] while writing paper: Automating Coinduction with Case Analysis"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana-champaign, Urbana, USA 61801 while writing paper: Towards a Module System for K"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, USA while writing paper: Matching logic explained"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana-Champaign, USA while writing paper: Synthesizing Monitors for Safety Properties: This Time with Calls and Returns"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, USA / Runtime Verification, USA while writing paper: A complete formal semantics of x86-64 user-level instruction set architecture"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana-Champaign, USA while writing paper: Allen Linear (Interval) Temporal Logic – Translation to LTL and Monitor Synthesis"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, Urbana, USA while writing paper: Efficient monitoring of parametric context-free patterns"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois, Urbana-Champaign, USA while writing paper: Efficient Formalism-Independent Monitoring of Parametric Properties"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "***University of Illinois at Urbana-Champaign while writing paper: Formal JVM Code Analysis in JavaFAN"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, Urbana-Champaign, IL, USA while writing paper: Dependent advice"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois, Urbana-Champaign, USA while writing paper: Introduction to the special issue on runtime verification"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "***University of Illinois at Urbana-Champaign while writing paper: From Rewriting Logic Executable Semantics to Matching Logic Program Verification"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois, Urbana-Champaign, USA while writing paper: Static Analysis to Enforce Safe Value Flow in Embedded Control Systems"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "[Dept. of Comput. Sci., Illinois Univ., Urbana-Champaign, IL, USA] while writing paper: Decentralized runtime analysis of multithreaded applications"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "***University of Illinois at Urbana-Champaign while writing paper: A Rewrite Logic Approach to Semantic Definition, Design and Analysis of Object-Oriented Languages"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana-Champaign, while writing paper: Online Efficient Predictive Safety Analysis of Multithreaded Programs"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, Champaign, USA while writing paper: A Language-Independent Program Verification Framework"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, Champaign, USA while writing paper: A Theoretical Foundation for Programming Languages Aggregation"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign while writing paper: Equality of streams is a Π0 over 2-complete problem"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, USA, Alexandru Ioan Cuza University, Iaşi, Romania while writing paper: Behavioral Rewrite Systems and Behavioral Productivity"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "***University of Illinois at Urbana-Champaign while writing paper: Matching Logic: A Logic for Structural Reasoning"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana-Champaign, USA while writing paper: Computational Logical Frameworks and Generic Program Analysis Technologies"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "NASA Ames Research Center - RIACS while writing paper: Towards Behavioral Maude"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "***University of Illinois at Urbana-Champaign while writing paper: An Executable Formal Semantics of C with Applications: Technical Report"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign while writing paper: On implementing behavioral rewriting"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois, Urbana, USA while writing paper: Specifying Languages and Verifying Programs with K"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana-Champaign, while writing paper: Extensional Theories and Rewriting"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "***University of Illinois at Urbana-Champaign while writing paper: Evolution-aware monitoring-oriented programming"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Research Inst. for Advanced Computer Science Moffett Field, CA United States while writing paper: Program Instrumentation and Trace Analysis"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana-Champaign, while writing paper: Behavioral Extensions of Institutions"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "***University of Illinois at Urbana-Champaign while writing paper: A Rewriting Based Approach to OO Language Prototyping and Design"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Computer Science & Engineering University of California at San Diego La Jolla, CA, 92093, USA while writing paper: Behavioral and Coinductive Rewriting (invited talk)"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana-Champaign, 201 N Goodwin, Urbana, IL 61801, USA while writing paper: An overview of the K semantic framework"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana-Champaign, USA while writing paper: An Effective Algorithm for the Membership Problem for Extended Regular Expressions"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Information Trust Institute while writing paper: An equational specification for the Scheme language"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana-Champaign, Urbana, IL, U.S.A. while writing paper: An instrumentation technique for online analysis of multithreaded programs"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "***University of Illinois at Urbana-Champaign while writing paper: A Formal Semantics of C with Applications"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois, Urbana-Champaign, USA while writing paper: An instrumentation technique for online analysis of multithreaded programs"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "NASA Ames Research Center, Research Institute for Advanced Computer Science, Moffett Field, CA, USA while writing paper: Monitoring programs using rewriting"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "NASA Ames Research Center – RIACS, and Fundamentals of Computing, Faculty of Mathematics, University of Bucharest, Hungary, HU while writing paper: Institution Morphisms"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois, Urbana, IL, USA while writing paper: An executable formal semantics of C with applications"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Research Institute for Advanced Computer Science, NASA Ames Research Center, Moffett Field, CA, 94035, USA while writing paper: Monitoring Java Programs with Java PathExplorer"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Illinois Univ. at Urbana-Champaign IL, United States while writing paper: A Rewriting-Based Approach to Trace Analysis"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, USA while writing paper: KJS: a complete formal semantics of JavaScript"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, USA while writing paper: Semantics-based program verifiers for all languages"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Runtime Verification Inc., University of Illinois at Urbana-Champaign, Champaign, USA while writing paper: Runtime Verification at Work: A Tutorial"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois,Urbana,IL,USA while writing paper: jPredictor"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, USA while writing paper: Towards a unified proof framework for automated fixpoint reasoning using matching logic"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign &amp; Alexandru Ioan Cuza University, Urbana, IL, USA while writing paper: Checking reachability using matching logic"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Formal Systems Laboratory, Department of Computer Science, University of Illinois Urbana­Champaign, United States of America while writing paper: An Equational Specification for the Scheme Language"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana-Champaign, USA while writing paper: A Semantic Approach to Interpolation"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "“Alexandru Ioan Cuza” University of Iaşi, Romania, University of Illinois at Urbana Champaign, USA while writing paper: Language definitions as rewrite theories"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Formal Systems Laboratory while writing paper: Language Definitions as Rewrite Theories"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, “Alexandru Ioan Cuza” University while writing paper: A Language-Independent Proof System for Mutual Program Equivalence"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, USA, University “Alexandru Ioan Cuza” Iaşi, Romania while writing paper: Maximal Causal Models for Sequentially Consistent Systems"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, Urbana, IL while writing paper: Mop"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, United States of America while writing paper: Efficient parametric runtime verification with deterministic string rewriting"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana-Champaign, Illinois, USA. grosu@cs.uiuc.edu while writing paper: An Overview of the Runtime Verification Tool Java PathExplorer"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana-Champaign, 201 N Goodwin Ave., Urbana, IL, 61801, USA while writing paper: An overview of the MOP runtime verification framework"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana-Champaign, USA while writing paper: Efficient monitoring of safety properties"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana-Champaign, Urbana-Champaign while writing paper: Rewriting-Based Techniques for Runtime Verification"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department Computer Science & Engineering, University of California, San Diego, La Jolla, CA, USA while writing paper: Distributed cooperative formal methods tools"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana – Champaign, USA while writing paper: Java-MOP: A Monitoring Oriented Programming Environment for Java"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science University of Illinois at Urbana Champaign, USA while writing paper: Monitoring Algorithms for Metric Temporal Logic Specifications"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign while writing paper: Maximal sound predictive race detection with control flow abstraction"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana-Champaign, United States while writing paper: The rewriting logic semantics project"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, USA while writing paper: K-Maude: A Rewriting Based Tool for Semantics of Programming Languages"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, USA while writing paper: Runtime Verification of C Memory Safety"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science & Engineering, University of California, San Diego, United States of America while writing paper: Weak Inclusion Systems: Part Two"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Alexandru Ioan Cuza University of Iaşi, Romania while writing paper: A Truly Concurrent Semantics for the $mathbb{K}$ Framework Based on Graph Transformations"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign while writing paper: <mml:math xmlns:mml=http://www.w3.org/1998/Math/MathML altimg=si1.gif overflow=scroll><mml:mi mathvariant=double-struck>K</mml:mi></mml:math> Overview and SIMPLE Case Study"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana-Champaign, USA while writing paper: A Rewriting Logic Approach to Type Inference"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana while writing paper: Runtime safety analysis of multithreaded programs"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science & Engineering, University of California, San Diego, United States of America while writing paper: Kan Extensions of Institutions"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana-Champaign, USA, 201 N Goodwin Ave, Urbana, IL 61801 while writing paper: A Rewrite Framework for Language Definitions and for Generation of Efficient Interpreters"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, USA while writing paper: Foreword"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, Illinois, USA while writing paper: Editorial"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Information Trust Institute while writing paper: Generating optimal linear temporal logic monitors by coinduction"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Dept. Computer Science & Engineering, University of California, San Diego 9500 Gilman Drive, La Jolla CA 92093-0114 USA phone: +1-858-822-1588, fax: +1-858-534-7029 while writing paper: An Overview of the Tatami Project*"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "***University of Illinois at Urbana-Champaign while writing paper: RV-Monitor: Efficient Parametric Runtime Verification with Simultaneous Properties"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois, Urbana-Champaign, California, Spain#TAB# while writing paper: Proceedings of the First combined international conference on Formal Approaches to Software Testing and Runtime Verification"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana-Champaign, 201 N. Goodwin, Urbana, IL, Germany#TAB# while writing paper: Proceedings of the 14th joint IFIP WG 6.1 international conference and Proceedings of the 32nd IFIP WG 6.1 international conference on Formal Techniques for Distributed Systems"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "***University of Illinois at Urbana-Champaign while writing paper: Equality of streams is a Π02-complete problem"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Information Trust Institute while writing paper: Conditional circular coinductive rewriting with case analysis"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, Champaign, USA while writing paper: Connecting Constrained Constructor Patterns and Matching Logic"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana-Champaign, while writing paper: From Conditional to Unconditional Rewriting"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, Urbana, USA while writing paper: Runtime Verification - 17 Years Later"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, USA while writing paper: Generating Proof Certificates for a Language-Agnostic Deductive Program Verifier"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, USA while writing paper: Foreword"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, Urbana, USA while writing paper: Towards a Verified Model of the Algorand Consensus Protocol in Coq"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, Urbana, USA while writing paper: Runtime Verification Past Experiences and Future Projections"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Deparment of Computer Science, University of Illinois at Urbana-Champaign while writing paper: GPredict: Generic Predictive Concurrency Analysis"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, Champaign, IL, USA while writing paper: First international Competition on Runtime Verification: rules, benchmarks, tools, and final results of CRV 2014"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, Champaign, USA while writing paper: From Rewriting Logic, to Programming Language Semantics, to Program Verification"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "***University of Illinois at Urbana-Champaign while writing paper: Automatic and Precise Dimensional Analysis"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, University Alexandru Ioan Cuza while writing paper: All-Path Reachability Logic"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "***University of Illinois at Urbana-Champaign while writing paper: Techniques for Evolution-Aware Runtime Verification"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign while writing paper: Evolution-Aware Monitoring-Oriented Programming"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana-Champaign, United States while writing paper: Term-generic logic"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, Champaign, USA while writing paper: A Language-Independent Approach to Smart Contract Verification"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, USA / Runtime Verification, USA while writing paper: A general approach to define binders using matching logic"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Computer Science Department, University of Illinois at Urbana-Champaign, Urbana, IL 61801, USA while writing paper: The Rewriting Logic Semantics Project"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana-Champaign while writing paper: Semantics and Algorithms for Parametric Monitoring"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana-Champaign, USA while writing paper: CIRC: A Circular Coinductive Prover"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana-Champaign, Urbana IL, USA while writing paper: Towards Monitoring-Oriented Programming"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Runtime Verification Inc. while writing paper: RV-ECU: Maximum Assurance In-Vehicle Safety Monitoring"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana-Champaign, USA while writing paper: Parametric Trace Slicing and Monitoring"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Information Trust Institute while writing paper: Certifying and synthesizing membership equational proofs"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Bucharest, University of California at San Diego while writing paper: Kan Extensions of Institutions"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois, Urbana-Champaign, USA while writing paper: A formal executable semantics of Verilog"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "[Department of Computer Science, University of Illinois at Urbana Champaign] while writing paper: Testing Extended Regular Language Membership Incrementally by Rewriting"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana-Champaign, USA while writing paper: CIRC: A Behavioral Verification Tool Based on Circular Coinduction"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "***University of Illinois at Urbana-Champaign while writing paper: Generating Optimal Linear Temporal Logic Monitors by Coinduction"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, Urbana-Champaign, IL, USA while writing paper: K-Java"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, USA while writing paper: ROSRV: Runtime Verification for Robots"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana-Champaign, while writing paper: Formal Analysis of Java Programs in JavaFAN"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, Urbana-Champaign, IL, USA while writing paper: K-Java"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Automated Software Engineering Group, Research Institute for Advanced Computer Science NASA Ames Research Center, Moffett Field, 94035, California, USA while writing paper: Synthesizing Monitors for Safety Properties"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, USA while writing paper: EnforceMOP: a runtime property enforcement system for multithreaded programs"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana, Champaign, USA while writing paper: Rule-Based Analysis of Dimensional Safety"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana-Champaign, USA while writing paper: Efficient Monitoring of ω-Languages"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Runtime Verification while writing paper: Formalizing Correct-by-Construction Casper in Coq"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, USA while writing paper: Defining the undefinedness of C"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer, Science University of Illinois, Illinois while writing paper: Matching μ-Logic"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science & Engineering, University of California at San Diego, San Diego while writing paper: Hidden Congruent Deduction"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, USA while writing paper: Defining the undefinedness of C"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois, Urbana-Champaign, USA while writing paper: Efficient decentralized monitoring of safety in distributed systems"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "***University of Illinois at Urbana-Champaign while writing paper: Rewriting Logic Semantics: From Language Specifications to Formal Analysis Tools"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana-Champaign, USA while writing paper: Detecting Errors in Multithreaded Programs by Generalized Predictive Analysis of Executions"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana while writing paper: Runtime safety analysis of multithreaded programs"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Research Institute for Advanced Computer Science, NASA Ames Research Center, Moffett Field, CA, USA while writing paper: Certifying domain-specific policies"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Research Institute for Advanced Computer Science Automated Software Engineering Group, NASA Ames Research Center, Moffett Field, California, 94035-1000, USA while writing paper: Complete Categorical Equational Deduction"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, Champaign, USA, Runtime Verification Inc., Urbana, USA while writing paper: The $$mathbb {K}$$ Vision for the Future of Programming Language Design and Analysis"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, Urbana, IL, USA while writing paper: Garbage collection for monitoring parametric properties"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign: Computer Science while writing paper: KEVM: A Complete Formal Semantics of the Ethereum Virtual Machine"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, USA / Runtime Verification, USA while writing paper: A formal verification tool for Ethereum VM bytecode"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, Champaign, USA while writing paper: A Logical Treatment of Finite Automata"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, Univ. of Illinois at Urbana-Champaign, USA while writing paper: Combining test case generation and runtime verification"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, USA while writing paper: KJS: a complete formal semantics of JavaScript"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, USAUniversity Alexandru Ioan Cuza, Iaşi, Romania while writing paper: On the complexity of stream equality"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, USA while writing paper: Semantics-based program verifiers for all languages"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana-Champaign, Illinios while writing paper: Experiments with Test Case Generation and Runtime Analysis"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "***University of Illinois at Urbana-Champaign while writing paper: A MODULAR REWRITING APPROACH TO LANGUAGE DESIGN, EVOLUTION AND ANALYSIS"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana-Champaign, USA while writing paper: Term-Generic Logic"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "***University of Illinois at Urbana-Champaign while writing paper: Abstract Semantics for Module Composition"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign &amp; Alexandru Ioan Cuza University, Urbana, IL, USA while writing paper: Checking reachability using matching logic"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, USA / Runtime Verification, USA while writing paper: Matching logic: the foundation of the K framework (invited talk)"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Information Trust Institute while writing paper: Matching µ-logic: Foundation of K framework"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Information Trust Institute while writing paper: Formal analysis of Java programs in JavaFAN"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Information Trust Institute while writing paper: ROSRV: Runtime verification for robots"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "***University of Illinois at Urbana-Champaign while writing paper: KOOL: A K-based Object-Oriented Language"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana-Champaign, USA while writing paper: Complete Categorical Deduction for Satisfaction as Injectivity"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "***University of Illinois at Urbana-Champaign while writing paper: Predicting Concurrency Errors at Runtime using Sliced Causality"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign while writing paper: Session details: Program verification I"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois Urbana-Champaign, Urbana, IL while writing paper: A rewriting approach to the design and evolution of object-oriented languages"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois Urbana-Champaign, Urbana, USA while writing paper: Model Checking Software"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Information Trust Institute while writing paper: Program verification using reachability logic"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois, Urbana-Champaign, USA while writing paper: Regular Strategies as Proof Tactics for CIRC"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Runtime Verification, Inc., Computer Science, University of Illinois, Urbana-Champaign while writing paper: Dealing With C's Original Sin"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, Urbana, IL, USA while writing paper: How effective are existing Java API specifications for finding bugs during runtime verification?"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Formal Systems Laboratory while writing paper: Programming Language Aggregation with Applications in Equivalence Checking"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, Champaign, USA while writing paper: $$mathbb {K}$$—A Semantic Framework for Programming Languages and Formal Analysis"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Research Institute for Advanced Computer Science, Automated Software Engineering Group, NASA Ames Research Center, Moffett Field, California, 94035, USA while writing paper: Interpreting Abstract Interpretations in Membership Equational Logic"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign while writing paper: Conditional Circular Coinductive Rewriting with Case Analysis"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana Champaign, USA while writing paper: Axiomatizability in inclusive equational logics"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois, Urbana-Champaign, USA while writing paper: Decentralized runtime analysis of multithreaded applications"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of california at San Diego while writing paper: Weak Inclusion Systems: Part Two"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "***University of Illinois at Urbana-Champaign while writing paper: Matching Logic - Extended Report"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana-Champaign, USA while writing paper: Certifying and Synthesizing Membership Equational Proofs"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, Urbana-Champaign, IL, USA while writing paper: Matching logic"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois, Urbana-Champaign while writing paper: Online efficient predictive safety analysis of multithreaded programs"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana-Champaign, Urbana, IL, US while writing paper: A Rewriting Logic Approach to Static Checking of Units of Measurement in C"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, USA while writing paper: From Hoare Logic to Matching Logic Reachability"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "[Department of Computer Science, University of Illinois at Urbana Champaign] while writing paper: The Rewriting Logic Semantics Project: A Progress Report"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, Urbana, USA, Runtime Verification Inc., Urbana, USA while writing paper: RV-Match: Practical Semantics-Based Program Analysis"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, USA while writing paper: Towards a Unified Theory of Operational and Axiomatic Semantics"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "NASA Ames Research Center, USA while writing paper: Towards certifying domain-specific properties of synthesized code"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, Champaign, USA while writing paper: A language-independent proof system for full program equivalence"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana Champaign, USA while writing paper: Generating Optimal Monitors for Extended Regular Expressions"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, Urbana-Champaign, IL, USA while writing paper: Mining parametric specifications"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois, Urbana-Champaign, USA while writing paper: A Tree Based Router Search Engine Architecture with Single Port Memories"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana, Champaign, USA while writing paper: A Formal Monitoring-Based Framework for Software Development and Analysis"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, Urbana, IL while writing paper: Mop"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "***University of Illinois at Urbana-Champaign while writing paper: Maximal Causal Models for Sequentially Consistent Multithreaded Systems"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana - Champaign, USA while writing paper: Parametric and Sliced Causality"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Information Trust Institute while writing paper: Preface"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois, Urbana-Champaign, USA while writing paper: Matching Logic: An Alternative to Hoare/Floyd Logic"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "***University of Illinois at Urbana-Champaign while writing paper: Maximality of Atomic Causality"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana-Champaign, USA while writing paper: Checking and Correcting Behaviors of Java Programs at Runtime with Java-MOP"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana-Champaign, 201 N. Goodwin, Urbana, IL 61801, USA while writing paper: Defining and Executing P Systems with Structured Data in K"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign while writing paper: The <mml:math xmlns:mml=http://www.w3.org/1998/Math/MathML altimg=si1.gif overflow=scroll><mml:mi mathvariant=double-struck>K</mml:mi></mml:math> Primer (version 3.3)"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana-Champaign while writing paper: A Rewriting Logic Approach to Operational Semantics (Extended Abstract)"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign while writing paper: Maximal sound predictive race detection with control flow abstraction"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Runtime Verification, Urbana, USA while writing paper: IELE: A Rigorously Designed Language and Tool Ecosystem for the Blockchain"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "[Department of Computer Science, University of Illinois at Urbana Champaign] while writing paper: Circular Coinduction: A Proof Theoretical Foundation"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana Champaign, IL, USA; while writing paper: Efficient decentralized monitoring of safety in distributed systems"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana-Champaign, USA while writing paper: $mathbb{K}$ Framework Distilled"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Univ. Illinois while writing paper: Composing Hidden Information Modules over Inclusive Institutions"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "[Department of Computer Science, University of Illinois at Urbana Champaign] while writing paper: Computationally Equivalent Elimination of Conditions"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science & Engineering, University of California at San Diego, 9500, Gilman Drive, San Diego, CA 92093, USA while writing paper: Equational axiomatizability for coalgebra"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, USA while writing paper: How good are the specs? a study of the bug-finding effectiveness of existing Java API specifications"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois at Urbana-Champaign, while writing paper: Certifying Optimality of State Estimation Programs"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois Urbana-Champaign while writing paper: Rewriting Logic Systems"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science & Engineering, University of California at San Diego, La Jolla, CA 92093-0114, USA while writing paper: A Birkhoff-like Axiomatizability Result for Hidden Algebra and Coalgebra"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, Urbana, USA while writing paper: Towards a $$mathbb {K}$$ K ool Future"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University of Illinois at Urbana-Champaign, USA while writing paper: Why and How Does K Work? The Logical Infrastructure Behind It"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "University Alexandru Ioan Cuza of Iaşi, Romania while writing paper: Executing Formal Semantics with the $mathbb K$ Tool"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Research Inst. for Advanced Computer Science Moffett Field, CA United States while writing paper: Synthesizing Dynamic Programming Algorithms fromLinear Temporal Logic Formulae"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Information Trust Institute while writing paper: K: A semantic framework for programming languages and formal analysis tools"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science & Engineering University of California, San Diego while writing paper: Incompleteness of Behavioral Logics"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Babeș-Bolyai University while writing paper: P Systems with Control Nuclei"
+                    },
+                    {
+                        "subject": "Grigore Roşu",
+                        "predicate": "was working in",
+                        "object": "Department of Computer Science, University of Illinois Urbana-Champaign, 201 N Goodwin Ave, Urbana, 61801, IL, USA while writing paper: Capturing constrained constructor patterns in matching logic"
+                    }
+                ]
+            }
+        ],
+        "triples_number": 642
+    }
+]

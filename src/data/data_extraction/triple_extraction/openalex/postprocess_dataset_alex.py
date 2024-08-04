@@ -146,6 +146,7 @@ def post_process_alex(data_prepocessed: dict, outputdata_path: str, endpoint_url
       for entity in new_question["all_triples"]:
           triples_number = 0
           triples_number += len(entity["triples"])
+      
       new_question["triples_number"] = triples_number
       new_dataset.append(new_question)  
 

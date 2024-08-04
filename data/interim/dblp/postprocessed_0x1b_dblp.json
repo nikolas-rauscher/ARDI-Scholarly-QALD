@@ -1,0 +1,226 @@
+[
+    {
+        "id": "0x1b",
+        "question": "What is the number of publications for the affiliation of the author who published 'The Dynamic Programming Equation for Second Order Stochastic Target Problems'?",
+        "answer": "-",
+        "author_dblp_uri": "[{'author1_dblp_uri': '<https://dblp.org/pid/06/8186>'}]",
+        "triples_number": 42,
+        "all_triples": [
+            {
+                "entity": "<https://dblp.org/pid/06/8186>",
+                "triples": [
+                    {
+                        "subject": "Halil Mete Soner",
+                        "predicate": "is",
+                        "object": "Creator"
+                    },
+                    {
+                        "subject": "Halil Mete Soner",
+                        "predicate": "is",
+                        "object": "Person"
+                    },
+                    {
+                        "subject": "Halil Mete Soner",
+                        "predicate": "link",
+                        "object": "http://www.wikidata.org/entity/Q57415895"
+                    },
+                    {
+                        "subject": "Halil Mete Soner",
+                        "predicate": "link",
+                        "object": "http://www.wikidata.org/entity/Q5642304"
+                    },
+                    {
+                        "subject": "Halil Mete Soner",
+                        "predicate": "affiliation",
+                        "object": "ETH Zürich"
+                    },
+                    {
+                        "subject": "Halil Mete Soner",
+                        "predicate": "link",
+                        "object": "https://people.math.ethz.ch/~hmsoner/"
+                    },
+                    {
+                        "subject": "Halil Mete Soner",
+                        "predicate": "primary affiliation",
+                        "object": "ETH Zürich"
+                    },
+                    {
+                        "subject": "Halil Mete Soner",
+                        "predicate": "link",
+                        "object": "https://people.math.ethz.ch/~hmsoner/"
+                    },
+                    {
+                        "subject": "Halil Mete Soner",
+                        "predicate": "link",
+                        "object": "https://scholar.google.com/citations?user=7u-pd8gAAAAJ"
+                    },
+                    {
+                        "subject": "Halil Mete Soner",
+                        "predicate": "link",
+                        "object": "https://mathgenealogy.org/id.php?id=41535"
+                    },
+                    {
+                        "subject": "Halil Mete Soner",
+                        "predicate": "link",
+                        "object": "https://zbmath.org/authors/?q=ai:soner.halil-mete"
+                    },
+                    {
+                        "subject": "Halil Mete Soner",
+                        "predicate": "link",
+                        "object": "https://mathscinet.ams.org/mathscinet/MRAuthorID/164850"
+                    },
+                    {
+                        "subject": "Halil Mete Soner",
+                        "predicate": "link",
+                        "object": "https://en.wikipedia.org/wiki/Halil_Mete_Soner"
+                    },
+                    {
+                        "subject": "Min Dai et al.: Leveraged Exchange-Traded Funds with Market Closure and Frictions. (2023)",
+                        "predicate": "authored by",
+                        "object": "Halil Mete Soner"
+                    },
+                    {
+                        "subject": "Albert Altarovici et al.: Optimal Consumption and Investment with Fixed and Proportional Transaction Costs. (2017)",
+                        "predicate": "authored by",
+                        "object": "Halil Mete Soner"
+                    },
+                    {
+                        "subject": "Bruno Bouchard et al.: Second-Order Stochastic Target Problems with Generalized Market Impact. (2019)",
+                        "predicate": "authored by",
+                        "object": "Halil Mete Soner"
+                    },
+                    {
+                        "subject": "Matteo Burzoni et al.: Viscosity Solutions for Controlled McKean-Vlasov Jump-Diffusions. (2020)",
+                        "predicate": "authored by",
+                        "object": "Halil Mete Soner"
+                    },
+                    {
+                        "subject": "Marcel Nutz and H. Mete Soner: Superhedging and Dynamic Risk Measures under Volatility Uncertainty. (2012)",
+                        "predicate": "authored by",
+                        "object": "Halil Mete Soner"
+                    },
+                    {
+                        "subject": "H. Mete Soner and Nizar Touzi: Superreplication Under Gamma Constraints. (2000)",
+                        "predicate": "authored by",
+                        "object": "Halil Mete Soner"
+                    },
+                    {
+                        "subject": "H. Mete Soner and Nizar Touzi: Stochastic Target Problems, Dynamic Programming, and Viscosity Solutions. (2002)",
+                        "predicate": "authored by",
+                        "object": "Halil Mete Soner"
+                    },
+                    {
+                        "subject": "H. Mete Soner and Nizar Touzi: The Dynamic Programming Equation for Second Order Stochastic Target Problems. (2009)",
+                        "predicate": "authored by",
+                        "object": "Halil Mete Soner"
+                    },
+                    {
+                        "subject": "H. Mete Soner and Nizar Touzi: Homogenization and Asymptotics for Small Transaction Costs. (2013)",
+                        "predicate": "authored by",
+                        "object": "Halil Mete Soner"
+                    },
+                    {
+                        "subject": "H. Mete Soner and Qinxin Yan: Viscosity Solutions for McKean-Vlasov Control on a Torus. (2024)",
+                        "predicate": "authored by",
+                        "object": "Halil Mete Soner"
+                    },
+                    {
+                        "subject": "Imen Ben Tahar et al.: The Dynamic Programming Equation for the Problem of Optimal Investment Under Capital Gains Taxes. (2007)",
+                        "predicate": "authored by",
+                        "object": "Halil Mete Soner"
+                    },
+                    {
+                        "subject": "Albert Altarovici et al.: Asymptotics for fixed transaction costs. (2015)",
+                        "predicate": "authored by",
+                        "object": "Halil Mete Soner"
+                    },
+                    {
+                        "subject": "Guy Barles and Halil Mete Soner: Option pricing with transaction costs and a nonlinear Black-Scholes equation. (1998)",
+                        "predicate": "authored by",
+                        "object": "Halil Mete Soner"
+                    },
+                    {
+                        "subject": "Umut Çetin et al.: Option hedging for small investors under liquidity costs. (2010)",
+                        "predicate": "authored by",
+                        "object": "Halil Mete Soner"
+                    },
+                    {
+                        "subject": "Yan Dolinsky and Halil Mete Soner: Duality and convergence for binomial markets with friction. (2013)",
+                        "predicate": "authored by",
+                        "object": "Halil Mete Soner"
+                    },
+                    {
+                        "subject": "Yan Dolinsky and H. Mete Soner: Robust hedging with proportional transaction costs. (2014)",
+                        "predicate": "authored by",
+                        "object": "Halil Mete Soner"
+                    },
+                    {
+                        "subject": "Kasper Larsen et al.: Facelifting in utility maximization. (2016)",
+                        "predicate": "authored by",
+                        "object": "Halil Mete Soner"
+                    },
+                    {
+                        "subject": "Yan Dolinsky and H. Mete Soner: Convex Duality with Transaction Costs. (2017)",
+                        "predicate": "authored by",
+                        "object": "Halil Mete Soner"
+                    },
+                    {
+                        "subject": "John P. Lehoczky et al.: An Asymptotic Analysis of Hierarchical Control of Manufacturing Systems Under Uncertainty. (1991)",
+                        "predicate": "authored by",
+                        "object": "Halil Mete Soner"
+                    },
+                    {
+                        "subject": "Suresh P. Sethi et al.: Turnpike Sets and Their Analysis in Stochastic Production Planning Problems. (1992)",
+                        "predicate": "authored by",
+                        "object": "Halil Mete Soner"
+                    },
+                    {
+                        "subject": "Dylan Possamaï et al.: Large liquidity expansion of super-hedging costs. (2012)",
+                        "predicate": "authored by",
+                        "object": "Halil Mete Soner"
+                    },
+                    {
+                        "subject": "Bruno Bouchard et al.: Special Issue: Optimization and Stochastic Control in Finance, Journal of Optimization Theory and Applications. (2018)",
+                        "predicate": "authored by",
+                        "object": "Halil Mete Soner"
+                    },
+                    {
+                        "subject": "Feyzullah Egriboyun and H. Mete Soner: Optimal investment strategies with a reallocation constraint. (2010)",
+                        "predicate": "authored by",
+                        "object": "Halil Mete Soner"
+                    },
+                    {
+                        "subject": "H. Mete Soner and Mirjana Vukelja: Utility maximization in an illiquid market in continuous time. (2016)",
+                        "predicate": "authored by",
+                        "object": "Halil Mete Soner"
+                    },
+                    {
+                        "subject": "Jussi Keppo et al.: Discrete Dividend Payments in Continuous Time. (2021)",
+                        "predicate": "authored by",
+                        "object": "Halil Mete Soner"
+                    },
+                    {
+                        "subject": "Mykhaylo Shkolnikov et al.: Deep Level-set Method for Stefan Problems. (2023)",
+                        "predicate": "authored by",
+                        "object": "Halil Mete Soner"
+                    },
+                    {
+                        "subject": "Bruno Bouchard et al.: Hedging Under an Expected Loss Constraint with Small Transaction Costs. (2016)",
+                        "predicate": "authored by",
+                        "object": "Halil Mete Soner"
+                    },
+                    {
+                        "subject": "Imen Ben Tahar et al.: Merton Problem with Taxes: Characterization, Computation, and Approximation. (2010)",
+                        "predicate": "authored by",
+                        "object": "Halil Mete Soner"
+                    },
+                    {
+                        "subject": "A. Max Reppen and H. Mete Soner: Bias-Variance Trade-off and Overlearning in Dynamic Decision Problems. (2020)",
+                        "predicate": "authored by",
+                        "object": "Halil Mete Soner"
+                    }
+                ]
+            }
+        ]
+    }
+]

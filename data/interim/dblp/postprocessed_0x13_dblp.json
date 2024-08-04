@@ -1,0 +1,1236 @@
+[
+    {
+        "id": "0x13",
+        "question": "What term did the author of 'On implementing behavioral rewriting' coin in 2001?",
+        "answer": "-",
+        "author_dblp_uri": "[{'author1_dblp_uri': '<https://dblp.org/pid/r/GrigoreRosu>'}]",
+        "triples_number": 244,
+        "all_triples": [
+            {
+                "entity": "<https://dblp.org/pid/r/GrigoreRosu>",
+                "triples": [
+                    {
+                        "subject": "Grigore Rosu",
+                        "predicate": "is",
+                        "object": "Creator"
+                    },
+                    {
+                        "subject": "Grigore Rosu",
+                        "predicate": "is",
+                        "object": "Person"
+                    },
+                    {
+                        "subject": "Grigore Rosu",
+                        "predicate": "link",
+                        "object": "http://www.wikidata.org/entity/Q84323648"
+                    },
+                    {
+                        "subject": "Grigore Rosu",
+                        "predicate": "affiliation",
+                        "object": "University of Illinois, Urbana-Champaign, IL, USA"
+                    },
+                    {
+                        "subject": "Grigore Rosu",
+                        "predicate": "link",
+                        "object": "http://fsl.cs.uiuc.edu/~grosu/"
+                    },
+                    {
+                        "subject": "Grigore Rosu",
+                        "predicate": "primary affiliation",
+                        "object": "University of Illinois, Urbana-Champaign, IL, USA"
+                    },
+                    {
+                        "subject": "Grigore Rosu",
+                        "predicate": "link",
+                        "object": "http://fsl.cs.uiuc.edu/~grosu/"
+                    },
+                    {
+                        "subject": "Grigore Rosu",
+                        "predicate": "link",
+                        "object": "https://github.com/grosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu",
+                        "predicate": "link",
+                        "object": "https://twitter.com/rosugrigore"
+                    },
+                    {
+                        "subject": "Grigore Rosu",
+                        "predicate": "link",
+                        "object": "https://dl.acm.org/profile/81100069676"
+                    },
+                    {
+                        "subject": "Grigore Rosu",
+                        "predicate": "link",
+                        "object": "https://scholar.google.com/citations?user=yxpqbdQAAAAJ"
+                    },
+                    {
+                        "subject": "Grigore Rosu",
+                        "predicate": "link",
+                        "object": "https://en.wikipedia.org/wiki/Grigore_Ro%C8%99u"
+                    },
+                    {
+                        "subject": "Grigore Rosu",
+                        "predicate": "link",
+                        "object": "https://en.wikipedia.org/wiki/Grigore_Rosu"
+                    },
+                    {
+                        "subject": "Nikolaj S. Bjørner et al.: Rigorous Methods for Smart Contracts (Dagstuhl Seminar 21431). (2021)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Qingzhou Luo and Grigore Rosu: EnforceMOP: a runtime property enforcement system for multithreaded programs. (2013)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Sandeep Dasgupta et al.: A complete formal semantics of x86-64 user-level instruction set architecture. (2019)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Chris Hathhorn et al.: Defining the undefinedness of C. (2015)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Jeff Huang et al.: Maximal sound predictive race detection with control flow abstraction. (2014)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Soha Hussein et al.: Security-policy monitoring and enforcement with JavaMOP. (2012)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Daejun Park et al.: KJS: a complete formal semantics of JavaScript. (2015)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu: Specifying Languages and Verifying Programs with K. (2013)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Owolabi Legunsen et al.: Techniques for Evolution-Aware Runtime Verification. (2019)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Elaine Li et al.: Formalizing Correct-by-Construction Casper in Coq. (2020)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu: Formal Design, Implementation and Verification of Blockchain Languages (Invited Talk). (2018)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Daejun Park et al.: End-to-End Formal Verification of Ethereum 2.0 Deposit Smart Contract. (2020)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Feng Chen and Grigore Rosu: Parametric and Sliced Causality. (2007)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Dwight Guth et al.: RV-Match: Practical Semantics-Based Program Analysis. (2016)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Marcelo d'Amorim and Grigore Rosu: Efficient Monitoring of omega-Languages. (2005)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Daejun Park et al.: A formal verification tool for Ethereum VM bytecode. (2018)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Vilas Jagannath et al.: Improved multithreaded unit testing. (2011)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Koushik Sen et al.: Runtime safety analysis of multithreaded programs. (2003)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Patrick O'Neil Meredith et al.: A formal executable semantics of Verilog. (2010)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "José Meseguer and Grigore Rosu: Algebraic Methodology and Software Technology, 12th International Conference, AMAST 2008, Urbana, IL, USA, July 28-31, 2008, Proceedings (2008)",
+                        "predicate": "edited by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Azadeh Farzan et al.: Formal JVM Code Analysis in JavaFAN. (2004)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu et al.: Matching Logic: An Alternative to Hoare/Floyd Logic. (2010)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "José Meseguer and Grigore Rosu: Computational Logical Frameworks and Generic Program Analysis Technologies. (2005)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu: Complete Categorical Deduction for Satisfaction as Injectivity. (2006)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Feng Chen et al.: Rule-Based Analysis of Dimensional Safety. (2003)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Mark Hills and Grigore Rosu: KOOL: An Application of Rewriting Logic to Language Prototyping and Analysis. (2007)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Mark Hills and Grigore Rosu: A Rewriting Logic Semantics Approach to Modular Program Analysis. (2010)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu: Matching Logic - Extended Abstract (Invited Talk). (2015)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu and Mahesh Viswanathan: Testing Extended Regular Language Membership Incrementally by Rewriting. (2003)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Traian-Florin Serbanuta and Grigore Rosu: Computationally Equivalent Elimination of Conditions. (2006)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Andrei Stefanescu et al.: All-Path Reachability Logic. (2014)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Klaus Havelund et al.: Formal Approaches to Software Testing and Runtime Verification, First Combined International Workshops, FATES 2006 and RV 2006, Seattle, WA, USA, August 15-16, 2006, Revised Selected Papers (2006)",
+                        "predicate": "edited by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu: On implementing behavioral rewriting. (2002)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Owolabi Legunsen and Grigore Rosu: Model Checking Software - 28th International Symposium, SPIN 2022, Virtual Event, May 21, 2022, Proceedings (2022)",
+                        "predicate": "edited by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Dana Fisman and Grigore Rosu: Tools and Algorithms for the Construction and Analysis of Systems - 28th International Conference, TACAS 2022, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2022, Munich, Germany, April 2-7, 2022, Proceedings, Part I (2022)",
+                        "predicate": "edited by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Dana Fisman and Grigore Rosu: Tools and Algorithms for the Construction and Analysis of Systems - 28th International Conference, TACAS 2022, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2022, Munich, Germany, April 2-7, 2022, Proceedings, Part II (2022)",
+                        "predicate": "edited by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Feng Chen and Grigore Rosu: Java-MOP: A Monitoring Oriented Programming Environment for Java. (2005)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Feng Chen and Grigore Rosu: Parametric Trace Slicing and Monitoring. (2009)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Klaus Havelund and Grigore Rosu: Synthesizing Monitors for Safety Properties. (2002)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Koushik Sen et al.: Online Efficient Predictive Safety Analysis of Multithreaded Programs. (2004)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Xiaohong Chen and Grigore Rosu: $\\mathbb {K}$ - A Semantic Framework for Programming Languages and Formal Analysis. (2019)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "José Meseguer and Grigore Rosu: The Rewriting Logic Semantics Project: A Progress Report. (2011)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Andrei Popescu et al.: A Semantic Approach to Interpolation. (2006)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu: An Effective Algorithm for the Membership Problem for Extended Regular Expressions. (2007)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu: 𝕂: A Semantic Framework for Programming Languages and Formal Analysis Tools. (2017)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Everett Hildenbrandt et al.: KEVM: A Complete Formal Semantics of the Ethereum Virtual Machine. (2018)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Brandon M. Moore et al.: Program Verification by Coinduction. (2018)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Dongyun Jin et al.: Garbage collection for monitoring parametric properties. (2011)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "José Meseguer and Grigore Rosu: Rewriting Logic Semantics: From Language Specifications to Formal Analysis Tools. (2004)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Xiaohong Chen and Grigore Rosu: Matching μ-Logic. (2019)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu et al.: One-Path Reachability Logic. (2013)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Feng Chen and Grigore Rosu: Parametric and Termination-Sensitive Control Dependence. (2006)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Florin Baboescu et al.: A Tree Based Router Search Engine Architecture with Single Port Memories. (2005)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Xiaohong Chen et al.: Connecting Constrained Constructor Patterns and Matching Logic. (2020)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu: Proceedings of the Seventh International Workshop on Rewriting Logic and its Applications, WRLA 2008, Budapest, Hungary, March 29-30, 2008 (2009)",
+                        "predicate": "edited by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Andrei Arusoaie et al.: Language Definitions as Rewrite Theories. (2014)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Andrei Arusoaie et al.: Making Maude Definitions More Interactive. (2012)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Dorel Lucanu et al.: K Framework Distilled. (2012)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Traian-Florin Serbanuta and Grigore Rosu: K-Maude: A Rewriting Based Tool for Semantics of Programming Languages. (2010)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Eric Bodden et al.: Dependent advice: a general approach to optimizing history-based aspects. (2009)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Feng Chen et al.: A Formal Monitoring-Based Framework for Software Development and Analysis. (2004)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Stefan Ciobaca et al.: A Language-Independent Proof System for Mutual Program Equivalence. (2014)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Eugen-Ioan Goriac et al.: Automating Coinduction with Case Analysis. (2010)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Dorel Lucanu and Grigore Rosu: Circular Coinduction with Special Contexts. (2009)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Klaus Havelund et al.: Runtime Verification Past Experiences and Future Projections. (2019)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Denis Bogdanas and Grigore Rosu: K-Java: A Complete Semantics of Java. (2015)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Chucky Ellison and Grigore Rosu: An executable formal semantics of C with applications. (2012)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Xiaohong Chen and Grigore Rosu: The K Vision for the Future of Programming Language Design and Analysis. (2021)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Joseph A. Goguen and Grigore Rosu: Composing Hidden Information Modules over Inclusive Institutions. (2004)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Dorel Lucanu et al.: Towards a \\mathbb K K ool Future. (2016)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu: From Rewriting Logic, to Programming Language Semantics, to Program Verification. (2015)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu and Dorel Lucanu: Behavioral Rewrite Systems and Behavioral Productivity. (2014)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu et al.: Proceedings of the 32nd IEEE/ACM International Conference on Automated Software Engineering, ASE 2017, Urbana, IL, USA, October 30 - November 03, 2017 (2017)",
+                        "predicate": "edited by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Patrick O'Neil Meredith and Grigore Rosu: Efficient parametric runtime verification with deterministic string rewriting. (2013)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu and Feng Chen: Certifying Measurement Unit Safety Polic. (2003)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu and Jon Whittle: Towards Certifying Domain-Specific Properties of Synthesized Code. (2002)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Mark Hills and Grigore Rosu: On Formal Analysis of OO Languages Using Rewriting Logic: Designing for Performance. (2007)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Koushik Sen et al.: Detecting Errors in Multithreaded Programs by Generalized Predictive Analysis of Executions. (2005)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Traian Serbanuta et al.: Defining and Executing P Systems with Structured Data in K. (2008)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu: Complete Categorical Equational Deduction. (2001)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Traian-Florin Serbanuta and Grigore Rosu: A Truly Concurrent Semantics for the K Framework Based on Graph Transformations. (2012)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu: Equality of streams is a Pi0 over 2-complete problem. (2006)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Klaus Havelund and Grigore Rosu: Workshop on Runtime Verification, RV 2001, in connection with CAV 2001, Paris, France, July 23, 2001 (2001)",
+                        "predicate": "edited by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Klaus Havelund and Grigore Rosu: Runtime Verification 2002, RV 2002, FLoC Satellite Event, Copenhagen, Denmark, July 26, 2002 (2002)",
+                        "predicate": "edited by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Klaus Havelund and Grigore Rosu: Proceedings of the Fourth Workshop on Runtime Verification, RV@ETAPS 2004, Barcelona, Spain, April 3, 2004 (2005)",
+                        "predicate": "edited by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Howard Barringer et al.: Runtime Verification - First International Conference, RV 2010, St. Julians, Malta, November 1-4, 2010. Proceedings (2010)",
+                        "predicate": "edited by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Philip Daian et al.: RV-Android: Efficient Parametric Android Runtime Verification, a Brief Tutorial. (2015)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Philip Daian et al.: Runtime Verification at Work: A Tutorial. (2016)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Klaus Havelund and Grigore Rosu: Runtime Verification - 17 Years Later. (2018)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Jeff Huang et al.: ROSRV: Runtime Verification for Robots. (2014)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Qingzhou Luo et al.: RV-Monitor: Efficient Parametric Runtime Verification with Simultaneous Properties. (2014)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Patrick O'Neil Meredith and Grigore Rosu: Runtime Verification with the RV System. (2010)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu: Finite-Trace Linear Temporal Logic: Coinductive Completeness. (2016)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu et al.: Synthesizing Monitors for Safety Properties: This Time with Calls and Returns. (2008)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu et al.: Runtime Verification of C Memory Safety. (2009)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Traian-Florin Serbanuta et al.: Maximal Causal Models for Sequentially Consistent Systems. (2012)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu and Joseph A. Goguen: Hidden Congruent Deduction. (1998)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Xiaohong Chen et al.: Towards a Trustworthy Semantics-Based Language Framework via Proof Generation. (2021)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Azadeh Farzan et al.: Formal Analysis of Java Programs in JavaFAN. (2004)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu: Formal Design, Implementation and Verification of Blockchain Languages Using K (Invited Talk). (2020)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu and Saddek Bensalem: Allen Linear (Interval) Temporal Logic - Translation to LTL and Monitor Synthesis. (2006)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu et al.: Certifying Optimality of State Estimation Programs. (2003)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Stefan Ciobaca et al.: A Theoretical Foundation for Programming Languages Aggregation. (2014)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Chucky Ellison et al.: A Rewriting Logic Approach to Type Inference. (2008)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Joseph A. Goguen et al.: Conditional Circular Coinductive Rewriting with Case Analysis. (2002)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Mark Hills and Grigore Rosu: Towards a Module System for K. (2008)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Andrei Popescu and Grigore Rosu: Term-Generic Logic. (2008)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu: From Conditional to Unconditional Rewriting. (2004)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Feng Chen et al.: Efficient Formalism-Independent Monitoring of Parametric Properties. (2009)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Joseph A. Goguen et al.: Distributed Cooperative Formal Methods Tools. (1997)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Joseph A. Goguen et al.: Circular Coinductive Rewriting. (2000)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Klaus Havelund and Grigore Rosu: Monitoring Programs Using Rewriting. (2001)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Owolabi Legunsen et al.: How good are the specs? a study of the bug-finding effectiveness of existing Java API specifications. (2016)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Michael R. Lowry et al.: Certifying Domain-Specific Policies. (2001)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Patrick O'Neil Meredith et al.: Efficient Monitoring of Parametric Context-Free Patterns. (2008)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Mark Hills and Grigore Rosu: A rewriting approach to the design and evolution of object-oriented languages. (2007)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Andrei Stefanescu et al.: Semantics-based program verifiers for all languages. (2016)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Koushik Sen et al.: Decentralized runtime analysis of multithreaded applications. (2006)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Vilas Jagannath et al.: IMUnit: improved multithreaded unit testing. (2010)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Dongyun Jin et al.: JavaMOP: Efficient parametric runtime monitoring framework. (2012)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Choonghwan Lee et al.: Mining parametric specifications. (2011)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu and Xiaohong Chen: Matching logic: the foundation of the K framework (invited talk). (2020)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "José Meseguer and Grigore Rosu: A Total Approach to Partial Algebraic Specification. (2002)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu: Extensional Theories and Rewriting. (2004)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu and Andrei Stefanescu: Towards a Unified Theory of Operational and Axiomatic Semantics. (2012)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Xiaohong Chen and Grigore Rosu: Matching mu-Logic: Foundation of K Framework (Invited Paper). (2019)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Dorel Lucanu et al.: CIRC: A Behavioral Verification Tool Based on Circular Coinduction. (2009)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Dorel Lucanu and Grigore Rosu: CIRC : A Circular Coinductive Prover. (2007)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Andrei Popescu and Grigore Rosu: Behavioral Extensions of Institutions. (2005)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu and Dorel Lucanu: Circular Coinduction: A Proof Theoretical Foundation. (2009)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu: On Safety Properties and Their Monitoring. (2012)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Xiaohong Chen et al.: A Language-Independent Approach to Smart Contract Verification. (2018)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Xiaohong Chen and Grigore Rosu: A Language-Independent Program Verification Framework. (2018)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Feng Chen and Grigore Rosu: Mop: an efficient and generic runtime verification framework. (2007)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu and Andrei Stefanescu: Checking reachability using matching logic. (2012)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Holger Giese and Grigore Rosu: Formal Techniques for Distributed Systems - Joint 14th IFIP WG 6.1 International Conference, FMOODS 2012 and 32nd IFIP WG 6.1 International Conference, FORTE 2012, Stockholm, Sweden, June 13-16, 2012. Proceedings (2012)",
+                        "predicate": "edited by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Klaus Havelund and Grigore Rosu: Preface. (2002)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Mark Hills et al.: A Rewriting Logic Approach to Static Checking of Units of Measurement in C. (2008)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Mark Hills et al.: A Rewrite Framework for Language Definitions and for Generation of Efficient Interpreters. (2006)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Dorel Lucanu et al.: Regular Strategies as Proof Tactics for CIRC. (2007)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu: Inductive Behavioral Proofs by Unhiding. (2003)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu: A Birkhoff-like Axiomatizability Result for Hidden Algebra and Coalgebra. (1998)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu and Traian-Florin Serbanuta: K Overview and SIMPLE Case Study. (2011)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Traian-Florin Serbanuta et al.: The K Primer (version 3.3). (2011)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Xiaohong Chen et al.: Matching logic explained. (2021)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Xiaohong Chen et al.: Capturing constrained constructor patterns in matching logic. (2023)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Chris Hathhorn and Grigore Rosu: Dealing With C's Original Sin. (2019)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu and Koushik Sen: An instrumentation technique for online analysis of multithreaded programs. (2007)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Ali Kheradmand and Grigore Rosu: P4K: A Formal Semantics of P4 and Applications. (2018)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Rodolfo Pellizzoni et al.: Hardware Runtime Monitoring for Dependable COTS-Based Real-Time Embedded Systems. (2008)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Cyrille Artho et al.: Experiments with Test Case Generation and Runtime Analysis. (2003)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Feng Chen et al.: jPredictor: a predictive runtime analysis tool for java. (2008)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Jeff Huang et al.: GPredict: Generic Predictive Concurrency Analysis. (2015)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Koushik Sen et al.: Generating Optimal Linear Temporal Logic Monitors by Coinduction. (2003)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu: The Institution of Order-Sorted Equational Logic. (1994)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Joseph A. Goguen et al.: Behavioral and Coinductive Rewriting. (2000)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Traian-Florin Serbanuta et al.: A Rewriting Logic Approach to Operational Semantics (Extended Abstract). (2007)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu: Kan Extensions of Institutions. (1999)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Cyrille Artho et al.: Combining test case generation and runtime verification. (2005)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Bernd Fischer and Grigore Rosu: Interpreting Abstract Interpretations in Membership Equational Logic. (2001)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Andrei Popescu et al.: A semantic approach to interpolation. (2009)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu: Equational axiomatizability for coalgebra. (2001)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu: Behavioral abstraction is hiding information. (2004)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Elaine Li et al.: Specification of the Giskard Consensus Protocol. (2020)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Andrei Stefanescu et al.: All-Path Reachability Logic. (2018)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Sumant Kowshik et al.: Static Analysis to Enforce Safe Value Flow in Embedded Control Systems. (2006)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Bernd Finkbeiner et al.: Runtime Verification, 02.01. - 06.01.2007 (2008)",
+                        "predicate": "edited by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Bernd Finkbeiner et al.: 07011 Abstracts Collection -- Runtime Verification. (2007)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Musab A. Alturki et al.: Towards a Verified Model of the Algorand Consensus Protocol in Coq. (2019)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Musab A. Alturki and Grigore Rosu: Statistical Model Checking of RANDAO's Resilience to Pre-computed Reveal Strategies. (2019)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Joseph A. Goguen and Grigore Rosu: Hiding More of Hidden Algebra. (1999)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Theodoros Kasampalis et al.: IELE: A Rigorously Designed Language and Tool Ecosystem for the Blockchain. (2019)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "David Lazar et al.: Executing Formal Semantics with the K Tool. (2012)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu et al.: Certifying and Synthesizing Membership Equational Proofs. (2003)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu and Andrei Stefanescu: From Hoare Logic to Matching Logic Reachability. (2012)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Pierre Salverda et al.: Formally Defining and Verifying Master/Slave Speculative Parallelization. (2005)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu and Andrei Stefanescu: Matching logic: a new program verification approach. (2011)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Vlad Rusu et al.: Language definitions as rewrite theories. (2016)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Stefan Ciobaca et al.: A language-independent proof system for full program equivalence. (2016)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Joseph A. Goguen and Grigore Rosu: Institution Morphisms. (2002)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Theodoros Kasampalis et al.: Language-parametric compiler validation with application to LLVM. (2021)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Bernd Finkbeiner et al.: 07011 Executive Summary -- Runtime Verification. (2007)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu and Koushik Sen: An Instrumentation Technique for Online Analysis of Multithreaded Programs. (2004)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Xiaohong Chen et al.: Towards a unified proof framework for automated fixpoint reasoning using matching logic. (2020)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Xiaohong Chen and Grigore Rosu: A general approach to define binders using matching logic. (2020)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Zhengyao Lin et al.: Generating Proof Certificates for a Language-Agnostic Deductive Program Verifier. (2023)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Owolabi Legunsen et al.: Evolution-Aware Monitoring-Oriented Programming. (2015)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Koushik Sen et al.: Efficient Decentralized Monitoring of Safety in Distributed Systems. (2004)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Andrei Popescu and Grigore Rosu: Term-generic logic. (2015)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "José Meseguer and Grigore Rosu: The rewriting logic semantics project. (2007)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Ezio Bartocci et al.: First international Competition on Runtime Verification: rules, benchmarks, tools, and final results of CRV 2014. (2019)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Klaus Havelund and Grigore Rosu: Efficient monitoring of safety properties. (2004)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Patrick O'Neil Meredith et al.: An overview of the MOP runtime verification framework. (2012)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Koushik Sen et al.: Online efficient predictive safety analysis of multithreaded programs. (2006)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu and Traian-Florin Serbanuta: An overview of the K semantic framework. (2010)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Virgil Emil Cazanescu and Grigore Rosu: Weak Inclusion Systems. (1997)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu: Axiomatizability in Inclusive Equational Logics. (2002)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Klaus Havelund and Grigore Rosu: Foreword - Selected Papers from the First International Workshop on Runtime Verification held in Paris, July 2001 (RV'01). (2004)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Klaus Havelund and Grigore Rosu: An Overview of the Runtime Verification Tool Java PathExplorer. (2004)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Klaus Havelund and Grigore Rosu: Foreword. (2005)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu: Finite-trace linear temporal logic: coinductive completeness. (2018)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Oleg Sokolsky and Grigore Rosu: Introduction to the special issue on runtime verification. (2012)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Samuel R. Buss and Grigore Rosu: Incompleteness of Behavioral Logics. (2000)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Feng Chen and Grigore Rosu: Towards Monitoring-Oriented Programming: A Paradigm Combining Specification and Implementation. (2003)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Feng Chen et al.: Checking and Correcting Behaviors of Java Programs at Runtime with Java-MOP. (2005)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grit Denker et al.: Rewriting Logic Systems. (2006)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Codruta Gîrlea and Grigore Rosu: Abstract Semantics for K Module Composition. (2011)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Joseph A. Goguen and Grigore Rosu: A protocol for distributed cooperative work. (1999)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Klaus Havelund and Grigore Rosu: Preface. (2001)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Klaus Havelund and Grigore Rosu: Monitoring Java Programs with Java PathExplorer. (2001)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Klaus Havelund and Grigore Rosu: Preface. (2004)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "José Meseguer and Grigore Rosu: Towards Behavioral Maude: Behavioral Membership Equational Logic. (2002)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "José Meseguer and Grigore Rosu: The Rewriting Logic Semantics Project. (2005)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu: Preface. (2008)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Koushik Sen and Grigore Rosu: Generating Optimal Monitors for Extended Regular Expressions. (2003)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Prasanna Thati and Grigore Rosu: Monitoring Algorithms for Metric Temporal Logic Specifications. (2004)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Virgil Emil Cazanescu and Grigore Rosu: Weak Inclusion Systems: Part Two. (2000)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu and Joseph A. Goguen: On Equational Craig Interpolation. (2000)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Marcelo d'Amorim and Grigore Rosu: An Equational Specification for the Scheme Language. (2005)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "José Meseguer and Grigore Rosu: The rewriting logic semantics project: A progress report. (2013)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Traian-Florin Serbanuta et al.: A rewriting logic approach to operational semantics. (2009)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Owolabi Legunsen et al.: How effective are existing Java API specifications for finding bugs during runtime verification? (2019)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Patrick O'Neil Meredith et al.: Efficient monitoring of parametric context-free patterns. (2010)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu and Klaus Havelund: Rewriting-Based Techniques for Runtime Verification. (2005)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Jörg Endrullis et al.: On the complexity of stream equality. (2014)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu: Matching Logic. (2017)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Andrei Stefanescu et al.: All-Path Reachability Logic. (2019)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Narciso Martí-Oliet et al.: Editorial. (2007)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu and Feng Chen: Semantics and Algorithms for Parametric Monitoring (2012)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Grigore Rosu: Matching Logic. (2017)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    },
+                    {
+                        "subject": "Musab A. Alturki et al.: Towards a Verified Model of the Algorand Consensus Protocol in Coq. (2019)",
+                        "predicate": "authored by",
+                        "object": "Grigore Rosu"
+                    }
+                ]
+            }
+        ]
+    }
+]
