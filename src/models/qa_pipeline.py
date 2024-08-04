@@ -4,7 +4,7 @@ import configparser
 import json
 import os
 from data.data_extraction.run_question import run_question
-from models.zero_shot_prompting_pipeline import clean_context, truncate_context_to_max_chars
+from models.predictions_pipeline import clean_context, truncate_context_to_max_chars
 from data.verbalizer.prompt_verbalizer import verbalise_triples
 from data.evidence_selection import evidence_triple_selection, triple2text, evidence_sentence_selection
 from datasets import load_dataset

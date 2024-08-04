@@ -119,7 +119,7 @@ We experiment with several state-of-the-art language models:
     │   │   ├── generatePrompt.py
     │   │   ├── prompt_verbalizer.py
     │   │   └── verbalisation_module.py
-    │   └── zero_shot_prompting_pipeline.py
+    │   └── predictions_pipeline.py
     └── visualization
         └── visualize.py
 

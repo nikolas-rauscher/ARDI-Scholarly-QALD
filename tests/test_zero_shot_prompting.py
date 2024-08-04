@@ -1,6 +1,6 @@
 
 import configparser
-from models.zero_shot_prompting_pipeline import run_model
+from models.predictions_pipeline import run_model
 
 
 config = configparser.ConfigParser()

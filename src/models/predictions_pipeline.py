@@ -75,7 +75,7 @@ def truncate_context_to_max_chars(context, question, prompt_template):
     
     return context
 
-def zero_shot_prompting_local(model, tokenizer, example, context_type, prompt_template):
+def zero_shot_prompting_local(model, tokenizer, question, context, prompt_template):
     """
     Generate zero-shot predictions using a local model.
 
@@ -89,14 +89,30 @@ def zero_shot_prompting_local(model, tokenizer, example, context_type, prompt_te
     Returns:
         dict: A dictionary containing the role and content of the response.
     """
-    context = clean_context(example["contexts"][context_type])
-    truncated_context = truncate_context_to_max_chars(context, example['question'], prompt_template)
-    formatted_prompt = prompt_template.format(question=example['question'], context=truncated_context)
+    context = clean_context(context)
+    truncated_context = truncate_context_to_max_chars(context, question, prompt_template)
+    formatted_prompt = prompt_template.format(question=question, context=truncated_context)
     
     inputs = tokenizer(formatted_prompt, add_special_tokens=True, max_length=max_length_input, return_tensors="pt").input_ids.to("cuda")
     outputs = model.generate(inputs, max_new_tokens=max_output_length)
     response_text = tokenizer.batch_decode(outputs, skip_special_tokens=True)[0]
     return response_text
+
+def zero_shot_prompting_local4settings(model, tokenizer, example, context_type, prompt_template):
+    """
+    Generate zero-shot predictions using a local model.
+
+    Args:
+        model (transformers.PreTrainedModel): The loaded model.
+        tokenizer (transformers.PreTrainedTokenizer): The loaded tokenizer.
+        example (dict): The example containing the question and context.
+        context_type (str): The type of context to use from the example.
+        prompt_template (str): The prompt template to format the question and context.
+
+    Returns:
+        dict: A dictionary containing the role and content of the response.
+    """
+    return zero_shot_prompting_local(model,tokenizer,question=example["question"],context=example["contexts"][context_type],prompt_template=prompt_template)
 
 def zero_shot_prompting_llama(api, example, context_type, prompt_template):
     """
@@ -192,7 +208,7 @@ def get_groq_api_response(question, client, model_id):
         print(f"API call failed: {e}")
         return "API call failed."
 
-def run_model(model_id, model_name, template_files, api=False, api_type=None):
+def run_model4settings(model_id, model_name, template_files, api=False, api_type=None):
     """
     Run the model to generate zero-shot predictions for the given templates.
 
@@ -273,7 +289,7 @@ def run_model(model_id, model_name, template_files, api=False, api_type=None):
                     elif api_type == 'groq':
                         response = zero_shot_prompting_groq(groq_client, example, context_type, prompt_template, model_id)
                 else:
-                    response = zero_shot_prompting_local(model, tokenizer, example, context_type, prompt_template)
+                    response = zero_shot_prompting_local4settings(model, tokenizer, example, context_type, prompt_template)
                 
                 template_result[context_key]["response"] = response
             
@@ -305,4 +321,4 @@ if __name__ == '__main__':
     
     for model_id, templates in model_templates.items():
         model_name = model_id.split('/')[-1]
-        run_model(model_id, model_name, templates, api=api, api_type=api_type)
+        run_model4settings(model_id, model_name, templates, api=api, api_type=api_type)
