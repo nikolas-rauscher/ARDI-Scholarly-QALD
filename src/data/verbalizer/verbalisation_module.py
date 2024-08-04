@@ -323,7 +323,7 @@ class VerbModule:
 
                             if pre_idx.strip() == '':
                                 to_replace = to_replace.replace(
-                                    '[^]', '(?<=\s)[^a-zA-Z0-9]')
+                                    '[^]', '(?<=\\s)[^a-zA-Z0-9]')
 
                             replaced_span = re.search(
                                 to_replace,
@@ -345,7 +345,7 @@ class VerbModule:
                             # a ??, then we would end up with to_replace beginning with [^], which we can't have
                             if pre_idx.strip() == '':
                                 to_replace = to_replace.replace(
-                                    '[^]', '(?<=\s)[^a-zA-Z0-9]')
+                                    '[^]', '(?<=\\s)[^a-zA-Z0-9]')
 
                             replaced_span = re.search(
                                 to_replace,
