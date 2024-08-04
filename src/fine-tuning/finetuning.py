@@ -21,6 +21,27 @@ metric = evaluate.load("rouge")
 with open(config['FilePaths']['prompt_template']) as f:
     prompt_template = f.read()
 
+def get_cross_validation_splits(train_dataset, target_column, n_splits=5):
+    """
+    Get cross-validation splits for the train dataset.
+
+    Args:
+        train_dataset (Dataset): The train dataset.
+        target_column (str): The name of the target column.
+        n_splits (int): Number of folds for cross-validation.
+
+    Returns:
+        list: A list of tuples, each containing train indices and validation indices for each split.
+    """
+    train_df = train_dataset.to_pandas()
+    X, y = train_df.drop(columns=[target_column]), train_df[target_column]
+
+    skf = StratifiedKFold(n_splits=n_splits)
+    return [(train_idx, val_idx) for train_idx, val_idx in skf.split(X, y)]
+
+# ==================================================================================
+# ==============Functions basically never called externally=========================
+# ==================================================================================
 
 def load_tokenizer(model_id):
     """
@@ -208,25 +229,6 @@ def formatting_prompts_func(examples):
             question=question, context=context) + answer
         prompt_texts.append(prompt_text)
     return prompt_texts
-
-
-def get_cross_validation_splits(train_dataset, target_column, n_splits=5):
-    """
-    Get cross-validation splits for the train dataset.
-
-    Args:
-        train_dataset (Dataset): The train dataset.
-        target_column (str): The name of the target column.
-        n_splits (int): Number of folds for cross-validation.
-
-    Returns:
-        list: A list of tuples, each containing train indices and validation indices for each split.
-    """
-    train_df = train_dataset.to_pandas()
-    X, y = train_df.drop(columns=[target_column]), train_df[target_column]
-
-    skf = StratifiedKFold(n_splits=n_splits)
-    return [(train_idx, val_idx) for train_idx, val_idx in skf.split(X, y)]
 
 
 def fine_tune_model(model_id, train_dataset, val_dataset):

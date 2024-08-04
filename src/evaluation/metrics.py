@@ -8,6 +8,7 @@ import json
 import numpy as np
 metric = evaluate.load("rouge")
 
+
 def calculate_metrics(generated_answers, reference_answers):
     """
     Calculate ROUGE scores for a set of answers against reference answers with corresponding order
@@ -40,7 +41,8 @@ def compute_meteor(generated_answers, reference_answers):
             gold_tokens = nltk.word_tokenize(gold_answer)
             system_tokens = nltk.word_tokenize(system_answer)
             try:
-                meteor_scores.append(meteor_score([system_tokens], gold_tokens))
+                meteor_scores.append(meteor_score(
+                    [system_tokens], gold_tokens))
             except Exception as err:
                 print(f"Error calculating METEOR score : {err}")
                 meteor_scores.append(0.0)
@@ -57,6 +59,7 @@ def ensure_nltk_resources():
     """Ensures necessary NLTK resources are downloaded."""
     nltk.download('wordnet')
     nltk.download('punkt')
+
 
 def compute_metrics(preds, labels):
     if isinstance(preds, tuple):

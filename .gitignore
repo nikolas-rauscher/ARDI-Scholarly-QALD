@@ -154,7 +154,6 @@ results/hm_results/todo
 
 # Data files
 data/external/
-*.json
 
 # Test scripts
 *test1.py*
@@ -165,5 +164,4 @@ data/external/
 *.zip
 
 # Results and logs
-./results/*
 *.txt
