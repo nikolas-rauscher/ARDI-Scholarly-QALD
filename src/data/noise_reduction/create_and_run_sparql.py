@@ -2,8 +2,7 @@ import json
 import requests
 import os
 from dotenv import load_dotenv
-import utils
-import answer_extraction
+# from src.data.noise_reduction.utils import read_questions, download_dataset, post_process_query
 from SPARQLWrapper import SPARQLWrapper, JSON
 import datetime
 from time import sleep

@@ -1,6 +1,6 @@
 import json
 import re
-
+from datasets import load_dataset
 
 def read_questions(file_name):
     """
@@ -43,3 +43,29 @@ def post_process_query(sparql_query):
     # Use regular expressions to add a space before '?'
     modified_sparql_query = re.sub(r'(\S)\?', r'\1 ?', cleaned_string)
     return modified_sparql_query
+
+def download_dataset(output_file):
+    """
+    Downloads a dataset and saves it to a specified output file.
+    
+    Parameters:
+        output_file (str): The path to the output file where the dataset will be saved.
+    Returns:
+        None
+    """
+    ds = load_dataset("awalesushil/DBLP-QuAD")
+    new_data = []
+
+    for item in ds['train']:
+        new_data.append({
+            "id": item["id"],
+            "question": item["question"]["string"],
+            "paraphrased_question": item["paraphrased_question"]["string"],
+            "query_type": item["query_type"],
+            "query": item["query"]["sparql"],
+            "entities": item["entities"] 
+        })
+        
+    with open(output_file, 'w') as f:
+        json.dump(new_data, f, indent=4)
+
