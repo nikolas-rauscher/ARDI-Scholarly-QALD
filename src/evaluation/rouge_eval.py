@@ -84,7 +84,7 @@ def ensure_folder_exists(folder_path):
 
 
 if __name__ == '__main__':
-    directory = '/Users/celes/Documents/Projects/ARDI-Scholarly-QALD/results/fine_tuning_preds_epoch_results_out'
+    directory = '/Users/celes/Documents/Projects/ARDI-Scholarly-QALD/data/processed/100q/processed'
     ref_directory = 'results/train_test_data'
     output_dir = os.path.join(directory, 'evaluation')
     # directory = 'results/hm_results/processed/'
@@ -98,7 +98,7 @@ if __name__ == '__main__':
         reference_answers = json.load(f)
 
     for filename in os.listdir(directory):
-        if ("test" not in filename):
+        if ("answer" not in filename):
             continue
         if filename.endswith(".json"):
             system_path = os.path.join(directory, filename)
