@@ -1,6 +1,7 @@
 from .create_context import create_dataset
 import json
 import os
+from .experiment import Dataset
 
 
 def format_author_uris(author_uris: list) -> str:
@@ -23,7 +24,7 @@ def format_author_uris(author_uris: list) -> str:
     return result
 
 
-def run_question(question: str, author_dblp_uri: list, question_id: str, config) -> dict:
+def run_question(question: str, author_dblp_uri: list) -> dict:
     """
     Processes a question by creating a JSON file with question details and initiates dataset creation.
 
@@ -34,9 +35,10 @@ def run_question(question: str, author_dblp_uri: list, question_id: str, config)
         config: Configuration object containing paths and URLs used throughout the dataset creation process.
 
     Return:
-        All retrieved triples and relevant wikidata (dict)
+        All retrieved triples and relevant wikidata (list of dict)
     """
     # Create question dictionary
+    question_id = author_dblp_uri[0].split('/')[-1] #question id is set to dblp_author_id
     question_dict = [{
         "id": question_id,
         "question": question,
@@ -44,6 +46,7 @@ def run_question(question: str, author_dblp_uri: list, question_id: str, config)
         "author_dblp_uri": format_author_uris(author_dblp_uri)
     }]
 
+    config = Dataset(question_id)
     # Set the file path for saving the question data
     save_path = os.path.join(config.get('FilePaths', 'custom_questions_path'), f"{question_id}.json")
     with open(save_path, 'w') as file:
@@ -52,7 +55,7 @@ def run_question(question: str, author_dblp_uri: list, question_id: str, config)
     # Update the path to the question in the config object
     config.questions_path = save_path 
     # Call create_dataset with the updated config
-    create_dataset(config, question_id)
+    create_dataset(config)
 
     merged_data_path = os.path.join(config.get('FilePaths', 'merged_triples_and_wikipedia_path'), f"final_merged_{question_id}.json")
     with open(merged_data_path, 'r', encoding='utf-8') as file:

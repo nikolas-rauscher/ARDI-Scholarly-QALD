@@ -7,37 +7,41 @@ from .merge_data import merge_data
 
 from .experiment import Dataset
 
-def create_dataset(config, expriment_name):
-    dataset = Dataset(config, expriment_name)
+
+def data_extraction(expriment_name):
+    dataset = Dataset(expriment_name)
+    create_dataset(dataset)
+
+def create_dataset(config):
 
     # Creating and preprocessing the DBLP dataset
-    create_dataset_dblp(dataset.questions_path, 
-                        dataset.dblp_endpoint_url,
-                        dataset.dblp_path_outputdata_preprocessed, subset=2) 
+    create_dataset_dblp(config.questions_path, 
+                        config.dblp_endpoint_url,
+                        config.dblp_path_outputdata_preprocessed, subset=100) 
 
-    post_process_dblp(dataset.dblp_path_outputdata_preprocessed,
-                      dataset.dblp_path_outputdata_postprocessed)
+    post_process_dblp(config.dblp_path_outputdata_preprocessed,
+                      config.dblp_path_outputdata_postprocessed)
 
     # Creating and preprocessing the OpenAlex dataset
-    create_alex_dataset(dataset.dblp_path_outputdata_preprocessed, 
-                        dataset.openalex_path_outputdata_preprocessed, 
-                        dataset.openalex_endpoint_url)
+    create_alex_dataset(config.dblp_path_outputdata_preprocessed, 
+                        config.openalex_path_outputdata_preprocessed, 
+                        config.openalex_endpoint_url)
 
-    post_process_alex_parallelized(dataset.openalex_path_outputdata_preprocessed, 
-                                   dataset.openalex_path_outputdata_postprocessed, 
-                                   dataset.openalex_endpoint_url, processes=8)
+    post_process_alex_parallelized(config.openalex_path_outputdata_preprocessed, 
+                                   config.openalex_path_outputdata_postprocessed, 
+                                   config.openalex_endpoint_url, processes=8)
 
     # Adding Wikipedia data
-    add_wikidata(dataset.raw_wikipedia_path, 
-                 dataset.processed_wikipedia_path,
-                 dataset.openalex_path_outputdata_postprocessed, 
-                 dataset.wikipedia_path_outputdata)
+    add_wikidata(config.raw_wikipedia_path, 
+                 config.processed_wikipedia_path,
+                 config.openalex_path_outputdata_postprocessed, 
+                 config.wikipedia_path_outputdata)
 
     # Merging all data
-    merge_data(dataset.dblp_path_outputdata_postprocessed, 
-               dataset.openalex_path_outputdata_postprocessed, 
-               dataset.wikipedia_path_outputdata,
-               dataset.final_path_merged_data)
+    merge_data(config.dblp_path_outputdata_postprocessed, 
+               config.openalex_path_outputdata_postprocessed, 
+               config.wikipedia_path_outputdata,
+               config.final_path_merged_data)
 
 
 
