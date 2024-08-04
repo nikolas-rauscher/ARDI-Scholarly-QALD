@@ -20,7 +20,7 @@ def ask_question():
         author_dblp_uri = input(
             "Please enter the author's DBLP URI (format: https://dblp.org/pid/w/TDWilson): ")
         print("Author's DBLP URI:", author_dblp_uri)
-        test_natural_question(natural_question, author_dblp_uri)
+        test_natural_question(natural_question, [author_dblp_uri])
     else:
         print("Invalid input. Please enter y or n.")
         ask_question()
