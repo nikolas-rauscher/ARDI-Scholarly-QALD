@@ -37,93 +37,55 @@ We experiment with several state-of-the-art language models:
 ```bash
 
 .
-.
+├── LICENSE
+├── Makefile
 ├── README.md
-├── config.py
+├── config.ini
 ├── data
 │   ├── README.md
 │   ├── external
-│   │   └── README.md
+│   ├── interim
 │   ├── processed
-│   │   ├── alex
-│   │   │   └── README.md
-│   │   ├── cleand_dataset
-│   │   └── dblp
-│   │       └── README.md
 │   └── raw
-│       ├── README.md
-│       └── dataset
 ├── docs
 │   └── README.md
-├── main.py
+├── models
+├── now.txt
 ├── reports
-│   └── README.md
-├── results
 │   ├── README.md
-└── src
-    ├── __init__.py
-    ├── data
-    │   ├── README.md
-    │   ├── add_wiki_data.py
-    │   ├── analyse_dataset_alex.py
-    │   ├── analyse_dataset_dblp.py
-    │   ├── create_dataset_alex.py
-    │   ├── create_dataset_dblp.py
-    │   ├── data
-    │   │   └── processed
-    │   ├── evaluation
-    │   │   └── qa_eval.py
-    │   ├── make_prompt.py
-    │   ├── merge_triples.py
-    │   ├── postprocessesing_wikidata.py
-    │   ├── postprocessing_alex.py
-    │   ├── postprocessing_dblp.py
-    │   ├── process_wikidata.py
-    │   ├── run_queries.py
-    │   └── run_query.py
-    ├── evaluation
-    │   ├── README.md
-    │   ├── hm_auto.py
-    │   ├── qa_eval.py
-    │   ├── results_prepocess.py
-    │   ├── rouge.py
-    │   └── scripts_for_human_eval
-    │       ├── README.md
-    │       ├── human_eval.py
-    │       ├── input
-    │       ├── output
-    │       ├── plot_human_eval.py
-    │       └── results
-    ├── features
-    │   ├── evidence_selection.py
-    │   └── noise_reduction
-    │       ├── README.md
-    │       ├── filter_for_vaild_awnsers.py
-    │       └── generate_spaql
-    │           ├── crate-top-n.py
-    │           ├── create_and_run_sparql.py
-    │           ├── datasets
-    │           ├── eval_results.py
-    │           ├── get_example_dataset.py
-    │           ├── merge_anwsers.py
-    │           ├── simple_noise_reduction.py
-    │           └── utils.py
-    ├── fine-tuning
-    │   └── finetuning.py
-    ├── models
-    │   ├── README.md
-    │   ├── prepare_prompts_context.py
-    │   ├── verbalizer
-    │   │   ├── README.md
-    │   │   ├── __init__.py
-    │   │   ├── generatePrompt.py
-    │   │   ├── prompt_verbalizer.py
-    │   │   └── verbalisation_module.py
-    │   └── predictions_pipeline.py
-    └── visualization
-        └── visualize.py
+│   ├── comparison_bar_plot_previous.png
+│   ├── comparison_prompt_template.png
+│   └── mean_loss.png
+├── requirements.txt
+├── results
+│   ├── 4settings10q
+│   ├── experiments_10q
+│   ├── experiments_T5
+│   ├── experiments_templates
+│   ├── fine_tuning_preds_epoch_results
+│   ├── results_4settings.json
+│   └── sparql
+├── setup.py
+├── src
+│   ├── data
+│   ├── evaluation
+│   ├── features
+│   ├── fine-tuning
+│   ├── main.py
+│   ├── models
+│   ├── utils
+│   └── visualization
+├── tests
+│   ├── test_data_extraction.py
+│   ├── test_evaluation.py
+│   ├── test_evidence_matching.py
+│   ├── test_fine_tuning_T5.ipynb
+│   ├── test_predictions.py
+│   ├── test_prepare_context.py
+│   ├── test_qa_pipeline.py
+│   └── test_zero_shot_prompting.py
+└── tree.txt
 
-55 directories, 55 files
-
+30 directories, 28 files
 
 ```

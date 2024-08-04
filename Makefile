@@ -50,9 +50,7 @@ triple-extraction:
 
 context-generation: 
 
-
 inference-zero-shot:  
-
 
 inference-fine-tuning:  
 
