@@ -1,0 +1,392 @@
+[
+    {
+        "id": "6b8aa79c-3908-4f03-b85b-aa1a325d9fe6",
+        "question": "What type of information sources were found to be lacking in organized information at Social Services offices according to the author's observation?",
+        "model": "Meta-Llama-2-7B",
+        "technique": "zero_shot",
+        "results": [
+            {
+                "prompt_template": "data/raw/prompt_template/prompt_template.txt",
+                "all_triples_results": {
+                    "response": "API call failed.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "verbalizer_results": {
+                    "response": "API call failed.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "evidence_matching": {
+                    "response": "API call failed.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "verbalizer_plus_evidence_matching": {
+                    "response": "API call failed.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "339bfd44-a71f-4057-a8a2-c84e1cc2c6ff",
+        "question": "What is the cited by count for the writer's institution who published the paper 'MAGMA: a multiagent architecture for metaheuristics'?",
+        "model": "Meta-Llama-2-7B",
+        "technique": "zero_shot",
+        "results": [
+            {
+                "prompt_template": "data/raw/prompt_template/prompt_template.txt",
+                "all_triples_results": {
+                    "response": "API call failed.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "verbalizer_results": {
+                    "response": "API call failed.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "evidence_matching": {
+                    "response": "API call failed.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "verbalizer_plus_evidence_matching": {
+                    "response": "API call failed.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "5da8b8e9-1ef5-4217-a06c-06b12324c991",
+        "question": "What was the focus of the author's undergraduate studies at Oberlin College?",
+        "model": "Meta-Llama-2-7B",
+        "technique": "zero_shot",
+        "results": [
+            {
+                "prompt_template": "data/raw/prompt_template/prompt_template.txt",
+                "all_triples_results": {
+                    "response": "API call failed.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "verbalizer_results": {
+                    "response": "API call failed.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "evidence_matching": {
+                    "response": "API call failed.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "verbalizer_plus_evidence_matching": {
+                    "response": "API call failed.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "d808ca0f-9b70-47a6-9b96-fb8f75cf0f1a",
+        "question": "Where did the author of SPAA 1999 - Guest Editors' Foreword receive a B.Tech degree from?",
+        "model": "Meta-Llama-2-7B",
+        "technique": "zero_shot",
+        "results": [
+            {
+                "prompt_template": "data/raw/prompt_template/prompt_template.txt",
+                "all_triples_results": {
+                    "response": "API call failed.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "verbalizer_results": {
+                    "response": "API call failed.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "evidence_matching": {
+                    "response": "API call failed.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "verbalizer_plus_evidence_matching": {
+                    "response": "API call failed.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "85c79cd1-0c96-4efd-a5a8-3ade69885173",
+        "question": "In which year did the author join Epic Games as an engineering fellow?",
+        "model": "Meta-Llama-2-7B",
+        "technique": "zero_shot",
+        "results": [
+            {
+                "prompt_template": "data/raw/prompt_template/prompt_template.txt",
+                "all_triples_results": {
+                    "response": "API call failed.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "verbalizer_results": {
+                    "response": "API call failed.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "evidence_matching": {
+                    "response": "API call failed.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "verbalizer_plus_evidence_matching": {
+                    "response": "API call failed.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "55d6d116-5fd7-4792-83e3-cecaeb3b35b9",
+        "question": "How many citations are there for the institution to which the author of the paper 'Dynamic Knowledge Graph Construction for Zero-shot Commonsense Question Answering' belongs?",
+        "model": "Meta-Llama-2-7B",
+        "technique": "zero_shot",
+        "results": [
+            {
+                "prompt_template": "data/raw/prompt_template/prompt_template.txt",
+                "all_triples_results": {
+                    "response": "API call failed.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "verbalizer_results": {
+                    "response": "API call failed.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "evidence_matching": {
+                    "response": "API call failed.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "verbalizer_plus_evidence_matching": {
+                    "response": "API call failed.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "4af2ea82-8bf9-46f6-a7e0-36b4604c5f67",
+        "question": "What is the type of organization where the author of the paper 'First order convergence and roots' works?",
+        "model": "Meta-Llama-2-7B",
+        "technique": "zero_shot",
+        "results": [
+            {
+                "prompt_template": "data/raw/prompt_template/prompt_template.txt",
+                "all_triples_results": {
+                    "response": "API call failed.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "verbalizer_results": {
+                    "response": "API call failed.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "evidence_matching": {
+                    "response": "API call failed.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "verbalizer_plus_evidence_matching": {
+                    "response": "API call failed.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "9aad6d9b-fc97-4c55-9630-8966eedb6f17",
+        "question": "In which field is Russell Greiner a specialist?",
+        "model": "Meta-Llama-2-7B",
+        "technique": "zero_shot",
+        "results": [
+            {
+                "prompt_template": "data/raw/prompt_template/prompt_template.txt",
+                "all_triples_results": {
+                    "response": "API call failed.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "verbalizer_results": {
+                    "response": "API call failed.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "evidence_matching": {
+                    "response": "API call failed.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "verbalizer_plus_evidence_matching": {
+                    "response": "API call failed.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "96650ffc-e614-4d50-be21-a8a01827b695",
+        "question": "What is the i10Index of the researcher who published A Dynamic, Distributed, Hierarchical Load Balancing for HLA-Based Simulations on Large-Scale Environments in 2010 with Robson E. De Grande from Brock University, Canada?",
+        "model": "Meta-Llama-2-7B",
+        "technique": "zero_shot",
+        "results": [
+            {
+                "prompt_template": "data/raw/prompt_template/prompt_template.txt",
+                "all_triples_results": {
+                    "response": "API call failed.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "verbalizer_results": {
+                    "response": "API call failed.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "evidence_matching": {
+                    "response": "API call failed.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "verbalizer_plus_evidence_matching": {
+                    "response": "API call failed.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "cf453550-d91c-4dbf-acec-510c5968e2e7",
+        "question": "From which university did the creator of Affect Modeling with Field-based Physiological Responses receive a Bachelor of Applied Science?",
+        "model": "Meta-Llama-2-7B",
+        "technique": "zero_shot",
+        "results": [
+            {
+                "prompt_template": "data/raw/prompt_template/prompt_template.txt",
+                "all_triples_results": {
+                    "response": "API call failed.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "verbalizer_results": {
+                    "response": "API call failed.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "evidence_matching": {
+                    "response": "API call failed.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                },
+                "verbalizer_plus_evidence_matching": {
+                    "response": "API call failed.",
+                    "metrics": {
+                        "exact_score": 0,
+                        "meteor": 0
+                    }
+                }
+            }
+        ]
+    }
+]

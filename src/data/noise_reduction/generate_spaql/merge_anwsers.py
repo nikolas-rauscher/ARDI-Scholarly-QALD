@@ -39,8 +39,8 @@ def merge_answers(train_dataset_path, sparql_answers_path, output_file_path):
     
     print(f'Merged data saved to {output_file_path} successfully!')
 
-train_dataset_path = 'results/prompt_context/prepared_data_file_zero_shot_prompting_final.json'
+train_dataset_path = 'results/prompt_context/prepared_data4settings_file_zero_shot_prompting_final.json'
 sparql_answers_path = 'src/features/noise_reduction/generate_spaql/datasets/answers/filterd_awnsers/1000_qestions/no_numbers_filterd_awnsers.json'
-output_file_path = 'results/prompt_context/prepared_data_file_zero_shot_prompting_final.json'
+output_file_path = 'results/prompt_context/prepared_data4settings_file_zero_shot_prompting_final.json'
 
 merge_answers(train_dataset_path, sparql_answers_path, output_file_path)

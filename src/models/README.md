@@ -9,8 +9,8 @@ This section defines the file paths used by the pipeline.
 - `zero_shot_prompting_result_file`: Path to the file where the zero-shot prompting results will be saved.
 - `prompt_template`: Path to the prompt template file. (Not the one for the pipeline)
 - `test_data_file`: Path to the test data file.
-- `prepared_data_file`: Path to the prepared data file.
-- `zero_shot_results_file`: Path to the file where the zero-shot results will be saved.
+- `prepared_data4settings_file`: Path to the prepared data file.
+- `zero_shot_4settings_results_file`: Path to the file where the zero-shot results will be saved.
 
 ### [Token]
 
@@ -68,8 +68,8 @@ To run the pipeline using a local model on a cluster:
    zero_shot_prompting_result_file = ./results/zero_shot_prompting.json
    prompt_template = ./data/raw/prompt_template.txt
    test_data_file = ./data/processed/test_processed_data_100.json
-   prepared_data_file = ./results/prepared_data_file_zero_shot_prompting.json
-   zero_shot_results_file = ./results/zero_shot_prompting.json
+   prepared_data4settings_file = ./results/prepared_data4settings_file_zero_shot_prompting.json
+   zero_shot_4settings_results_file = ./results/zero_shot_prompting.json
 
    [Token]
    llamaapi = LL-toLj4vcjSC82cwlgF0yf0o5sUs8tTj8tPhbABsKMb1c74TnQud7bJbcFozHTu00n

@@ -12,6 +12,6 @@ if __name__ == '__main__':
     with open(config['FilePaths']['prompt_template'], 'r') as file:
         prompt_template = file.read()
 
-    output_file = config['FilePaths']['prepared_data_file']
+    output_file = config['FilePaths']['prepared_data4settings_file']
     # generate_contexts_with_evidence_and_verbalizer(examples, prompt_template, output_file, wikipedia_data=True)
     prepare_data_4settings(examples, output_file, wikipedia_data=True)
