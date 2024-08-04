@@ -1,16 +1,9 @@
-import sys
 import os
-
-sys.path.append('./src')
-
 from data.verbalizer.prompt_verbalizer import verbalise_triples
-from data.evidence_selection.evidence_selection import evidence_triple_selection, load_triplet_extractor, triple2text, evidence_sentence_selection
+from data.evidence_selection import evidence_triple_selection, load_triplet_extractor, triple2text, evidence_sentence_selection
 from tqdm import tqdm
 import configparser
 import json
-
-config = configparser.ConfigParser()
-config.read('config.ini')
 
 
 def generate_contexts_with_evidence_and_verbalizer(examples, output_file, wikipedia_data=True):
@@ -185,14 +178,3 @@ def generate_context_for_file(input_file_path, prompt_template_path, output_file
 
     prepare_data_4settings(examples, prompt_template, output_file_path)
     return True
-
-
-if __name__ == '__main__':
-    with open(config['FilePaths']['prepare_prompt_context_input'], 'r') as file:
-        examples = json.load(file)
-    with open(config['FilePaths']['prompt_template'], 'r') as file:
-        prompt_template = file.read()
-
-    output_file = config['FilePaths']['prepared_data_file']
-    # generate_contexts_with_evidence_and_verbalizer(examples, prompt_template, output_file, wikipedia_data=True)
-    prepare_data_4settings(examples, output_file, wikipedia_data=True)

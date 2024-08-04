@@ -13,6 +13,10 @@ experiment_name = "full_dataset"
 question = "What is the field of study of Tom Wilson?"
 author_dblp_uri = ["https://dblp.org/pid/w/TDWilson"]
 
-run_question(question, author_dblp_uri)
+def main():
+    run_question(question, author_dblp_uri)
 
 ##################################################################################
+
+if __name__ == "__main__":
+    main()

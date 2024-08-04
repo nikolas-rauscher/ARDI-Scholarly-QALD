@@ -178,7 +178,6 @@ def process_in_parallel(data: dict, outputdata_path: str, endpoint_url: str, pro
     for i in range(processes):
         outputdata_name  = os.path.basename(outputdata_path)
         directory = os.path.dirname(outputdata_path)
-        print(outputdata_name)
         outputpath = directory + "/" +f"{outputdata_name}_{i}.json"
         start_index = i * segment_size
         if i == processes - 1:

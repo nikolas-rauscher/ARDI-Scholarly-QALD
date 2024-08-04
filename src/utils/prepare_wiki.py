@@ -6,7 +6,7 @@ sys.path.append('..')
 import configparser
 import json
 from src.data.verbalizer.prompt_verbalizer import verbalise_triples
-from data.evidence_selection.evidence_selection import evidence_triple_selection, triple2text, evidence_sentence_selection
+from data.evidence_selection import evidence_triple_selection, triple2text, evidence_sentence_selection
 
 PACKAGE_PARENT = '.'
 SCRIPT_DIR = os.path.dirname(os.path.realpath(

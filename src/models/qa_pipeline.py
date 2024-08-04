@@ -1,7 +1,4 @@
 import sys
-# Append source directories to system path
-sys.path.append('./src')
-sys.path.append('..')
 from tqdm import tqdm
 import configparser
 import json
@@ -9,7 +6,7 @@ import os
 from data.data_extraction.run_question import run_question
 from models.zero_shot_prompting_pipeline import clean_context, truncate_context_to_max_chars
 from data.verbalizer.prompt_verbalizer import verbalise_triples
-from data.evidence_selection.evidence_selection import evidence_triple_selection, triple2text, evidence_sentence_selection
+from data.evidence_selection import evidence_triple_selection, triple2text, evidence_sentence_selection
 from datasets import load_dataset
 import gc  # Garbage Collector Interface
 import torch
@@ -43,6 +40,15 @@ model = AutoModelForSeq2SeqLM.from_pretrained(model_id, device_map="auto")
 prompt_template = open(config["FilePaths"]["prompt_template"], "r").read()
 
 
+def choose_device() -> str:
+    if torch.cuda.is_available():
+        return "cuda:0"
+    if hasattr(torch.backends, "mps"):
+        if torch.backends.mps.is_available():
+            return "mps"
+    return "cpu"
+
+
 def qa(model, tokenizer, example, prompt_template):
     """
     Generate prediction using a pre-trained model.
@@ -61,9 +67,11 @@ def qa(model, tokenizer, example, prompt_template):
         context, example['question'], prompt_template)
     formatted_prompt = prompt_template.format(
         question=example['question'], context=truncated_context)
-
+    # device = torch.device(choose_device())
+    device = "cpu"
+    model.to(device)
     inputs = tokenizer(formatted_prompt, add_special_tokens=True,
-                       max_length=max_length_input, return_tensors="pt").input_ids.to("cuda")
+                       max_length=max_length_input, return_tensors="pt").input_ids.to(device)
     outputs = model.generate(inputs, max_new_tokens=max_output_length)
     response_text = tokenizer.batch_decode(
         outputs, skip_special_tokens=True)[0]
@@ -85,18 +93,41 @@ def question_answering(question, author_dblp_uri, verbalizer=True, evidence_matc
     Returns:
         str: The generated response based on the processed context.
     """
-    wiki_data = {}  # Dictionary to hold Wikipedia data
     # List to store extracted triples
-    all_triples = run_question(question, author_dblp_uri)
+    question_item = run_question(question, author_dblp_uri)[0]
+    return qa_with_merged_data(question_item, verbalizer=verbalizer, evidence_matching=evidence_matching)
+
+
+def qa_with_merged_data(question_item, verbalizer=True, evidence_matching=True):
+    """
+    Perform question answering with context and evidence processing.
+
+    Args:
+        model (transformers.PreTrainedModel): The pre-trained model for generation.
+        tokenizer (transformers.PreTrainedTokenizer): The tokenizer associated with the model.
+        prompt_template (str): Template string for the input prompt.
+        question (str): The question to be answered.
+        verbalizer (bool): Whether to use verbalizer for triples. Defaults to True.
+        evidence_matching (bool): Whether to match evidence for the answer. Defaults to True.
+
+    Returns:
+        str: The generated response based on the processed context.
+    """
+
+    all_triples = question_item["all_triples"]
+    wiki_data = question_item["wiki_data"]
+    question = question_item["question"]
+    wiki_context = ""
     # Process Wikipedia data for context
-    for key, wiki_text in wiki_data.items():
-        if wiki_text and evidence_matching:
-            sentences = wiki_text.split('.')
-            wiki_evidence = evidence_sentence_selection(
-                wiki_data, sentences, conserved_percentage=0.2, max_num=40)
-            wiki_context = '. '.join(wiki_evidence)
-        else:
-            wiki_context = str(wiki_text)
+    for wiki_dic in wiki_data:
+        for key, wiki_text in wiki_dic.items():
+            if wiki_text and evidence_matching:
+                sentences = wiki_text.split('.')
+                wiki_evidence = evidence_sentence_selection(
+                    question, sentences, conserved_percentage=0.2, max_num=40)
+                wiki_context += '. '.join(wiki_evidence)
+            else:
+                wiki_context += str(key+":"+wiki_text)
 
     # Generate context based on options
     if not evidence_matching and not verbalizer:
@@ -104,7 +135,8 @@ def question_answering(question, author_dblp_uri, verbalizer=True, evidence_matc
                             for triple in all_triples if isinstance(triple, dict)])
 
     if evidence_matching:
-        triples_evidence = evidence_triple_selection(question, all_triples)
+        triples_evidence = evidence_triple_selection(
+            question_item["question"], all_triples)
         if not verbalizer:
             context = '. '.join(
                 [triple2text(triple) for triple in triples_evidence if isinstance(triple, dict)])
@@ -113,11 +145,4 @@ def question_answering(question, author_dblp_uri, verbalizer=True, evidence_matc
         context = verbalise_triples(triples_evidence)
     context += wiki_context
 
-    return qa(model, tokenizer, {"question": question, "context": context}, prompt_template)
-
-
-if __name__ == "__main__":
-    dataset = load_dataset('wepolyu/QALD-2024')
-    item = dataset['train'][0]
-    print(item["author_dblp_uri"][1:-1])
-    question_answering(item["question"], item["author_dblp_uri"][1:-1])
+    return qa(model, tokenizer, {"question": question_item["question"], "contexts": context}, prompt_template)

@@ -2,14 +2,20 @@
 
 This project is a student project developed for the Scholarly QALD Challenge 2024: [https://kgqa.github.io/scholarly-QALD-challenge/2024/](https://kgqa.github.io/scholarly-QALD-challenge/2024/).
 
+Before executing the experiment, ensure to install the source code as a package by running the following command:
+
+```shell
+pip install -e .
+```
+
 ## Our Approach
 
 Our goal is to build a Question Answering system capable of answering questions related to the scholarly domain. To achieve this, we utilize an approach that involves:
 
 1. **Information Extraction:** We extract relevant information (triples) from 3 data sources, including:
-    - DBLP KG
-    - OpenAlex KG
-    - Wikipedia
+   - DBLP KG
+   - OpenAlex KG
+   - Wikipedia
 2. **Evidence Matching and Verbalization:** We employ evidence matching techniques to identify relevant information within the context and then verbalize it into a format suitable for question answering.
 3. **Zero-Shot Prompting and Fine-tuning:** We leverage pre-trained language models and fine-tune them for question answering using the created context. We experiment with both zero-shot prompting and fine-tuning approaches.
 
@@ -23,9 +29,11 @@ We experiment with several state-of-the-art language models:
 - T5
 
 ### Methodology - Answer Generation
+
 <img width="1131" alt="image" src="https://i.imgur.com/ZrOr4YG.png">
 
 ## Folder Structure
+
 ```bash
 
 .

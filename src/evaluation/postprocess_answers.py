@@ -172,6 +172,7 @@ def process_for_evaluation(data, result_keys):
     """
     output = [[] for _ in range(len(result_keys))]
     for item in data:
+        print(item["results"])
         responses = item["results"][0]
         for i, key in enumerate(result_keys):
             response = extract_response(responses[key]['response'])
@@ -213,7 +214,7 @@ def preprocess_sparql(file_path):
     
 
 if __name__ == "__main__":
-    preprocess_sparql('/Users/celes/Documents/Projects/ARDI-Scholarly-QALD/data/external/sparql.json')
+    # preprocess_sparql('/Users/celes/Documents/Projects/ARDI-Scholarly-QALD/data/external/sparql.json')
     # test_directory = "results/train_test_data"
     # gt_path = "data/raw/codalab_new_train_data.json"
     # data_directories = ['results/zero-shot_Flan_T5_large',
@@ -225,5 +226,5 @@ if __name__ == "__main__":
     #     ensure_folder_exists(data_directory + '_out')
     #     pipeline_question_ids(test_directory=data_directory,
     #                           ref_directory=test_directory, out_directory=data_directory + '_out')
-    # process_all_files_in_folder(
-    #     "./data/processed/100q", process_for_evaluation, RESULT_KEYS)
+    process_all_files_in_folder(
+        "./data/processed/100q", process_for_evaluation, RESULT_KEYS)

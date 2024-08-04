@@ -238,13 +238,3 @@ def create_embeddings_from_triple(triple):
     concatenated_triple = triple2text(triple)
     embedding = model.encode(concatenated_triple, convert_to_tensor=True)
     return embedding
-
-# if __name__ == "__main__":
-#     with open("./data/external/preprocessed_full_dataset_wiki.json") as f:
-#         data = json.load(f)[6]
-#     extract_triplet = load_triplet_extractor()
-#     for wiki_text in data['wiki_data']:
-#         for key,item in wiki_text.items():
-#             ems = evidence_sentence_selection(
-#                 data['question'], item.split('.'), triplet_extractor=extract_triplet, llm=True, conserved_percentage=0.1)
-#     # print(data['triples_number'], len(ems))

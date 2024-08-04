@@ -14,8 +14,7 @@ current_script_path = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(current_script_path, 'graph2text/data/webnlg')
 OUTPUT_DIR = os.path.join(current_script_path, 'graph2text/outputs/test_model')
 CHECKPOINT = os.path.join(current_script_path, 'graph2text/outputs/t5-base_13881/val_avg_bleu=68.1000-step_count=5.ckpt')
-import sys 
-sys.path.append("./src")
+
 from data.verbalizer.graph2text.finetune import Graph2TextModule
 
 MAX_LENGTH = 384
