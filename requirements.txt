@@ -13,10 +13,11 @@ nltk==3.8.1
 peft==0.11.1
 groq==0.9.0
 SPARQLWrapper==2.0.0
-logging==0.4.9.6
+#logging==0.4.9.6
 datasets==2.20.0
 faiss-cpu==1.8.0
 scikit-learn==1.4.2
 configparser==7.0.0
 numpy==1.26.4
-pandas==2.2.2
+pandas==2.2.2 
+llamaapi == 0.1.36
