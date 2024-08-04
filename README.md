@@ -1,11 +1,11 @@
 # ARDI-Project Scholarly QALD Challenge 2024
 
-This project is a student project developed for the Scholarly QALD Challenge 2024: [https://kgqa.github.io/scholarly-QALD-challenge/2024/](https://kgqa.github.io/scholarly-QALD-challenge/2024/).
+This project is a student project developed for the Scholarly QALD Challenge 2024: [https://kgqa.github.io/scholarly-QALD-challenge/2024/](https://kgqa.github.io/scholarly-QALD-challenge/2024/). Our finely tuned model can be found in the repository wepolyu/KGQA-1 on Hugging Face with model ID: `wepolyu/KGQA-1`.
 
 ## Installation 
 
-[!Note]
-Python version 3.12.
+>[!NOTE]
+>We use Python version 3.12.
 
 To install the verbalizer, follow these steps:
 
