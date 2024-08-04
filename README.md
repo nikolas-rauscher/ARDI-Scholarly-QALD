@@ -2,7 +2,10 @@
 
 This project is a student project developed for the Scholarly QALD Challenge 2024: [https://kgqa.github.io/scholarly-QALD-challenge/2024/](https://kgqa.github.io/scholarly-QALD-challenge/2024/).
 
-## Installation
+## Installation 
+
+[!Note]
+Python version 3.12.
 
 To install the verbalizer, follow these steps:
 
