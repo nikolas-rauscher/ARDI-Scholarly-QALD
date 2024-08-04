@@ -37,7 +37,7 @@ def merge_data(dblp_processed_path: str, alex_processed_path: str, extracted_wik
         
         # find question in extracted wiki articles 
         for wiki_article in wikipedia_data:
-              if wiki_article["id"] == alex_question["id"]:
+              if wiki_article["id"] == alex_question["id"]: 
                 break
               
         new_merged_question["triples_number"]  = dblp_question["triples_number"] + alex_question["triples_number"]
@@ -46,10 +46,12 @@ def merge_data(dblp_processed_path: str, alex_processed_path: str, extracted_wik
             merged_triples_all = []
             merged_triples_for_entity = entity_alex["triples"] + entity_dblp["triples"]
             merged_triples_all.append(merged_triples_for_entity)
-        
-        new_merged_question["all_triples"] = merged_triples_all
-        new_merged_question["wiki_data"] = wiki_article["wiki_data"]
-        new_merged_dataset.append(new_merged_question)
+        try: 
+            new_merged_question["all_triples"] = merged_triples_all
+            new_merged_question["wiki_data"] = wiki_article["wiki_data"]
+            new_merged_dataset.append(new_merged_question)
+        except KeyError as e:
+            print(f"wikidata for {new_merged_question['id']} is missing ") 
 
     with open(merged_data_path, 'w') as file: 
             json.dump(new_merged_dataset, file, indent=4, ensure_ascii=False)
