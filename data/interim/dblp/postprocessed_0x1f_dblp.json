@@ -1,0 +1,1681 @@
+[
+    {
+        "id": "0x1f",
+        "question": "What is the average two years citedness of the writer of AQuery: Query Language for Ordered Data, Optimization Techniques, and Experiments?",
+        "answer": "-",
+        "author_dblp_uri": "[{'author1_dblp_uri': '<https://dblp.org/pid/s/DennisShasha>'}]",
+        "triples_number": 333,
+        "all_triples": [
+            {
+                "entity": "<https://dblp.org/pid/s/DennisShasha>",
+                "triples": [
+                    {
+                        "subject": "Dennis E. Shasha",
+                        "predicate": "is",
+                        "object": "Creator"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha",
+                        "predicate": "is",
+                        "object": "Person"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha",
+                        "predicate": "link",
+                        "object": "http://www.wikidata.org/entity/Q56892414"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha",
+                        "predicate": "link",
+                        "object": "http://www.wikidata.org/entity/Q5258945"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha",
+                        "predicate": "affiliation",
+                        "object": "New York University, Courant Institute of Mathematical Sciences"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha",
+                        "predicate": "link",
+                        "object": "http://www.cs.nyu.edu/cs/faculty/shasha/index.html"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha",
+                        "predicate": "primary affiliation",
+                        "object": "New York University, Courant Institute of Mathematical Sciences"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha",
+                        "predicate": "link",
+                        "object": "http://www.cs.nyu.edu/cs/faculty/shasha/index.html"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha",
+                        "predicate": "link",
+                        "object": "https://scholar.google.com/citations?user=UH3qseUAAAAJ"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha",
+                        "predicate": "link",
+                        "object": "https://mathgenealogy.org/id.php?id=69408"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha",
+                        "predicate": "link",
+                        "object": "https://dl.acm.org/profile/81100290016"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha",
+                        "predicate": "link",
+                        "object": "https://zbmath.org/authors/?q=ai:shasha.dennis-e"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha",
+                        "predicate": "link",
+                        "object": "https://mathscinet.ams.org/mathscinet/MRAuthorID/271027"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha",
+                        "predicate": "link",
+                        "object": "https://en.wikipedia.org/wiki/Dennis_Shasha"
+                    },
+                    {
+                        "subject": "Philippe Bonnet and Dennis E. Shasha: Administration Wizards. (2009)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Philippe Bonnet and Dennis E. Shasha: Index Tuning. (2009)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Philippe Bonnet and Dennis E. Shasha: Performance Monitoring Tools. (2009)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Philippe Bonnet and Dennis E. Shasha: Schema Tuning. (2009)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Philippe Bonnet and Dennis E. Shasha: Application-Level Tuning. (2018)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Philippe Bonnet and Dennis E. Shasha: Benchmark Frameworks. (2018)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Philippe Bonnet and Dennis E. Shasha: Index Tuning. (2018)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Philippe Bonnet and Dennis E. Shasha: Physical Layer Tuning. (2018)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Philippe Bonnet and Dennis E. Shasha: Schema Tuning. (2018)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Transaction Chopping. (2009)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Transaction Chopping. (2018)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha and Manda Wilson: Statistics is Easy! (2008)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha and Manda Wilson: Statistics is Easy! Second Edition (2010)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Jessica P. Chang and Dennis E. Shasha: Storing Clocked Programs Inside DNA: A Simplifying Framework for Nanocomputing (2011)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Manpreet Singh Katari et al.: Statistics is Easy: Case Studies on Real Scientific Datasets (2021)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Siddharth Krishna et al.: Automated Verification of Concurrent Search Structures (2021)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Fábio Porto et al.: Constellation Queries over Big Data. (2018)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Database Tuning: Principles, Experiments, and Guidance. (2003)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Activist Data Mining for Computational Science: Tools and Applications. (2003)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Reducing Errors by Refusing to Guess (Occasionally). (2018)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Fernando Chirigati et al.: ReproZip: Computational Reproducibility With Ease. (2016)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Juliana Freire et al.: Computational reproducibility: state-of-the-art, challenges, and database research opportunities. (2012)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Alberto Lerner et al.: Fast Algorithms for Time Series with applications to Finance, Physics, Music, Biology, and other Suspects. (2004)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Bin Li and Dennis E. Shasha: Free Parallel Data Mining. (1998)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Raoni Lourenço et al.: BugDoc: Algorithms to Debug Computational Processes. (2020)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Raoni Lourenço et al.: BugDoc: A System for Debugging Computational Pipelines. (2020)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Peter Piatko et al.: Thinksheet: A Tool for Tailoring Complex Documents. (1996)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Arthur T. Whitney and Dennis E. Shasha: Lots o' Ticks: Real-Time High Performance Time Series Queries on Billions of Trades and Quotes. (2001)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Yunyue Zhu and Dennis E. Shasha: Warping Indexes with Envelope Transforms for Query by Humming. (2003)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Swapneel Sheth et al.: A Course on Programming and Problem Solving. (2016)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Ashlesh Sharma et al.: Alphacodes: Usable, Secure Transactions with Untrusted Providers using Human Computable Puzzles. (2016)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Aditya Dhananjay et al.: Fully-digital beamforming demonstration with Pi-Radio mmWave SDR platform. (2020)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Xiaojian Zhao et al.: Incremental Methods for Simple Problems in Time Series: Algorithms and Experiments. (2005)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Helena Galhardas et al.: An Extensible Framework for Data Cleaning. (2000)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha et al.: Unordered Tree Mining with Applications to Phylogeny. (2004)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Gilad Koren and Dennis E. Shasha: Scheduling Overloaded Real-Time Systems with Competitive/Worst Case Guarantees. (2004)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Nicolas Anciaux et al.: GhostDB: querying visible and hidden data without leaks. (2007)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Fernando Seabra Chirigati et al.: Packing experiments for sharing and publication. (2013)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Françoise Fabret et al.: Filtering Algorithms and Implementation for Very Fast Publish/Subscribe. (2001)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Helena Galhardas et al.: AJAX: An Extensible Data Cleaning Tool (2000)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Jim Gray et al.: The Dangers of Replication and a Solution. (1996)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Raoni Lourenço et al.: Debugging Machine Learning Pipelines. (2019)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Arthur Meacham and Dennis E. Shasha: JustMyFriends: full SQL, full transactional amenities, and access privacy. (2012)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Computing for biologists: lessons from some successful case studies. (2005)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha and Philippe Bonnet: Database tuning: principles, experiments, and troubleshooting techniques (part II). (2002)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha and Philippe Bonnet: Database tuning: principles, experiments, and troubleshooting techniques (part I). (2002)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Jason Tsong-Li Wang et al.: Structural Matching and Discovery in Document Databases. (1997)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Jason Tsong-Li Wang et al.: An Approximate Search Engine for Structural Databases. (2000)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Jason Tsong-Li Wang et al.: Pattern Matching and Pattern Discovery in Scientific, Program, and Document Databases. (1995)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Yunyue Zhu et al.: Query by Humming - in Action with its Technology Revealed. (2003)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: When Does Non-Linear Text Help? (1986)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "David Tanzer and Dennis E. Shasha: Queryable Acyclic Production Systems. (1999)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Karpjoo Jeong et al.: An Approach to Fault-Tolerant Parallel Processing on Intermittently Idle, Heterogeneous Workstations. (1997)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Yasuhiro Fujiwara and Dennis E. Shasha: Quiet: Faster Belief Propagation for Images and Related Applications. (2015)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Anh L. Mai et al.: Planning Multiple Epidemic Interventions with Reinforcement Learning. (2023)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "João L. M. Pereira et al.: Acronym Expander at SDU@AAAI-21: an Acronym Disambiguation Module. (2021)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "João Pereira et al.: Efficient Matching for Web-Based Publish/Subscribe Systems. (2000)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Fernando Seabra Chirigati et al.: ReproZip: Using Provenance to Support Computational Reproducibility. (2013)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Xuefeng Cui et al.: Homology search for genes. (2007)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha and Kaizhong Zhang: Fast Parallel Algorithms for the Unit Cost Editing Distance Between Trees. (1989)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Amir Khatibi et al.: Pre-processing and Indexing Techniques for Constellation Queries in Big Data. (2017)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Noah Youngs et al.: Positive-Unlabeled Learning in the Face of Labeling Bias. (2015)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Maximilien Servajean et al.: ThePlantGame: Actively Training Human Annotators for Domain-specific Crowdsourcing. (2016)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Cinzia Di Pietro et al.: ANTICLUSTAL: Multiple Sequence Alignment by Antipole Clustering and Linear Approximate 1-Median Computation. (2003)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Philippe Bonnet and Dennis E. Shasha: Application-Level Tuning. (2009)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Philippe Bonnet and Dennis E. Shasha: Physical Layer Tuning. (2009)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Philippe Bonnet and Dennis E. Shasha: Tuning Concurrency Control. (2009)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Philippe Bonnet and Dennis E. Shasha: Administration Wizards. (2018)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Philippe Bonnet and Dennis E. Shasha: Data Generation. (2018)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Philippe Bonnet and Dennis E. Shasha: Database Benchmarks. (2018)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Philippe Bonnet and Dennis E. Shasha: Performance Monitoring Tools. (2018)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Philippe Bonnet and Dennis E. Shasha: Tuning Concurrency Control. (2018)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha and Yunyue Zhu: High Performance Discovery in Time Series - Techniques and Case Studies (2004)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Jesse M. Lingeman and Dennis E. Shasha: Network Inference in Molecular Biology - A Hands-on Framework (2012)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Mustafa Anil Koçak et al.: Conjugate Conformal Prediction for Online Binary Classification. (2016)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Siddharth Krishna et al.: Verifying concurrent search structure templates. (2020)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Lessons from Wall Street: Case Studies in Configuration, Tuning, and Distribution (Tutorial). (1997)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha et al.: Simple Rational Guidance for Chopping Up Transactions. (1992)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Jason Tsong-Li Wang et al.: Combinatorial Pattern Discovery for Scientific Data: Some Preliminary Results. (1994)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "David Mazières and Dennis E. Shasha: Don't Trust your File Server. (2001)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Amir Khatibi et al.: Improving Tourism Prediction Models Using Climate and Social Media Data: A Fine-Grained Approach. (2018)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Vincenzo Bonnici et al.: Enhancing Graph Database Indexing by Suffix Tree Structure. (2010)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Aditya Dhananjay et al.: Calibrating a 4-channel Fully-Digital 60 GHz SDR. (2020)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Rakesh Agrawal et al.: Object Versioning in Ode. (1991)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Xin Zhang and Dennis E. Shasha: Better Burst Detection. (2006)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Yanling Yang et al.: An Approximate Oracle for Distance in Metric Spaces. (1998)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Kaizhong Zhang et al.: Fast Serial and Parallel Algorithms for Approximate Tree Matching with VLDC's. (1992)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Kaizhong Zhang et al.: On the Editing Distance between Undirected Acyclic Graphs and Related Problems. (1995)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha et al.: Temporal Verification of Carrier-Sense Local Area Network Protocols. (1984)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Catriel Beeri et al.: Database Programming Languages (DBPL-4), Proceedings of the Fourth International Workshop on Database Programming Languages - Object Models and Languages, Manhattan, New York City, USA, 30 August - 1 September 1993 (1994)",
+                        "predicate": "edited by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Steve Rozen and Dennis E. Shasha: Rationale and Design of BULK. (1991)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Rosalba Giugno and Dennis E. Shasha: GraphGrep: A Fast and Universal Method for Querying Graphs. (2002)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Jason Tsong-Li Wang et al.: A tool for tree pattern matching. (1991)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Mai Le Xuan Anh et al.: EpiPolicy: a tool for combating epidemics. (2021)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Future of computing: inspiration from nature. (2012)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Vincenzo Bonnici et al.: A subgraph isomorphism algorithm and its application to biochemical data. (2013)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Danilo Dessì et al.: SuperNoder: a tool to discover over-represented modular structures in networks. (2018)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Raoni Lourenço et al.: BugDoc. (2023)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Raoni Lourenço et al.: Correction to: BugDoc Iterative debugging and explanation of pipeline executions. (2023)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha and Paul G. Spirakis: Fast Parallel Algorithms for Processing of Joins. (1987)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Karpjoo Jeong and Dennis E. Shasha: PLinda 2.0: A Transactional/Checkpointing Approach to Fault Tolerant Linda. (1994)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Djamel Edine Yagoubi et al.: RadiusSketch: Massively Distributed Indexing of Time Series. (2017)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Helena Galhardas et al.: Improving Data Cleaning Quality Using a Data Lineage Facility. (2001)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Brian G. Anderson and Dennis E. Shasha: Persistant Linda: Linda + Transactions + Query Processing. (1991)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Oleksandra Levchenko et al.: Distributed Algorithms to Find Similar Time Series. (2019)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Antonino Aparo et al.: Simple Pattern-only Heuristics Lead to Fast Subgraph Matching Strategies on Very Large Networks. (2018)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Nicolas Anciaux et al.: Querying and Aggregating Visible and Hidden Data Without Leaks. (2007)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Helena Galhardas et al.: Declaratively Cleaning your Data with AJAX. (2000)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha and John Turek: Promises versus assumptions in database fault tolerance. (1991)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Jason Tsong-Li Wang et al.: Application of neural networks to biological data mining: a case study in protein sequence classification. (2000)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Jason Tsong-Li Wang et al.: Evaluating a Class of Distance-Mapping Algorithms for Data Mining and Clustering. (1999)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Xiong Wang et al.: Automated Discovery of Active Motifs in Three Dimensional Molecules. (1997)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Eliezer Kantorowitz et al.: Distributed Office By Example (D-OBE). (1986)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Marc Donner et al.: Algorithms and Experience in Increasing the Intelligibility and Hygiene of Access Control in Large Organizations. (2000)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Oleksandra Levchenko et al.: Spark-parSketch: A Massively Distributed Indexing of Time Series Datasets. (2018)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Yunyue Zhu and Dennis E. Shasha: Efficient elastic burst detection in data streams. (2003)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Helena Galhardas et al.: Declarative Data Cleaning: Language, Model, and Algorithms. (2001)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Theodore Johnson and Dennis E. Shasha: 2Q: A Low Overhead High Performance Buffer Management Replacement Algorithm. (1994)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Alberto Lerner and Dennis E. Shasha: AQuery: Query Language for Ordered Data, Optimization Techniques, and Experiments. (2003)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "João Pereira et al.: WebFilter: A High-throughput XML-based Publish and Subscribe System. (2001)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "João Pereira et al.: Publish/Subscribe on the Web at Extreme Speed. (2000)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: NetBook - a Data Model to Support Knowledge Exploration. (1985)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha and Philippe Bonnet: Database Tuning: Principles, Experiments, and Troubleshooting Techniques. (2002)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha and Steve Rozen: Database Tuning. (1992)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Patrick Valduriez et al.: Scientific Data Analysis Using Data-Intensive Scalable Computing: The SciDISC Project. (2018)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Peter Williams et al.: The Blind Stone Tablet: Outsourcing Durability to Untrusted Parties. (2009)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Alex Rubinsteyn et al.: Parakeet: A Just-In-Time Parallel Accelerator for Python. (2012)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Qicheng Ma et al.: DNA sequence classification via an expectation maximization algorithm and neural networks: a case study. (2001)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha et al.: Exact and approximate algorithms for unordered tree matching. (1994)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha et al.: Pattern Matching in Unordered Trees. (1992)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Richard Cole et al.: Fast window correlations over uncooperative time series. (2005)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Jason Tsong-Li Wang et al.: Automated Discovery of Active Motifs in Multiple RNA Secondary Structures. (1996)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Aditya Dhananjay et al.: Pi-Radio v1: Calibration techniques to enable fully-digital beamforming at 60 GHz. (2021)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Gilad Koren and Dennis E. Shasha: MOCA: A Multiprocessor On-Line Competitive Algorithm for Real-Time System Scheduling. (1994)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Domenico Cantone et al.: Antipole Tree Indexing to Support Range Search and K-Nearest Neighbor Search in Metric Spaces. (2005)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Philippe Bonnet et al.: Repeatability and workability evaluation of SIGMOD 2011. (2011)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Stefan Manegold et al.: Repeatability & workability evaluation of SIGMOD 2009. (2009)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Steve Rozen and Dennis E. Shasha: Using a Relational System On Wall Street: The Good, The Bad, The Ugly, And The Ideal. (1989)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Upstart Puzzles: Strategic Friendship. (2015)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Upstart Puzzles: Chair Games. (2016)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Find me quickly. (2016)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Finding October. (2018)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Opioid games. (2019)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Stopping tyranny. (2020)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Optimal chimes. (2020)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Privacy-preserving polling. (2020)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Exclusivity probes. (2022)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Card Nim. (2022)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Rémi Rampin et al.: ReproZip: The Reproducibility Packer. (2016)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha and Jason Tsong-Li Wang: New Techniques for Best-Match Retrieval. (1990)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Noah Youngs et al.: Negative Example Selection for Protein Function Prediction: The NoGO Database. (2014)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Christopher S. Poultney et al.: Sungear: interactive visualization and functional analysis of genomic datasets. (2007)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Maximilien Servajean et al.: Crowdsourcing Thousands of Specialized Labels: A Bayesian Active Training Approach. (2017)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Giovanni Micale et al.: MultiRI: Fast Subgraph Matching in Labeled Multigraphs. (2020)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha and Philippe Bonnet: Database Tuning - Principles, Experiments, and Troubleshooting Techniques. (2002)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Database Tuning - A Principled Approach (1992)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: The puzzler's elusion - a tale of fraud, pursuit, and the art of logic. (2006)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Jason Tsong-Li Wang et al.: Finding approximate patterns in undirected acyclic graphs. (2002)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Eric Hielscher et al.: Locality Optimization for Data Parallel Programs (2013)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Raoni Lourenço et al.: Debugging Machine Learning Pipelines. (2020)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Alfredo Ferro et al.: Behind Efficient Algorithms to Search in Graphs. (2011)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Cathy A. Lazere and Dennis E. Shasha: Out of Their Minds: The Lives and Discoveries of 15 Great Computer Scientists. (1998)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Jason Tsong-Li Wang et al.: Data Mining in Bioinformatics (2005)",
+                        "predicate": "edited by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Cinzia Di Pietro et al.: AntiClustAl: Multiple Sequence Alignment by Antipole Clustering. (2005)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Jason Tsong-Li Wang et al.: Introduction to Data Mining in Bioinformatics. (2005)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Kaizhong Zhang and Dennis E. Shasha: Tree pattern matching. (1997)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Sanjoy K. Baruah et al.: On the competitiveness of on-line real-time task scheduling. (1991)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Gilad Koren and Dennis E. Shasha: Dover; an optimal on-line scheduling algorithm for overloaded real-time systems. (1992)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Gilad Koren and Dennis E. Shasha: An Approach To Handling Overloaded Systems That Allow Skips. (1995)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Gilad Koren et al.: MOCA: A multiprocessor on-line competitive algorithm for real-time system scheduling. (1993)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Vladimir Lanin and Dennis E. Shasha: A Symmetric Concurrent B-Tree Algorithm. (1986)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "David Mazières and Dennis E. Shasha: Building secure file systems out of Byzantine storage. (2002)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Nathan Goodman and Dennis E. Shasha: Semantically-based Concurrency Control for Search Structures. (1985)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Theodore Johnson and Dennis E. Shasha: Utilization of B-trees with Inserts, Deletes and Modifies. (1989)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Theodore Johnson and Dennis E. Shasha: A Framework for the Performance Analysis of Concurrent B-tree Algorithms. (1990)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Vladimir Lanin and Dennis E. Shasha: Concurrent Set Manipulation without Locking. (1988)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha et al.: Algorithmics and Applications of Tree and Graph Searching. (2002)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "John Turek et al.: Locking without Blocking: Making Lock Based Concurrent Data Structure Algorithms Nonblocking. (1992)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Shuai Mu et al.: Deferred Runtime Pipelining for contentious multicore software transactions. (2019)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Jinyuan Li et al.: Secure Untrusted Data Repository (SUNDR). (2004)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Zain Tariq et al.: Planning Epidemic Interventions with EpiPolicy. (2021)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Djamel Edine Yagoubi et al.: ParCorr: efficient parallel methods to identify similar time series pairs across sliding windows. (2018)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Upstart Puzzles: Take Your Seats. (2015)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Ruby risks. (2017)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Fighting for lava. (2019)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Feedback for foxes. (2020)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Randomower. (2021)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Giovanni Micale et al.: Fast analytical methods for finding significant labeled graph motifs. (2018)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Tuning Databases for High Performance. (1996)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Karen E. Thum et al.: An integrated genetic, genomic and systems approach defines gene networks regulated by the interaction of light and carbon signaling pathways in Arabidopsis. (2008)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Alan D. Fekete et al.: Making snapshot isolation serializable. (2005)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Theodore Johnson and Dennis E. Shasha: The Performance of Current B-Tree Algorithms. (1993)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha and Nathan Goodman: Concurrent Search Structure Algorithms. (1988)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha et al.: Foreword to TODS SIGMOD/PODS 2008 special issue. (2009)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha et al.: Transaction Chopping: Algorithms and Performance Studies (1995)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha and Jason Tsong-Li Wang: Optimizing Equijoin Queries In Distributed Databases Where Relations Are Hash Partitioned. (1991)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Xin Zhang et al.: Fast Elastic Peak Detection for Mass Spectrometry Data Mining. (2012)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Jason Tsong-Li Wang et al.: MetricMap: an embedding technique for processing distance-based queries in metric spaces. (2005)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Christophe Pradal et al.: VersionClimber: Version Upgrades Without Tears. (2019)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Alessandro Laganà et al.: miRò: a miRNA knowledge base. (2009)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Alfredo Ferro et al.: Fast Clustering and Minimum Weight Matching Algorithms for Very Large Mobile Backbone Wireless Networks. (2003)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Lior Galanti et al.: Pheniqs 2.0: accurate, high-performance Bayesian decoding and confidence estimation for combinatorial barcode indexing. (2021)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Fabio Rinnone et al.: NetMatchStar: an enhanced Cytoscape network querying app. (2015)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Fernando Chirigati et al.: A collaborative approach to computational reproducibility. (2016)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Matthias Jarke and Dennis E. Shasha: Message from the Editors-in-Chief. (2000)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Matthias Jarke and Dennis E. Shasha: Information Systems takes a new direction. (1994)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Matthias Jarke and Dennis E. Shasha: The new Editorial Board of  Information Systems  . (1994)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Editorial. (2004)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Sanjoy K. Baruah et al.: On the Competitiveness of On-Line Real-Time Task Scheduling. (1992)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Eduardo da Silva Mattos and Dennis E. Shasha: Bankruptcy prediction with low-quality financial information. (2024)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Anh L. Mai et al.: Planning Multiple Epidemic Interventions with Reinforcement Learning. (2023)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Raoni Lourenço et al.: BugDoc: Algorithms to Debug Computational Processes. (2020)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Zhehu Yuan et al.: Forgetful Forests: high performance learning data structures for streaming data under concept drift. (2022)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Philippe Bonnet and Dennis E. Shasha: Tuning Database Design for High Performance. (2014)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Tuning Database Design for High Performance. (1997)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Misael Mongiovì et al.: gLabTrie: A Data Structure for Motif Discovery with Constraints. (2018)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Puzzling adventures - tales of strategy, logic, and mathematical skill. (2005)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Dr. Ecco - mathematical detective. (2004)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: StrangerDB: Safe Data Management with Untrusted Servers. (2006)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Wei Cao and Dennis E. Shasha: AppSleuth: a tool for database tuning at the application level. (2013)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Wei Cao and Dennis E. Shasha: Tuning in action. (2013)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Biocomputational puzzles: data, algorithms, and visualization. (2008)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Gilad Koren and Dennis E. Shasha: D^over: An Optimal On-Line Scheduling Algorithm for Overloaded Uniprocessor Real-Time Systems. (1995)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha and Kaizhong Zhang: Fast Algorithms for the Unit Cost Editing Distance Between Trees. (1990)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Kaizhong Zhang et al.: Approximate Tree Matching in the Presence of Variable Length Don't Cares. (1994)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Kaizhong Zhang et al.: On the Editing Distance Between Unordered Labeled Trees. (1992)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Xiong Wang et al.: Finding Patterns in Three-Dimensional Graphs: Algorithms and Applications to Scientific Data Mining. (2002)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Jason Tsong-Li Wang et al.: A System for Approximate Tree Matching. (1994)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Merrill E. Isenman and Dennis E. Shasha: Performance and Architectural Issues for String Matching. (1990)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Kaippallimalil J. Jacob and Dennis E. Shasha: FinTime - A Financial Time Series Benchmark. (1999)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Ioana Manolescu et al.: The repeatability experiment of SIGMOD 2008. (2008)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Kaizhong Zhang et al.: On the Editing Distance Between Undirected Acyclic Graphs. (1996)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Salvatore Alaimo et al.: TACITuS: transcriptomic data collector, integrator, and selector on big data platform. (2019)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Review - WALRUS: A Similarity Retrieval Algorithm for Image Databases. (1999)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Review - Join Synopses for Approximate Query Answering. (1999)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Review - On Random Sampling over Joins. (1999)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Review - Ripple Joins for Online Aggregation. (1999)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Review - Efficient Locking for Concurrent Operations on B-Trees. (1999)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Alfredo Ferro et al.: NetMatch: a Cytoscape plugin for searching biological networks. (2007)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Munir Cochinwala et al.: Efficient data reconciliation. (2001)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Steve Rozen and Dennis E. Shasha: A Framework for Automating Physical Database Design. (1991)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Christophe Salperwyck et al.: GhostDB: Hiding Data from Prying Eyes. (2007)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Jason Tsong-Li Wang and Dennis E. Shasha: Query Processing for Distance Metrics. (1990)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Yunyue Zhu and Dennis E. Shasha: StatStream: Statistical Monitoring of Thousands of Data Streams in Real Time. (2002)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Sanjoy K. Baruah et al.: On-line Scheduling in the Presence of Overload (1991)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha and Martyn Amos: DNA Hash Pooling and its Applications. (2009)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Siddharth Krishna et al.: Go with the flow: compositional abstractions for concurrent data structures. (2018)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Nisarg Patel et al.: Verifying concurrent multicopy search structures. (2021)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Upstart Puzzles: Auction Triplets. (2015)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Upstart Puzzles: Ice Trap. (2016)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Open field tic-tac-toe. (2017)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Stacking the deck. (2017)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Partitioned peace. (2017)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Polychromatic choreography. (2018)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Bounce blockchain. (2018)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Randomized anti-counterfeiting. (2019)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Dust wars. (2019)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Stay in balance. (2021)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Roulette Angel. (2021)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: String me along. (2021)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Beating the house. (2022)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Maximal Cocktails. (2023)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Sampling the Goods. (2023)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Tidy Towers. (2023)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Nicolas Anciaux et al.: Revelation on demand. (2009)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Jason Tsong-Li Wang et al.: New Techniques for DNA Sequence Classification. (1999)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha and Marc Snir: Efficient and Correct Execution of Parallel Programs that Share Memory. (1988)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Tuning Time Series Queries in Finance: Case Studies and Recommendations. (1999)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Mustafa Anil Koçak et al.: SafePredict: A Meta-Algorithm for Machine Learning That Uses Refusals to Guarantee Correctness. (2017)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Michele Dolfi et al.: A model project for reproducible papers: critical temperature for the Ising model on a square lattice. (2014)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Cole Smith et al.: Robotic Room Traversal using Optical Range Finding. (2020)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Fábio Porto et al.: Point pattern search in big data. (2018)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Huiyuan Shan et al.: A Structure-Based Search Engine for Phylogenetic Databases. (2002)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha et al.: ATreeGrep: Approximate Searching in Unordered Trees. (2002)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Jason Tsong-Li Wang et al.: TreeRank: A Similarity Measure for Nearest Neighbor Searching in Phylogenetic Databases. (2003)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Kaizhong Zhang and Dennis E. Shasha: Simple Fast Algorithms for the Editing Distance Between Trees and Related Problems. (1989)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Mustafa Anil Koçak et al.: SafePredict: A Meta-Algorithm for Machine Learning That Uses Refusals to Guarantee Correctness. (2021)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Jason Tsong-Li Wang et al.: An Algorithm for Finding the Largest Approximately Common Substructures of Two Trees. (1998)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Manos Athanassoulis et al.: Data Structures for Data-Intensive Applications: Tradeoffs and Design Guidelines. (2023)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Juliana Freire et al.: Exploring the Coming Repositories of Reproducible Experiments: Challenges and Opportunities. (2011)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "João L. M. Pereira et al.: AcX: System, Techniques, and Experiments for Acronym Expansion. (2022)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: An interview with Michael Rabin. (2010)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Upstart Puzzles: Proving without Teaching/Teaching without Proving. (2014)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Upstart puzzles. (2015)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Upstart puzzles. (2016)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: String wars. (2018)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Strategic paddling. (2020)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Orbit design. (2022)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: Cooperation in the Commons. (2023)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Jason Tsong-Li Wang et al.: New techniques for extracting features from protein sequences. (2001)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Zhehu Yuan et al.: Forgetful Forests: Data Structures for Machine Learning on Streaming Data under Concept Drift. (2023)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Alessandro Laganà et al.: miR-EdiTar: a database of predicted A-to-I edited miRNA target sites. (2012)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Noah Youngs et al.: Parametric Bayesian priors and better choice of negative examples improve protein function prediction. (2013)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "John Turek and Dennis E. Shasha: The Many Faces of Consensus in Distributed Systems. (1992)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Fernando Seabra Chirigati et al.: A Computational Reproducibility Benchmark. (2013)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Theodore Johnson and Dennis E. Shasha: Some Approaches to Index Design for Cube Forest. (1997)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Theodore Johnson and Dennis E. Shasha: Some Approaches to Index Design for Cude Forests. (1999)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Alberto Lerner and Dennis E. Shasha: The Virtues and Challenges of Ad Hoc + Streams Querying in Finance. (2003)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Dennis E. Shasha: What Good are Concurrent Search Structure Algorithms for databases Anyway? (1985)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Diego Reforgiato Recupero et al.: Graphclust: a Method for Clustering Database of Graphs. (2008)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Susan H. Gray et al.: Information Search with Dynamic Text vs Paper Text: An Empirical Comparison. (1991)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Giovanni Micale et al.: Fast methods for finding significant motifs on labelled multi-relational networks. (2019)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Alfredo Ferro et al.: GraphFind: enhancing graph searching by low support data mining techniques. (2008)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Raffaele Di Natale et al.: SING: Subgraph search In Non-homogeneous Graphs. (2010)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Bingran Shen et al.: EnsInfer: a simple ensemble approach to network inference outperforms any single method. (2023)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Gabriel Krouk et al.: A Systems Approach Uncovers Restrictions for Signal Interactions Regulating Genome-wide Responses to Nutritional Cues in Arabidopsis. (2009)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Theodore Johnson and Dennis E. Shasha: B-Trees with Inserts and Deletes: Why Free-at-Empty Is Better Than Merge-at-Half. (1993)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Oleksandra Levchenko et al.: BestNeighbor: efficient evaluation of kNN queries on large time series databases. (2021)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Xiong Wang et al.: An Index Structure for Data Mining and Clustering. (2000)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Titouan Lorieul et al.: Classification Under Ambiguity: When Is Average-K Better Than Top-K? (2021)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Fábio Porto et al.: Constellation Queries over Big Data. (2017)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Fernando Chirigati et al.: A Collaborative Approach to Computational Reproducibility. (2017)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Nikunj Gupta et al.: On the calibration of compartmental epidemiological models. (2023)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Nisarg Patel et al.: Verifying Concurrent Multicopy Search Structures. (2021)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Siddharth Krishna et al.: Go with the Flow: Compositional Abstractions for Concurrent Data Structures (Extended Version). (2017)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Eleftherios Soulas and Dennis E. Shasha: Fast Methods for Statistical Arbitrage. (2016)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Bin Li et al.: A Framework for Biological Pattern Discovery on Networks of Workstations. (1999)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Jason Tsong-Li Wang et al.: Pattern Discovery and Classification in Biosequences. (1999)",
+                        "predicate": "authored by",
+                        "object": "Dennis E. Shasha"
+                    },
+                    {
+                        "subject": "Jason Tsong-Li Wang et al.: Pattern Discovery in Biomolecular Data: Tools, Techniques and Applications (1999)",
+                        "predicate": "edited by",
+                        "object": "Dennis E. Shasha"
+                    }
+                ]
+            }
+        ]
+    }
+]
