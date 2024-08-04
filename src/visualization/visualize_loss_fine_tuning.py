@@ -93,7 +93,7 @@ def visualize_loss_fine_tuning(files_directory):
     plt.title('Mean Training and Validation Loss Over Epochs')
     plt.legend()
     plt.tight_layout()
-    plt.savefig('results/imgs/mean_loss.png', dpi=300, bbox_inches='tight')
+    plt.savefig('reports/mean_loss.png', dpi=300, bbox_inches='tight')
     plt.show()
 
 if __name__ == '__main__':

@@ -74,5 +74,5 @@ ax.yaxis.grid(True, linestyle='--', linewidth=0.5, color='black')
 
 # Show the plot
 plt.tight_layout()
-plt.savefig("./results/imgs/comparison_prompt_template.png")
+plt.savefig("./reports/comparison_prompt_template.png")
 plt.show()
