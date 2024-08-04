@@ -255,12 +255,13 @@ def process_metric_for_all_files(directory, gt_path):
         reference_answers = json.load(f)
 
     for filename in os.listdir(directory):
-        if "test" not in filename or not filename.endswith(".json"):
-            continue
+        # if "test" not in filename or not filename.endswith(".json"):
+        #     continue
 
         answer_file_path = os.path.join(directory, filename)
 
         with open(answer_file_path, 'r') as f:
+            print(answer_file_path)
             generated_answers = json.load(f)
             all_scores = calculate_metrics(
                 generated_answers, reference_answers)

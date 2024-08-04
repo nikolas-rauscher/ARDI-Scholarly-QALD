@@ -19,4 +19,4 @@ faiss-cpu==1.8.0
 scikit-learn==1.4.2
 configparser==7.0.0
 numpy==1.26.4
-pandas==1.2.3
+pandas==2.2.2

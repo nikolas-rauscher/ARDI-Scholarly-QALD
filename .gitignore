@@ -167,3 +167,6 @@ data/external/
 *.txt
 src/utils/
 data/processed/prepared_data.json
+*train.json
+*scores_sparql.json
+*results/sparql/sparql.json
