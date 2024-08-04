@@ -1,7 +1,7 @@
 from .create_context import create_dataset
 import json
 import os
-from .experiment import Dataset
+from .experiment import Experiment
 
 
 def format_author_uris(author_uris: list) -> str:
@@ -46,7 +46,7 @@ def run_question(question: str, author_dblp_uri: list) -> dict:
         "author_dblp_uri": format_author_uris(author_dblp_uri)
     }]
 
-    config = Dataset(question_id)
+    config = Experiment(question_id)
     # Set the file path for saving the question data
     save_path = os.path.join(config.get('FilePaths', 'custom_questions_path'), f"{question_id}.json")
     with open(save_path, 'w') as file:

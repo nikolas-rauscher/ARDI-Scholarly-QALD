@@ -1,7 +1,7 @@
 import configparser
 import os
 
-class Dataset:
+class Experiment:
     def __init__(self, experiment_name, config_file='config.ini', direct_input=False):
         # Load the configuration file directly
         self.config = configparser.ConfigParser()

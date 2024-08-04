@@ -5,12 +5,12 @@ from .triple_extraction.openalex.postprocess_dataset_alex import post_process_al
 from .wikipedia_data.add_wiki_data import add_wikidata
 from .merge_data import merge_data
 
-from .experiment import Dataset
+from .experiment import Experiment
 
 
 def data_extraction(expriment_name):
-    dataset = Dataset(expriment_name)
-    create_dataset(dataset)
+    config = Experiment(expriment_name)
+    create_dataset(config)
 
 def create_dataset(config):
 
