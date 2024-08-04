@@ -4,8 +4,8 @@ This project is a student project developed for the Scholarly QALD Challenge 202
 
 ## Installation 
 
-[!Note]
-Python version 3.12.
+>[!NOTE]
+>We use Python version 3.12.
 
 To install the verbalizer, follow these steps:
 
