@@ -17,7 +17,7 @@ def create_dataset(config):
     # Creating and preprocessing the DBLP dataset
     create_dataset_dblp(config.questions_path, 
                         config.dblp_endpoint_url,
-                        config.dblp_path_outputdata_preprocessed, subset=100) 
+                        config.dblp_path_outputdata_preprocessed) 
 
     post_process_dblp(config.dblp_path_outputdata_preprocessed,
                       config.dblp_path_outputdata_postprocessed)
@@ -29,7 +29,7 @@ def create_dataset(config):
 
     post_process_alex_parallelized(config.openalex_path_outputdata_preprocessed, 
                                    config.openalex_path_outputdata_postprocessed, 
-                                   config.openalex_endpoint_url, processes=8)
+                                   config.openalex_endpoint_url, processes=1)
 
     # Adding Wikipedia data
     add_wikidata(config.raw_wikipedia_path, 

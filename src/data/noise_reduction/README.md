@@ -33,25 +33,22 @@ This module focuses on reducing noise in the DBLP-QuAD dataset and improving/rep
 - `eval_results.py`: Evaluates the generated SPARQL queries and answers.
 - `utils.py`: Provides utility functions for reading data, processing queries, etc.
 
-### Dependencies
 
-- Python 3.8+
-- sentence_transformers
-- faiss
-- requests
-- json
-- numpy
-- os
-- dotenv
-- SPARQLWrapper
-- datetime
-- time
-- tqdm
-- datasets
-- logging
+### Usage 
 
-
-<!-- ### Usage
-
-<!-- Refer to the individual script files for specific usage instructions and examples. -->
-TBA.  -->
+1. Set up environment variables
+    Create a .env file in the root directory of the project and add your OpenAI API key:
+````
+echo "OPENAI_API_KEY=your_api_key_here" > .env
+````
+2. Edit the config.ini file to set the necessary paths and parameters. Here is an example configuration:
+````
+[noise_reduction_parameters]
+shot = 5
+limit = 10000
+with_schema = true
+model_name = gpt-3.5-turbo
+````
+3. Run the script
+````
+python src/data/noise_reduction/main.py

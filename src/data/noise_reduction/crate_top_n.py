@@ -77,7 +77,7 @@ def find_similar_questions(input_questions_file, example_questions, index_file, 
     """
     logging.info("Loading input questions and FAISS index...")
     # Load input questions and FAISS index
-    input_questions = json.load(open(input_questions_file, 'r'))#[:2]  # Only the first 2 questions
+    input_questions = json.load(open(input_questions_file, 'r'))
     index = faiss.read_index(index_file)
 
     logging.info(f"Number of vectors in the index: {index.ntotal}")
@@ -141,22 +141,20 @@ def find_similar_questions(input_questions_file, example_questions, index_file, 
 
     logging.info("Done!")
 
-# Usage:
-logging.info("Creating the FAISS index...")
-example_questions = create_faiss_index(
-    example_questions_file="input_questions_v2.json",
-    index_file="embeddings/example_questions_index_all-mpnet-base-v2.faiss",
-    embeddings_file="embeddings/example_questions_embeddings_all-mpnet-base-v2.npy",
-    max_examples=10000
-)
-
-logging.info("Finding the top n similar questions...")
-find_similar_questions(
-    input_questions_file="train_dataset.json",
-    example_questions=example_questions,
-    index_file="embeddings/example_questions_index_all-mpnet-base-v2.faiss",
-    output_file="dev_questions_top_5_similar_questions_v2.json",
-    n=5
-)
-
-logging.info("Process completed.")
+if __name__ == "__main__":
+    logging.info("Creating the FAISS index...")
+    example_questions = create_faiss_index(
+        example_questions_file="input_questions_v2.json",
+        index_file="embeddings/example_questions_index_all-mpnet-base-v2.faiss",
+        embeddings_file="embeddings/example_questions_embeddings_all-mpnet-base-v2.npy",
+        max_examples=10000
+    )
+    
+    logging.info("Finding the top n similar questions...")
+    find_similar_questions(
+        input_questions_file="train_dataset.json",
+        example_questions=example_questions,
+        index_file="embeddings/example_questions_index_all-mpnet-base-v2.faiss",
+        output_file="dev_questions_top_5_similar_questions_v2.json",
+        n=5
+    )

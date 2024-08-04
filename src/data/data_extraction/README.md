@@ -33,7 +33,7 @@ process_wiki (only once) ------------------------------------------------|
 ]
 ```
 
-#### create_dataset_dblp.py
+#### triple_extraction/dblp//create_dataset_dblp.py
 
 This script creates a list of dictionaries of all extracted triples from the dblp Knowledge graph given the Author URI. 
 
@@ -43,7 +43,7 @@ Path of dataset with the questions <br>
 Json file with all extracted triples for every question 
 
 
-#### postprocessing_dblp.py
+#### triple_extraction/dblp/postprocessing_dblp.py
 
 This script postprocess all extracted triples from the DBLP KG, by removing unnecessary triples and replacing the names of certain predicates
 
@@ -79,7 +79,7 @@ Json of all processed triples, extracted from the DBLP KG
 ]
 ```
 
-#### create_dataset_alex.py
+#### triple_extraction/alex/create_dataset_alex.py
 
 This script creates a list of dictionaries of all extracted triples from the OpenAlex Knowledge Graph given the DBLP Author URI. First the Author ORCID is extracted from the extracted triples from the DBLP KG. Then the Author URI in the OpenAlex dataset is extracted by providing the Orcid of the author
 
@@ -116,7 +116,7 @@ Json file with all extracted triples from OpenAlex KG for every question
 ]
 ```
 
-#### postprocessing_alex.py
+#### triple_extraction/alex/postprocessing_alex.py
 
 This script postprocess all extracted triples from the OpenAlex KG, by 
 - Predicate Filtering: The script filters triples based on a list of desired predicates such as 'modified', 'citedByCount', etc. Only triples with these predicates are retained for further processing.
@@ -126,7 +126,9 @@ This script postprocess all extracted triples from the OpenAlex KG, by
 - Membership Information: If the predicate is "org#memberOf", the script fetches the name of the institution from the URI and constructs a triple indicating that the subject is a member of the fetched institution.
 - Counts by Year: For the "countsByYear" predicate, the script fetches the citation counts and works count for the specified year, transforming these into more explicit triples that clearly state the number of citations and papers in that particular year.
 
-Input: Path of extracted triples from DBLP KG
+Input:  - Path of extracted triples from DBLP KG
+        - The function also inlcudes a process parameter. You can parallelize the triple postprocessing by running muliple processes in parallel. (Default = 1)
+        
 Output: list of transformed and enriched triples, as well as a count of these triples. This processed data is saved in a structured JSON format which retains the enriched information in an organized manner. 
 
 ```python
@@ -154,7 +156,7 @@ Output: list of transformed and enriched triples, as well as a count of these tr
 ]
 ```
 
-#### process_wikidata.py
+#### wikipedia_data/process_wikidata.py
 
 This script process the partially corrupted wiki dataset, that was provided by the organizers and creates a Json file with the data
 
@@ -163,7 +165,7 @@ Path of corrupted wikidata as text file <br>
 **Ouput:** <br> 
 Well formated Json file with with wiki data 
 
-#### add_wiki_data.py
+#### wikipedia_data/add_wiki_data.py
 
 For each extracted name and institution, the script attempts to find matching Wikipedia articles using two key functions:
 - find_wiki_article_by_name(): Searches for Wikipedia articles where the entity’s name appears to match an entity within the article’s initial text, using a cosine similarity measure on character n-grams.

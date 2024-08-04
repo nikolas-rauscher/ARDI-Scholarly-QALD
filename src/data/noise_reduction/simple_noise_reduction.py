@@ -39,6 +39,3 @@ def clean_and_save_dataset(input_path, output_path):
     print(f"Cleaned dataset saved to: {output_path}")
 
 
-input_file_path = 'src/features/noise_reduction/generate_spaql/datasets/answers/merged_dataset/1000_qestions/processed_data500_merged_dataset.json'
-output_file_path = 'results/prompt_context/prepared_data4settings_file_zero_shot_prompting_final.json'
-clean_and_save_dataset(input_file_path, output_file_path)
