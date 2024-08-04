@@ -2,7 +2,7 @@ from .create_context import create_dataset
 import json
 import os
 from .experiment import Experiment
-
+import random
 
 def format_author_uris(author_uris: list) -> str:
     """
@@ -38,7 +38,7 @@ def run_question(question: str, author_dblp_uri: list) -> dict:
         All retrieved triples and relevant wikidata (list of dict)
     """
     # Create question dictionary
-    question_id = author_dblp_uri[0].split('/')[-1] #question id is set to dblp_author_id
+    question_id = hex(random.randint(0, 255))
     question_dict = [{
         "id": question_id,
         "question": question,
@@ -47,8 +47,11 @@ def run_question(question: str, author_dblp_uri: list) -> dict:
     }]
 
     config = Experiment(question_id)
+    if not os.path.exists(config.get('FilePaths', 'custom_questions_path')):
+        os.makedirs(config.get('FilePaths', 'custom_questions_path'))
     # Set the file path for saving the question data
     save_path = os.path.join(config.get('FilePaths', 'custom_questions_path'), f"{question_id}.json")
+    print(save_path)
     with open(save_path, 'w') as file:
         json.dump(question_dict, file, indent=4, ensure_ascii=False)
     

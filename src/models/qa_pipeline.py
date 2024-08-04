@@ -119,4 +119,5 @@ def question_answering(question, author_dblp_uri, verbalizer=True, evidence_matc
 if __name__ == "__main__":
     dataset = load_dataset('wepolyu/QALD-2024')
     item = dataset['train'][0]
-    question_answering(item["question"], item["author_dblp_uri"])
+    print(item["author_dblp_uri"][1:-1])
+    question_answering(item["question"], item["author_dblp_uri"][1:-1])

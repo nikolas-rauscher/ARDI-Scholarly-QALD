@@ -182,4 +182,4 @@ data/external/
 *test3.py*
 *.zip
 ./results/*
-# *.txt
+*.txt

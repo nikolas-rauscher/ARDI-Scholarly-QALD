@@ -1,4 +1,5 @@
 import json
+import os
 from SPARQLWrapper import  JSON
 from .herlper_functions import read_json, get_triples_for_entity
 from typing import List, Dict
@@ -111,7 +112,8 @@ def create_dataset_dblp(trainingdata_path: str, endpoint_url: str, outputdata_pa
         processed_data.append(data_block)
 
     # Save the new processed training data
-    
+    if not os.path.exists("./data/interim/dblp"):
+        os.makedirs("./data/interim/dblp")
     with open(outputdata_path, 'w') as file:
         json.dump(processed_data, file, indent=4,ensure_ascii=False)
 

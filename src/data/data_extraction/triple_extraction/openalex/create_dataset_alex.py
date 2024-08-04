@@ -1,4 +1,5 @@
 import json
+import os
 from .helper_function import run_query, read_json
 import time
 
@@ -95,7 +96,8 @@ def create_alex_dataset(dblp_processed_dataset_path: str, outputdata_path: str, 
                 alex_question["triples_number"] = triples_number
             
         alex_all_questions.append(alex_question)
-
+        if not os.path.exists("./data/interim/alex"):
+            os.makedirs("./data/interim/alex")
         with open(outputdata_path, 'w') as file:
             json.dump(alex_all_questions, file, indent=4,ensure_ascii=False)
         
