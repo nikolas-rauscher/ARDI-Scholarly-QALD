@@ -88,6 +88,7 @@ def extract_triplets(text):
         ), 'predicate': relation.strip(), 'object': object_.strip()})
     return triplets
 
+
 def triple2text(triple):
     """Converts a triple dictionary into a text string.
 
@@ -104,14 +105,14 @@ def triple2text(triple):
         if isinstance(obj, list):
             obj = '+'.join(obj)
         return f"{subject} {predicate} {obj}"
-    
+
     # If triple is a list, ensure it has the correct length and convert to string
     elif isinstance(triple, list) and len(triple) == 3:
         subject, predicate, obj = triple
         if isinstance(obj, list):
             obj = '+'.join(obj)
         return f"{subject} {predicate} {obj}"
-    
+
     return ""  # Return an empty string if triple is not a dictionary or a list of length 3
 
 
@@ -130,7 +131,8 @@ def evidence_sentence_selection(question, sentences, conserved_percentage=0.1, m
         A list of selected sentences that are relevant to the question.
     """
     if llm:
-        q_embeddings = [create_embeddings_from_triple(sentence) for sentence in extract_triple_from_question(question, triplet_extractor)]
+        q_embeddings = [create_embeddings_from_triple(
+            sentence) for sentence in extract_triple_from_question(question, triplet_extractor)]
     else:
         q_embeddings = [create_embeddings_from_sentence(question)]
 
@@ -211,6 +213,7 @@ def evidence_sentence_selection_per_triple(triple, sentences, num_sentences=2):
                              k=num_sentences, largest=True)
     return sentences[idx_list]
 
+
 def create_embeddings_from_sentence(sentence):
     """Create embeddings from a sentence using the Sentence-BERT model.
 
@@ -222,8 +225,6 @@ def create_embeddings_from_sentence(sentence):
     """
     embedding = model.encode(sentence, convert_to_tensor=True)
     return embedding
-
-
 
 
 def create_embeddings_from_triple(triple):

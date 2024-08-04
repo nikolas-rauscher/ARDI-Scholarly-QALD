@@ -16,7 +16,6 @@ def test_predictions1setting():
         model_name = model_id.split('/')[-1]
         run_model(model_id, model_name, templates)
 
-
 def test_predictions4settings():
     model_templates = {
         config['Model']['model_id_1']: config['Templates']['model_1_prompt_templates'].split(', ')

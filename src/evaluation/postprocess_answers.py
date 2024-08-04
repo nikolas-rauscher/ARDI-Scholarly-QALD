@@ -6,7 +6,7 @@ RESULT_KEYS = ["all_triples_results", "verbalizer_results",
                "evidence_matching", "verbalizer_plus_evidence_matching"]
 
 
-def process_all_files_in_folder(directory, process_func, result_keys):
+def process_all_files_in_folder(directory, process_func, result_keys=RESULT_KEYS):
     """
     Process all JSON files in a given directory.
 
@@ -27,7 +27,7 @@ def process_all_files_in_folder(directory, process_func, result_keys):
         print(f"Processing file: {file_name}")
         process_file(file_path, process_func, output_dir, result_keys)
 
-def process_file(file_path, process_func, output_dir, result_keys):
+def process_file(file_path, process_func, output_dir, result_keys=RESULT_KEYS):
     """
     Process a single JSON file and save the output.
 
@@ -40,6 +40,7 @@ def process_file(file_path, process_func, output_dir, result_keys):
     Returns:
         None
     """
+    ensure_folder_exists(output_dir)
     with open(file_path, "r") as file:
         data = json.load(file)
         output = process_func(data, result_keys)
@@ -214,7 +215,7 @@ def preprocess_sparql(file_path):
     
 
 if __name__ == "__main__":
-    # preprocess_sparql('/Users/celes/Documents/Projects/ARDI-Scholarly-QALD/data/external/sparql.json')
+    # preprocess_sparql('data/external/sparql.json')
     # test_directory = "results/train_test_data"
     # gt_path = "data/raw/codalab_new_train_data.json"
     # data_directories = ['results/zero-shot_Flan_T5_large',
@@ -227,4 +228,4 @@ if __name__ == "__main__":
     #     pipeline_question_ids(test_directory=data_directory,
     #                           ref_directory=test_directory, out_directory=data_directory + '_out')
     process_all_files_in_folder(
-        "/Users/celes/Documents/Projects/ARDI-Scholarly-QALD/results/experiments_10q", process_for_evaluation, RESULT_KEYS)
+        "results/experiments_10q", process_for_evaluation, RESULT_KEYS)
