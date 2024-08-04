@@ -92,14 +92,27 @@ def triple2text(triple):
     """Converts a triple dictionary into a text string.
 
     Args:
-        triple: A dictionary containing 'subject', 'predicate', and 'object' of the triple.
+        triple: A dictionary or a list containing 'subject', 'predicate', and 'object' of the triple.
 
     Returns:
         A string representation of the triple.
     """
-    if isinstance(triple["object"], list):
-        triple["object"] = '+'.join(triple["object"])
-    return f"{triple['subject']} {triple['predicate']} {triple['object']}"
+    if isinstance(triple, dict):  # Ensure triple is a dictionary
+        subject = triple.get('subject', '')
+        predicate = triple.get('predicate', '')
+        obj = triple.get('object', '')
+        if isinstance(obj, list):
+            obj = '+'.join(obj)
+        return f"{subject} {predicate} {obj}"
+    
+    # If triple is a list, ensure it has the correct length and convert to string
+    elif isinstance(triple, list) and len(triple) == 3:
+        subject, predicate, obj = triple
+        if isinstance(obj, list):
+            obj = '+'.join(obj)
+        return f"{subject} {predicate} {obj}"
+    
+    return ""  # Return an empty string if triple is not a dictionary or a list of length 3
 
 
 def evidence_sentence_selection(question, sentences, conserved_percentage=0.1, max_num=50, triplet_extractor=None, llm=False):
@@ -226,12 +239,12 @@ def create_embeddings_from_triple(triple):
     embedding = model.encode(concatenated_triple, convert_to_tensor=True)
     return embedding
 
-if __name__ == "__main__":
-    with open("./data/external/preprocessed_full_dataset_wiki.json") as f:
-        data = json.load(f)[6]
-    extract_triplet = load_triplet_extractor()
-    for wiki_text in data['wiki_data']:
-        for key,item in wiki_text.items():
-            ems = evidence_sentence_selection(
-                data['question'], item.split('.'), triplet_extractor=extract_triplet, llm=True, conserved_percentage=0.1)
-    # print(data['triples_number'], len(ems))
+# if __name__ == "__main__":
+#     with open("./data/external/preprocessed_full_dataset_wiki.json") as f:
+#         data = json.load(f)[6]
+#     extract_triplet = load_triplet_extractor()
+#     for wiki_text in data['wiki_data']:
+#         for key,item in wiki_text.items():
+#             ems = evidence_sentence_selection(
+#                 data['question'], item.split('.'), triplet_extractor=extract_triplet, llm=True, conserved_percentage=0.1)
+#     # print(data['triples_number'], len(ems))
