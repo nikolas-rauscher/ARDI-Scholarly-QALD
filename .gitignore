@@ -166,3 +166,4 @@ data/external/
 # Results and logs
 *.txt
 src/utils/
+data/processed/prepared_data.json
