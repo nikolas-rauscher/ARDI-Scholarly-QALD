@@ -1,18 +1,19 @@
-import json
-import configparser
-from tqdm import tqdm
-import os
-from data.data_extraction import run_question
-from src.models.zero_shot_prompting_pipeline import clean_context, truncate_context_to_max_chars
-from models.verbalizer.generatePrompt import verbalise_triples
-from data.evidence_selection import evidence_triple_selection, triple2text, evidence_sentence_selection
-from transformers import AutoModelForCausalLM, AutoTokenizer
-import torch
-import gc  # Garbage Collector Interface
 import sys
 # Append source directories to system path
 sys.path.append('./src')
 sys.path.append('..')
+from tqdm import tqdm
+import configparser
+import json
+import os
+from data.data_extraction.run_question import run_question
+from models.zero_shot_prompting_pipeline import clean_context, truncate_context_to_max_chars
+from data.verbalizer.prompt_verbalizer import verbalise_triples
+from data.evidence_selection.evidence_selection import evidence_triple_selection, triple2text, evidence_sentence_selection
+from datasets import load_dataset
+import gc  # Garbage Collector Interface
+import torch
+from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 
 # Read configuration file
 config = configparser.ConfigParser()
@@ -35,6 +36,11 @@ print(PREFIX_PATH)
 
 # Re-read configuration for PREFIX_PATH adjustments
 config.read(PREFIX_PATH + 'config.ini')
+
+model_id = "wepolyu/KGQA-1"
+tokenizer = AutoTokenizer.from_pretrained(model_id)
+model = AutoModelForSeq2SeqLM.from_pretrained(model_id, device_map="auto")
+prompt_template = open(config["FilePaths"]["prompt_template"], "r").read()
 
 
 def qa(model, tokenizer, example, prompt_template):
@@ -64,7 +70,7 @@ def qa(model, tokenizer, example, prompt_template):
     return response_text
 
 
-def question_answering(model, tokenizer, prompt_template, question, author_dblp_uri, verbalizer=True, evidence_matching=True):
+def question_answering(question, author_dblp_uri, verbalizer=True, evidence_matching=True):
     """
     Perform question answering with context and evidence processing.
 
@@ -108,3 +114,9 @@ def question_answering(model, tokenizer, prompt_template, question, author_dblp_
     context += wiki_context
 
     return qa(model, tokenizer, {"question": question, "context": context}, prompt_template)
+
+
+if __name__ == "__main__":
+    dataset = load_dataset('wepolyu/QALD-2024')
+    item = dataset['train'][0]
+    question_answering(item["question"], item["author_dblp_uri"])

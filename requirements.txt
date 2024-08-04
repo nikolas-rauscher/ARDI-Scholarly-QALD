@@ -14,8 +14,8 @@ evaluate==0.4.2
 nltk==3.8.1
 peft==0.11.1
 rouge-score==0.1.2
-SPARQLWrapper == 2.0.0
+groq>=0.9.0
+SPARQLWrapper>=2.0.0
 logging==0.4.9.6
 datasets==2.20.0
-evaluate==0.4.2
 faiss-cpu==1.8.0
