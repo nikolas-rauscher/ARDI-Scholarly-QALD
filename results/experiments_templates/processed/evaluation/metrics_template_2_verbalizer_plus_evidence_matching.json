@@ -1,0 +1,12 @@
+{
+    "rouge1": 6.4333,
+    "rouge2": 1.6667,
+    "rougeL": 6.175,
+    "rougeLsum": 6.1083,
+    "gen_len": 100.0,
+    "f1": 0.0,
+    "recall": 0.0,
+    "precision": 0.0,
+    "EM": 0.0,
+    "meteor": 0.0283
+}
