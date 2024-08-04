@@ -2,18 +2,45 @@
 
 This project is a student project developed for the Scholarly QALD Challenge 2024: [https://kgqa.github.io/scholarly-QALD-challenge/2024/](https://kgqa.github.io/scholarly-QALD-challenge/2024/).
 
-## Usage
+## Installation
+
+To install the verbalizer, follow these steps:
+
+1. Download the `output.tar.gz` file from the following [link](https://drive.google.com/file/d/1OW2MkEffc6j-EqiWciMPVN0l56X3bNnS/view?usp=drive_link).
+
+2. Place the downloaded file in the `graph2text` folder:
+
+    ```bash
+    cd src/data/verbalizer/graph2text
+    ```
+
+3. Unpack the file in the `graph2text` folder:
+
+    ```bash
+    tar -xvf output.tar.gz
+    ```
+
+4. Run the following commands to combine and extract the model files:
+
+    ```bash
+    cd outputs/t5-base_13881/best_tfmr
+    cat pytorch_model.bin.tar.gz.parta* > pytorch_model.bin.tar.gz
+    tar -xzvf pytorch_model.bin.tar.gz
+    ```
+
 Before executing the experiment, ensure to install the source code as a package by running the following command:
 
-```shell
+```bash
 pip install -e .
 ```
 
 and then install the required dependencies by running:
 
-```shell
+```bash
 pip install -r requirements.txt
 ```
+
+## Usage
 
 ### We have created 2 main Pipelines
 
@@ -25,8 +52,8 @@ pip install -r requirements.txt
     - **Output**: Provides the answer based on the gathered data.
 
     To use the demo pipeline, run:
-    ```shell
-    python src/models/qa_pipeline.py --pipeline demo --question "Your Question Here" --auto_id "Your Auto-ID Here"
+    ```bash
+    python src/main.py --pipeline demo --question "Your Question Here" --auto_id "Your Auto-ID Here"
     ```
 
 2. **Challenge Dataset Creation Pipeline**:
@@ -37,8 +64,8 @@ pip install -r requirements.txt
     - **Output**: A dataset ready for use in the challenge.
 
     To create the challenge dataset, run:
-    ```shell
-    python tests/test_<component_name>.py 
+    ```bash
+    python src/main.py --pipeline create_dataset --parameters "Your Parameters Here"
     ```
 
 ### Component Testing
@@ -51,54 +78,54 @@ pip install -r requirements.txt
     The components should be executed in the following order:
 
     1. **Noise Reduction**:
-        ```shell
+        ```bash
         python tests/test_noise_reduction.py
         ```
 
     2. **Data Extraction**:
-        ```shell
+        ```bash
         python tests/test_data_extraction.py
         ```
 
     3. **Prepare Prompt Context**:
-        ```shell
+        ```bash
         python tests/test_prepare_context.py
         ```
 
     4. **Zero-Shot Prompting** or **Fine-Tuning T5**:
         - For Zero-Shot Prompting:
-          ```shell
+          ```bash
           python tests/test_zero_shot_prompting.py
           ```
 
         - For Fine-Tuning T5:
-          ```shell
+          ```bash
           python tests/test_fine_tuning_T5.ipynb
           ```
 
     5. **Evaluation**:
-        ```shell
+        ```bash
         python tests/test_evaluation.py
         ```
 
     Additionally, you can test other subcomponents using the following scripts:
     - **Evidence Matching**:
-      ```shell
+      ```bash
       python tests/test_evidence_matching.py
       ```
 
     - **Predictions**:
-      ```shell
+      ```bash
       python tests/test_predictions.py
       ```
 
-    - **QA Pipeline**: (independent component):
-      ```shell
+    - **QA Pipeline**:
+      ```bash
       python tests/test_qa_pipeline.py
       ```
 
     - **Noise Reduction SPARQL Generation** (independent component):
-      ```shell
+      ```bash
       python tests/test_noise_reduction_SPARQL_gernation.py
       ```
 
@@ -129,7 +156,6 @@ We experiment with several state-of-the-art language models:
 <img width="1131" alt="image" src="https://i.imgur.com/ZrOr4YG.png">
 
 ## Folder Structure
-
 ```bash
 .
 ├── LICENSE
@@ -171,16 +197,14 @@ We experiment with several state-of-the-art language models:
 │   ├── utils
 │   └── visualization
 ├── tests
-│   ├── test_noise_reduction.py
-│   ├── test_noise_reduction_SPARQL_gernation.py
 │   ├── test_data_extraction.py
-│   ├── test_prepare_context.py
-│   ├── test_zero_shot_prompting.py
+│   ├── test_evaluation.py
+│   ├── test_evidence_matching.py
 │   ├── test_fine_tuning_T5.ipynb
 │   ├── test_predictions.py
-│   ├── test_evidence_matching.py
-│   ├── test_evaluation.py
-│   └── test_qa_pipeline.py
+│   ├── test_prepare_context.py
+│   ├── test_qa_pipeline.py
+│   └── test_zero_shot_prompting.py
 └── tree.txt
 
 30 directories, 28 files
