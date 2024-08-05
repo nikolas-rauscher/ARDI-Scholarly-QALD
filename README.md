@@ -1,6 +1,6 @@
 # ARDI-Project Scholarly QALD Challenge 2024
 
-This project is a student project developed for the Scholarly QALD Challenge 2024: [https://kgqa.github.io/scholarly-QALD-challenge/2024/](https://kgqa.github.io/scholarly-QALD-challenge/2024/).
+This project is a student project developed for the Scholarly QALD Challenge 2024: [https://kgqa.github.io/scholarly-QALD-challenge/2024/](https://kgqa.github.io/scholarly-QALD-challenge/2024/). Our finel-tuned Flan-T5-Large designed for Question Answering with contextual information (with the dataset ﻿[rausch/cleaned-old-dataset-6000Q](https://huggingface.co/datasets/rausch/cleaned-old-dataset-6000Q)) is available at [﻿wepolyu/KGQA-1](https://huggingface.co/wepolyu/KGQA-1).
 
 ## Installation 
 
@@ -204,17 +204,3 @@ We experiment with several state-of-the-art language models:
 │   ├── test_evidence_matching.py
 │   ├── test_evaluation.py
 │   └── test_qa_pipeline.py
-└── tree.txt
-│   ├── utils
-│   └── visualization
-├── tests
-│   ├── test_noise_reduction.py
-│   ├── test_noise_reduction_SPARQL_generation.py
-│   ├── test_data_extraction.py
-│   ├── test_prepare_context.py
-│   ├── test_zero_shot_prompting.py
-│   ├── test_fine_tuning_T5.ipynb
-│   ├── test_predictions.py
-│   ├── test_evidence_matching.py
-│   ├── test_evaluation.py
-│---└── test_qa_pipeline.py
